@@ -537,15 +537,17 @@ to {
 
 .imagedownload{
 	width: 150px;
+	margin-top:10px;
 }
 .imagedownload2{
 	width: 150px;
 	margin-left: 10px;
+	margin-top:10px;
 }
 
 .phone{
 	margin-top:-70px;
-	margin-left: 170px;
+	margin-left: 50px;
 }
 
 .slide{
@@ -564,7 +566,17 @@ to {
 /*MEDIA QUERIES*/
 
 @media (max-width: 991px) {
- h1 {
+.hide1{
+	display:none!important;
+}
+.center1{
+	text-align: center;
+}
+.truth{
+	margin-left: auto;
+	margin-right: auto;
+}
+h1 {
 font-size: 35px;
 line-height: 50px;
 margin: 15px 0;
@@ -583,6 +595,9 @@ margin: 30px auto;
 }
 }
  @media (max-width: 767px) {
+ .hide2{
+	display:none!important;
+}
  h1 {
 font-size: 30px;
 line-height: 40px;
