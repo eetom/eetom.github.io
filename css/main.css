@@ -598,7 +598,17 @@ margin: 30px auto;
  .hide2{
 	display:none!important;
 }
- h1 {
+.imagedownload2{
+	margin-left: 0px;
+}
+.shift1{
+	margin-top: 15px;
+}
+.phoneimage1{
+	width:100%;
+}
+h1 {
+}
 font-size: 30px;
 line-height: 40px;
 }
