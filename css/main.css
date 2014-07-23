@@ -546,7 +546,7 @@ to {
 }
 
 .phone{
-	margin-top:-70px;
+	margin-top:-40px;
 	margin-left: 50px;
 }
 
@@ -554,7 +554,7 @@ to {
 	z-index: 99;
 	width:265px;
 	left:60px;
-	top:-530px;
+	top:-560px;
 }
 
 
@@ -575,7 +575,6 @@ to {
 .truth{
 	margin-left: auto;
 	margin-right: auto;
-	width:60%;
 }
 h1 {
 font-size: 35px;
@@ -609,7 +608,7 @@ margin: 30px auto;
 	width:100%;
 }
 h1 {
-}
+
 font-size: 30px;
 line-height: 40px;
 }
