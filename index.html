@@ -56,8 +56,13 @@
     </section>
 
 <!--   scripts go here -->
-
+  <script src="./js/jquery-2.1.3.min.js"></script>
   <script>
+
+  // Highlight result element
+    $('#result').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
 
   // Run example
     $('#run').click(function() {
