@@ -55,6 +55,32 @@
 
     </section>
 
+<!--   scripts go here -->
+
+  <script>
+
+  // Run example
+    $('#run').click(function() {
+      var root = 'http://jsonplaceholder.typicode.com';
+      $.ajax({
+        url: root + '/posts/1',
+        method: 'GET'
+      }).then(function(data) {
+        var str = JSON.stringify(data, null, '\t')
+        $('#result').html(
+          str.replace(/\n/g, '<br/>')
+             .replace(/\\n/g, ' ')
+             .replace(/\t/g, '&nbsp;&nbsp;')
+        );
+
+        $('#result').each(function(i, block) {
+          hljs.highlightBlock(block);
+        });
+      });
+    });
   
+
+  </script>
+
   </body>
 </html>
