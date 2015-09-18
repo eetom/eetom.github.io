@@ -1,0 +1,22 @@
+Here is a textfile for learning.
+
+1) Install Bower
+2) With Bower Install things like Bootstrap etc.
+3) Set up files for main.scss
+
+// Import Bootstrap files
+@import
+    "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap.scss"
+;
+
+// Override any Bootstrap variables
+
+// Import partials (defaults to `_sass`)
+@import
+    "header",
+    "content",
+    "footer"
+;
+
+4) duplicate bower components into _site
+5) set up bower init
