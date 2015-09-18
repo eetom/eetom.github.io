@@ -14,7 +14,6 @@
 .main-menu {
 	text-align: center;
 	margin-top: 40px;
-	margin-left: 20px;
 }
 
 .main-image {
@@ -37,4 +36,12 @@
 	border-radius: 50px;
 	border: 2px solid #ccc;
 	padding: 5px;
+	margin-bottom: 30px;
+}
+
+// =========================================
+//Typography Classes
+
+ul.navmenu a {
+	font-size: 1.7em;
 }
