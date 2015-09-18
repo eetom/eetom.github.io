@@ -6,8 +6,13 @@ Here is a textfile for learning.
 
 // Import Bootstrap files
 @import
-    "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap.scss"
+    "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap.scss",
+    "../bower_components/font-awesome/css/font-awesome.css",
+    // Google fonts
+    "https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,300italic,400italic"
 ;
+
+
 
 // Override any Bootstrap variables
 

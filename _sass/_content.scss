@@ -8,6 +8,15 @@
 // =========================================
 
 
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+a, p, h1, h2, h3, h4, h5 {
+	font-weight: 300;
+}
+
+
 // =========================================
 //Layout Classes
 
@@ -48,14 +57,19 @@ ul.navmenu a {
 	font-size: 1.4em;
 }
 
-.left:before {
-    content: "\e079";
-    font-family: FontAwesome;
+.pull-right-name {
+	text-align: right;
+	float: right;
+	margin-right: 30px;
 }
-.right:before {
-    content: "\e079";
-    font-family: FontAwesome;
+
+.navmenu a {
+
 }
+
+// =========================================
+//Button Classes
+
 .btn-nav {
 	color: #333;
     background-color: #f2f2f2;
