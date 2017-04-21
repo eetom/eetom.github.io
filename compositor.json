@@ -36,15 +36,6 @@
   },
   "content": [
     {
-      "component": "nav",
-      "links": [
-        {
-          "href": "https://github.com/eetom/eetom.github.io",
-          "text": "GitHub"
-        }
-      ]
-    },
-    {
       "component": "header",
       "heading": "eetom.github.io",
       "subhead": "This is a test repository for learning github :)",
@@ -62,15 +53,24 @@
       ]
     },
     {
-      "component": "footer",
+      "component": "nav",
       "links": [
         {
           "href": "https://github.com/eetom/eetom.github.io",
           "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/eetom/eetom.github.io",
+          "text": "This Site Repo"
         },
         {
           "href": "https://github.com/eetom",
-          "text": "eetom"
+          "text": "My Github Account"
         }
       ]
     }
