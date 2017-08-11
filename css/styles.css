@@ -1,5 +1,13 @@
 /* CSS Styles */
 
+body {
+  font-family: Georgia;
+}
+
+h1 {
+  font-size: 30px;
+}
+
 p {
 	font-size: 20px;
   line-height: 1.1;
