@@ -1,29 +1,3 @@
 /* CSS Styles */
 
-body {
-  font-family: Georgia;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-size: 25px;
-}
-
-p {
-	font-size: 20px;
-  line-height: 2;
-}
-
-.layout-style {
-	width: 50%;
-  margin: 50px auto;
-}
-
-.eric-sig {
-  width: 40%;
-  padding-top: 35px;
-}
 
