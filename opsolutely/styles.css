@@ -1,0 +1,121 @@
+/*Styles for ops-marketing website*/
+
+@font-face {
+    font-family: 'filosreg';
+    src: url('/fonts/filosreg-020415006EmigreWebOnly.eot');
+    src: url('/fonts/filosreg-020415006EmigreWebOnly.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/filosreg-020415006EmigreWebOnly.woff2') format('woff2'),
+         url('/fonts/filosreg-020415006EmigreWebOnly.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont,'avenir next', avenir,
+               helvetica, 'helvetica neue',ubuntu,roboto, noto,
+               'segoe ui', arial, sans-serif;
+}
+
+/*Custom Colors*/
+
+.evergreen-txt {
+  color: #0F3D33;
+}
+
+.evergreen-btn-bg {
+  background-color: #0F3D33;
+}
+
+.b--evergreen {
+  border-color: #0F3D33;
+}
+
+.poppy-btn-bg {
+  background-color: #eb6751;
+}
+
+.poppy-txt {
+  color: #eb6751;
+}
+
+.poppy-bg {
+  background-color: rgba(235, 103, 81, 0.92);
+}
+
+.b--poppy {
+  border-color: #eb6751;
+}
+
+.rose-text {
+  color: #fc9f8a;
+}
+
+.rose-bg {
+  background-color: #fc9f8a;
+}
+
+.rose-circle {
+  background-color: #fc9f8a;
+  border-radius: 200px;
+  width: 40%;
+  height: 100%;
+}
+
+.lemon-bg {
+  background-color: #f4ec51;
+}
+
+.lemon-circle {
+  background-color: #f4ec51;
+  border-radius: 200px;
+  width: 40%;
+  height: 100%;
+}
+
+.creamsicle-txt {
+  color: #FCC48A;
+}
+
+.creamsicle-bg {
+  background-color: rgba(255, 190, 133, 0.92)
+}
+
+.b--creamsicle {
+  border-color: #FCC48A;
+}
+
+.creamsicle-btn-bg {
+  background-color: #FCC48A;
+}
+
+.seafoam-bg {
+  background-color: rgba(177, 227, 227, 0.92)
+}
+
+.pacific-circle {
+  background-color: #54b7b4;
+  border-radius: 200px;
+  width: 40%;
+  height: 100%;
+}
+
+.bg-black-02 {
+  background-color: rgba(0, 0, 0, .02);
+}
+
+/*Custom Fonts*/
+
+.filosofia {
+  font-family: 'Filosofia';
+  font-weight: normal;
+}
+
+/*Custom Styles*/
+
+.logo-img {
+  width: 100%;
+}
+
+.aspect-ratio--x {
+  padding-bottom: 40%;
+}

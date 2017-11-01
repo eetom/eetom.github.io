@@ -1,0 +1,39 @@
+/*
+ * Emigre web font kit 58b4e0ebb621e
+ * 
+ * These fonts are not shareware. 
+ * Use of these fonts requires the purchase 
+ * of a license from Emigre, www.emigre.com  
+ * Please contact sales@emigre.com
+ *
+ * To purchase a license to use this font go to:
+ * http://www.emigre.com/WebFonts/Filosofia/Regular
+ *
+ * © 2017 Emigre, Inc
+ */
+
+
+
+
+@font-face {
+    font-family: 'filosreg';
+    src: url('filosreg-020415006EmigreWebOnly.eot');
+    src: url('filosreg-020415006EmigreWebOnly.eot?#iefix') format('embedded-opentype'),
+         url('filosreg-020415006EmigreWebOnly.woff2') format('woff2'),
+         url('filosreg-020415006EmigreWebOnly.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'filosreglin';
+    src: url('filosreglin-020415006EmigreWebOnly.eot');
+    src: url('filosreglin-020415006EmigreWebOnly.eot?#iefix') format('embedded-opentype'),
+         url('filosreglin-020415006EmigreWebOnly.woff2') format('woff2'),
+         url('filosreglin-020415006EmigreWebOnly.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
