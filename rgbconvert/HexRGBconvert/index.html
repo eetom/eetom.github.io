@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Convert Hex to RGB</title>
+  	<link rel="stylesheet" href="styles.css" type="text/css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script type="text/javascript" src="math.js"></script>
+  </head>
+  <body>
+  	<div class="center">
+	  	<h1>Convert Hex To RGB</h1>
+	  	<span>Hex Input:</span>
+	  	<input type="text" id="hex" onClick="this.select();" value="#fff" maxlength="7">
+		<p>RGB Output:
+		<span class="results" id="p1">...</span><button onclick="copyToClipboard('#p1')">Copy to Clipboard</button></p>
+	</div>
+  </body>
+</html>

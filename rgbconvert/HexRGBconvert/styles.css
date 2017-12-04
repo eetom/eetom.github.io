@@ -1,0 +1,47 @@
+/*Styling for the HexRGB*/
+
+* {
+	font-family: "Helvetica";
+	border:0;
+}
+
+body { 
+	padding: 20px; 
+	font-size: 1em;
+	background: #222; 
+	color: #ddd; 
+}
+
+.center {
+	width: 75%;
+	margin: 250px auto;
+}
+
+/*click to copy button*/
+button {
+	font-size: 1em;
+	padding: 0.75em 1.5em;
+	margin-left: 8px
+}
+
+/*User inputs the hex*/
+input {
+  width: 10%;
+  font-size: 1.5em;
+  background: none;
+  padding: 8px; 
+  border-bottom: 2px dotted #555555;
+  outline: none;
+  color: gray;
+  margin-bottom: 16px;
+}
+
+/*display the results*/
+.results {
+  font-size: 1.5em;
+  padding: 8px; 
+  border-bottom: 2px dotted #555555;
+  color: gray;
+  outline: none;
+  margin-bottom: 16px;
+}
