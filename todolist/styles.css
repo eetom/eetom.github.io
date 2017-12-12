@@ -14,19 +14,14 @@ body {
 h2 {
   margin:20px 20px 0 0;
   text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 p.title {
   margin-top: 5px;
   margin-bottom: 25px;
   text-align: left;
-}
-
-small.subtitle {
-  margin-left: 5px;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 /* Remove margins and padding from the list */
@@ -106,22 +101,22 @@ ul li.checked::before {
 }
 
 .pause {
-  background-color: #9B59B6;
+  background-color: #FFB902;
   color: white;
 }
 
 .start {
-  background-color: #3498DB;
+  background-color: #00BE81;
   color: white;
 }
 
 .initiate {
-  background-color: #48C9B0 !important;
+  background-color: #6A67CE;
 }
 
 /* Style the header */
 .header {
-  background-color: #FF9900;
+  background-color: #2E3C54;
   padding: 10px 40px 30px 40px;
   color: white;
   text-align: center;
@@ -153,8 +148,8 @@ input {
 .addBtn {
   padding: 10px;
   width: 15%;
-  background: #d9d9d9;
-  color: #555;
+  background: #FC636B;
+  color: #fff;
   float: left;
   text-align: center;
   font-size: 16px;
@@ -162,16 +157,12 @@ input {
   transition: 0.3s;
 }
 
-.addBtn:hover {
-  background-color: #bbb;
-}
-
 /* Style the "Add" button */
 .clearBtn {
   padding: 10px;
   width: 11%;
-  background: #d9d9d9;
-  color: #555;
+  background: #FC636B;
+  color: #fff;
   float: right;
   text-align: center;
   font-size: 16px;
@@ -184,13 +175,17 @@ input {
   padding: 10px;
   width: 11%;
   margin-right: 15px;
-  background: #d9d9d9;
-  color: #555;
+  background: #FC636B;
+  color: #fff;
   float: right;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.addBtn:hover, .clearBtn:hover, .saveBtn:hover {
+  background-color: #FF6D92;
 }
 
 .fa-tasks, .fa-pause, .fa-hourglass-start, .fa-clock-o, .fa-floppy-o, .fa-external-link {
