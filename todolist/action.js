@@ -1,6 +1,8 @@
 // JS for Taskit
 
-  var count = 0;
+  var seconds = 0;
+  var minutes = 0;
+  var hours = 0;
 
   // Create a "close" and "timer" button and append it to each list item
   var myNodelist = document.getElementsByTagName("LI");
@@ -14,7 +16,7 @@
     span.className = "close";
     span.appendChild(txt);
     timeicon.className = "fa fa-clock-o";
-    timer.className = "pause";
+    timer.className = "pause basic";
     timer.appendChild(timeicon);
     timer.appendChild(timertxt);
     myNodelist[i].appendChild(span);
@@ -59,7 +61,6 @@
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
     var t = document.createTextNode(inputValue);
-    count++;
     li.appendChild(t);
     if (inputValue === '') {
       alert("You must write something!");
@@ -81,10 +82,10 @@
       timer2[i].onclick = function() {
       if (this.className === 'start timer'){
         this.className = 'pause timer';
-        this.innerHTML = '<i class="fa fa-pause" aria-hidden="true"></i> Pause 00:00';
+        this.innerHTML = '<i class="fa fa-pause" aria-hidden="true"></i> Paused <span class="watch">' + hours + ':' + minutes + ':' + seconds + '</span>';
       } else {
         this.className = 'start timer';
-        this.innerHTML = '<i class="fa fa-hourglass-start" aria-hidden="true"></i> Timing 00:00';
+        this.innerHTML = '<i class="fa fa-hourglass-start" aria-hidden="true"></i> Timing <span class="watch">' + hours + ':' + minutes + ':' + seconds + '</span>';
       }
         console.log('TIMER START!')
       }
