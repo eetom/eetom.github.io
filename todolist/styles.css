@@ -12,8 +12,21 @@ body {
 }
 
 h2 {
-  margin:20px 20px 20px 0;
+  margin:20px 20px 0 0;
   text-align: left;
+}
+
+p.title {
+  margin-top: 5px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+small.subtitle {
+  margin-left: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* Remove margins and padding from the list */
@@ -83,9 +96,27 @@ ul li.checked::before {
   color: white;
 }
 
+/* Style the timer button */
+.pause, .start {
+  position: absolute;
+  right: 45px;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.pause {
+  background-color: #9B59B6;
+  color: white;
+}
+
+.start {
+  background-color: #3498DB;
+  color: white;
+}
+
 /* Style the header */
 .header {
-  background-color: #53777A;
+  background-color: #FF9900;
   padding: 10px 40px 30px 40px;
   color: white;
   text-align: center;
@@ -123,4 +154,11 @@ input {
 .addBtn:hover {
   background-color: #bbb;
 }
+
+.fa-tasks, .fa-ban, .fa-hourglass-start {
+  margin-right: 10px;
+}
+
+
+
 
