@@ -72,7 +72,7 @@
     document.getElementById("myInput").value = "";
 
     var timer = document.createElement("SPAN");
-    var timertxt = document.createTextNode("start timer");
+    var timertxt = document.createTextNode("Start Timer");
     var timericon = document.createElement("i");
     timericon.className = "fa fa-clock-o";
     timer.className = "pause timer initiate";
@@ -84,7 +84,7 @@
       timer2[i].onclick = function() {
       if (this.className === 'start timer'){
         this.className = 'pause timer';
-        this.innerHTML = '<i class="fa fa-ban" aria-hidden="true"></i> Pause 00:00';
+        this.innerHTML = '<i class="fa fa-pause" aria-hidden="true"></i> Pause 00:00';
       } else {
         this.className = 'start timer';
         this.innerHTML = '<i class="fa fa-hourglass-start" aria-hidden="true"></i> Timing 00:00';
