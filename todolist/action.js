@@ -72,8 +72,11 @@
     document.getElementById("myInput").value = "";
 
     var timer = document.createElement("SPAN");
-    var timertxt = document.createTextNode("Start Timer");
-    timer.className = "pause timer";
+    var timertxt = document.createTextNode("start timer");
+    var timericon = document.createElement("i");
+    timericon.className = "fa fa-clock-o";
+    timer.className = "pause timer initiate";
+    timer.appendChild(timericon);
     timer.appendChild(timertxt);
     li.appendChild(timer);
 

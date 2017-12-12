@@ -114,6 +114,10 @@ ul li.checked::before {
   color: white;
 }
 
+.initiate {
+  background-color: #48C9B0 !important;
+}
+
 /* Style the header */
 .header {
   background-color: #FF9900;
@@ -155,7 +159,7 @@ input {
   background-color: #bbb;
 }
 
-.fa-tasks, .fa-ban, .fa-hourglass-start {
+.fa-tasks, .fa-ban, .fa-hourglass-start, .fa-clock-o {
   margin-right: 10px;
 }
 
