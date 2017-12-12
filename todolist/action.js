@@ -1,28 +1,24 @@
-// JS for ToDo List Proto
+// JS for Taskit
 
-  // Create a "close" button and append it to each list item
+  var count = 0;
+
+  // Create a "close" and "timer" button and append it to each list item
   var myNodelist = document.getElementsByTagName("LI");
   var i;
   for (i = 0; i < myNodelist.length; i++) {
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.appendChild(txt);
-    myNodelist[i].appendChild(span);
-  }
-
-  // Create a "timer" button and append it to each list item
-  var myNodelist2 = document.getElementsByTagName("LI");
-  var i;
-  for (i = 0; i < myNodelist2.length; i++) {
     var timer = document.createElement("SPAN");
     var timertxt = document.createTextNode("Pause");
     var timeicon = document.createElement("i");
+    span.className = "close";
+    span.appendChild(txt);
     timeicon.className = "fa fa-clock-o";
     timer.className = "pause";
     timer.appendChild(timeicon);
     timer.appendChild(timertxt);
-    myNodelist2[i].appendChild(timer);
+    myNodelist[i].appendChild(span);
+    myNodelist[i].appendChild(timer);
   }
 
   // Click on a close button to hide the current list item
@@ -63,7 +59,10 @@
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
     var t = document.createTextNode(inputValue);
+    count++;
     li.appendChild(t);
+    localStorage.setItem( count , inputValue);
+    console.log(localStorage.getItem("a") + " " + count);
     if (inputValue === '') {
       alert("You must write something!");
     } else {

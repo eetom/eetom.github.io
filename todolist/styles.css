@@ -1,9 +1,10 @@
-/* CSS Styles for ToDo List Proto */
+/* CSS Styles for Taskit */
 
 body {
   margin: 0;
   min-width: 250px;
   font-family: 'Lato', sans-serif;
+  background-color: #2E3C54;
 }
 
 /* Include the padding and border in an element's total width and height */
@@ -28,7 +29,8 @@ p.title {
 ul {
   margin: 0;
   margin-top: 177px;
-  padding: 0;
+  padding: 0 40px;
+  background-color: #2E3C54;
 }
 
 /* Style the list items */
