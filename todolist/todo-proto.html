@@ -14,8 +14,8 @@
     <div id="myDIV" class="header">
       <h2><i class="fa fa-tasks"></i> Todo List <small class="subtitle">[vr. 1.0]</small></h2>
       <p class="title">Create a simple task list for easy task management</p>
-      <input type="text" id="myInput" placeholder="Enter Task Description...">
-      <span onclick="newElement()" class="addBtn">+ Add New Task</span>
+      <input type="text" id="myInput" onkeydown = "if (event.keyCode == 13) document.getElementById('addBtn').click()" placeholder="Enter Task Description...">
+      <span onclick="newElement()" class="addBtn" id="addBtn">+ Add New Task</span>
     </div>
 
     <ul id="myUL">
