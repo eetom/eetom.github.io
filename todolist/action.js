@@ -61,8 +61,6 @@
     var t = document.createTextNode(inputValue);
     count++;
     li.appendChild(t);
-    localStorage.setItem( count , inputValue);
-    console.log(localStorage.getItem("a") + " " + count);
     if (inputValue === '') {
       alert("You must write something!");
     } else {
