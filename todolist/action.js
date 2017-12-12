@@ -82,12 +82,12 @@
 
     for (i = 0; i < timer2.length; i++) {
       timer2[i].onclick = function() {
-      if (this.className === 'pause timer'){
-        this.className = 'start timer';
-        this.innerHTML = '<i class="fa fa-hourglass-start" aria-hidden="true"></i> Timing 00:00';
-      } else {
+      if (this.className === 'start timer'){
         this.className = 'pause timer';
         this.innerHTML = '<i class="fa fa-ban" aria-hidden="true"></i> Pause 00:00';
+      } else {
+        this.className = 'start timer';
+        this.innerHTML = '<i class="fa fa-hourglass-start" aria-hidden="true"></i> Timing 00:00';
       }
         console.log('TIMER START!')
       }
