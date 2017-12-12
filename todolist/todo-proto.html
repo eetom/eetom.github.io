@@ -16,6 +16,8 @@
       <p class="title">Create a simple task list for easy task management</p>
       <input type="text" id="myInput" onkeydown = "if (event.keyCode == 13) document.getElementById('addBtn').click()" placeholder="Enter Task Description...">
       <span onclick="newElement()" class="addBtn" id="addBtn">+ Add New Task</span>
+      <span onclick="window.open('https://eetom.github.io/todolist/todo-proto.html')" class="clearBtn"><i class="fa fa-external-link" aria-hidden="true"></i> New List</span>
+      <span onclick="newElement()" class="saveBtn"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save List</span>
     </div>
 
     <ul id="myUL">
