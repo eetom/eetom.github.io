@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mondrian CSS Grids Demo</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>
+  <body>
+  	<div class="main-title">
+  	Mondrian CSS Grids Demo
+  	<p> By Eric Tsai <a href="https://github.com/eetom">View this project on GitHub</a></p>
+  	</div>
+  	<div class="grid">
+  		<!-- Colour Sections -->
+		  <div class="item-a"><p class="dimensions">Grid-column: 1 <br> Grid-row: 1</p></div>
+	    <div class="item-b"><p class="dimensions">Grid-column: 2 / 4 <br> Grid-row: 1 / 3</p></div>
+	    <div class="item-c"><p class="dimensions">Grid-column: 1 <br> Grid-row: 3</p></div>
+
+	    <!-- White sections -->
+	    <div class="item-e"><p class="dimensions">Grid-column: 1 <br> Grid-row: 2</p></div>
+	    <div class="item-f"><p class="dimensions">Grid-column: 2 <br> Grid-row: 3</p></div>
+	    <div class="item-g"><p class="dimensions">Grid-column: 3 <br> Grid-row: 3</p></div>
+  	</div>
+
+    <div class="information">
+      <p>Set up a <span class="code">div</span> with this CSS style:</p>
+
+      <p class="code">
+        .grid { <br>
+        &nbsp;display: grid; <br>
+        &nbsp;grid-template-columns: 175px 300px 100px; <br>
+        &nbsp;grid-template-rows: 300px 200px 100px; <br>
+        &nbsp;margin: 15px auto 40px auto; <br>
+        &nbsp;width: 575px; <br>
+        &nbsp;border: 5px solid black; <br>
+        } <br>
+      </p>
+      <p>This creates a CSS grid with 3 columns and 3 rows.<br><span class="code">grid-template-columns</span> allows you to divide the columns into specific lenghts and number of columns, <span class="code">grid-template-rows</span> does the same for rows. In this <span class="code">grid-template-columns</span> we have one column of 175px width, one column of 300px width, and finally one column of 100px width.<br> A total of 3 columns.</p>
+      <p>Create a <span class="code">div</span> for each section you wish to create on this grid.<br>For example, this Mondrian has 6 sections. 3 Colour sections and 3 white sections.</p>
+
+      <p class="code">
+        &lt;div class="grid"> <br>
+          &nbsp;&lt;!-- Colour Sections --> <br>
+          &nbsp;&lt;div class="item-a">&lt;/div> <br>
+          &nbsp;&lt;div class="item-a">&lt;/div> <br>
+          &nbsp;&lt;div class="item-a">&lt;/div> <br>
+          <br>
+          &nbsp;&lt;!-- White Sections --> <br>
+          &nbsp;&lt;div class="item-e">&lt;/div> <br>
+          &nbsp;&lt;div class="item-f">&lt;/div> <br>
+          &nbsp;&lt;div class="item-g">&lt;/div> <br>
+          &lt;div>
+      </p>
+
+      <p>Style each of the sections. <br> For example here is the yellow section of the Mondrian.</p>
+      <p class="code">
+        .item-a { <br>
+        &nbsp;grid-column: 1; <br>
+        &nbsp;grid-row: 1; <br>
+        &nbsp;background-color: yellow; <br>
+        &nbsp;border: 5px solid black; <br>
+        }
+      </p>
+
+      <p>This section is defined as all the area from column 1 and row 1.<br>Early we defined in the <span class="code">.grid</span> style that the first column is 174px wide and the first row is 300px long.<br> The <span class="code">background-color</span> is yellow.<br> And the <span class="code">border</span> is a solid 5 pixel thick black line.</p>
+      <div class="grid">
+        <div class="item-a"></div>
+      </div>
+
+      <p>For trickier sections; such as the red section that spans multiple rows and columns. Set up the style like so:</p>
+      <p class="code">
+        .item-b { <br>
+        &nbsp;grid-column: 2/4; <br>
+        &nbsp;grid-row: 1/3; <br>
+        &nbsp;background-color: red; <br>
+        &nbsp;border: 5px solid black; <br>
+        }
+      </p>
+      <p>This creates a section that covers BETWEEN the start columns 2 and start 4<br> And BETWEEN the start of row 1 and the start of row 3</p>
+      <div class="grid">
+        <div class="item-b"></div>
+      </div>
+
+      <p>Put it all togther by styling the rest of the sections a,b,c,d,e,f</p>
+      <div class="grid">
+        <!-- Colour Sections -->
+        <div class="item-a"><</div>
+        <div class="item-b"></div>
+        <div class="item-c"></div>
+
+        <!-- White sections -->
+        <div class="item-e"></div>
+        <div class="item-f"><</div>
+        <div class="item-g"></div>
+      </div>
+      <p>Feel free to use this a base to experiment and try different things with CSS grids!</p>
+
+      <p><a href="https://github.com/eetom">View this project on GitHub</a></p>
+    </div>
+  </body>
+</html>
+
