@@ -2,13 +2,134 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
-  <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Design Sys Notes</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
   </head>
+
   <body>
-  	<h1>Hello World</h1>
-  
+    <div class="wrapper">
+    	<div>
+    		<h1>DESSYS Notes</h1>
+    	</div>
+
+      <div class="text-block">
+    	  <h3>Colors Notes<small>v.01</small></h3>
+      	<p class="subtitle">Usage Guidelines</p>
+      	<p>Only core components such as Buttons or Typography should depend directly on the colors component. Higher level components should get their colors indirectly from the core set of components. This makes it easy to update the color usage across the library.</p>
+      </div>
+
+      <div class="block-element">
+    	  <h3>Primary Palette</h3>
+
+        <div class="color-section">
+          <div class="colorblock marine">Marine<span class="colorhex">#2f7bbf</span></div>
+          <p>This is the "Primary" color used in the UI, its used in the Primary Button to show emphasis beyond the default grey buttons.</p>
+          <ul>
+            <li>When using this as a background color, use White for the text color</li>
+          </ul>
+        </div>
+
+        <div class="color-section">
+          <div class="colorblock bluemine">Bluemine <span class="colorhex">#1e4e79</span></div>
+          <p>This is the darker counter-part color to Marine Blue, used for strokes and hover states, its used mainly with Marine Blue.</p>
+          <ul>
+            <li>When using this as a background color, use White for the text color</li>
+          </ul>
+        </div>
+
+        <div class="color-section">
+        </div>
+
+        <div class="color-section">
+          <div class="colorblock gallery">Gallery <span class="colorhex">#ebebeb</span></div>
+          <p>This is the "Default" color used in the UI, its used in the Default Button.</p>
+          <ul>
+            <li>When using this as a background color, use Mineshaft for the text color</li>
+          </ul>
+        </div>
+
+        <div class="color-section">
+          <div class="colorblock alto">Alto <span class="colorhex">#e0e0e0</span></div>
+          <p>This is the darker counter-part to Gallery, this is used in hover states for default elements.</p>
+          <ul>
+            <li>When using this as a background color, use Mineshaft for the text color</li>
+          </ul>
+       </div>
+
+       <div class="color-section">
+        <div class="colorblock silver">Silver <span class="colorhex">#cccccc</span></div>
+        <p>This is the default stroke color, its a bit darker thant Alto to make sure its easy to see in different element states</p>
+        <ul>
+          <li>Do NOT use this for a background color, stroke only</li>
+        </ul>
+      </div>
+
+      <div class="color-section">
+        <div class="colorblock blazeorange">Blaze Orange <span class="colorhex">#f56500</span></div>
+        <p>This is the Cloudflare Orange. Other than the logo we don't really use this in our dashboard. The color is more prevalent in the
+        marketing website.</p>
+        <ul>
+          <li>When using this as a background color, use White for the text color</li>
+        </ul>
+      </div>
+
+      <div class="color-section">
+        <div class="colorblock yelloworange">Yellow Orange <span class="colorhex">#faad3f</span></div>
+        <p>This is Cloudflare's lighter yellow-orange. Only used in the logo and marketing materials.</p>
+        <ul>
+          <li>When using this as a background color, use White for the text color</li>
+        </ul>
+      </div>
+
+      <div class="color-section">
+      </div>
+
+      <div class="color-section">
+        <div class="colorblock mineshaft">Mineshaft <span class="colorhex">#333333</span></div>
+        <p>This is the main "black" color for Cloudflare, used primary in text.</p>
+        <ul>
+          <li>When using this as a background color, use White for the text color</li>
+        </ul>
+      </div>
+
+      <div class="color-section">
+        <div class="colorblock boulder">Boulder <span class="colorhex">#7d7d7d</span></div>
+        <p>This is the lighter "black" color for accent text and UI elements.</p>
+        <ul>
+          <li>Do NOT use this for a background color, stroke only</li>
+        </ul>
+      </div>
+
+      <div class="color-section">
+      </div>
+
+      <div class="color-section">
+        <div class="colorblock tallpoppy">Tall Poppy <span class="colorhex">#bd2527</span></div>
+        <p>This is the main "Warning" color for Cloudflare, used primary in text, buttons, and other elements
+        in the dashboard when we want to make sure users are warned of making any potentially removing/
+        deleting/break-their-site actions.</p>
+        <ul>
+          <li>When using this as a background color, use White for the text color</li>
+        </ul>
+      </div>
+
+      <div class="color-section">
+        <div class="colorblock roofterracotta">Roof Terracotta <span class="colorhex">#9f1f21</span></div>
+        <p>This is the darker counter-part for Tall Poppy. For states like hover and focus etc.</p>
+        <ul>
+          <li>When using this as a background color, use White for the text color</li>
+        </ul>
+      </div>
+
+      <div class="color-section">
+      </div>
+
+
+
+      </div>
+    </div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
   </body>
 </html>
+
