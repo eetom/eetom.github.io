@@ -138,16 +138,20 @@ ul li {
   padding: 20px;
 }
 
-.example-primary-button {
+.example-base-button {
   border-radius: 2px;
-  border: 1px solid #1E4E79;
-  background-color: #2f7bbf;
   padding-left: 8px;
   padding-right: 8px;
   height: 32px;
-  color: #fff;
   font-size: 16px;
   margin-top: 10px;
+  cursor: pointer;
+}
+
+.example-primary-button {
+  border: 1px solid #1E4E79;
+  background-color: #2f7bbf;
+  color: #fff;
 }
 
 .example-primary-button:not(.disabled):hover {
@@ -156,18 +160,14 @@ ul li {
 
 .disabled {
   opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
 }
 
 .example-default-button {
-  border-radius: 2px;
   border: 1px solid #cccccc;
   background-color: #ebebeb;
-  padding-left: 8px;
-  padding-right: 8px;
-  height: 32px;
   color: #333333;
-  font-size: 16px;
-  margin-top: 10px;
 }
 
 .example-default-button:not(.disabled):hover {
@@ -175,15 +175,9 @@ ul li {
 }
 
 .example-warning-button {
-  border-radius: 2px;
   border: 1px solid #9f1f21;
   background-color: #bd2527;
-  padding-left: 8px;
-  padding-right: 8px;
-  height: 32px;
   color: #fff;
-  font-size: 16px;
-  margin-top: 10px;
 }
 
 .example-warning-button:not(.disabled):hover {
