@@ -101,7 +101,7 @@ ul li.checked::before {
   right: 45px;
   top: 0;
   padding: 12px 16px 12px 16px;
-  width: 15%;
+/*  width: 15%;*/
 }
 
 .pause {
@@ -109,13 +109,28 @@ ul li.checked::before {
   color: white;
 }
 
+.pause:after {
+   content: "Paused";
+   padding-left: 5px;
+}
+
 .start {
   background-color: #00BE81;
   color: white;
 }
 
+.start:after {
+   content: "Timing";
+   padding-left: 5px;
+}
+
 .initiate {
   background-color: #6A67CE;
+  color: white;
+}
+
+.initiate:after {
+  content: "Start Timer";
 }
 
 /* Style the header */
@@ -150,8 +165,7 @@ input {
 
 /* Style the "Add" button */
 .addBtn {
-  padding: 10px;
-  width: 15%;
+  padding: 10px 14px;
   background: #FC636B;
   color: #fff;
   float: left;
@@ -188,11 +202,23 @@ input {
   transition: 0.3s;
 }
 
+.addBtn:after {
+  content:"Add New Task";
+}
+
+.saveBtn:after {
+  content: "Save List";
+}
+
+.clearBtn:after {
+  content: "New List";
+}
+
 .addBtn:hover, .clearBtn:hover, .saveBtn:hover {
   background-color: #FF6D92;
 }
 
-.fa-tasks, .fa-pause, .fa-hourglass-start, .fa-clock-o, .fa-floppy-o, .fa-external-link {
+.fa-plus-circle, .fa-tasks, .fa-pause, .fa-hourglass-start, .fa-clock-o, .fa-floppy-o, .fa-external-link {
   margin-right: 8px;
 }
 

@@ -1,14 +1,126 @@
 /*Responsive Styles for Design Sys notes*/
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+/* Laptop L - 1440 */
+@media only screen and (max-width : 1441px) {
+  body {
+      background-color: lightblue;
+      /*responsive test*/
+    }
+}
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { ... }
+/* Laptop - 1024 */
+@media only screen and (max-width : 1025px) {
+	body {
+    background-color: lightgreen;
+    /*responsive test*/
+  }
+  .saveBtn:after {
+    content: "Save";
+  }
+  .clearBtn:after {
+    content: "New";
+  }
+}
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
+/* Tablet - 768 */
+@media only screen and (max-width : 769px) {
+  body {
+    background-color: red;
+    /*responsive test*/
+  }
+  .pause:after {
+    content: none;
+    padding-left: 0px;
+  }
+  .start:after {
+     content: none;
+     padding-left: 5px;
+  }
+  .initiate {
+    height: 100%;
+    vertical-align: middle;
+  }
+  .initiate:after {
+    content: none;
+  }
+  .initiate .fa {
+    font-size: 22px;
+  }
+  .saveBtn:after {
+    content: none;
+  }
+  .clearBtn:after {
+    content: none;
+  }
+  .clearBtn, .saveBtn {
+    padding: 10px 14px;
+    width: auto;
+    text-align: center;
+    font-size: 22px;
+  }
+  .fa-floppy-o, .fa-external-link {
+    margin-right: 0;
+  }
+  .saveBtn {
+    margin-right: 10px;
+  }
+}
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
+/* Mobile L - 425 */
+@media only screen and (max-width : 426px) {
+  body {
+    background-color: darkgreen;
+    /*responsive test*/
+  }
+  h2 {
+    font-size: 2.2em;
+  }
+  input {
+    width: 100%;
+  } 
+  ul {
+    margin-top: 265px;
+    padding: 0 20px;
+  }
+  .header {
+    padding: 10px 20px 30px 20px;
+    height: 265px;
+  }
+  .clearBtn, .saveBtn, .addBtn {
+    margin-top: 15px;
+  }
+}
 
+/* Mobile M - 375px */ 
+@media only screen and (max-width : 376px) {
+  body {
+    background-color: blue;
+    /*responsive test*/
+  }
+  ul {
+    padding: 0 15px;
+  }
+  .header {
+    padding: 10px 15px 30px 15px;
+  }
+}
+
+/* Mobile S - 320 */ 
+@media only screen and (max-width : 321px) {
+  body {
+    background-color: darkred;
+    /*responsive test*/
+  }
+  .clearBtn, .saveBtn {
+    padding: 10px;
+    width: auto;
+    text-align: center;
+    font-size: 22px;
+  }
+  ul {
+    padding: 0 10px;
+  }
+  .header {
+    padding: 10px 10px 30px 10px;
+  }
+}
