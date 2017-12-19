@@ -3,9 +3,15 @@
 /* Laptop L - 1440 */
 @media only screen and (max-width : 1441px) {
   body {
-      background-color: lightblue;
-      /*responsive test*/
-    }
+    background-color: lightblue;
+    /*responsive test*/
+  }
+  input {
+    width: 53%;
+  }
+  .saveBtn, .clearBtn {
+    width: 13%;
+  }
 }
 
 /* Laptop - 1024 */
@@ -13,6 +19,9 @@
 	body {
     background-color: lightgreen;
     /*responsive test*/
+  }
+  input {
+    width: 46%;
   }
   .saveBtn:after {
     content: "Save";
@@ -66,12 +75,8 @@
   }
 }
 
-/* Mobile L - 425 */
-@media only screen and (max-width : 426px) {
-  body {
-    background-color: darkgreen;
-    /*responsive test*/
-  }
+/* Special Breakpoint for Buttons */
+@media only screen and (max-width: 605px) {
   h2 {
     font-size: 2.2em;
   }
@@ -88,6 +93,22 @@
   }
   .clearBtn, .saveBtn, .addBtn {
     margin-top: 15px;
+  }
+}
+
+/* Mobile L - 425 */
+@media only screen and (max-width : 426px) {
+  body {
+    background-color: darkgreen;
+    /*responsive test*/
+  }
+  ul {
+    margin-top: 265px;
+    padding: 0 20px;
+  }
+  .header {
+    padding: 10px 20px 30px 20px;
+    height: 265px;
   }
 }
 
