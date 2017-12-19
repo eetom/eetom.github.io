@@ -3,7 +3,7 @@
 /* Laptop L - 1440 */
 @media only screen and (max-width : 1441px) {
   body {
-    background-color: lightblue;
+    /*background-color: lightblue;*/
     /*responsive test*/
   }
   input {
@@ -17,7 +17,7 @@
 /* Laptop - 1024 */
 @media only screen and (max-width : 1025px) {
 	body {
-    background-color: lightgreen;
+    b/*ackground-color: lightgreen;*/
     /*responsive test*/
   }
   input {
@@ -29,12 +29,15 @@
   .clearBtn:after {
     content: "New";
   }
+  .initiate:after {
+    content: "Start";
+  }
 }
 
 /* Tablet - 768 */
 @media only screen and (max-width : 769px) {
   body {
-    background-color: red;
+    /*background-color: red;*/
     /*responsive test*/
   }
   .pause:after {
@@ -50,7 +53,7 @@
     vertical-align: middle;
   }
   .initiate:after {
-    content: none;
+    content: "Start";
   }
   .initiate .fa {
     font-size: 22px;
@@ -99,7 +102,7 @@
 /* Mobile L - 425 */
 @media only screen and (max-width : 426px) {
   body {
-    background-color: darkgreen;
+    /*background-color: darkgreen;*/
     /*responsive test*/
   }
   ul {
@@ -115,7 +118,7 @@
 /* Mobile M - 375px */ 
 @media only screen and (max-width : 376px) {
   body {
-    background-color: blue;
+    /*background-color: blue;*/
     /*responsive test*/
   }
   ul {
@@ -129,7 +132,7 @@
 /* Mobile S - 320 */ 
 @media only screen and (max-width : 321px) {
   body {
-    background-color: darkred;
+    /*background-color: darkred;*/
     /*responsive test*/
   }
   .clearBtn, .saveBtn {
