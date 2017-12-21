@@ -1,14 +1,111 @@
 /*Responsive Styles for Design Sys notes*/
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+/* Laptop L - 1440 */
+@media only screen and (max-width : 1441px) {
+/*  body {
+    background-color: lightblue;
+  }*/
+}
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { ... }
+/* Laptop - 1024 */
+@media only screen and (max-width : 1025px) {
+/*	body {
+    background-color: lightgreen;
+  }*/
+  .color-section {
+    width: 40%;
+    margin: 0 auto 16px 0;
+  }
+  .color-section.example {
+    display: block;
+    width: 90%;
+    margin: 0;
+  }
+  .example-primary-button:not(.disabled):after {
+    content: "Primary Button";
+  }
+  .example-primary-button:after {
+    content: "Disabled Button";
+  }
+  .example-default-button:not(.disabled):after {
+    content: "Default Button";
+  }
+  .example-default-button:after {
+    content: "Disabled Button";
+  }
+  .example-warning-button:not(.disabled):after {
+    content: "Warning Button";
+  }
+  .example-warning-button:after {
+    content: "Disabled Button";
+  }
+}
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
+/* Tablet - 768 */
+@media only screen and (max-width : 769px) {
+/*  body {
+    background-color: red;
+  }*/
+  .example-primary-button:not(.disabled):after {
+    content: "Primary";
+  }
+  .example-primary-button:after {
+    content: "Disabled";
+  }
+  .example-default-button:not(.disabled):after {
+    content: "Default";
+  }
+  .example-default-button:after {
+    content: "Disabled";
+  }
+  .example-warning-button:not(.disabled):after {
+    content: "Warning";
+  }
+  .example-warning-button:after {
+    content: "Disabled";
+  }
+}
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
+/* Mobile L - 425 */
+@media only screen and (max-width : 426px) {
+/*  body {
+    background-color: darkgreen;
+  }*/
+  .text-block {
+    width: 100%;
+  }
+  .color-section {
+    width: 100%;
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+  .color-section.example {
+    width: 85%;
+    margin: 0 auto 36px auto;
+  }
+  .block-element {
+    margin-bottom: 10px; 
+  }
+  .block-element:after {
+    content: " ";
+    display: block;
+    border: 1px solid #cccccc;
+    height: 0px;
+    margin-bottom: 36px; 
+    width: 100%;
+  }
+}
 
+/* Mobile M - 375px */ 
+@media only screen and (max-width : 376px) {
+/*  body {
+    background-color: blue;
+  }*/
+}
+
+/* Mobile S - 320 */ 
+@media only screen and (max-width : 321px) {
+/*  body {
+    background-color: darkred;
+  }*/
+}

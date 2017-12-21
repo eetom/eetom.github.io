@@ -6,13 +6,8 @@
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 300;
-}
-
-h2 {
-  font-size: 32px;
-  font-weight: 400;
 }
 
 h3 {
@@ -158,6 +153,14 @@ ul li {
   background-color: #1E4E79;
 }
 
+.example-primary-button:not(.disabled):after {
+  content: "I'm a Primary Button";
+}
+
+.example-primary-button:after {
+  content: "Disabled Primary Button";
+}
+
 .disabled {
   opacity: 0.4;
   pointer-events: none;
@@ -174,6 +177,14 @@ ul li {
   background-color: #e0e0e0;
 }
 
+.example-default-button:not(.disabled):after {
+  content: "I'm a Default Button";
+}
+
+.example-default-button:after {
+  content: "Disabled Default Button";
+}
+
 .example-warning-button {
   border: 1px solid #9f1f21;
   background-color: #bd2527;
@@ -182,6 +193,14 @@ ul li {
 
 .example-warning-button:not(.disabled):hover {
   background-color: #9f1f21;
+}
+
+.example-warning-button:not(.disabled):after {
+  content: "I'm a Warning Button";
+}
+
+.example-warning-button:after {
+  content: "Disabled Warning Button";
 }
 
 .example-links {
