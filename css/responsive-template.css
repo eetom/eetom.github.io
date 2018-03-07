@@ -1,0 +1,50 @@
+/*Responsive Styles for Design Sys notes*/
+
+/* Laptop L - 1440 */
+@media only screen and (max-width : 1441px) {
+  body {
+    background-color: lightblue;
+    /*responsive test*/
+  }
+}
+
+/* Laptop - 1024 */
+@media only screen and (max-width : 1025px) {
+	body {
+    background-color: lightgreen;
+    /*responsive test*/
+  }
+
+}
+
+/* Tablet - 768 */
+@media only screen and (max-width : 769px) {
+  body {
+    background-color: red;
+    /*responsive test*/
+  }
+}
+
+/* Mobile L - 425 */
+@media only screen and (max-width : 426px) {
+  body {
+    background-color: darkgreen;
+    /*responsive test*/
+  }
+}
+
+/* Mobile M - 375px */ 
+@media only screen and (max-width : 376px) {
+  body {
+    background-color: blue;
+    /*responsive test*/
+  }
+}
+
+/* Mobile S - 320 */ 
+@media only screen and (max-width : 321px) {
+  body {
+    background-color: darkred;
+    /*responsive test*/
+  }
+}
