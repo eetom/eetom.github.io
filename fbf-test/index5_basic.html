@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>title</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+  <div class="modal">
+    <div class="modal-inner">  
+      <div class="title">
+        <h2>Create a Firewall Rule</h2>
+      </div>
+
+      <div id="name">
+        <h3>Give the rule a name or description</h3>
+        <input type="text" class="name" size="20" name="name" value="" placeholder="Enter Rule Name/Description" />
+      </div>
+
+      <div class="radio-section">
+        <h3>Builder Mode</h3>
+        <p>Go to Advanced mode for full text field input for filters. Once you go to advanced you cannot return to basic.</p>
+
+        <div id="radio-default" class="radio1"><input type="radio" class="radio2" name="myRadio" checked="true" value="1"/> Basic &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /></div>
+
+        <div id="radio-adv" class="radio1"><input type="radio" class="radio2" name="myRadio" value="2" onClick="window.location = 'index6_adv.html';"/> Advanced<br /></div>
+      </div>
+
+      <h3>Choose the filters for the rule</h3>
+      <p>Add and remove filters to create rule criteria.</p>
+
+      <div class="filter-group">
+      <div id="filters">
+        <p class="filter-item-first">
+          <label for="filters" class="filters">
+            IF &nbsp;
+            <select>
+              <option value="default">Select one ..</option>
+              <option value="ip">IP Addresses</option>
+              <option value="asn">ASN</option>
+              <option value="bots">Bot Classifications</option>
+              <option value="hosts">Hosts</option>
+              <option value="requesturi">Request URI</option>
+              <option value="country">Country Code</option>
+              <option value="useragent">User Agent</option>
+              <option value="threatlvl">Threat Level</option>
+            </select>
+            <select>
+              <option value="IS">IS</option>
+              <option value="NOT">IS NOT</option>
+              <option value="Greater">IS GREATER THAN</option>
+              <option value="LESSER">IS LESSER THAN</option>
+              <option value="CONTAINS">CONTAINS</option>
+            </select>
+
+            <input type="text" id="" size="20" name="p_scnt" value="" placeholder="select one .." />
+          </label>
+        </p>
+      </div>
+      <a href="#" id="addScnt">+ Add Another Filter</a>
+      </div>
+
+      <h3>Choose an action for the rule</h3>
+      <p>Select an action to be applied to the requests that match the filter criteria.</p>
+      <div id="actions">
+        THEN &nbsp;
+        <select id="action">
+          <option value="1">Select one ..</option>
+          <option value="2">Block</option>
+          <option value="3">Whitelist</option>
+          <option value="4">Captcha</option>
+          <option value="5">JS Challenge</option>
+          <option value="6">Log/Permit</option>
+          <option value="7">Custom Block</option>
+          <option value="8">Redirect</option>
+        </select>
+
+        <div id="custom-block">
+          <p>and show <input type="text" placeholder="Enter an Error Code"/></p>
+        </div>
+        <div id="redirect">
+          <p>and go to <input type="text" placeholder="Enter an redirect URL"/></p>
+        </div>
+      </div>
+
+      <h3>Choose some Tags for the rule</h3>
+      <p>Tags are for sorting and organizing rules. Type in a tag and separate with enter between tags.</p>
+
+      <div id="tags">
+        <input type="text" class="tags" size="20" name="name" value="" placeholder="Start typing.." />
+      </div>
+    </div>
+    <div>
+      <div class="modal-lower">  
+        <button>Cancle</button>
+        <button>Save & Deploy</button>
+      </div>
+    </div>
+  </div>
+
+  <button onClick="window.location = 'main-selector.html';">Go back to Selector</button>
+
+<script src="https://code.jquery.com/jquery-1.4.3.min.js"></script>
+<script src="action.js"></script>
+<script>
+  $(document).ready(function () {
+    toggleFields();
+    $("#action").change(function () {
+        toggleFields();
+    });
+});
+
+function toggleFields() {
+  if ($("#action").val() == 7) {
+      $("#custom-block").show();
+      $("#redirect").hide(); }
+  else if ($("#action").val() == 8) {
+      $("#redirect").show();
+      $("#custom-block").hide(); }
+  else {
+      $("#custom-block").hide();
+      $("#redirect").hide(); }
+}
+</script>
+</body>
+</html>

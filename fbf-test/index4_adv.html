@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>title</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+  <div class="modal">
+    <div class="modal-inner">  
+      <div class="title">
+        <h2>Create a Firewall Rule</h2>
+      </div>
+
+      <div id="name">
+        <h3>Give the rule a name or description</h3>
+        <input type="text" class="name" size="20" name="name" value="" placeholder="Enter Rule Name/Description" />
+      </div>
+
+      <h3>Enter the filters for the rule</h3>
+      <p>Type in the text box below to create filters, separate each filter with
+      a new line.</p>
+
+      <div class="filter-group-2">
+        <div id="filters">
+          <textarea name="Text1" class="advanced-text" placeholder="Example: 
+IP Address = 112.123.1.1.1, 112.123.11.2.2 
+AND ASN = 12343
+OR ASN = 12322" rows="5" /></textarea>
+        </div>
+      </div>
+
+      <h3>Choose an action for the rule</h3>
+      <p>Select an action to be applied to the requests that match the filter criteria.</p>
+      <div id="actions">
+        THEN &nbsp;
+        <select id="action">
+          <option value="1">Select one ..</option>
+          <option value="2">Block</option>
+          <option value="3">Whitelist</option>
+          <option value="4">Captcha</option>
+          <option value="5">JS Challenge</option>
+          <option value="6">Log/Permit</option>
+          <option value="7">Custom Block</option>
+          <option value="8">Redirect</option>
+        </select>
+
+        <div id="custom-block">
+          <p>and show <input type="text" placeholder="Enter an Error Code"/></p>
+        </div>
+        <div id="redirect">
+          <p>and go to <input type="text" placeholder="Enter an redirect URL"/></p>
+        </div>
+      </div>
+
+      <h3>Choose some Tags for the rule</h3>
+      <p>Tags are for sorting and organizing rules. Type in a tag and separate with enter between tags.</p>
+
+      <div id="tags">
+        <input type="text" class="tags" size="20" name="name" value="" placeholder="Start typing.." />
+      </div>
+    </div>
+    <div>
+      <div class="modal-lower">  
+        <button>Cancle</button>
+        <button>Save & Deploy</button>
+      </div>
+    </div>
+  </div>
+
+  <button onClick="window.location = 'main-selector.html';">Go back to Selector</button>
+
+<script src="https://code.jquery.com/jquery-1.4.3.min.js"></script>
+<script src="action.js"></script>
+<script>
+$(document).ready(function () {
+    toggleFields();
+    $("#action").change(function () {
+        toggleFields();
+    });
+});
+
+function toggleFields() {
+  if ($("#action").val() == 7) {
+      $("#custom-block").show();
+      $("#redirect").hide(); }
+  else if ($("#action").val() == 8) {
+      $("#redirect").show();
+      $("#custom-block").hide(); }
+  else {
+      $("#custom-block").hide();
+      $("#redirect").hide(); }
+}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>title</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+  <div class="modal">
+    <div class="modal-inner selector-text">  
+      <div class="title">
+        <h2>Testing FBF concept modal</h2>
+      </div>
+      <p>We are going to use this as a way to user test creating Filter Based Firewall rules.</p>
+      <p>We have 2 different design to test, the first is what we're calling 'Basic' (IFTTT style), this means that they will be using a more wizard form and have to build each piece of the filter in.</p>
+      <p>The second is an 'Advanced' mode (DSL style), where the user
+      will be able to enter in a DSL into a textarea.</p>
+      <p>One of the things we will want to test would be what the transition between the two modes could be like? Should we only use one of them? Will they be allowed to go back to Basic if they choose Advanced?
+      Theses are the questions we will try to answer with our customers in user tests.</p>
+
+      <ul>
+        <li>Modal 1: Basic Mode Only (IFTTT): <a href="index3_basic.html">Here</a></li>
+        <li>Modal 2: Advanced Mode Only (DSL): <a href="index4_adv.html">Here</a></li>
+        <li>Modal 3: CANNOT Switch Between Basic & Advanced: <a href="index1_basic.html">Here</a></li>
+        <li>Modal 4: CAN Switch Between Basic & Advanced: <a href="index5_basic.html">Here</a></li>
+      </ul>
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.4.3.min.js"></script>
+  <script src="action.js"></script>
+</body>
+</html>
