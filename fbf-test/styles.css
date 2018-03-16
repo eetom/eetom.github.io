@@ -49,7 +49,7 @@ p {
 }
 
 .filter-group {
-  background-color: #F8FFFB;
+  /*background-color: #F8FFFB;*/
   border: 1px solid #ccc;
   width: 650px;
   padding: 10px 10px 20px 10px; 
@@ -57,7 +57,7 @@ p {
 }
 
 .filter-group-2 {
-  background-color: #F8FFFB;
+  /*background-color: #F8FFFB;*/
   border: 1px solid #ccc;
   width: 650px;
   padding: 10px; 
@@ -81,7 +81,7 @@ p {
   padding: 10px 20px;
   border: 1px solid #ccc;
   width: 630px;
-  background-color: #FFF9F9;
+  /*background-color: #FFF9F9;*/
 }
 
 #tags {
@@ -89,7 +89,7 @@ p {
   padding: 10px 20px;
   border: 1px solid #ccc;
   width: 630px;
-  background-color: #F9FBFF;
+  /*background-color: #F9FBFF;*/
 }
 
 .modal {
