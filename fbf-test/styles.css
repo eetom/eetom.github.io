@@ -1,0 +1,167 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #555;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #2F7BBF;
+  text-decoration: underline;
+}
+
+a:hover {
+  color:#ff7900;
+}
+
+input {
+	padding:5px 7px;
+	border:1px solid #999;
+	border-radius:4px;
+	width: 33%;
+  font-size: 15px;
+}
+
+input.name {
+  width: 650px;
+  margin: 5px 0 15px 0;
+}
+
+input.tags {
+  width: 610px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+#filters {
+  padding: 0px 5px;
+  margin: 15px 0;
+}
+
+.filter-group {
+  /*background-color: #F8FFFB;*/
+  border: 1px solid #ccc;
+  width: 650px;
+  padding: 10px 10px 20px 10px;
+  margin: 20px 0 40px 0;
+}
+
+.filter-group-2 {
+  /*background-color: #F8FFFB;*/
+  border: 1px solid #ccc;
+  width: 650px;
+  padding: 10px;
+  margin: 20px 0 40px 0;
+}
+
+.filter-group a {
+  padding: 10px;
+}
+
+.filter-item {
+  padding: 5px 0;
+}
+
+.filter-item-first {
+  padding: 5px 38px;
+}
+
+#actions {
+  margin: 15px 0 35px 0;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  width: 630px;
+  /*background-color: #FFF9F9;*/
+}
+
+#tags {
+  margin: 15px 0 35px 0;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  width: 630px;
+  /*background-color: #F9FBFF;*/
+}
+
+.modal {
+  width: 763px;
+  margin: 30px auto 0 auto;
+  border: 1px solid #cccccc;
+  background-color: #fff;
+}
+
+.modal-inner {
+  width: 670px;
+  margin: 0 auto;
+}
+
+.modal-lower {
+  width: 703px;
+  padding: 20px 30px;
+  background-color: #ccc;
+  text-align: right;
+}
+
+.modal-lower button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.radio1 {
+  float: left;
+}
+
+input.radio2 {
+  width: auto;
+}
+
+.radio-section {
+  margin: 15px 0 65px 0;
+}
+
+.radio-section p {
+  margin-bottom: 20px;
+}
+
+.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.advanced-text {
+  width: 610px;
+}
+
+#custom-block, #redirect {
+  display: inline;
+}
+
+#custom-block p, #redirect p {
+  display: inline;
+}
+
+.selector-text p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.selector-text ul {
+  list-style: none;
+  margin-bottom: 40px;
+  padding-left: 0px;
+}
+
+.selector-text ul li {
+  padding: 8px 0;
+  font-weight: 600;
+}
+

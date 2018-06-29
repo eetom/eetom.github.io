@@ -70,22 +70,20 @@
     document.getElementById("myInput").value = "";
 
     var timer = document.createElement("SPAN");
-    var timertxt = document.createTextNode("Start Timer");
     var timericon = document.createElement("i");
     timericon.className = "fa fa-clock-o";
     timer.className = "pause timer initiate";
     timer.appendChild(timericon);
-    timer.appendChild(timertxt);
     li.appendChild(timer);
 
     for (i = 0; i < timer2.length; i++) {
       timer2[i].onclick = function() {
       if (this.className === 'start timer'){
         this.className = 'pause timer';
-        this.innerHTML = '<i class="fa fa-pause" aria-hidden="true"></i> Paused <span class="watch">' + hours + ':' + minutes + ':' + seconds + '</span>';
+        this.innerHTML = '<i class="fa fa-pause" aria-hidden="true"></i><span class="watch">' + hours + ':' + minutes + ':' + seconds + '</span>';
       } else {
         this.className = 'start timer';
-        this.innerHTML = '<i class="fa fa-hourglass-start" aria-hidden="true"></i> Timing <span class="watch">' + hours + ':' + minutes + ':' + seconds + '</span>';
+        this.innerHTML = '<i class="fa fa-hourglass-start" aria-hidden="true"></i><span class="watch">' + hours + ':' + minutes + ':' + seconds + '</span>';
       }
         console.log('TIMER START!')
       }
