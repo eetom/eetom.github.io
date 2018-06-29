@@ -1,0 +1,146 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Chimerical - Eric Tsai</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/normalize.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/hvrbox.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+
+        <div class="header-container" id="header">
+            <header class="wrapper clearfix">
+                <h1 class="title"><a href="">chim<span class="gray-text">eric</span>al</a><span class="subtitle">adjective - kī-ˈmer-i-kəl - wildly fanciful; highly unrealistic</span></h1>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">DESIGN</a></li>
+                        <li><a href="../code.html">CODE</a></li>
+                        <li><a href="../words.html" class="active">WORDS</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+          <div class="main wrapper clearfix">
+            <section>
+                <article>
+                    <header>
+                        <h2>.gitignore and the dreaded .DS_store</h2>
+                        <p>Last Updated: 10/31/2017</p>
+                    </header>
+                    <p>If you ever use a Mac for your web developing needs, you might see a certain file that shows up from time to time.
+                    The .DS_Store file is a file created by the Mac operating system that stores custom attributes of the folder kinda like
+                    a metadata of what has been changed about that folder. The problem is that this becomes annoying when using a version
+                    control process (such as Git) that you will have to constantly add and commit this even when you have made no code change you
+                    might have .DS_Store changes to update.</p>
+          
+                    <p>The solution is in the .gitignore file!</p>
+                    <p>The .gitignore file is primarily used for Git version control to igonre files that the user does not want it to
+                    track changes. This makes it perfect for the use of managing the dreaded .DS_Store files (yes <strong>files</strong>, each folder will have it's own .DS_Store file)
+                    </p>
+                    
+                    <hr class="writing-rule">
+          
+                    <h3>Step 1: Create a .gitignore file</h3>
+          
+                    <p>The first thing to do will be to create the .gitignore file</p>
+                    <p>Check out a previous post on <a href="writing/basiccommandline.html">Command line basics for Designers</a> for some help with
+                    command line to generate a .gitignore file.</p>
+          
+                    <p>Start in the git repository folder you wish to create the .gitignore file in. Then type in...</p>
+                    <p class="code">User$ touch .gitignore</p>
+          
+                    <p>Now you have an empty .gitignore file</p>
+          
+                    <hr class="writing-rule">
+          
+                    <h3>Step 2: Let the .gitignore file ignore .DS_Store files</h3>
+          
+                    <p>Now that we have a .gitignore file we can start telling Git what to ignore! Open up the .gitignore file
+                    in your favorite IDE/text editor and add in ...</p>
+          
+                    <p class="code">.DS_Store</p>
+          
+                    <p>And then save. Then you're done! Well, almost...?</p>
+          
+                    <hr class="writing-rule">
+          
+                    <h3>Step 3 Optional: Untracking tracked .DS_Store files</h3>
+          
+                    <p>Just setting up the .gitignore is not enough if you have already started to track .DS_Store
+                    in a previous commit. You have to stop git from tracking it for .gitignore to take effect. Go
+                    back to terminal and the directory and type in ...</p>
+          
+                    <p class="code">User$ git rm --cached .DS_Store</p>
+          
+                    <hr class="writing-rule">
+          
+                    <h3 class="writing-subtitle">Step 4 Optional: The Nuclear option - Global .gitignore</h3>
+          
+                    <p>That's right, we're sick and tired of having to do this for every repository we create. It's time
+                    once and for all to show .DS_Store who's boss. Github help files suggest using this line in your terminal
+                    to create a global .gitignore...</p>
+          
+                    <p class="code">User$ git config --global core.excludesfile ~/.gitignore_global</p>
+          
+                    <p>And then once again, open up the file in a text editor/IDE and add the line...</p>
+          
+                    <p class="code">.DS_Store</p>
+          
+                    <p>This should take care of your .DS_Store issues for good! Make sure to untrack (Step 3 optional) any
+                    .DS_Store files that are already being tracked when you do this as well!</p>
+          
+                    <hr class="writing-rule">
+                
+                    <p>Resources used to write this post: <br>
+                      <a href="https://en.wikipedia.org/wiki/.DS_Store">.DS_Store, From Wikipedia</a> <br />
+                      and <a href="https://help.github.com/articles/ignoring-files/">Using Git / Ignoring files, from Github</a> <br>
+                      Also check out Octocat's sample .gitignore file <a href="https://gist.github.com/octocat/9257657">octocat/.gitignore</a>
+                    </p>
+                    <div class="blogback">
+                      <a href="../words.html" class="blogback">Back to words</a>
+                      <a href="#" class="blogback">Next: Lorem Ipsum</a>
+                    </div>
+                </article>
+              </section>
+              </div>
+            <div class="main wrapper clearfix">
+                
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper clearfix">
+                <div class="footer-content">
+                    <h2>eric tsai</h2>
+                    <ul>
+                        <li>Product designer from Canada working in San Francisco</li>
+                        <li>Chimerical designer who prototypes and designs</li>
+                        <li>
+                          <a href="mailto:erictsaidesign@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                          <a href="https://www.linkedin.com/in/erictsaidesign/"><i class="fab fa-linkedin"></i></a>
+                          <a href="https://dribbble.com/Eetom"><i class="fab fa-dribbble-square"></i></a>
+                           <a href="https://github.com/eetom"><i class="fab fa-github-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

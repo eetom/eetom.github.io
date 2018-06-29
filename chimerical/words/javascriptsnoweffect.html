@@ -1,0 +1,208 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Chimerical - Eric Tsai</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/normalize.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/hvrbox.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+
+        <div class="header-container" id="header">
+            <header class="wrapper clearfix">
+                <h1 class="title"><a href="">chim<span class="gray-text">eric</span>al</a><span class="subtitle">adjective - kī-ˈmer-i-kəl - wildly fanciful; highly unrealistic</span></h1>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">DESIGN</a></li>
+                        <li><a href="../code.html">CODE</a></li>
+                        <li><a href="../words.html" class="active">WORDS</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+          <div class="main wrapper clearfix">
+            <section>
+                <article>
+                    <header>
+                        <h2>JavaScript snow effect on your website</h2>
+                        <p>Last Updated: 1/04/2018</p>
+                    </header>
+                    <p>I recently added some Javascript snowflake effect for this holiday season just to add a littel something festive to my website. I've seen it done a few different ways on different websites but wanted something
+                      light and simple. The tutorial I followed to create this effec is at <a href="https://www.kirupa.com/html5/the_falling_snow_effect.htm">Kirupa.com</a>. Check out the screenshot below to see how it looks with
+                    the effect on.</p>
+          
+                    <img src="../img/snowflake_homepage.png" alt="">
+                    <p><b>NOTE:</b> This was based on my older portfolio site :)</p>
+          
+                    <p>Most of the steps you need will be on the tutorial website, but here are a few tips that I have found
+                    to make it a bit easier <i class="fa fa-smile-o" aria-hidden="true"></i>.</p>
+                    
+                    <hr class="writing-rule">
+          
+                    <h3>Step 1: Add all the assets</h3>
+          
+                    <p>For this method of adding JS snowflakes, you'll need the CSS and JS file from the tutorial site.
+                    </p>
+          
+                    <p>Here is the CSS file .. </p>
+                    <p class="code">
+                      /*SNOW EFFECT STYLES*/ <br />
+                      #snowflakeContainer { <br />
+                          position: absolute; <br />
+                          left: 0px; <br />
+                          top: 0px; <br />
+                      } <br />
+                      .snowflake { <br />
+                          padding-left: 15px; <br />
+                          font-family: Cambria, Georgia, serif; <br />
+                          font-size: 14px; <br />
+                          line-height: 24px; <br />
+                          position: fixed; <br />
+                          color: #FFFFFF; <br />
+                          user-select: none; <br />
+                          z-index: 1000; <br />
+                      } <br />
+                      .snowflake:hover { <br />
+                          cursor: default; <br />
+                      } <br />
+                    </p>
+          
+                    <p>To make changes to the visuals of your snowflake, adjust the <span class="code">color</span> to change the color of the snowflake.</p>
+          
+                    <p>Now downaload a copy of the Javascript file..</p>
+                    <a href="https://www.kirupa.com/js/fallingsnow_v6.zip" class="blogback">Download zip file from Kirupa.com</a>
+                    <p>It's a legthy file, so we wont show the entire code here, but we can go over a few of the highlights.
+                      The file was created by <a href="https://www.kirupa.com/me/index.htm">Kuripa</a> and is very well
+                      annotated and explains how each step works.</p>
+          
+                    <p>One of the more fun variable to change is the <span class="code">numberOfSnowflakes</span>, it - as the name describes - determine the number of snowflakes on the screen at one time. I've got mine set to 100.</p>
+          
+                    <p class="code">
+                      // Specify the number of snowflakes you want visible <br />
+                      var numberOfSnowflakes = 100; <br />
+                    </p>
+          
+                    <p>Another cool section to look at is the controls for the <span class="code">speed</span> and <span class="code">radius</span> of the snowflakes. Each snowflake is randomly generated and have different sizes and speeds. The code uses the <span class="code">Math.random()</span> function to randomize each snowflake. For example
+                    the radius of the snowflake is determined by <span class="code">4+Math.random()*10</span> this allows for a number between 1 and 0 that is then multiplied by 10 and then add 4, for a range of 4 to 14.</p>
+          
+                    <p class="code">
+                      var speed = 5+Math.random()*40; <br />
+                      var radius = 4+Math.random()*10; <br />
+                    </p>
+          
+                    <hr class="writing-rule">
+          
+                    <h3>Step 2: Connecting it to your website</h3>
+          
+                    <p>Now that we have both the CSS and JS file we can get it to work with your website. To do this we'll need
+                    to add it to your website's HTML code.</p>
+          
+                    <p>First let's add the CSS file, I have the CSS file saved in my site's CSS folder, then I
+                    add the file by linking it in the HTML page <span class="code">&lt;head&gt;</span> section I want the snowflakes to show up in..</p>
+          
+                    <p class="code">
+                      &lt;head&gt;<br />
+                      <br />
+                      &lt;link href="your-path-to-the-css-file/snow.css" rel="stylesheet"&gt;<br />
+                      other code ..
+                    </p>
+          
+                    <p>Then the next step is to add the JS file to the HTML page..</p>
+          
+                    <p class="code">
+                      other code ..<br />
+                      <br />
+                      &lt;script src="your-path-to-the-js-file/fallingsnow_v6.js"&gt;&lt;/script&gt;<br />
+                      &lt;/body&gt;
+                    </p>
+          
+                    <p>I tend to add JS script files at the bottom of my html so it doesn't slow down the rest of the HTML content from loading first</p>
+          
+                    <hr class="writing-rule">
+          
+                    <h3>Step 3: Add a &lt;div&gt; for the snowflake</h3>
+          
+                    <p>We're almost finished! If you load the page now.. no snowflakes happen. Why is that? It's because we need
+                    to have a element for the javascript to add and remove the snowflakes from. To do this we'll need to create
+                    a new <span class="code">&lt;div&gt;</span> before the <span class="code">&lt;body&gt;</span> tag in your
+                    HTML page.</p>
+          
+                    <p class="code">
+                        &lt;body&gt; <br />
+                        <br />
+                          &lt;div id="snowflakeContainer"&gt; <br />
+                            &lt;p class="snowflake"&gt;*&lt;/p&gt; <br />
+                          &lt;/div&gt;<br />
+                      <br />
+                        ... the rest of your code
+                    </p>
+          
+                    <p>This creates a <span class="code">&lt;div&gt;</span> that is locked to the top of your browser page
+                    and covers the entire screen. This is where the JS file will put new snowflakes on top of the rest of the content. Now that you have all of it combined refresh the site and you should see some
+                    wonderful snow effect!</p>
+          
+                    <hr class="writing-rule">
+          
+                    <p>And that's it, all you need to add some holiday cheer to winterize your webpage. The key things
+                    to note are ..</p>
+          
+                    <ol>
+                      <li>Add in the asset files - CSS and JS</li>
+                      <li>Link it in the HTML so it can be loaded</li>
+                      <li>Add the HTML code it needs to show up on the page</li>
+                    </ol>
+          
+                    <hr class="writing-rule">
+                
+                    <p>Resources used to write this post: <br>
+                      <a href="https://www.kirupa.com/html5/the_falling_snow_effect.htm">Kirupa - The Falling Snow Effect</a> <br />
+                      Special thanks for the tutorial and providing assets.
+                    </p>
+                    <div class="blogback">
+                      <a href="../words.html" class="blogback">Back to words</a>
+                      <a href="#" class="blogback">Next: Lorem Ipsum</a>
+                    </div>
+                </article>
+              </section>
+              </div>
+            <div class="main wrapper clearfix">
+                
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper clearfix">
+                <div class="footer-content">
+                    <h2>eric tsai</h2>
+                    <ul>
+                        <li>Product designer from Canada working in San Francisco</li>
+                        <li>Chimerical designer who prototypes and designs</li>
+                        <li>
+                          <a href="mailto:erictsaidesign@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                          <a href="https://www.linkedin.com/in/erictsaidesign/"><i class="fab fa-linkedin"></i></a>
+                          <a href="https://dribbble.com/Eetom"><i class="fab fa-dribbble-square"></i></a>
+                           <a href="https://github.com/eetom"><i class="fab fa-github-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

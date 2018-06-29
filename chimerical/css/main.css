@@ -1,0 +1,610 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;  /*! main font color */
+    font-size: 1em; /*! main font size */
+    line-height: 1.4; /*! main text lineheight */
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 2.5%;
+}
+
+.footer-content {
+    width: 60%;
+    font-weight: normal;
+}
+
+.footer-content h2 {
+    text-transform: none;
+}
+
+.footer-content li {
+  font-size: 1rem;
+}
+
+i {
+  font-size: 1.8rem;
+  padding: 10px 5px;
+  color: #333;
+  margin-top: 1rem;
+}
+
+li a:first-child i {
+  padding-left: 0;
+}
+
+
+/* ===================
+    ALL: Color Theme
+   =================== */
+
+.header-container,
+.footer-container {
+    background: #fff;
+}
+
+.title {
+    color: #222;
+
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul,
+header ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   width: 140%;
+}
+
+header a {
+ text-decoration: none;
+}
+
+nav a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: #222;
+    background: #fff;
+}
+
+nav a:hover,
+nav a:visited {
+    color: #222;
+}
+
+nav a:hover {
+    color: #222;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -10px;
+  left: 0;
+  background-color: #222;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+nav a.active {
+   font-weight: bold;
+}
+
+h1.title a {
+    text-decoration: none;
+    color: #222;
+}
+
+h1.title a:hover {
+    color: #b2b2b2;;
+}
+
+.gray-text {
+  color: #222;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 20px 0 30px 0;
+}
+
+.footer-container footer {
+    color: #222;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+.img-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 2rem 0;
+    justify-content: space-between;
+}
+
+.img-sub {
+  width: 30%;
+}
+
+.hvrbox-text a,
+.hvrbox-text a:visited{
+    color: #333;
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.home-img {
+    width: 100%;
+    min-height: 200px;
+    background-color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.design-img {
+    max-width: 100%;
+    background-color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.subtitle {
+  padding-top: 5px;
+  display: block;
+  font-size: 12px;
+  color: #3F3F3F;
+}
+
+.blog ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.blog ul li {
+  padding-bottom: 10px;
+}
+
+p.code {
+    font-family: 'Courier', 'Monaco';
+    padding: 10px;
+    background-color: #dddddd;
+    font-size: 16px;
+}
+
+span.code {
+    font-family: 'Courier', 'Monaco';
+    padding: 3px 6px;
+    background-color: #dddddd;
+    font-size: 16px;
+}
+
+a.blogback {
+    font-family: 'Courier', 'Monaco';
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.blogback {
+  margin-top: 10%;
+}
+
+.blogcaret {
+  font-size: 1rem;
+}
+
+.writing-rule {
+  margin: 2rem 0;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+.table-no {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.table-yes {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.table-maybe {
+  background-color: #f1c40f;
+  color: white;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #bbbbbb;
+}
+
+.img-desc {
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.hvrbox {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 200px;
+    border: 1px solid #eee;
+}
+
+.diagram {
+  font-style: italic;
+  margin-bottom: 2em;
+  margin-top: .5em;
+}
+
+.blog-img {
+    width: 100%;
+    min-height: 200px;
+    background-color: #FFF;
+    border: 1px solid #ddd;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 766px) {
+    
+    h1.title {
+        margin-top: 35px;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    nav ul {
+       flex-wrap: wrap;
+    }
+
+    nav li {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    nav a:before,
+    nav a:hover:before {
+        visibility: hidden;
+    }
+
+    .footer-content {
+         width: 100%;
+    }
+    
+    footer ul,
+    header ul {
+        columns: 1;
+        width: 100%;
+    }
+
+    div.img-sub {
+        margin: 10px 0;
+        max-height: 300px;
+        width: 100%;
+    }
+
+    .img-desc {
+      margin-bottom: 1em;
+    }
+
+    .home-img {
+        max-width: 100%;
+        min-height: 200px;
+    }
+
+    h1.title a {
+        color: #b2b2b2;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 984px) {
+    div .img-sub {
+        margin: 10px 0;
+        width: 48%;
+    }
+}
+
+@media only screen and (min-width: 985px) {
+    div .img-sub {
+
+        margin: 10px 0;
+    }
+
+    .home-img {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        margin: 0 30px 0 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+        padding-top: 40px;
+    }
+
+    nav {
+        float: right;
+        padding-top: 65px;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 55%;
+    }
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited,
+    a:hover {
+        /*text-decoration: none;*/
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

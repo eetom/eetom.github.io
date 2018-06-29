@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Chimerical - Eric Tsai</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/normalize.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/hvrbox.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+
+        <div class="header-container" id="header">
+            <header class="wrapper clearfix">
+                <h1 class="title"><a href="">chim<span class="gray-text">eric</span>al</a><span class="subtitle">adjective - kī-ˈmer-i-kəl - wildly fanciful; highly unrealistic</span></h1>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">DESIGN</a></li>
+                        <li><a href="../code.html">CODE</a></li>
+                        <li><a href="../words.html" class="active">WORDS</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+          <div class="main wrapper clearfix">
+            <section>
+                <article>
+                    <header>
+                        <h2>Moving Commits into a new branch</h2>
+                        <p>Last Updated: 10/24/2017</p>
+                    </header>
+                    <p>Sometimes I make the mistake of not starting a new branch before I start editing code, especially if i'm the only one
+                    working on a repository and there is only the master branch.</p>
+          
+                    <p>To fix this I looked it up on stackoverflow and this is the best answer I have found.</p>
+          
+                    <h3>Step 1: How many commits in are we?</h3>
+                    <p class="code">User$ git log</p>
+                    <p>This allows us to check how many commits we want to move. You can read the comment on the commit to see how
+                    far back you want to roll</p>
+                    <p class="code">
+                    commit 0b2b5b47b9c540....<br>
+                    Author: Eric Tsai<br>
+                    Date: Tue Oct 24 20:00:44 2017 -0700<br>
+                    I want to roll this commit back<br>
+                    <br>
+                    commit 0b2b235x333540....<br>
+                    Author: Eric Tsai <br>
+                    Date:   Tue Oct 24 19:59:44 2017 -0700<br>
+                    This is fine, leave this in master</p>
+          
+                    <hr class="writing-rule">
+          
+                    <h3>Step 2: Discarding the commits temporarily</h3>
+                    <p class="code">User$ git reset --keep HEAD~3</p>
+                    <p>This discards the "3" most recent commits temporarily because it doesn't "throw away" the changes, change
+                    this number to the number of commits you want to roll back</p>
+          
+                    <hr class="writing-rule">
+          
+                    <h3>Step 3: Creating a new branch</h3>
+                    <p class="code">User$ git checkout -t -b newbranchname</p>
+                    <p>This creates and switches to a new branch based off of the new master branch that has been rolled back</p>
+          
+                    <hr class="writing-rule">
+          
+                    <h3>Step 4: Cherry pick it</h3>
+                    <p class="code">User$ git cherry-pick ..HEAD@{2}</p>
+                    <p>This is the magical step that moves the temporarily discarded commits into the new branch we moved to,
+                      It's important to only use {2} because this denotes the action that happen 2 steps ago, not the number
+                    of commites we're bringing back</p>
+          
+                    <p>And if all goes well you should have a new branch that is x commits ahead of the master</p>
+                    <p class="code">
+                      User$ git status <br>
+                      On branch newbranch <br>
+                      Your branch is ahead of 'master' by 1 commit. <br>
+                      (use "git push" to publish your local commits)
+                    </p>
+          
+                    <p>And that's all there is to it. A simple 4 step process! To read more about this
+                      go to the <a href="https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git/36463546#36463546">stackoverflow page</a></p>
+                    <div class="blogback">
+                      <a href="../words.html" class="blogback">Back to words</a>
+                      <a href="#" class="blogback">Next: Lorem Ipsum</a>
+                    </div>
+                </article>
+              </section>
+              </div>
+            <div class="main wrapper clearfix">
+                
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper clearfix">
+                <div class="footer-content">
+                    <h2>eric tsai</h2>
+                    <ul>
+                        <li>Product designer from Canada working in San Francisco</li>
+                        <li>Chimerical designer who prototypes and designs</li>
+                        <li>
+                          <a href="mailto:erictsaidesign@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                          <a href="https://www.linkedin.com/in/erictsaidesign/"><i class="fab fa-linkedin"></i></a>
+                          <a href="https://dribbble.com/Eetom"><i class="fab fa-dribbble-square"></i></a>
+                           <a href="https://github.com/eetom"><i class="fab fa-github-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
