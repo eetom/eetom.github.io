@@ -6,6 +6,17 @@ html {
     line-height: 1.4; /*! main text lineheight */
 }
 
+a {
+  color: #ff5252;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*Main theme color for 2018 #ff5252*/
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -75,6 +86,10 @@ li a:first-child i {
   padding-left: 0;
 }
 
+.blog li a {
+  color: #ff5252;
+}
+
 
 /* ===================
     ALL: Color Theme
@@ -132,6 +147,7 @@ nav a {
 nav a:hover,
 nav a:visited {
     color: #222;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -145,7 +161,7 @@ nav a:before {
   height: 2px;
   bottom: -10px;
   left: 0;
-  background-color: #222;
+  background-color: #ff5252;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -161,6 +177,7 @@ nav a:hover:before {
 
 nav a.active {
   font-weight: bold;
+  color: #ff5252;
 }
 
 h1.title a {
@@ -169,7 +186,7 @@ h1.title a {
 }
 
 h1.title a:hover {
-  color: #b2b2b2;;
+  color: #ff5252;
 }
 
 .gray-text {
@@ -178,10 +195,20 @@ h1.title a:hover {
 
 h3 a{
   text-decoration: none;
+  color: #222;
 }
 
 h3 a:hover{
   text-decoration: underline;
+  color: #ff5252;
+}
+
+.main-logo {
+    float: left;
+    height: 40px;
+    width: 44px;
+    margin-top: -6px;
+    margin-right: 10px;
 }
 
 /* ==============
@@ -320,8 +347,9 @@ tr:nth-child(even) {
   color: white;
 }
 
-.disabled {
+li a.disabled {
   pointer-events: none;
+  text-decoration: line-through;
   cursor: default;
   color: #bbbbbb;
 }
@@ -367,16 +395,16 @@ tr:nth-child(even) {
     }
 
     nav {
-        justify-content: flex-start;
-    }
-
-    nav ul {
-       flex-wrap: wrap;
+        float: left;
     }
 
     nav li {
         width: 100%;
-        padding: 5px 0;
+        padding: 20px 25px 5px 0;
+    }
+
+    nav li:first-child {
+      padding-left: 5px;
     }
 
     nav a:before,
@@ -400,17 +428,18 @@ tr:nth-child(even) {
         width: 100%;
     }
 
+    .hvrbox {
+      min-width: 100%;
+    }
+
     .img-desc {
       margin-bottom: 1em;
+      text-align: center;
     }
 
     .home-img {
         max-width: 100%;
         min-height: 200px;
-    }
-
-    h1.title a {
-        color: #b2b2b2;
     }
 }
 
@@ -486,7 +515,7 @@ tr:nth-child(even) {
 
     .main article {
         float: left;
-        width: 55%;
+        width: 75%;
     }
 
 }
