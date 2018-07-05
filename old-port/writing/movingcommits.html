@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Writing - Eric Tsai UI/UX Designer</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/img/logofav-red.png">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->   
+    <script src="../assets/js/modernizr.js" defer="defer"></script>
+  </head>
+  <body>
+
+   <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <img src="http://www.erictsai.me/assets/img/red-logo.svg" alt="eric-portfolio-logo" class="main-logo"></img>
+          <a href = "../index.html" class = "navbar-brand title">ERIC TSAI
+            <span class="subtext"> UI/UX</span>
+          </a>       
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html#portfoliowrap2">WORK</a></li>
+            <li><a href="../about.html">ABOUT</a></li>
+            <li class="active"><a href="../writing.html">WRITING</a></li>
+            <li><a href="../contact.html">CONTACT</a></li>  
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+   <!-- *****************************************************************************************************************
+   TITLE
+   ***************************************************************************************************************** -->
+
+    <div class="container mtf">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 centered">
+          <p class="subtag">Learning Git</p>
+          <hr>
+          <h1 class="subtitle">Moving Commits into a new branch</h1>
+          <p class="title-spacing">Last Updated: 10/24/2017</p>
+        </div>
+        <div class="col-lg-8 col-md-10 col-lg-offset-2 col-md-offset-1 align-left">
+          <p>Sometimes I make the mistake of not starting a new branch before I start editing code, especially if i'm the only one
+          working on a repository and there is only the master branch.</p>
+
+          <p>To fix this I looked it up on stackoverflow and this is the best answer I have found.</p>
+
+          <h3 class="writing-subtitle">Step 1: How many commits in are we?</h3>
+          <p class="code">User$ git log</p>
+          <p>This allows us to check how many commits we want to move. You can read the comment on the commit to see how
+          far back you want to roll</p>
+          <p class="code">
+          commit 0b2b5b47b9c540....<br>
+          Author: Eric Tsai<br>
+          Date: Tue Oct 24 20:00:44 2017 -0700<br>
+          I want to roll this commit back<br>
+          <br>
+          commit 0b2b235x333540....<br>
+          Author: Eric Tsai <br>
+          Date:   Tue Oct 24 19:59:44 2017 -0700<br>
+          This is fine, leave this in master</p>
+
+          <hr class="writing-rule">
+
+          <h3 class="writing-subtitle">Step 2: Discarding the commits temporarily</h3>
+          <p class="code">User$ git reset --keep HEAD~3</p>
+          <p>This discards the "3" most recent commits temporarily because it doesn't "throw away" the changes, change
+          this number to the number of commits you want to roll back</p>
+
+          <hr class="writing-rule">
+
+          <h3 class="writing-subtitle">Step 3: Creating a new branch</h3>
+          <p class="code">User$ git checkout -t -b newbranchname</p>
+          <p>This creates and switches to a new branch based off of the new master branch that has been rolled back</p>
+
+          <hr class="writing-rule">
+
+          <h3 class="writing-subtitle">Step 4: Cherry pick it</h3>
+          <p class="code">User$ git cherry-pick ..HEAD@{2}</p>
+          <p>This is the magical step that moves the temporarily discarded commits into the new branch we moved to,
+            It's important to only use {2} because this denotes the action that happen 2 steps ago, not the number
+          of commites we're bringing back</p>
+
+          <p>And if all goes well you should have a new branch that is x commits ahead of the master</p>
+          <p class="code">
+            User$ git status <br>
+            On branch newbranch <br>
+            Your branch is ahead of 'master' by 1 commit. <br>
+            (use "git push" to publish your local commits)
+          </p>
+
+          <p>And that's all there is to it. A simple 4 step process! To read more about this
+            go to the <a href="https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git/36463546#36463546">stackoverflow page</a>.</p>
+
+          <p class="spacing"><a href="../writing.html"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Writing</a></p>
+        </div>
+      </div>
+   </div><!-- --/container ---->
+
+  <!-- *****************************************************************************************************************
+  FOOTER
+  ***************************************************************************************************************** -->
+   <div id="footerwrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-4 footer-column">
+          <h4>About Eric</h4>
+          <div class="hline-w"></div>
+                <p>I'm a designer from Canada. I design with sites, apps, and tshirts etc. Enjoys traveling, Ramen, and <a href="https://thatfilmfeeling.tumblr.com/">Photography</a></p>
+        </div>
+        <div class="col-md-4 col-lg-4 footer-column">
+          <h4>Connect with Eric</h4>
+          <div class="hline-w"></div>
+          <p>
+            <a href="https://www.linkedin.com/in/erictsaidesign"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/eetom"><i class="fa fa-github"></i></a>
+                  <a href="https://dribbble.com/Eetom"><i class="fa fa-dribbble"></i></a>
+            <a href="mailto:hello@erictsai.me"><i class="fa fa-envelope-o"></i></a>
+                  <a href="https://twitter.com/hamburger_dog"><i class="fa fa-twitter"></i></a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-4 footer-column">
+          <h4>Where is Eric now?</h4>
+          <div class="hline-w"></div>
+          <p>San Francisco, USA</p>
+        </div>
+      </div><! --/row -->
+    </div><! --/container -->
+   </div><! --/footerwrap -->
+   
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/retina-1.1.0.js"></script>
+    <script src="../assets/js/jquery.hoverdir.js"></script>
+    <script src="../assets/js/jquery.hoverex.min.js"></script>
+    <script src="../assets/js/jquery.prettyPhoto.js"></script>
+    <script src="../assets/js/jquery.isotope.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+
+  </body>
+</html>
