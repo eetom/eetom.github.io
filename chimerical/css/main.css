@@ -185,8 +185,11 @@ h1.title a {
   color: #222;
 }
 
-h1.title a:hover {
+h1.title a:hover,
+h1.title img.main-logo:hover {
   color: #ff5252;
+  transform: rotate(20deg);
+  
 }
 
 .gray-text {
