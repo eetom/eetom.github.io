@@ -2,7 +2,7 @@
 
 body {
 	background-color: #ecf0f1;
-  letter-spacing: 1.6;
+  line-height: : 1.6;
 }
 
 .wrapper {
@@ -100,10 +100,12 @@ hr {
 	.wrapper {
 		background-color: #fff;
 		padding: 0;
+    margin-top: 0;
 	}
 
 	body {
 		background-color: #fff;
+    padding: 0.5em;
 	}
 
 	h2 {
