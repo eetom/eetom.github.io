@@ -23,8 +23,9 @@ h3 {
 }
 
 p {
-  line-height: 1.65;
+  line-height: 1.85;
   font-size: 1.2rem;
+  opacity: 0.6;
 }
 
 a {
@@ -44,7 +45,7 @@ a:hover {
 
 .wrapper {
 	width: 100%;
-	max-width: 1024px;
+	max-width: 900px;
 	margin: 3.5em auto;
 }
 
@@ -54,16 +55,19 @@ a:hover {
 
 .section-title {
   width: 100%;
-  max-width: 256px;
+  max-width: 300px;
 }
 
 .section-content {
   width: 100%;
-  max-width: 768px;
+  max-width: 560px;
 }
 
 hr {
   margin: 3em 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
 }
 
 a.disabled {
