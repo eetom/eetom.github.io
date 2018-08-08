@@ -15,12 +15,13 @@ body {
 }
 
 .section-content p {
-	margin-top: 0.2rem;
+	margin-top: 0;
 	margin-bottom: 0.25rem;
 }
 
-.aquired {
-	opacity: 0.5;
+.section-content .aquired {
+  margin-top: 0.5rem;
+	opacity: 0.6;
 }
 
 .section-content h3 {
