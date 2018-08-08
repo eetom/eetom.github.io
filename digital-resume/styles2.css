@@ -15,7 +15,7 @@ body {
 }
 
 .section-content p {
-	margin-top: 0;
+	margin-top: 0.2rem;
 	margin-bottom: 0.25rem;
 }
 
@@ -95,7 +95,7 @@ hr {
 
 
 /*Section layout breakpoint*/
-@media only screen  and (max-width : 961px) {
+@media all and (max-width: 1080px) {
 
 	.wrapper {
 		background-color: #fff;
