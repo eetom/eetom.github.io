@@ -9,11 +9,13 @@ body {
   padding: 1em;
 }
 
-h1, h2 {
+h1 {
   font-family: 'Bitter', serif;
+  font-size: 1.8rem;
 }
 
 h2 {
+  font-family: 'Bitter', serif;
   margin: 0 0 2em 0;
 }
 
@@ -104,7 +106,7 @@ a.disabled {
 
   .section-content {
     width: 100%;
-    max-width: none;
+    max-width: 560px;
   }
 
   h2 {

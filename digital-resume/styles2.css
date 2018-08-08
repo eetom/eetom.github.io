@@ -96,7 +96,7 @@ hr {
 
 
 /*Section layout breakpoint*/
-@media all and (max-width: 1080px) {
+@media only screen and (max-width: 1080px) {
 
 	.wrapper {
 		background-color: #fff;
@@ -118,4 +118,18 @@ hr {
     padding: 10px;
   }
 
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 600px) {
+  .section-title {
+    padding: 0 2em;
+  }
+
+  .section-content {
+    padding: 0 2em;
+  }
+
+  h1 {
+    padding: 0 1em;
+  }
 }
