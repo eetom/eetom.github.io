@@ -1,0 +1,31 @@
+/*styles only for the printer friendly version*/
+
+.wrapper {
+  margin: 1em auto;
+  max-width: 800px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+a {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+hr {
+  margin: 1.5em 0;
+}
