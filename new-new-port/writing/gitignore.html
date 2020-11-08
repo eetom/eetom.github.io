@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Writing - Eric Tsai Product Designer</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/img/logofav-red.png">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->   
+    <script src="../assets/js/modernizr.js" defer="defer"></script>
+  </head>
+  <body>
+    <!-- ********** NAVBAR SECTION -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="http://www.erictsai.me/assets/img/red-logo.svg" alt="eric-portfolio-logo" class="main-logo"></img>
+          <a href="../index.html" class="navbar-brand title">ERIC TSAI</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Portfolio</a></li>
+            <li class="active"><a href="../writing.html">Writing</a></li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ********** END NAVBAR SECTION -->
+
+   <!-- *****************************************************************************************************************
+   TITLE
+   ***************************************************************************************************************** -->
+
+    <div class="container mt-150 mb-50">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 centered">
+          <p class="subtag">Learning Git</p>
+          <hr>
+          <h1 class="subtitle">.gitignore and the dreaded .DS_store</h1>
+          <p class="title-spacing">Last Updated: 10/31/2017</p>
+        </div>
+        <div class="col-lg-8 col-md-10 col-lg-offset-2 col-md-offset-1 align-left">
+          <p>If you ever use a Mac for your web developing needs, you might see a certain file that shows up from time to time.
+          The .DS_Store file is a file created by the Mac operating system that stores custom attributes of the folder kinda like
+          a metadata of what has been changed about that folder. The problem is that this becomes annoying when using a version
+          control process (such as Git) that you will have to constantly add and commit this even when you have made no code change you
+          might have .DS_Store changes to update.</p>
+
+          <p>The solution is in the .gitignore file!</p>
+          <p>The .gitignore file is primarily used for Git version control to igonre files that the user does not want it to 
+          track changes. This makes it perfect for the use of managing the dreaded .DS_Store files (yes <strong>files</strong>, each folder 
+          will have it's own .DS_Store file)
+          </p>
+
+          <h3 class="writing-subtitle">Step 1: Create a .gitignore file</h3>
+
+          <p>The first thing to do will be to create the .gitignore file</p>
+          <p>Check out a previous post on <a href="writing/basiccommandline.html">Command line basics for Designers</a> for some help with 
+          command line to generate a .gitignore file.</p>
+
+          <p>Start in the git repository folder you wish to create the .gitignore file in. Then type in...</p>
+          <p class="code">User$ touch .gitignore</p>
+
+          <p>Now you have an empty .gitignore file</p>
+
+          <hr class="writing-rule">
+
+          <h3 class="writing-subtitle">Step 2: Let the .gitignore file ignore .DS_Store files</h3>
+
+          <p>Now that we have a .gitignore file we can start telling Git what to ignore! Open up the .gitignore file
+          in your favorite IDE/text editor and add in ...</p>
+
+          <p class="code">.DS_Store</p>
+
+          <p>And then save. Then you're done! Well, almost...?</p>
+
+          <hr class="writing-rule">
+
+          <h3 class="writing-subtitle">Step 3 Optional: Untracking tracked .DS_Store files</h3>
+
+          <p>Just setting up the .gitignore is not enough if you have already started to track .DS_Store
+          in a previous commit. You have to stop git from tracking it for .gitignore to take effect. Go
+          back to terminal and the directory and type in ...</p>
+
+          <p class="code">User$ git rm --cached .DS_Store</p>
+
+          <hr class="writing-rule">
+
+          <h3 class="writing-subtitle">Step 4 Optional: The Nuclear option - Global .gitignore</h3>
+
+          <p>That's right, we're sick and tired of having to do this for every repository we create. It's time
+          once and for all to show .DS_Store who's boss. Github help files suggest using this line in your terminal
+          to create a global .gitignore...</p>
+
+          <p class="code">User$ git config --global core.excludesfile ~/.gitignore_global</p>
+
+          <p>And then once again, open up the file in a text editor/IDE and add the line...</p>
+
+          <p class="code">.DS_Store</p>
+
+          <p>This should take care of your .DS_Store issues for good! Make sure to untrack (Step 3 optional) any
+          .DS_Store files that are already being tracked when you do this as well!</p>
+
+          <hr class="writing-rule">
+      
+          <p>Resources used to write this post: <br> 
+            <a href="https://en.wikipedia.org/wiki/.DS_Store">.DS_Store, From Wikipedia</a> <br>
+            <a href="https://help.github.com/articles/ignoring-files/">Using Git / Ignoring files, from Github</a> <br>
+            Also check out Octocat's sample .gitignore file <a href="https://gist.github.com/octocat/9257657">octocat/.gitignore</a>
+          </p>
+
+          <p class="spacing"><a href="../writing.html"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Writing</a></p>
+        </div>
+      </div>
+   </div><!-- --/container ---->
+
+    <!-- ********** FOOTER SECTION -->
+    <div id="footerwrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 footer-column">
+            <h4>Facts about Eric</h4>
+            <div class="hline mb-25"></div>
+            <p>I design websites, apps, and occasionally non-digital stuff. I enjoy biking, eating <a href="https://goo.gl/maps/nNBYhoYWyXt">ramen</a>, and <a href="https://thatfilmfeeling.tumblr.com/">photography</a>. Always looking to improve myself and learn new things.</p>
+          </div>
+          <div class="col-md-4 col-lg-4 footer-column">
+            <h4>Connect with Eric online</h4>
+            <div class="hline mb-25"></div>
+            <p>
+              <a href="https://www.linkedin.com/in/erictsaidesign"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/eetom"><i class="fa fa-github"></i></a>
+              <a href="https://dribbble.com/Eetom"><i class="fa fa-dribbble"></i></a>
+              <a href="mailto:erictsaidesign@gmail.com"><i class="fa fa-envelope-o"></i></a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-4 footer-column">
+            <h4>Connect with Eric in person</h4>
+            <div class="hline mb-25"></div>
+            <p>I'm currently work in <a href="https://en.wikipedia.org/wiki/South_of_Market,_San_Francisco">San Francisco</a>, California. Come grab <a href="https://goo.gl/maps/RinCPg9HBzS2">coffee</a> and chat!</p>
+          </div>
+        </div><!--/row -->
+      </div><!--/container -->
+    </div><!--/footerwrap -->
+    <!-- ********** END FOOTER SECTION -->
+   
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina-1.1.0.js"></script>
+    <script src="assets/js/jquery.hoverdir.js"></script>
+    <script src="assets/js/jquery.hoverex.min.js"></script>
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="assets/js/jquery.isotope.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>

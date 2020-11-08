@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Writing - Eric Tsai Product Designer</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/img/logofav-red.png">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->   
+    <script src="../assets/js/modernizr.js" defer="defer"></script>
+  </head>
+  <body>
+    <!-- ********** NAVBAR SECTION -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="http://www.erictsai.me/assets/img/red-logo.svg" alt="eric-portfolio-logo" class="main-logo"></img>
+          <a href="../index.html" class="navbar-brand title">ERIC TSAI</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Portfolio</a></li>
+            <li class="active"><a href="../writing.html">Writing</a></li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ********** END NAVBAR SECTION -->
+
+   <!-- *****************************************************************************************************************
+   TITLE
+   ***************************************************************************************************************** -->
+
+    <div class="container mt-150 mb-50">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 centered">
+          <p class="subtag">Learning Javascript</p>
+          <hr>
+          <h1 class="subtitle">JavaScript snow effect on your website</h1>
+          <p class="title-spacing">Last Updated: 1/04/2018</p>
+        </div>
+        <div class="col-lg-8 col-md-10 col-lg-offset-2 col-md-offset-1 align-left">
+          <p>I recently added some Javascript snowflake effect for this holiday season just to add a littel something festive to my website. I've seen it done a few different ways on different websites but wanted something
+            light and simple. The tutorial I followed to create this effec is at <a href="https://www.kirupa.com/html5/the_falling_snow_effect.htm">Kirupa.com</a>. Check out the screenshot below to see how it looks with 
+          the effect on.</p>
+
+          <img src="../assets/img/snowflake_homepage.png" alt="">
+
+          <p>Most of the steps you need will be on the tutorial website, but here are a few tips that I have found
+          to make it a bit easier <i class="fa fa-smile-o" aria-hidden="true"></i>.</p>
+
+          <h3 class="writing-subtitle">Step 1: Add all the assets</h3>
+
+          <p>For this method of adding JS snowflakes, you'll need the CSS and JS file from the tutorial site.
+          </p>
+
+          <p>Here is the CSS file .. </p>
+          <p class="code">
+            /*SNOW EFFECT STYLES*/ <br />
+            #snowflakeContainer { <br />
+                position: absolute; <br />
+                left: 0px; <br />
+                top: 0px; <br />
+            } <br />
+            .snowflake { <br />
+                padding-left: 15px; <br />
+                font-family: Cambria, Georgia, serif; <br />
+                font-size: 14px; <br />
+                line-height: 24px; <br />
+                position: fixed; <br />
+                color: #FFFFFF; <br />
+                user-select: none; <br />
+                z-index: 1000; <br />
+            } <br />
+            .snowflake:hover { <br />
+                cursor: default; <br />
+            } <br />
+          </p>
+
+          <p>To make changes to the visuals of your snowflake, adjust the <span class="code">color</span> to change the color of the snowflake.</p>
+
+          <p>Now downaload a copy of the Javascript file..</p>
+          <button class="writing-button"><a href="https://www.kirupa.com/js/fallingsnow_v6.zip">EXTERNAL FILE DOWNLOAD</a></button>
+          <p>It's a legthy file, so we wont show the entire code here, but we can go over a few of the highlights.
+            The file was created by <a href="https://www.kirupa.com/me/index.htm">Kuripa</a> and is very well
+            annotated and explains how each step works.</p>
+
+          <p>One of the more fun variable to change is the <span class="code">numberOfSnowflakes</span>, it - as the name describes - determine the number of snowflakes on the screen at one time. I've got mine set to 100.</p>
+
+          <p class="code">
+            // Specify the number of snowflakes you want visible <br />
+            var numberOfSnowflakes = 100; <br />
+          </p>
+
+          <p>Another cool section to look at is the controls for the <span class="code">speed</span> and <span class="code">radius</span> of the snowflakes. Each snowflake is randomly generated and have different sizes and speeds. The code uses the <span class="code">Math.random()</span> function to randomize each snowflake. For example
+          the radius of the snowflake is determined by <span class="code">4+Math.random()*10</span> this allows for a number between 1 and 0 that is then multiplied by 10 and then add 4, for a range of 4 to 14.</p>
+
+          <p class="code">
+            var speed = 5+Math.random()*40; <br />
+            var radius = 4+Math.random()*10; <br />
+          </p>
+
+          <hr class="writing-rule">
+
+          <h3 class="writing-subtitle">Step 2: Connecting it to your website</h3>
+
+          <p>Now that we have both the CSS and JS file we can get it to work with your website. To do this we'll need
+          to add it to your website's HTML code.</p>
+
+          <p>First let's add the CSS file, I have the CSS file saved in my site's CSS folder, then I
+          add the file by linking it in the HTML page <span class="code">&lt;head&gt;</span> section I want the snowflakes to show up in..</p>
+
+          <p class="code">
+            &lt;head&gt;<br />
+            <br />
+            &lt;link href="your-path-to-the-css-file/snow.css" rel="stylesheet"&gt;<br />
+            other code ..
+          </p>
+
+          <p>Then the next step is to add the JS file to the HTML page..</p>
+
+          <p class="code">
+            other code ..<br />
+            <br />
+            &lt;script src="your-path-to-the-js-file/fallingsnow_v6.js"&gt;&lt;/script&gt;<br />
+            &lt;/body&gt;
+          </p>
+
+          <p>I tend to add JS script files at the bottom of my html so it doesn't slow down the rest of the HTML content from loading first</p>
+
+          <hr class="writing-rule">
+
+          <h3 class="writing-subtitle">Step 3: Add a &lt;div&gt; for the snowflake</h3>
+
+          <p>We're almost finished! If you load the page now.. no snowflakes happen. Why is that? It's because we need
+          to have a element for the javascript to add and remove the snowflakes from. To do this we'll need to create
+          a new <span class="code">&lt;div&gt;</span> before the <span class="code">&lt;body&gt;</span> tag in your
+          HTML page.</p>
+
+          <p class="code">
+              &lt;body&gt; <br />
+              <br />
+                &lt;div id="snowflakeContainer"&gt; <br />
+                  &lt;p class="snowflake"&gt;*&lt;/p&gt; <br />
+                &lt;/div&gt;<br />
+            <br />    
+              ... the rest of your code  
+          </p>
+
+          <p>This creates a <span class="code">&lt;div&gt;</span> that is locked to the top of your browser page
+          and covers the entire screen. This is where the JS file will put new snowflakes on top of the rest of the content. Now that you have all of it combined refresh the site and you should see some
+          wonderful snow effect!</p>
+
+          <hr class="writing-rule">
+
+          <p>And that's it, all you need to add some holiday cheer to winterize your webpage. The key things
+          to note are ..</p>
+
+          <ol>
+            <li>Add in the asset files - CSS and JS</li>
+            <li>Link it in the HTML so it can be loaded</li>
+            <li>Add the HTML code it needs to show up on the page</li>
+          </ol>
+
+          <hr class="writing-rule">
+      
+          <p>Resources used to write this post: <br> 
+            <a href="https://www.kirupa.com/html5/the_falling_snow_effect.htm">Kirupa - The Falling Snow Effect</a> <br />
+            Special thanks for the tutorial and providing assets.
+          </p>
+
+          <p class="spacing"><a href="../writing.html"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Writing</a></p>
+        </div>
+      </div>
+   </div><!-- --/container ---->
+
+    <!-- ********** FOOTER SECTION -->
+    <div id="footerwrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 footer-column">
+            <h4>Facts about Eric</h4>
+            <div class="hline mb-25"></div>
+            <p>I design websites, apps, and occasionally non-digital stuff. I enjoy biking, eating <a href="https://goo.gl/maps/nNBYhoYWyXt">ramen</a>, and <a href="https://thatfilmfeeling.tumblr.com/">photography</a>. Always looking to improve myself and learn new things.</p>
+          </div>
+          <div class="col-md-4 col-lg-4 footer-column">
+            <h4>Connect with Eric online</h4>
+            <div class="hline mb-25"></div>
+            <p>
+              <a href="https://www.linkedin.com/in/erictsaidesign"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/eetom"><i class="fa fa-github"></i></a>
+              <a href="https://dribbble.com/Eetom"><i class="fa fa-dribbble"></i></a>
+              <a href="mailto:erictsaidesign@gmail.com"><i class="fa fa-envelope-o"></i></a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-4 footer-column">
+            <h4>Connect with Eric in person</h4>
+            <div class="hline mb-25"></div>
+            <p>I'm currently work in <a href="https://en.wikipedia.org/wiki/South_of_Market,_San_Francisco">San Francisco</a>, California. Come grab <a href="https://goo.gl/maps/RinCPg9HBzS2">coffee</a> and chat!</p>
+          </div>
+        </div><!--/row -->
+      </div><!--/container -->
+    </div><!--/footerwrap -->
+    <!-- ********** END FOOTER SECTION -->
+   
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina-1.1.0.js"></script>
+    <script src="assets/js/jquery.hoverdir.js"></script>
+    <script src="assets/js/jquery.hoverex.min.js"></script>
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="assets/js/jquery.isotope.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>

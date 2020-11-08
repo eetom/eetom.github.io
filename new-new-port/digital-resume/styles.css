@@ -1,0 +1,122 @@
+/*Shared CSS for both versions*/
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  padding: 1em;
+}
+
+h1 {
+  font-family: 'Bitter', serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: 'Bitter', serif;
+  margin: 0 0 2em 0;
+  font-weight: 500;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.85;
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+
+a {
+  font-size: 1.3125rem;
+  color: #e74c3c;
+}
+
+a:hover {
+  color: #c0392b;
+}
+
+.date {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  padding-left: 5px;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 900px;
+	margin: 3.5em auto;
+}
+
+.section-wrapper {
+  display: flex;
+}
+
+.section-title {
+  width: 100%;
+  max-width: 300px;
+}
+
+.section-content {
+  width: 100%;
+  max-width: 560px;
+}
+
+.section-content-cv {
+  width: 100%;
+  margin: 5%;
+}
+
+hr {
+  margin: 3em 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+a.disabled {
+  text-decoration: line-through;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/*One-off Styles*/
+
+.no-title {
+  margin-top: 0;
+}
+
+.aquired {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+
+/*Media Queries*/
+
+/*Section layout breakpoint*/
+@media only screen  and (max-width : 961px) {
+
+  .section-wrapper {
+    flex-direction: column;
+  }
+
+  .section-title {
+    width: 100%;
+    max-width: none;
+  }
+
+  .section-content {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+}

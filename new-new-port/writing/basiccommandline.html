@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Writing - Eric Tsai Product Designer</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/img/logofav-red.png">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->   
+    <script src="../assets/js/modernizr.js" defer="defer"></script>
+  </head>
+  <body>
+    <!-- ********** NAVBAR SECTION -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="http://www.erictsai.me/assets/img/red-logo.svg" alt="eric-portfolio-logo" class="main-logo"></img>
+          <a href="../index.html" class="navbar-brand title">ERIC TSAI</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Portfolio</a></li>
+            <li class="active"><a href="../writing.html">Writing</a></li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ********** END NAVBAR SECTION -->
+
+   <!-- *****************************************************************************************************************
+   TITLE
+   ***************************************************************************************************************** -->
+
+    <div class="container mt-150 mb-50">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 centered">
+          <p class="subtag">Learning Git</p>
+          <hr>
+          <h1 class="subtitle">Command line basics for Designers</h1>
+          <p class="title-spacing">Last Updated: 10/24/2017</p>
+        </div>
+        <div class="col-lg-8 col-md-10 col-lg-offset-2 col-md-offset-1 align-left">
+          <p>Learning version control and git can be learned through many GUI apps that make it easy for first-timers to learn
+          the basics, but at a certian point you might want to devel into the command line way of doing things.</p>
+
+          <p>There are some advantages and certian disadvantages at I've found over time when using command line, but overall its
+            been a positive experience for me. I actually find its easier to navigate directories and find files and open apps
+          with command line</p>
+
+          <h3 class="writing-subtitle">Here is a short list of basic commands</h3>
+
+          <p><i class="fa fa-caret-right" aria-hidden="true"></i> To LIST out a directory's files and folders use</p>
+          <p class="code">User$ LS</p>
+          <p>Here is the result</p>
+          <p class="code">index.html <br> page1.html <br>
+          page2.html  <br>  styles.css <br> images</p>
+          <p>Note that "images" has no file extension, therefore is a folder</p>
+
+          <hr class="writing-rule">
+
+          <p><i class="fa fa-caret-right" aria-hidden="true"></i> To CHANGE DIRECTORY and go into a folder use</p>
+          <p class="code">User$ CD *name-of-folder*</p>
+
+          <hr class="writing-rule">
+
+          <p><i class="fa fa-caret-right" aria-hidden="true"></i> To CHANGE DIRECTORY and go OUT a folder use</p>
+          <p class="code">User$ CD ..</p>
+
+          <hr class="writing-rule">
+
+          <p><i class="fa fa-caret-right" aria-hidden="true"></i> To MAKE a DIRECTORY use</p>
+          <p class="code">User$ MKDIR *name-of-directory-to-delete*</p>
+
+          <hr class="writing-rule">
+
+          <p><i class="fa fa-caret-right" aria-hidden="true"></i> To REMOVE a DIRECTORY use</p>
+          <p class="code">User$ RMDIR *name-of-new-directory*</p>
+          <p>This only works for an empty folder, to delete a non-empty folder use</p>
+          <p class="code">User$ RM -R *name-of-directory-to-delete*</p>
+
+          <hr class="writing-rule">
+
+          <p><i class="fa fa-caret-right" aria-hidden="true"></i> To create a new file use</p>
+          <p class="code">User$ TOUCH name-of-new-file.txt</p>
+          <p>Make sure to include the files extension and this will
+          create a new file in the dicrectory you are currently in,
+          you can check with LS to list out the directory to
+          see if the file has been created</p>
+
+          <p><i class="fa fa-caret-right" aria-hidden="true"></i> To REMOVE a file use</p>
+          <p class="code">User$ RM name-of-file-to-delete.txt</p>
+
+          <hr class="writing-rule">
+
+          <p>A really good resources to learn more about command line is <a href="https://github.com/0nn0/terminal-mac-cheatsheet">Github terminal-mac-cheatsheet by 0nn0</a>,
+          check it out! :)</p>
+
+          <p class="spacing"><a href="../writing.html"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to Writing</a></p>
+        </div>
+      </div>
+   </div><!-- --/container ---->
+
+    <!-- ********** FOOTER SECTION -->
+    <div id="footerwrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 footer-column">
+            <h4>Facts about Eric</h4>
+            <div class="hline mb-25"></div>
+            <p>I design websites, apps, and occasionally non-digital stuff. I enjoy biking, eating <a href="https://goo.gl/maps/nNBYhoYWyXt">ramen</a>, and <a href="https://thatfilmfeeling.tumblr.com/">photography</a>. Always looking to improve myself and learn new things.</p>
+          </div>
+          <div class="col-md-4 col-lg-4 footer-column">
+            <h4>Connect with Eric online</h4>
+            <div class="hline mb-25"></div>
+            <p>
+              <a href="https://www.linkedin.com/in/erictsaidesign"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/eetom"><i class="fa fa-github"></i></a>
+              <a href="https://dribbble.com/Eetom"><i class="fa fa-dribbble"></i></a>
+              <a href="mailto:erictsaidesign@gmail.com"><i class="fa fa-envelope-o"></i></a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-4 footer-column">
+            <h4>Connect with Eric in person</h4>
+            <div class="hline mb-25"></div>
+            <p>I'm currently work in <a href="https://en.wikipedia.org/wiki/South_of_Market,_San_Francisco">San Francisco</a>, California. Come grab <a href="https://goo.gl/maps/RinCPg9HBzS2">coffee</a> and chat!</p>
+          </div>
+        </div><!--/row -->
+      </div><!--/container -->
+    </div><!--/footerwrap -->
+    <!-- ********** END FOOTER SECTION -->
+   
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina-1.1.0.js"></script>
+    <script src="assets/js/jquery.hoverdir.js"></script>
+    <script src="assets/js/jquery.hoverex.min.js"></script>
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="assets/js/jquery.isotope.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
