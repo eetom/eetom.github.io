@@ -1,6 +1,17 @@
-/* CSS Styles */
+/* CSS Override Tachyons Styles */
 
 .small-img {
   width: 500px;
 }
 
+a {
+	color: #19a974;
+}
+
+a:visited {
+	color: #137752;
+}
+
+a:hover {
+	color: #137752;
+}
