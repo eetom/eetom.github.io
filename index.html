@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Eetom</title>
+    <title>OkayEric</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
 
   <header class="sans-serif">
-    <div class="cover bg-left bg-center-l" style="background-image: url(https://eetom.github.io/img/img7.jpg)">
+    <div class="cover bg-left bg-center-l mainview">
       <div class="bg-black-0 pb5 pb6-m pb7-l">
         <nav class="dt w-100 mw8 center"> 
         </nav> 
@@ -17,14 +17,14 @@
     </div> 
   </header>
 
-  <body class="sans-serif">
+  <body class="times">
     <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
       <div class="fr w-100 w-80-l">
-        <p class="f6 b ttu">
+        <p class="f6 b ttu avenir">
           Projects, Learning, and Resources
         </p>
-        <h1 class="f2 f2-l lh-title mt0 mb4 mb4-ns">
-          Eetom
+        <h1 class="f2 f2-l lh-title mt0 mb4 mb4-ns avenir">
+          OkayEric
         </h1>
       </div>
 
@@ -40,7 +40,7 @@
         </div>
 
         <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
-          <p class="b ttu">
+          <p class="b ttu avenir">
             Words in executable lines
           </p>
         </div>
@@ -79,7 +79,7 @@
         </div>
 
         <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
-          <p class="b ttu">
+          <p class="b ttu avenir">
             Words in paragraphs
           </p>
         </div>
@@ -101,14 +101,14 @@
         </div>
 
         <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
-          <p class="b ttu">
+          <p class="b ttu avenir">
             Deltas
           </p>
         </div>
 
         <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
           <p><b>03/31</b> - Layout changes to clean up homepage, moved hosted image links to subpage</p>
-          <p><b>04/01</b> - Add 7 more images</p>
+          <p><b>04/01</b> - Add 7 more images, randomize header image on load with hosted images</p>
         </div>
       </div>
 
@@ -122,7 +122,7 @@
   <footer class="bg-near-black white-80 pv5 pv6-l">
     <div class="cf pa3 pa4-m pa5-l mw9 center">
       <div class="fr w-100 w-80-l">
-        <p class="f5">Made by Eric Tsai</p>
+        <p class="f5 avenir">Made by Eric Tsai</p>
         <p class="f6 i">Last updated in 2021</p>
         <p>
           <a class="link"href="https://github.com/eetom">[Github]</a> /
@@ -134,3 +134,14 @@
   </footer>
 
 </html>
+
+
+<script type="text/javascript">
+
+
+// Allow for random header image
+  var images = ['https://eetom.github.io/img/img1.jpg', 'https://eetom.github.io/img/img2.jpg', 'https://eetom.github.io/img/img3.jpg', 'https://eetom.github.io/img/img4.jpg', 'https://eetom.github.io/img/img5.jpg', 'https://eetom.github.io/img/img6.jpg', 'https://eetom.github.io/img/img7.jpg', 'https://eetom.github.io/img/img8.jpg', 'https://eetom.github.io/img/img9.jpg', 'https://eetom.github.io/img/img10.jpg', 'https://eetom.github.io/img/img11.jpg', 'https://eetom.github.io/img/img12.jpg', 'https://eetom.github.io/img/img13.jpg', 'https://eetom.github.io/img/img14.jpg'];
+  document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+
+</script>
+ 

@@ -15,3 +15,16 @@ a:visited {
 a:hover {
 	color: #137752;
 }
+
+.mainview {
+    background-image: url(images/bg-1.png);
+}
+
+.avenir {
+    font-family: 'avenir next', avenir, sans-serif;
+}
+
+.times {
+    font-family: times, serif;
+}
+
