@@ -10,13 +10,8 @@
 
   <body class="sans-serif">
     <main class="cf pa3 pa4-m pa5-l mw9 center">
-      <div class="fr w-100 w-80-l">
-        <p class="f6 ttu">
-          Hosted Images
-        </p>
-        <h1 class="f2 f2-l lh-title mt0 mb4 mb4-ns">
-          OkayEric! Hosted Images<br class="dn db-ns">
-        </h1>
+      <div id="header">
+        <!-- reusable header goes here-->
       </div>
 
       <div class="fr w-100 w-80-l">
@@ -148,5 +143,18 @@
       </div>
     </main>
   </body>
+
+  <footer>
+    <div id="footer">
+      <!-- reusable footer goes here-->
+    </div>
+  </footer>
+
 </html>
 
+<script>
+  $(function () {
+    $('#footer').load('footer.html');
+    $('#header').load('header.html');
+  });
+</script>

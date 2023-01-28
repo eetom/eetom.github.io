@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </head>
 
   <header class="sans-serif">
@@ -19,14 +20,8 @@
 
   <body class="avenir">
     <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
-      <div class="fr w-100 w-80-l">
-        <img src="https://eetom.github.io/img/me.png" class="br-100 ba h3 w3 dib mb4" alt="avatar">
-        <p class="f5 b ttu">
-          Projects, Learning, and Resources
-        </p>
-        <h1 class="f2 f2-l lh-title mt0 mb4 mb4-ns">
-          <a href="index.html">OkayEric!</a>
-        </h1>
+      <div id="header">
+        <!-- reusable header goes here-->
       </div>
 
       <div class="fr w-100 w-80-l"> <!-- this is a line break -->
@@ -89,29 +84,24 @@
     </main>
   </body>
 
-  <footer class="bg-near-black white-80 pv5 pv6-l">
-    <div class="cf pa3 pa4-m pa5-l mw9 center">
-      <div class="fr w-100 w-80-l">
-        <p class="f5">Made by Eric Tsai</p>
-        <p class="f6 i">Last updated in January 2023</p>
-        <p>
-          <a class="link"href="https://github.com/eetom">[Github]</a> /
-          <a class="link"href="https://dribbble.com/Eetom">[Dribbble]</a> /
-          <a class="link"href="mailto:erictsaidesign@gmail.com">[mail]</a>
-        </p>
-      </div>
+  <footer>
+    <div id="footer">
+      <!-- reusable footer goes here-->
     </div>
   </footer>
 
 </html>
 
+<script>
+  $(function () {
+    $('#footer').load('footer.html');
+    $('#header').load('header.html');
+  });
+</script>
 
 <script type="text/javascript">
-
-
 // Allow for random header image
   var images = ['https://eetom.github.io/img/img1.jpg', 'https://eetom.github.io/img/img2.jpg', 'https://eetom.github.io/img/img3.jpg', 'https://eetom.github.io/img/img4.jpg', 'https://eetom.github.io/img/img5.jpg', 'https://eetom.github.io/img/img6.jpg', 'https://eetom.github.io/img/img7.jpg', 'https://eetom.github.io/img/img8.jpg', 'https://eetom.github.io/img/img9.jpg', 'https://eetom.github.io/img/img10.jpg', 'https://eetom.github.io/img/img11.jpg', 'https://eetom.github.io/img/img12.jpg', 'https://eetom.github.io/img/img13.jpg', 'https://eetom.github.io/img/img14.jpg'];
   document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
-
 </script>
  

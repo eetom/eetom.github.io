@@ -51,6 +51,18 @@
           <p>To cut to the chase, I wanted to have a footer and header section that could be maintained separatly.
             To do this, I'm following a tutorial from this <a href="https://medium.com/@AmyScript/how-to-reduce-reuse-and-recycle-your-code-389e6742e4ac">webpage</a>.
           </p>
+          <p>Now, I won't go over all the details in steps as shown in the tutorial, but here are the broad strokes</p>
+          <ul>
+            <li>1. Create a separate html page for the code you wish to reuse. In our case I've made one for the header and one for the footer. Named aptly 'header.html' and 'footer.html'</li>
+            <li>2. Go to the page you wish for the code to show up in, link jquery in the header.</li>
+            <li>3. In a separate script section, on the condition of page ready, use the load function to load a html file content into a specific id tag div</li>
+            <li>4. In the section where you want to add the code in the main html page, create a div with the id tag that matches the loaded content.
+              For example if you load 'header.html' into a div with the id tag 'header' create a div with id="header"</li>
+            <li>5. Done! That's it! Check for bugs and typos and enjoy your reusable code.</li>
+          </ul>
+
+          <p>Thanks again for the <a href="https://medium.com/@AmyScript/how-to-reduce-reuse-and-recycle-your-code-389e6742e4ac">tutorial</a> I was using to follow along. 
+            Was pretty simple and had nice explainations.</p>
           <p class="mb6"></p>
         </div>
       </div>
