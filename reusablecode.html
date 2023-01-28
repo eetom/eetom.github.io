@@ -20,14 +20,8 @@
 
   <body class="avenir">
     <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
-      <div class="fr w-100 w-80-l">
-        <img src="https://eetom.github.io/img/me.png" class="br-100 ba h3 w3 dib mb4" alt="avatar">
-        <p class="f5 b ttu">
-          Projects, Learning, and Resources
-        </p>
-        <h1 class="f2 f2-l lh-title mt0 mb4 mb4-ns">
-          <a href="index.html">OkayEric!</a>
-        </h1>
+      <div id="header">
+        <!-- reusable header goes here-->
       </div>
 
       <div class="fr w-100 w-80-l"> <!-- this is a line break -->
@@ -54,7 +48,9 @@
             is hardcoded in by hand. A very <i>manual</i> process that takes a bit too much time. Even with the use of templates
             for this writing section, there's always a lot that I might want to update over time. And this will make it easier.
           </p>
-          <p>To cut to the chase, I wanted to have a footer and header section that could be maintained separatly.</p>
+          <p>To cut to the chase, I wanted to have a footer and header section that could be maintained separatly.
+            To do this, I'm following a tutorial from this <a href="https://medium.com/@AmyScript/how-to-reduce-reuse-and-recycle-your-code-389e6742e4ac">webpage</a>.
+          </p>
           <p class="mb6"></p>
         </div>
       </div>
@@ -77,6 +73,7 @@
 <script>
   $(function(){
     $('#footer').load('footer.html');
+    $('#header').load('header.html');
   });
 </script>
 
