@@ -63,6 +63,6 @@ p.code {
 
 .header-text {
   display: flex;
-  flex-drection: column;
+  flex-direction: column;
   margin-left: 16px;
 }
