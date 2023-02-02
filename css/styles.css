@@ -59,6 +59,7 @@ p.code {
 
 .header {
   display: flex;
+  align-items: center;
 }
 
 .header-text {
