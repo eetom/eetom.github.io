@@ -60,3 +60,9 @@ p.code {
 .header {
   display: flex;
 }
+
+.header-text {
+  display: flex;
+  flex-drection: column;
+  margin-left: 16px;
+}
