@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OkayEric!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+
+  <header class="sans-serif">
+    <div class="cover bg-left bg-center-l mainview">
+      <div class="bg-black-0 pb5 pb6-m pb7-l">
+        <nav class="dt w-100 mw8 center"> 
+        </nav> 
+      </div>
+    </div> 
+  </header>
+
+  <body class="avenir">
+    <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
+      <div id="header">
+        <!-- reusable header goes here-->
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+      <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
+
+        <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
+          <p class="b ttu">
+          </p> 
+        </div>
+
+        <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
+          <p class="b ttu">Moving Commits into a new branch</p>
+          <p class="ttu">
+            October 24, 2017 <br>
+            San Francisco, CA
+          </p>
+        </div>
+
+        <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
+          <p>Sometimes I make the mistake of not starting a new branch before I start editing code, especially if i'm the only one
+            working on a repository and there is only the master branch.</p>
+          
+          <p>To fix this I looked it up on stackoverflow and this is the best answer I have found.</p>
+
+          <br />
+          
+          <h3 class="writing-subtitle">Step 1: How many commits in are we?</h3>
+          <p class="code">User$ git log</p>
+          <p>This allows us to check how many commits we want to move. You can read the comment on the commit to see how
+            far back you want to roll</p>
+          <p class="code">
+            commit 0b2b5b47b9c540....<br>
+            Author: Eric Tsai<br>
+            Date: Tue Oct 24 20:00:44 2017 -0700<br>
+            I want to roll this commit back<br>
+            <br>
+            commit 0b2b235x333540....<br>
+            Author: Eric Tsai <br>
+            Date: Tue Oct 24 19:59:44 2017 -0700<br>
+            This is fine, leave this in master
+          </p>
+          
+          <br />
+          
+          <h3 class="writing-subtitle">Step 2: Discarding the commits temporarily</h3>
+          <p class="code">User$ git reset --keep HEAD~3</p>
+          <p>This discards the "3" most recent commits temporarily because it doesn't "throw away" the changes, change
+            this number to the number of commits you want to roll back</p>
+          
+          <br />
+          
+          <h3 class="writing-subtitle">Step 3: Creating a new branch</h3>
+          <p class="code">User$ git checkout -t -b newbranchname</p>
+          <p>This creates and switches to a new branch based off of the new master branch that has been rolled back</p>
+          
+          <br />
+          
+          <h3 class="writing-subtitle">Step 4: Cherry pick it</h3>
+          <p class="code">User$ git cherry-pick ..HEAD@{2}</p>
+          <p>This is the magical step that moves the temporarily discarded commits into the new branch we moved to,
+            It's important to only use {2} because this denotes the action that happen 2 steps ago, not the number
+            of commites we're bringing back</p>
+          
+          <p>And if all goes well you should have a new branch that is x commits ahead of the master</p>
+          <p class="code">
+            User$ git status <br>
+            On branch newbranch <br>
+            Your branch is ahead of 'master' by 1 commit. <br>
+            (use "git push" to publish your local commits)
+          </p>
+          
+          <p>And that's all there is to it. A simple 4 step process! To read more about this
+            go to the <a
+              href="https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git/36463546#36463546">stackoverflow
+              page</a>.</p>
+
+          <p class="mb6"></p>
+        </div>
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+    </main>
+  </body>
+
+  <footer>
+    <div id="footer">
+      <!-- reusable footer goes here-->
+    </div>
+  </footer>
+
+</html>
+
+<script>
+  $(function () {
+    $('#footer').load('footer.html');
+    $('#header').load('header.html');
+  });
+</script>
+
+<script type="text/javascript">
+// Allow for random header image
+  var images = ['https://eetom.github.io/img/img1.jpg', 'https://eetom.github.io/img/img2.jpg', 'https://eetom.github.io/img/img3.jpg', 'https://eetom.github.io/img/img4.jpg', 'https://eetom.github.io/img/img5.jpg', 'https://eetom.github.io/img/img6.jpg', 'https://eetom.github.io/img/img7.jpg', 'https://eetom.github.io/img/img8.jpg', 'https://eetom.github.io/img/img9.jpg', 'https://eetom.github.io/img/img10.jpg', 'https://eetom.github.io/img/img11.jpg', 'https://eetom.github.io/img/img12.jpg', 'https://eetom.github.io/img/img13.jpg', 'https://eetom.github.io/img/img14.jpg'];
+  document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+</script>
+ 

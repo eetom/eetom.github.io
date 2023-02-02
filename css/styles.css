@@ -31,3 +31,28 @@ a:hover {
 .avenir {
     font-family: 'avenir next', avenir, sans-serif;
 }
+
+table {
+  font-size: 16px;
+  font-weight: 400;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+p.code {
+  font-family: 'Courier', 'Monaco';
+  padding: 10px;
+  background-color: #dddddd;
+  font-size: 16px;
+}
