@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OkayEric!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+
+  <header class="sans-serif">
+    <div class="cover bg-left bg-center-l mainview">
+      <div class="bg-black-0 pb5 pb6-m pb7-l">
+        <nav class="dt w-100 mw8 center"> 
+        </nav> 
+      </div>
+    </div> 
+  </header>
+
+  <body class="avenir">
+    <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
+      <div id="header">
+        <!-- reusable header goes here-->
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+      <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
+
+        <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
+          <p class="b ttu">
+          </p> 
+        </div>
+
+        <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
+          <p class="b ttu">Mac Command line basics for Designers</p>
+          <p class="ttu">
+            October 24, 2017 <br>
+            San Francisco, CA
+          </p>
+        </div>
+
+        <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
+          <p>Learning version control and git can be learned through many GUI apps that make it easy for first-timers to learn
+            the basics, but at a certian point you might want to devel into the command line way of doing things.</p>
+          
+          <p>There are some advantages and certian disadvantages at I've found over time when using command line, but overall its
+            been a positive experience for me. I actually find its easier to navigate directories and find files and open apps
+            with command line</p>
+          
+          <h3>Here is a short list of basic commands</h3>
+          
+          <p><i class="fa fa-caret-right blogcaret" aria-hidden="true"></i> To LIST out a directory's files and folders use</p>
+          <p class="code">User$ LS</p>
+          <p>Here is the result</p>
+          <p class="code">index.html <br> page1.html <br>
+            page2.html <br> styles.css <br> images</p>
+          <p>Note that "images" has no file extension, therefore is a folder</p>
+          
+          <br />
+          
+          <p><i class="fa fa-caret-right blogcaret" aria-hidden="true"></i> To CHANGE DIRECTORY and go into a folder use</p>
+          <p class="code">User$ CD *name-of-folder*</p>
+          
+          <br />
+          
+          <p><i class="fa fa-caret-right blogcaret" aria-hidden="true"></i> To CHANGE DIRECTORY and go OUT a folder use</p>
+          <p class="code">User$ CD ..</p>
+          
+          <br />
+          
+          <p><i class="fa fa-caret-right blogcaret" aria-hidden="true"></i> To MAKE a DIRECTORY use</p>
+          <p class="code">User$ MKDIR *name-of-directory-to-delete*</p>
+          
+          <br />
+          
+          <p><i class="fa fa-caret-right blogcaret" aria-hidden="true"></i> To REMOVE a DIRECTORY use</p>
+          <p class="code">User$ RMDIR *name-of-new-directory*</p>
+          <p>This only works for an empty folder, to delete a non-empty folder use</p>
+          <p class="code">User$ RM -R *name-of-directory-to-delete*</p>
+          
+          <br />
+          
+          <p><i class="fa fa-caret-right blogcaret" aria-hidden="true"></i> To create a new file use</p>
+          <p class="code">User$ TOUCH name-of-new-file.txt</p>
+          <p>Make sure to include the files extension and this will
+            create a new file in the dicrectory you are currently in,
+            you can check with LS to list out the directory to
+            see if the file has been created</p>
+          
+          <p><i class="fa fa-caret-right blogcaret" aria-hidden="true"></i> To REMOVE a file use</p>
+          <p class="code">User$ RM name-of-file-to-delete.txt</p>
+          
+          <br />
+          
+          <p>A really good resources to learn more about command line is <a
+              href="https://github.com/0nn0/terminal-mac-cheatsheet">Github terminal-mac-cheatsheet by 0nn0</a>,
+            check it out! :)</p>
+
+          <p class="mb6"></p>
+        </div>
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+    </main>
+  </body>
+
+  <footer>
+    <div id="footer">
+      <!-- reusable footer goes here-->
+    </div>
+  </footer>
+
+</html>
+
+<script>
+  $(function () {
+    $('#footer').load('footer.html');
+    $('#header').load('header.html');
+  });
+</script>
+
+<script type="text/javascript">
+// Allow for random header image
+  var images = ['https://eetom.github.io/img/img1.jpg', 'https://eetom.github.io/img/img2.jpg', 'https://eetom.github.io/img/img3.jpg', 'https://eetom.github.io/img/img4.jpg', 'https://eetom.github.io/img/img5.jpg', 'https://eetom.github.io/img/img6.jpg', 'https://eetom.github.io/img/img7.jpg', 'https://eetom.github.io/img/img8.jpg', 'https://eetom.github.io/img/img9.jpg', 'https://eetom.github.io/img/img10.jpg', 'https://eetom.github.io/img/img11.jpg', 'https://eetom.github.io/img/img12.jpg', 'https://eetom.github.io/img/img13.jpg', 'https://eetom.github.io/img/img14.jpg'];
+  document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+</script>
+ 
