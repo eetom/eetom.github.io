@@ -71,3 +71,12 @@ p.code {
 .headline {
   margin-bottom: 4px;
 }
+
+.horizontal-nav {
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-nav a {
+  margin-right: 32px;
+}

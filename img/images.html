@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OkayEric!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+
+  <header class="sans-serif">
+    <div class="cover bg-left bg-center-l mainview">
+      <div class="bg-black-0 pb5 pb6-m pb7-l">
+        <nav class="dt w-100 mw8 center"> 
+        </nav> 
+      </div>
+    </div> 
+  </header>
+
+  <body class="avenir">
+    <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
+      <div id="header">
+        <!-- reusable header goes here-->
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+      <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
+
+        <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
+          <p class="b ttu">
+          </p> 
+        </div>
+
+        <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
+          <p class="b ttu">Images</p>
+        </div>
+
+        <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
+          <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
+            <img src="nowords/Beach.jpg" class="db thumb-img" alt="Beach" />
+            <img src="nowords/Border.jpg" class="db thumb-img" alt="Border" />
+            <img src="nowords/Botanical.jpg" class="db thumb-img" alt="Botanical" />
+            <img src="nowords/Chocolate.jpg" class="db thumb-img" alt="Chocolate" />
+            <img src="nowords/Deloitte.jpg" class="db thumb-img" alt="Deloitte" />
+            <img src="nowords/Dicks.jpg" class="db thumb-img" alt="Dicks" />
+            <img src="nowords/Keyboard.jpg" class="db thumb-img" alt="Keyboard" />
+            <img src="nowords/Kirkland.jpg" class="db thumb-img" alt="Kirkland" />
+            <img src="nowords/Lakeview.jpg" class="db thumb-img" alt="Lakeview" />
+            <img src="nowords/Medina.jpg" class="db thumb-img" alt="Medina" />
+            <img src="nowords/Pasta.jpg" class="db thumb-img" alt="Pasta" />
+            <img src="nowords/pizza.jpg" class="db thumb-img" alt="Pizza" />
+            <img src="nowords/Planter.jpg" class="db thumb-img" alt="Planter" />
+            <img src="nowords/Relax.jpg" class="db thumb-img" alt="Relax" />
+            <img src="nowords/Revolver.jpg" class="db thumb-img" alt="Revolver" />
+            <img src="nowords/Sunset.jpg" class="db thumb-img" alt="Sunset" />
+            <img src="nowords/Techbro.jpg" class="db thumb-img" alt="Techbro" />
+            <img src="nowords/Trail.jpg" class="db thumb-img" alt="Trail" />
+          </div>
+        </div>
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+    </main>
+  </body>
+
+  <footer>
+    <div id="footer">
+      <!-- reusable footer goes here-->
+    </div>
+  </footer>
+
+</html>
+
+<script>
+  $(function () {
+    $('#footer').load('../footer.html');
+    $('#header').load('../header.html');
+  });
+</script>
+
+<script type="text/javascript">
+// Allow for random header image
+  var images = ['https://eetom.github.io/img/img1.jpg', 'https://eetom.github.io/img/img2.jpg', 'https://eetom.github.io/img/img3.jpg', 'https://eetom.github.io/img/img4.jpg', 'https://eetom.github.io/img/img5.jpg', 'https://eetom.github.io/img/img6.jpg', 'https://eetom.github.io/img/img7.jpg', 'https://eetom.github.io/img/img8.jpg', 'https://eetom.github.io/img/img9.jpg', 'https://eetom.github.io/img/img10.jpg', 'https://eetom.github.io/img/img11.jpg', 'https://eetom.github.io/img/img12.jpg', 'https://eetom.github.io/img/img13.jpg', 'https://eetom.github.io/img/img14.jpg'];
+  document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+</script>
+ 

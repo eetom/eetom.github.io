@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OkayEric!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+
+  <header class="sans-serif">
+    <div class="cover bg-left bg-center-l mainview">
+      <div class="bg-black-0 pb5 pb6-m pb7-l">
+        <nav class="dt w-100 mw8 center"> 
+        </nav> 
+      </div>
+    </div> 
+  </header>
+
+  <body class="avenir">
+    <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
+      <div id="header">
+        <!-- reusable header goes here-->
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+      <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
+
+        <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
+          <p class="b ttu">
+          </p> 
+        </div>
+
+        <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
+          <p class="b ttu">Words</p>
+        </div>
+
+        <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
+          <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
+            <p><b>02/02/2023</b> - <a href="greatwave.html">Great waves of coffee</a></p>
+            <p><b>01/28/2023</b> - <a href="reusablecode.html">Working with reusable code</a></p>
+            <p><b>01/24/2023</b> - <a href="startwriting.html">Start writing again</a></p>
+            <p><b>04/01/2021</b> - <a href="ristretto.html">Ristretto and other coffee glossary words</a></p>
+            <p><b>01/12/2019</b> - <a href="wineselection.html">How to pick wines</a></p>
+            <p><b>06/27/2018</b> - <a href="job-stories.html">What are Job Stories?</a></p>
+            <p><b>06/27/2018</b> - <a href="sankey-diagrams.html">Sankey Diagrams</a></p>
+            <p><b>10/31/2017</b> - <a href="packlighter.html">Pack Lighter - Travel Happier</a></p>
+            <p><b>10/24/2017</b> - <a href="movingcommits.html">Moving Commits into a new branch</a></p>
+            <p><b>10/24/2017</b> - <a href="basiccommandline.html">Mac Command line basics for Designers</a></p>
+          </div>
+        </div>
+
+    </main>
+  </body>
+
+  <footer>
+    <div id="footer">
+      <!-- reusable footer goes here-->
+    </div>
+  </footer>
+
+</html>
+
+<script>
+  $(function () {
+    $('#footer').load('../footer.html');
+    $('#header').load('../header.html');
+  });
+</script>
+
+<script type="text/javascript">
+// Allow for random header image
+  var images = ['https://eetom.github.io/img/img1.jpg', 'https://eetom.github.io/img/img2.jpg', 'https://eetom.github.io/img/img3.jpg', 'https://eetom.github.io/img/img4.jpg', 'https://eetom.github.io/img/img5.jpg', 'https://eetom.github.io/img/img6.jpg', 'https://eetom.github.io/img/img7.jpg', 'https://eetom.github.io/img/img8.jpg', 'https://eetom.github.io/img/img9.jpg', 'https://eetom.github.io/img/img10.jpg', 'https://eetom.github.io/img/img11.jpg', 'https://eetom.github.io/img/img12.jpg', 'https://eetom.github.io/img/img13.jpg', 'https://eetom.github.io/img/img14.jpg'];
+  document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+</script>
+ 
