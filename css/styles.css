@@ -67,3 +67,7 @@ p.code {
   flex-direction: column;
   margin-left: 16px;
 }
+
+.headline {
+  margin-bottom: 4px;
+}
