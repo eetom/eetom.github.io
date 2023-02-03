@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
 
   <header class="sans-serif">
@@ -46,10 +47,9 @@
           <a href="words/words.html">/words</a>
           <a href="img/images.html">/images</a>
           <a href="projects/projects.html">/projects</a>
-          <a href="https://github.com/eetom">/github</a>
-          <a href="https://dribbble.com/Eetom">/dribbble</a>
+          <a href="https://github.com/eetom">/github <i class="material-icons" style="font-size: 14px;">open_in_new</i></a>
+          <a href="https://dribbble.com/Eetom">/dribbble <i class="material-icons" style="font-size: 14px;">open_in_new</i></a>
           <a href="projects/digital-resume/index.html">/resume</a>
-          <a href="mailto:erictsaidesign@gmail.com">/email</a>
         </div>
       </div>
 
@@ -57,19 +57,17 @@
   </body>
 
   <footer>
-    <div id="footer">
-      <!-- reusable footer goes here-->
-    </div>
+    <footer class="bg-near-black white-80 pv5 pv5-l">
+      <div class="cf pa3 pa4-m pa5-l mw9 center">
+        <div class="fr w-100 w-80-l">
+          <p class="f5">by Eric Tsai<br />Last updated in January 2023</p>
+          <a href="mailto:erictsaidesign@gmail.com"><i class="material-icons">mail</i></a>
+        </div>
+      </div>
+    </footer>
   </footer>
 
 </html>
-
-<script>
-  $(function () {
-    $('#footer').load('footer.html');
-    $('#header').load('header.html');
-  });
-</script>
 
 <script type="text/javascript">
 // Allow for random header image
