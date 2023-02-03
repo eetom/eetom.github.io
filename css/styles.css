@@ -16,6 +16,10 @@ a:hover {
 	color: #137752;
 }
 
+.index-main-body {
+  height: 700px;
+}
+
 .mainview {
     background-image: url(images/bg-1.png);
 }
