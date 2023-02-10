@@ -42,7 +42,7 @@ tr:nth-child(even) {
   background-color: #eeeeee;
 }
 
-p.code {
+.code {
   font-family: 'Courier', 'Monaco';
   padding: 10px;
   background-color: #dddddd;
