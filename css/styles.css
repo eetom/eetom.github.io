@@ -124,11 +124,11 @@ hr {
 }
 
 a.placeholder {
-  color:lightseagreen;
+  color:lightpink;
   font-style: italic;
 }
 
 a:visited.placeholder {
-  color: rgb(11, 100, 95);
+  color: rgb(191, 122, 132);
   font-style: italic;
 }
