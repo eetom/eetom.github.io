@@ -1,9 +1,5 @@
 /* CSS Override Tachyons Styles */
 
-.small-img {
-  width: 500px;
-}
-
 a {
 	color: #19a974;
 }
@@ -106,6 +102,10 @@ hr {
   padding: 0 4px;
 }
 
+.small-img {
+  width: 500px;
+}
+
 .column img {
   margin-top: 8px;
   vertical-align: middle;
@@ -121,4 +121,14 @@ hr {
 
 .img-sub {
   width: 48%;
+}
+
+a.placeholder {
+  color:lightseagreen;
+  font-style: italic;
+}
+
+a:visited.placeholder {
+  color: rgb(11, 100, 95);
+  font-style: italic;
 }
