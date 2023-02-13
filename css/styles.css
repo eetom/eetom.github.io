@@ -13,11 +13,15 @@ a:hover {
 }
 
 .mainview {
-    background-image: url(images/bg-1.png);
+  background-image: url(images/bg-1.png);
 }
 
-.avenir {
-    font-family: 'avenir next', avenir, sans-serif;
+.main-title {
+  text-decoration: none;
+}
+
+.font {
+  font-family: 'Noto Sans', sans-serif;;
 }
 
 table {
@@ -72,6 +76,10 @@ tr:nth-child(even) {
 
 .horizontal-nav a {
   margin-right: 32px;
+}
+
+.horizontal-flex {
+  flex-direction: row;
 }
 
 hr {
