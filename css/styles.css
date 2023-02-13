@@ -131,7 +131,16 @@ hr {
 }
 
 .img-sub {
-  width: 32%;
+  width: 48%;
+}
+
+.img-sub img {
+  max-height: 260px;
+}
+
+.img-sub h3 {
+  margin-top: 0px;
+  margin-bottom: 32px;
 }
 
 .img-nav {
