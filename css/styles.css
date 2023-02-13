@@ -12,10 +12,6 @@ a:hover {
 	color: #137752;
 }
 
-.index-main-body {
-  height: 700px;
-}
-
 .mainview {
     background-image: url(images/bg-1.png);
 }
@@ -120,7 +116,15 @@ hr {
 }
 
 .img-sub {
-  width: 48%;
+  width: 32%;
+}
+
+.img-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 2rem 0;
+  justify-content: space-between;
+  width: 22%;
 }
 
 a.placeholder {
