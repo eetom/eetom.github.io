@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OkayEric!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+  <header class="sans-serif">
+    <div class="cover bg-left bg-center-l mainview">
+      <div class="bg-black-0 pb5 pb6-m pb7-l">
+        <nav class="dt w-100 mw8 center"> 
+        </nav> 
+      </div>
+    </div> 
+  </header>
+
+  <body class="avenir">
+    <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
+      <div id="header">
+        <!-- reusable header goes here-->
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+      <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
+
+        <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
+          <p class="b ttu">
+          </p> 
+        </div>
+
+        <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
+          <p class="b ttu">Hokkaido, Japan: Color</p>
+          <p>Fujifilm Klass W</p>
+          <p>Superia 400</p>
+        </div>
+
+        <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
+
+          <div class="row">
+            <div class="column">
+              <img src="nowords/jpc1.jpg" class="db" />
+              <img src="nowords/jpc23.jpg" class="db" />
+              <img src="nowords/jpc2.jpg" class="db" />
+              <img src="nowords/jpc22.jpg" class="db" />
+              <img src="nowords/jpc3.jpg" class="db" />
+              <img src="nowords/jpc21.jpg" class="db" />
+              <img src="nowords/jpc4.jpg" class="db" />
+              <img src="nowords/jpc20.jpg" class="db" />
+              <img src="nowords/jpc5.jpg" class="db" />
+              <img src="nowords/jpc19.jpg" class="db" />
+              <img src="nowords/jpc6.jpg" class="db" />
+              <img src="nowords/jpc18.jpg" class="db" />
+            </div>
+            <div class="column">
+              <img src="nowords/jpc7.jpg" class="db" />
+              <img src="nowords/jpc17.jpg" class="db" />
+              <img src="nowords/jpc8.jpg" class="db" />
+              <img src="nowords/jpc16.jpg" class="db" />
+              <img src="nowords/jpc9.jpg" class="db" />
+              <img src="nowords/jpc15.jpg" class="db" />
+              <img src="nowords/jpc10.jpg" class="db" />
+              <img src="nowords/jpc14.jpg" class="db" />
+              <img src="nowords/jpc11.jpg" class="db" />
+              <img src="nowords/jpc13.jpg" class="db" />
+              <img src="nowords/jpc12.jpg" class="db" />
+            </div>
+          </div>
+          <p class="mb6"></p>
+        </div>
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+    </main>
+  </body>
+
+  <footer>
+    <div id="footer">
+      <!-- reusable footer goes here-->
+    </div>
+  </footer>
+
+</html>
+
+<script>
+  $(function () {
+    $('#footer').load('../footer.html');
+    $('#header').load('../header.html');
+  });
+</script>
+
+<script type="text/javascript">
+// Allow for random header image
+  var images = ['https://eetom.github.io/img/img1.jpg', 'https://eetom.github.io/img/img2.jpg', 'https://eetom.github.io/img/img3.jpg', 'https://eetom.github.io/img/img4.jpg', 'https://eetom.github.io/img/img5.jpg', 'https://eetom.github.io/img/img6.jpg', 'https://eetom.github.io/img/img7.jpg', 'https://eetom.github.io/img/img8.jpg', 'https://eetom.github.io/img/img9.jpg', 'https://eetom.github.io/img/img10.jpg', 'https://eetom.github.io/img/img11.jpg', 'https://eetom.github.io/img/img12.jpg', 'https://eetom.github.io/img/img13.jpg', 'https://eetom.github.io/img/img14.jpg'];
+  document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+</script>
+ 
