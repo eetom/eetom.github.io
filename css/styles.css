@@ -42,6 +42,15 @@ tr:nth-child(even) {
   background-color: #eeeeee;
 }
 
+.blog-img {
+  max-height: 450px;
+}
+
+.caption {
+  font-style: italic;
+  font-size: 14px;
+}
+
 .code {
   font-family: 'Courier', 'Monaco';
   padding: 10px;
