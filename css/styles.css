@@ -85,7 +85,7 @@ tr:nth-child(even) {
 }
 
 .horizontal-nav a {
-  margin-right: 32px;
+  margin-right: 1rem;
 }
 
 .horizontal-flex {
@@ -157,7 +157,11 @@ hr {
   flex-wrap: wrap;
   margin: 0 0 2rem 0;
   justify-content: space-between;
-  width: 22%;
+  width: 32%;
+}
+
+.img-nav a img {
+  border: 1px solid #ccc;
 }
 
 a.placeholder {
@@ -168,4 +172,33 @@ a.placeholder {
 a:visited.placeholder {
   color: rgb(191, 122, 132);
   font-style: italic;
+}
+
+@media screen and (max-width: 30em) {
+  .horizontal-nav {
+      display: block;
+    }
+
+  .img-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 2rem 0;
+    justify-content: space-between;
+    width: 98%;
+  }
+  .img-section {
+    display: block;
+  }
+
+  .img-sub {
+    width: 98%;
+  }
+
+    .row {
+      display: block;
+    }
+
+    .column {
+      max-width: 100%;
+    }
 }
