@@ -177,6 +177,7 @@ a:visited.placeholder {
 @media screen and (max-width: 30em) {
   .horizontal-nav {
       display: block;
+      margin-left: 0;
     }
 
   .img-nav {
@@ -200,5 +201,9 @@ a:visited.placeholder {
 
     .column {
       max-width: 100%;
+    }
+
+    .horizontal-flex {
+      flex-direction: column;
     }
 }
