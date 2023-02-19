@@ -145,6 +145,7 @@ hr {
 
 .img-sub img {
   max-height: 260px;
+  border: 1px solid #ccc;
 }
 
 .img-sub h3 {
