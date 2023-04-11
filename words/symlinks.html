@@ -60,13 +60,32 @@
           <p>There are 2 types of symlinks, a "hard" symlink and a "soft" symlink. A soft symlink is similar to a shortcut, 
             it would be in the folder and when you want to access it, you would be redirected to the actual location of the file.
           A hard symlink would be more than just a redirect, it would work as if the file was in secondary directory.
-          </p>
+          </p
 
+          <h3> Here's how you could set up symlinks in Windows</h3>
+          
+          <p>In Windows you can access the built in tools to create symlinks within Powershell</p>
+          <p class="code">C:/Users/user>mklink</p>
           <br />
+
+          <p>This will prompt you to choose from 3 options: </p>
+          <p class="code">MKLINK [[/D] | [/H] | [/J]] Link Target</p>
+          <p>/D makes a Directory link (soft, can be file or directory)</p>
+          <p>/J makes a Junction link (hard, but directory only, not direct on file)</p>
+          <p>/H makes a Hard link (can only be a local file not directory) does not take up real drive space</p>
+          <br />
+
+          <p>You could enter in something like this..</p>
+          <p class="code">mklink /D "C:\PS\Downloads" "C:\Users\user\Downloads"</p>
+          <p>This would create a Directory link, that would exist in the directory PS\Downloads, and would point at user\Downloads</p>
+          <br />
+
+          <p>NOTE! In order to create symlinks in Windows you must have admin access. Otherwise you will get an error that tells you "ou do not have sufficient privilege to perform this operation"</p>
 
           <h3>References</h3>
           <p><a href="https://www.howtogeek.com/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/">The Complete Guide to Creating Symbolic Links (aka Symlinks) on Windows</a></p>
           <p><a href="https://docs.antora.org/antora/latest/symlinks/">Symlinks by Antora</a></p>
+          <p><a href="https://woshub.com/create-symlink-windows/"></a>Creating Symbolic Links (Symlinks) in Windows</p>
 
           <p class="mb6"></p>
         </div>
