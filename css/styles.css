@@ -143,6 +143,11 @@ hr {
   width: 48%;
 }
 
+.small-line {
+  width: 15%;
+  background-color: #cccccc;
+}
+
 .img-sub img {
   max-height: 260px;
   border: 1px solid #ccc;
