@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskit - Task Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="responsive.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="action2.js"></script>
+    <!-- <script src="stopwatch.js"></script> -->
+  </head>
+
+  <body>
+    <div id="myDIV" class="header">
+      <h2>Taskit</h2>
+      <p class="title">A simple task list for easy task management and tracking</p>
+
+      <input type="text" id="myInput" onkeydown="if (event.keyCode == 13) document.getElementById('addBtn').click()"
+        placeholder="Enter Task Description...">
+      <span onclick="newElement()" class="addBtn" id="addBtn"><i class="fa fa-plus-circle"></i></span>
+      
+      
+      <span onclick="window.open('https://eetom.github.io/projects/todolist/taskit.html')" class="clearBtn"><i
+          class="fa fa-external-link" aria-hidden="true"></i></span>
+      <span onclick="saveList()" class="saveBtn disabled"><i class="fa fa-floppy-o" aria-hidden="true"></i></span>
+      </div>
+      
+      <ul id="myUL">
+      
+      </ul>
+
+
+      <br><br>
+
+
+
+      <div class="wrapper">
+        <h2>Stopwatch</h2>
+        <h2>Vanilla JavaScript Stopwatch</h2>
+        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+        <button id="button-start">Start</button>
+        <button id="button-stop">Stop</button>
+        <button id="button-reset">Reset</button>
+      </div>
+  </body>
+</html>
