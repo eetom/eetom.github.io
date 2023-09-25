@@ -357,6 +357,10 @@ hr.writing-rule {
   height: 250px;
 }
 
+#wip {
+  background-image: url(https://eetom.github.io/projects/new-new-port/assets/img/wip.png);
+}
+
 #analytics {
   background-image: url(https://eetom.github.io/projects/new-new-port/assets/img/analytics.png);
 }
