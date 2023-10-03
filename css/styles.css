@@ -180,6 +180,11 @@ a:visited.placeholder {
   font-style: italic;
 }
 
+.work-title-logo {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 30em) {
   .horizontal-nav {
       display: block;
