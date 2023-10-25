@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Net Present Value vs. Internal Rate of Return</title>
+<link rel="stylesheet" href="styles.css">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+</head>
+
+<body>
+<form id="calculation" action="">
+<h2>Net Present Value (NPV) calculator</h2>
+
+<div class="equation">
+    $$ {NPV = \sum^n_{t=0} \frac{R_t}{(1 + i)^t }} $$
+</div>
+
+<div class="equation">
+    $$ {NPV = (PV_0 + PV_1 + PV_2 + .. + PV_t)} $$
+</div>
+
+<fieldset>
+	<!-- <legend>Net Present Value (NPV) calculator</legend> -->
+
+    <p>
+		<label for="investment">How much is the initial investment?</label><br>
+		<input id="investment" name="investment" type="text" />
+	</p>
+	<p>
+		<label for="wacc">Discount rate (i): Enter in decimal percentage (10% = 0.1)</label><br>
+		<input id="wacc" name="wacc" type="text" />
+	</p>
+	<p>
+		<label for="time">Time (t) how many intervals will we calculate for?</label><br>
+		<select id="mySelect">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+		</select>
+	</p>
+    <!-- <p>
+		<label for="inflow">Net cash inflow-outflows during a specific single period (Rt)</label><br>
+		<input id="inflow" name="inflow" type="text" />
+	</p> -->
+
+	<div id="container">
+		<div id="square">
+			<label for="inflow">Net cash inflow-outflows during a specific single period (Rt)</label><br>
+			<input id="inflow" name="inflow" type="text" />
+			<div id="number"></div>
+		</div>
+	  </div>
+	<p>
+		<input type="submit" value="Calculate NPV" />
+		or
+		<input type="reset" value="Reset" />
+	</p>
+
+    <hr>
+	<p>
+		<label for="npv"><h2>Net Present Value (NPV)</h2></label>
+        <p><i>Positive means worth it, negative is not a good investment</i></p>
+		<input id="npv" name="npv" type="text" />
+	</p>
+</fieldset>
+</form>
+
+<script>
+(function () {
+	function calculateNPV(time, inflow, wacc, investment) {
+		time = parseFloat(time);
+		inflow = parseFloat(inflow);
+        wacc = parseFloat(wacc);
+        investment = parseFloat(investment);
+        let y = 1;
+        let x = 0;
+        let sum = 0;
+        
+        do {
+            // calculate the (1+i)^y
+            x = (inflow/(Math.pow(1+wacc,y)));
+            // print to console to check accuracy of x
+            console.log(x);
+            // sum up this instance of x
+            sum += x;
+            // start another interval to calculate
+            y += 1;
+        } while (y < (time+1));
+
+		return parseInt(sum - investment);
+	}
+
+	var calculation = document.getElementById("calculation");
+	if (calculation) {
+		calculation.onsubmit = function () {
+			this.npv.value = calculateNPV(this.time.value, this.inflow.value, this.wacc.value, this.investment.value);
+			return false;
+		};
+	}
+}());
+
+const myDiv = document.getElementById("square");
+const container = document.getElementById("container");
+const select = document.getElementById("mySelect");
+let elementCount = 0;
+
+select.addEventListener("change", e => {
+  elementCount = e.target.value;
+  container.innerHTML = '';
+  
+  for (var i = 0; i < elementCount; i++) {
+    container.appendChild(myDiv.cloneNode(true));
+  }
+});
+
+</script>
+</body>
+</html>

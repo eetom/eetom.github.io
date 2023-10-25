@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Net Present Value vs. Internal Rate of Return</title>
+<link rel="stylesheet" href="styles.css">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+</head>
+
+<body>
+<form id="calculation" action="">
+<h1>Net Present Value (NPV) calculator</h1>
+<p>Net present value (NPV) is the difference between the present value of cash inflows and the present value of
+cash outflows over a period of time. NPV is used in capital budgeting and investment planning to analyze the 
+profitability of a projected investment or project.</p>
+<hr>
+
+<h1>MathJax Equations</h1>
+<div class="equation">
+    $$ {NPV = \sum^n_{t=0} \frac{R_t}{(1 + i)^t }} $$
+</div>
+
+<div class="equation">
+    $$ {NPV = (PV_0 + PV_1 + PV_2 + .. + PV_t)} $$
+</div>
+<br>
+<p>To learn more about MathJax, check out their <a href="https://www.mathjax.org/">site</a></p>
+<hr>
+
+<h1>NPV Equation solver</h1>
+<fieldset class="wht-bg">
+	<!-- <legend>Net Present Value (NPV) calculator</legend> -->
+
+    <p>
+		<label for="investment">How much is the initial investment</label><br>
+		<input id="investment" name="investment" type="text" />
+	</p>
+    <p>
+		<label for="wacc">Discount rate (i) enter in decimal percentage (10% = 0.1)</label><br>
+		<input id="wacc" name="wacc" type="text" />
+	</p>
+	<p>
+		<label for="time">Time (t) how many intervals will we calculate for?</label><br>
+		<input id="time" name="time" type="text" />
+	</p>
+    <p>
+		<label for="inflow">Net cash inflow-outflows during a specific single period (Rt)</label><br>
+		<input id="inflow" name="inflow" type="text" />
+	</p>
+	<p>
+		<input type="submit" value="Calculate NPV" />
+		or
+		<input type="reset" value="Reset" />
+	</p>
+
+    <hr>
+	<p>
+		<label for="npv"><h2>Net Present Value (NPV)</h2></label>
+        <p><i>Positive means worth it, negative is not a good investment</i></p>
+		<input id="npv" name="npv" type="text" />
+	</p>
+</fieldset>
+</form>
+
+<script>
+(function () {
+	function calculateNPV(time, inflow, wacc, investment) {
+		time = parseFloat(time);
+		inflow = parseFloat(inflow);
+        wacc = parseFloat(wacc);
+        investment = parseFloat(investment);
+        let y = 1;
+        let x = 0;
+        let sum = 0;
+        
+        do {
+            // calculate the (1+i)^y
+            x = (inflow/(Math.pow(1+wacc,y)));
+            // print to console to check accuracy of x
+            console.log(x);
+            // sum up this instance of x
+            sum += x;
+            // start another interval to calculate
+            y += 1;
+        } while (y < (time+1));
+
+		return parseInt(sum - investment);
+	}
+
+	var calculation = document.getElementById("calculation");
+	if (calculation) {
+		calculation.onsubmit = function () {
+			this.npv.value = calculateNPV(this.time.value, this.inflow.value, this.wacc.value, this.investment.value);
+			return false;
+		};
+	}
+}());
+</script>
+</body>
+</html>

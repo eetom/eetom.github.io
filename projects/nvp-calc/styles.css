@@ -1,0 +1,34 @@
+body {
+  background-color: powderblue;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+h1 {
+  color: #004851;
+  }
+  
+p {
+  font-size: 24px;
+}
+
+input {
+  margin-bottom: 8px;
+}
+
+.equation {
+  font-size: 40px;
+  width: 10%;
+}
+
+.wht-bg {
+  background-color: white;
+}
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}

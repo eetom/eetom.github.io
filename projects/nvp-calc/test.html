@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Fish Weight Calculator</title>
+</head>
+
+<body>
+<form id="fishWeight" action="">
+<fieldset>
+	<legend>Fish Weight Calculator</legend>
+	<p>
+		<label for="length">Length (in)</label>
+		<input id="length" name="length" type="number" />
+	</p>
+	<p>
+		<label for="girth">Girth (in)</label>
+		<input id="girth" name="girth" type="number" />
+	</p>
+	<p>
+		<input type="submit" value="Calculate weight" />
+		or
+		<input type="reset" value="Reset" />
+	</p>
+	<p>
+		<label for="weight">Weight (lbs)</label>
+		<input id="weight" name="weight" type="number" />
+	</p>
+</fieldset>
+</form>
+
+<script>
+(function () {
+	function calculateFishWeight(length, girth) {
+		length = parseFloat(length);
+		girth = parseFloat(girth);
+		return (length * girth * girth / 800);
+	}
+
+	var fishWeight = document.getElementById("fishWeight");
+	if (fishWeight) {
+		fishWeight.onsubmit = function () {
+			this.weight.value = calculateFishWeight(this.length.value, this.girth.value);
+			return false;
+		};
+	}
+}());
+</script>
+</body>
+</html>

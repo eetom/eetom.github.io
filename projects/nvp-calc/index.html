@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+</head>
+<body>
+
+    <h1>NPV / IRR calculator</h1>
+
+    <!-- <div>
+        $$ {J(\theta) =\frac{1}{2m} [\sum^n_{i=1}(h_\theta(x^{(i)}) - y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j} $$
+    </div> -->
+
+    <div class="equation">
+        $$ {NPV = \sum^n_{t=0} \frac{R_t}{(1 + i)^t }} $$
+    </div>
+
+
+    <form action="/action_page.php">
+        <label for="fname">Net Present Value (NPV):</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Time (t)</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="lname">Net cash inflow-outflows during a single period (Rt)</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="lname">Discount rate or return that could be earned in investments (i)</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    </form> 
+
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" />
+          </li>
+          <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+        </ul>
+      </form>
+      
+
+
+</body>
+</html>

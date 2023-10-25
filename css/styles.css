@@ -158,6 +158,12 @@ hr {
   margin-bottom: 32px;
 }
 
+.math-box {
+  background-color: #eee;
+  border: 1px solid;
+  margin-bottom: 24px;
+}
+
 .img-nav {
   display: flex;
   flex-wrap: wrap;
