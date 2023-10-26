@@ -162,6 +162,12 @@ hr {
   background-color: #eee;
   border: 1px solid;
   margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.math-box p {
+  text-align: center;
+  font-size: 16px;
 }
 
 .img-nav {
@@ -212,15 +218,15 @@ a:visited.placeholder {
     width: 98%;
   }
 
-    .row {
-      display: block;
-    }
+  .row {
+    display: block;
+  }
 
-    .column {
-      max-width: 100%;
-    }
+  .column {
+    max-width: 100%;
+  }
 
-    .horizontal-flex {
-      flex-direction: column;
-    }
+  .horizontal-flex {
+    flex-direction: column;
+  }
 }
