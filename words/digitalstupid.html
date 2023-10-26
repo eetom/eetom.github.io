@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OkayEric!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+  <header class="sans-serif">
+    <div class="cover bg-left bg-center-l mainview">
+      <div class="bg-black-0 pb5 pb6-m pb7-l">
+        <nav class="dt w-100 mw8 center"> 
+        </nav> 
+      </div>
+    </div> 
+  </header>
+
+  <body class="font">
+    <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
+      <div id="header">
+        <!-- reusable header goes here-->
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+      <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
+
+        <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
+          <p class="b ttu">
+          </p> 
+        </div>
+
+        <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
+          <h2 class="b ttu">Digital stupid?</h2>
+          <p class="ttu">
+            October 26th, 2023 <br>
+            Bellevue, WA
+          </p>
+        </div>
+
+        <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
+          <p>What a hot take! I understand where Mr. Araki is coming from in terms of how I feel when I shoot film photos, but I don't fully agree with him here about the total dismerits of digital images.
+            I'd like to think of film and digital as seperate mediums that somehow look similar when presented to an audience. How many people out there can tell what is a photo shot on film and what is
+            shot on CCD sensor based on a printed image? To me the fun and emotion of shooting on silver halide is the experience itself. And that is only for myself to experience as it's not something
+            that can be shared or properly expressed via the final image.
+          </p>
+
+          <div class="pa4">
+            <blockquote class="ml0 mt0 pl4 black-90 bl bw2 b--green">
+              <p class="f5 f4-m f3-l lh-copy measure mt0">
+                … digital cameras are for stupid people. Pictures taken by a digital camera only show the instant
+                moment. A digital camera copies the presence of reality. What you see is
+                what you get. However, there may be something added to the frame during
+                the process of developing or printing when it comes to gelatin silver
+                print. There could be sentimental feelings in those photographs. This
+                kind of “mysterious secret” goes into the process of using a film
+                camera. It is humane, so it is appropriate for photographic expression. I
+                do not feel the body temperature of the subject in digital image. There
+                is no physicality. A digital camera turns a photographer into a robot,
+                with no feeling.
+              </p>
+              <cite class="f6 ttu tracked fs-normal">― Nobuyoshi Araki excerpt from <a href="https://quod.lib.umich.edu/t/tap/7977573.0001.205?view=text;rgn=main">Crossing Boundaries, an interview with Nobuyoshi Araki (2011)</a></cite>
+            </blockquote>
+          </div>
+
+          <h3>References</h3>
+          <p>From an interveiew in Trans Asia Photography <a href="https://quod.lib.umich.edu/t/tap/7977573.0001.205?view=text;rgn=main">Crossing Boundaries, an interview with
+            Nobuyoshi Araki (2011)</a> by Hyewon Yi</p>
+
+          <p class="mb6"></p>
+        </div>
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+    </main>
+  </body>
+
+  <footer>
+    <div id="footer">
+      <!-- reusable footer goes here-->
+    </div>
+  </footer>
+
+</html>
+
+<script>
+  $(function () {
+    $('#footer').load('../footer.html');
+    $('#header').load('../header.html');
+  });
+</script>
+
+<script type="text/javascript">
+  // Allow for random header image
+  var images = [
+    'https://eetom.github.io/img/hosted/img1.jpg', 'https://eetom.github.io/img/hosted/img2.jpg', 'https://eetom.github.io/img/hosted/img3.jpg', 'https://eetom.github.io/img/hosted/img4.jpg', 'https://eetom.github.io/img/hosted/img5.jpg', 'https://eetom.github.io/img/hosted/img6.jpg', 'https://eetom.github.io/img/hosted/img7.jpg', 'https://eetom.github.io/img/hosted/img8.jpg', 'https://eetom.github.io/img/hosted/img9.jpg', 'https://eetom.github.io/img/hosted/img10.jpg', 'https://eetom.github.io/img/hosted/img11.jpg', 'https://eetom.github.io/img/hosted/img12.jpg', 'https://eetom.github.io/img/hosted/img13.jpg', 'https://eetom.github.io/img/hosted/img14.jpg', ' https://eetom.github.io/img/hosted/img15.jpg', 'https://eetom.github.io/img/hosted/img16.jpg', 'https://eetom.github.io/img/hosted/img17.jpg', 'https://eetom.github.io/img/hosted/img18.jpg', 'https://eetom.github.io/img/hosted/img19.jpg', 'https://eetom.github.io/img/hosted/img20.jpg', 'https://eetom.github.io/img/hosted/img21.jpg', 'https://eetom.github.io/img/hosted/img22.jpg'];
+  document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+</script>
+ 
