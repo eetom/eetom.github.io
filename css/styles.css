@@ -91,6 +91,7 @@ tr:nth-child(even) {
 .horizontal-flex {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
 }
 
 hr {
@@ -175,7 +176,7 @@ hr {
   flex-wrap: wrap;
   margin: 0 0 2rem 0;
   justify-content: space-between;
-  width: 24%;
+  width: 30%;
 }
 
 .img-nav a img {
@@ -197,6 +198,18 @@ a:visited.placeholder {
   align-items: center;
 }
 
+/* Medium size screen */
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .img-nav {
+      width: 40%;
+    }
+  .math-box {
+      margin-bottom: 16px;
+      font-size: 16px;
+  }
+}
+
+/* Small size screen */
 @media screen and (max-width: 30em) {
   .horizontal-nav {
       display: block;
@@ -210,6 +223,7 @@ a:visited.placeholder {
     justify-content: space-between;
     width: 98%;
   }
+  
   .img-section {
     display: block;
   }
@@ -228,5 +242,14 @@ a:visited.placeholder {
 
   .horizontal-flex {
     flex-direction: column;
+  }
+
+  .img-nav {
+    width: 100%;
+  }
+
+  .math-box {
+    margin-bottom: 16px;
+    font-size: 16px;
   }
 }
