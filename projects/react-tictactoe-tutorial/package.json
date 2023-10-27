@@ -8,7 +8,7 @@
   "name": "vy6j3f",
   "description": null,
   "version": "0.0.0",
-    "homepage": "eetom.github.io/projects/react-tictactoe-tutorial/public/index.html",
+  "homepage": "https://eetom.github.io/projects/react-tictactoe-tutorial/public/index.html",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -28,5 +28,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
