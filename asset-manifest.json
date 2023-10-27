@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/projects/react-tictactoe-tutorial/public/index.html/static/css/main.b42549b9.css",
-    "main.js": "/projects/react-tictactoe-tutorial/public/index.html/static/js/main.23805506.js",
-    "index.html": "/projects/react-tictactoe-tutorial/public/index.html/index.html",
-    "main.b42549b9.css.map": "/projects/react-tictactoe-tutorial/public/index.html/static/css/main.b42549b9.css.map",
-    "main.23805506.js.map": "/projects/react-tictactoe-tutorial/public/index.html/static/js/main.23805506.js.map"
+    "main.css": "/projects/react-tictactoe-tutorial/static/css/main.b42549b9.css",
+    "main.js": "/projects/react-tictactoe-tutorial/static/js/main.23805506.js",
+    "index.html": "/projects/react-tictactoe-tutorial/index.html",
+    "main.b42549b9.css.map": "/projects/react-tictactoe-tutorial/static/css/main.b42549b9.css.map",
+    "main.23805506.js.map": "/projects/react-tictactoe-tutorial/static/js/main.23805506.js.map"
   },
   "entrypoints": [
     "static/css/main.b42549b9.css",
