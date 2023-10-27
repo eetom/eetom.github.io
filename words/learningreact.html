@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OkayEric!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+  <header class="sans-serif">
+    <div class="cover bg-left bg-center-l mainview">
+      <div class="bg-black-0 pb5 pb6-m pb7-l">
+        <nav class="dt w-100 mw8 center"> 
+        </nav> 
+      </div>
+    </div> 
+  </header>
+
+  <body class="font">
+    <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
+      <div id="header">
+        <!-- reusable header goes here-->
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+      <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
+
+        <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
+          <p class="b ttu">
+          </p> 
+        </div>
+
+        <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
+          <h2 class="b ttu">Learning React</h2>
+          <p class="ttu">
+            October 27th, 2021 <br>
+            Bellevue, WA
+          </p>
+        </div>  
+
+        <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
+          <h2>Step 1: The basics</h2>
+          <p>Here are my notes as I learn React. React is a programing language based off of Javascript used to create user interfaces. This is a bit more involved than just simple
+            HTML and CSS as it will be more than just displaying content and styling it. Javascript and React allow users to interact with the the page content dynamically. This opens up
+            a lot more in terms of content, communication, and utility.
+          </p>   
+          
+          <br>
+
+          <h3>React is..</h3>
+          <ul>
+            <li><h3>Declarative</h3><p>The opposite of imparative. Code base on the "states" of your app.</p></li>
+            <li><h3>Component based</h3><p>Build and reuse components across your app.</p></li>
+            <li><h3>Easy to use with the rest of your code</h3><p>React can be used along side whatever existing code you wish to use.</p></li>
+          </ul>
+
+          <br>
+          <p>To cut to the chase, I wanted to have a footer and header section that could be maintained separatly.
+            To do this, I'm following a tutorial from this <a href="https://medium.com/@AmyScript/how-to-reduce-reuse-and-recycle-your-code-389e6742e4ac">webpage</a>.
+          </p>
+          <p>Now, I won't go over all the details in steps as shown in the tutorial, but here are the broad strokes</p>
+
+          <p class="code">1. Create a separate html page for the code you wish to reuse. In our case I've made one for the header and one for the footer. Named aptly 'header.html' and 'footer.html'</p>
+          <br />
+          <p class="code">2. Go to the page you wish for the code to show up in, link jquery in the header.</p>
+          <br />
+          <p class="code">3. In a separate script section, on the condition of page ready, use the load function to load a html file content into a specific id tag div</p>
+          <br />
+          <p class="code">4. In the section where you want to add the code in the main html page, create a div with the id tag that matches the loaded content.</p>
+          <br />
+          <p class="code">5. Done! That's it! Check for bugs and typos and enjoy your reusable code.</p>
+          <br />
+
+          <p>Thanks again for the <a href="https://medium.com/@AmyScript/how-to-reduce-reuse-and-recycle-your-code-389e6742e4ac">tutorial</a> I was using to follow along. 
+            Was pretty simple and had nice explainations.</p>
+          <p class="mb5"></p>
+
+          <h2>References</h2>
+          <p><a href="https://www.investopedia.com/terms/n/npv.asp">React quick start guide</a> on the React documentation site</p>
+          <p class="mb6"></p>
+        </div>
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+
+    </main>
+  </body>
+
+  <footer>
+    <div id="footer">
+      <!-- reusable footer goes here-->
+    </div>
+  </footer>
+
+</html>
+
+<script>
+  $(function () {
+    $('#footer').load('../footer.html');
+    $('#header').load('../header.html');
+  });
+</script>
+
+<script type="text/javascript">
+  // Allow for random header image
+  var images = [
+    'https://eetom.github.io/img/hosted/img1.jpg', 'https://eetom.github.io/img/hosted/img2.jpg', 'https://eetom.github.io/img/hosted/img3.jpg', 'https://eetom.github.io/img/hosted/img4.jpg', 'https://eetom.github.io/img/hosted/img5.jpg', 'https://eetom.github.io/img/hosted/img6.jpg', 'https://eetom.github.io/img/hosted/img7.jpg', 'https://eetom.github.io/img/hosted/img8.jpg', 'https://eetom.github.io/img/hosted/img9.jpg', 'https://eetom.github.io/img/hosted/img10.jpg', 'https://eetom.github.io/img/hosted/img11.jpg', 'https://eetom.github.io/img/hosted/img12.jpg', 'https://eetom.github.io/img/hosted/img13.jpg', 'https://eetom.github.io/img/hosted/img14.jpg', ' https://eetom.github.io/img/hosted/img15.jpg', 'https://eetom.github.io/img/hosted/img16.jpg', 'https://eetom.github.io/img/hosted/img17.jpg', 'https://eetom.github.io/img/hosted/img18.jpg', 'https://eetom.github.io/img/hosted/img19.jpg', 'https://eetom.github.io/img/hosted/img20.jpg', 'https://eetom.github.io/img/hosted/img21.jpg', 'https://eetom.github.io/img/hosted/img22.jpg'];
+  document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+</script 
