@@ -24,6 +24,17 @@ a:hover {
   font-family: 'Noto Sans', sans-serif;;
 }
 
+.blog-callout {
+  background-color: #F6FFFD;
+  border:1px solid #003E30;
+  padding: 3rem;
+  line-height: 2em;
+}
+
+.blog-img-border {
+  border: 1px solid #333;
+}
+
 table {
   font-size: 16px;
   font-weight: 400;
