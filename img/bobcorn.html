@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OkayEric!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+  <header class="sans-serif">
+    <div class="cover bg-left bg-center-l mainview">
+      <div class="bg-black-0 pb5 pb6-m pb7-l">
+        <nav class="dt w-100 mw8 center"> 
+        </nav> 
+      </div>
+    </div> 
+  </header>
+
+  <body class="avenir">
+    <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
+      <div id="header">
+        <!-- reusable header goes here-->
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+      <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
+
+        <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
+          <p class="b ttu"></p> 
+        </div>
+
+        <div class="fl-ns w-100-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
+          <p class="b ttu">Bob's cornmaze Snohomish Washington: Black & White</p>
+          <p>Kodak T3200 - Fujifilm Natura Black f1.9</p>
+        </div>
+
+        <div class="fl-ns w-100-m w-60-l pr3-m pr5-l">
+
+          <div class="row">
+            <div class="column">
+              <img src="nowords/Bobcorn5.png" class="db" />
+              <img src="nowords/Bobcorn11.png" class="db" />
+              <img src="nowords/Bobcorn3.png" class="db" />
+              <img src="nowords/Bobcorn8.png" class="db" />
+              <img src="nowords/Bobcorn17.png" class="db" />
+              <img src="nowords/Bobcorn15.png" class="db" />
+              <img src="nowords/Bobcorn12.png" class="db" />
+              <img src="nowords/Bobcorn9.png" class="db" />
+              <img src="nowords/Bobcorn1.png" class="db" />
+            </div>
+            <div class="column">
+              <img src="nowords/Bobcorn10.png" class="db" />
+              <img src="nowords/Bobcorn18.png" class="db" />
+              <img src="nowords/Bobcorn6.png" class="db" />
+              <img src="nowords/Bobcorn2.png" class="db" />
+              <img src="nowords/Bobcorn13.png" class="db" />
+              <img src="nowords/Bobcorn16.png" class="db" />
+              <img src="nowords/Bobcorn7.png" class="db" />
+              <img src="nowords/Bobcorn14.png" class="db" />
+              <img src="nowords/Bobcorn4.png" class="db" />
+            </div>
+          </div>
+          <p class="mb6"></p>
+        </div>
+      </div>
+
+      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+    </main>
+  </body>
+
+  <footer>
+    <div id="footer">
+      <!-- reusable footer goes here-->
+    </div>
+  </footer>
+
+</html>
+
+<script>
+  $(function () {
+    $('#footer').load('../footer.html');
+    $('#header').load('../header.html');
+  });
+</script>
+
+<script type="text/javascript">
+  // Allow for random header image
+  var images = [
+    'https://eetom.github.io/img/hosted/img1.jpg', 'https://eetom.github.io/img/hosted/img2.jpg', 'https://eetom.github.io/img/hosted/img3.jpg', 'https://eetom.github.io/img/hosted/img4.jpg', 'https://eetom.github.io/img/hosted/img5.jpg', 'https://eetom.github.io/img/hosted/img6.jpg', 'https://eetom.github.io/img/hosted/img7.jpg', 'https://eetom.github.io/img/hosted/img8.jpg', 'https://eetom.github.io/img/hosted/img9.jpg', 'https://eetom.github.io/img/hosted/img10.jpg', 'https://eetom.github.io/img/hosted/img11.jpg', 'https://eetom.github.io/img/hosted/img12.jpg', 'https://eetom.github.io/img/hosted/img13.jpg', 'https://eetom.github.io/img/hosted/img14.jpg', ' https://eetom.github.io/img/hosted/img15.jpg', 'https://eetom.github.io/img/hosted/img16.jpg', 'https://eetom.github.io/img/hosted/img17.jpg', 'https://eetom.github.io/img/hosted/img18.jpg', 'https://eetom.github.io/img/hosted/img19.jpg', 'https://eetom.github.io/img/hosted/img20.jpg', 'https://eetom.github.io/img/hosted/img21.jpg', 'https://eetom.github.io/img/hosted/img22.jpg'];
+  document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+</script>
