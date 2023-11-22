@@ -1,60 +1,91 @@
 /* CSS Override Tachyons Styles */
 
+
+/* ======= Link styling ======= */
 a {
-	color: #19a974;
+	color: #840A91;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 a:visited {
-	color: #137752;
+	color: #840A91;
 }
 
 a:hover {
-	color: #137752;
+	color: #230526;
+  background-color: #EFE4F0;
+  text-decoration: underline;
 }
 
-.mainview {
-  background-image: url(images/bg-1.png);
+a.placeholder {
+  color: lightpink;
+  font-style: italic;
+}
+
+a:visited.placeholder {
+  color: rgb(191, 122, 132);
+  font-style: italic;
+}
+
+a:hover.placeholder {
+  color: rgb(191, 122, 132);
+  font-style: italic;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.footer-link, a:visited.footer-link {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+a:hover.footer-link {
+  text-decoration: underline;
+}
+
+/* ==================================== */
+
+/* ======= Font styling ======= */
+
+.font {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #FEFEFE;
+}
+
+h1 {
+      font-family: 'Playfair Display', serif;
+      color: #1B1B1B;
+      font-weight: 100;
+      font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #1B1B1B;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  color: #1B1B1B;
+  font-weight:100;
+  font-size: 1.4rem;
+}
+
+.sub-title {
+  color: #828282;
+}
+
+.spaced-out {
+  letter-spacing: 0.2em;
+  color: #1B1B1B;
 }
 
 .main-title {
   text-decoration: none;
-}
-
-.font {
-  font-family: 'Noto Sans', sans-serif;;
-}
-
-.blog-callout {
-  background-color: #F6FFFD;
-  border:1px solid #003E30;
-  padding: 3rem;
-  line-height: 2em;
-}
-
-.blog-img-border {
-  border: 1px solid #333;
-}
-
-table {
-  font-size: 16px;
-  font-weight: 400;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td,
-th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #eeeeee;
-}
-
-.blog-img {
-  max-height: 450px;
 }
 
 .caption {
@@ -63,9 +94,11 @@ tr:nth-child(even) {
 }
 
 .code {
-  font-family: 'Courier', 'Monaco';
-  padding: 10px;
-  background-color: #dddddd;
+  /* font-family: 'Courier', 'Monaco'; */
+  color: #56215C;
+  padding: 1.5rem;
+  background-color: #F5F3F6;
+  border: 1px solid #D9D0DA;
   font-size: 16px;
 }
 
@@ -89,6 +122,106 @@ tr:nth-child(even) {
   margin-bottom: 4px;
 }
 
+/* ==================================== */
+
+/* ======= Image styling ======= */
+
+.mainview {
+  background-image: url(images/bg-1.png);
+}
+
+.blog-img {
+  max-height: 450px;
+}
+
+.small-img {
+  width: 500px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.img-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 2rem 0;
+  justify-content: space-between;
+}
+
+.img-sub {
+  width: 48%;
+}
+
+.img-sub img {
+  max-height: 260px;
+  border: 1px solid #ccc;
+}
+
+.img-sub h3 {
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+.img-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 2rem 0;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.img-nav a img {
+  border: 1px solid #ccc;
+}
+
+/* ==================================== */
+
+/* ======= Background styling ======= */
+
+.blog-callout {
+  background-color: #F6FFFD;
+  border:1px solid #003E30;
+  padding: 3rem;
+  margin: 3rem 0;
+  line-height: 2em;
+}
+
+.blog-callout h3 {
+  margin-top: 0;
+}
+
+.blog-img-border {
+  border: 1px solid #333;
+}
+
+/* ==================================== */
+
+/* ======= Table styling ======= */
+
+table {
+  font-size: 16px;
+  font-weight: 400;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+/* ==================================== */
+
+
 .horizontal-nav {
   display: flex;
   align-items: center;
@@ -105,11 +238,20 @@ tr:nth-child(even) {
   align-items: baseline;
 }
 
+
+/* ======= Line styling ======= */
+
 hr {
-  background-color: #cccccc;
   height: 1px;
   border: none;
+  border-top: 2px dotted black;
 }
+
+.small-line {
+  width: 15%;
+}
+
+/* ==================================== */
 
 .category {
   display: flex;
@@ -134,42 +276,6 @@ hr {
   padding: 0 4px;
 }
 
-.small-img {
-  width: 500px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.img-section {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 0 2rem 0;
-  justify-content: space-between;
-}
-
-.img-sub {
-  width: 48%;
-}
-
-.small-line {
-  width: 15%;
-  background-color: #cccccc;
-}
-
-.img-sub img {
-  max-height: 260px;
-  border: 1px solid #ccc;
-}
-
-.img-sub h3 {
-  margin-top: 0px;
-  margin-bottom: 32px;
-}
-
 .math-box {
   background-color: #eee;
   border: 1px solid;
@@ -182,32 +288,12 @@ hr {
   font-size: 16px;
 }
 
-.img-nav {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 0 2rem 0;
-  justify-content: space-between;
-  width: 30%;
-}
-
-.img-nav a img {
-  border: 1px solid #ccc;
-}
-
-a.placeholder {
-  color:lightpink;
-  font-style: italic;
-}
-
-a:visited.placeholder {
-  color: rgb(191, 122, 132);
-  font-style: italic;
-}
-
 .work-title-logo {
   display: flex;
   align-items: center;
 }
+
+/* ======= Responsive stuff ======= */
 
 /* Medium size screen */
 @media screen and (min-width: 30em) and (max-width: 60em) {
