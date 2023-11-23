@@ -19,7 +19,7 @@ a:hover {
 }
 
 a.placeholder, .horizontal-nav a.placeholder {
-  color: lightpink;
+  color: rgb(191, 122, 132);
   font-style: italic;
   text-decoration: line-through;
 }
