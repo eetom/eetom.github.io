@@ -18,9 +18,10 @@ a:hover {
   text-decoration: underline;
 }
 
-a.placeholder {
+a.placeholder, .horizontal-nav a.placeholder {
   color: lightpink;
   font-style: italic;
+  text-decoration: line-through;
 }
 
 a:visited.placeholder {
