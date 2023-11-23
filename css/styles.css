@@ -53,7 +53,7 @@ a:hover.placeholder {
   color:#1B1B1B;
 }
 
-.main-title a, .main-title a:hover, .main-title a:visited {
+a.main-title, a:hover.main-title, a:visited.main-title {
   text-decoration: none;
   color: #1B1B1B;
 }
