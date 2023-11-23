@@ -35,14 +35,30 @@ a:hover.placeholder {
   text-decoration: none;
 }
 
-a.footer-link, a:visited.footer-link {
+.footer-link a, .footer-link a:visited {
   color: white;
   display: flex;
   flex-direction: column;
 }
 
-a:hover.footer-link {
+.footer-link a:hover {
+  color: #EEEEEE;
   text-decoration: underline;
+}
+
+.horizontal-nav a {
+  margin-right: 1rem;
+  color:#1B1B1B;
+}
+
+.main-title a {
+  text-decoration: none;
+  color: #1B1B1B;
+}
+
+.main-title a:hover {
+  text-decoration: none;
+  color: #1B1B1B;
 }
 
 /* ==================================== */
@@ -82,10 +98,6 @@ h3 {
 .spaced-out {
   letter-spacing: 0.2em;
   color: #1B1B1B;
-}
-
-.main-title {
-  text-decoration: none;
 }
 
 .caption {
@@ -226,10 +238,6 @@ tr:nth-child(even) {
   display: flex;
   align-items: center;
   margin-left: 16px;
-}
-
-.horizontal-nav a {
-  margin-right: 1rem;
 }
 
 .horizontal-flex {
