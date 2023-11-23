@@ -3,17 +3,18 @@
 
 /* ======= Link styling ======= */
 a {
-	color: #840A91;
-  text-decoration: none;
+	color: #230526;
+  text-decoration: underline;
   background-color: transparent;
 }
 
 a:visited {
-	color: #840A91;
+	color: #362B37;
+  text-decoration: underline;
 }
 
 a:hover {
-	color: #230526;
+	color: #840A91;
   background-color: #EFE4F0;
   text-decoration: underline;
 }
@@ -42,6 +43,7 @@ a:hover.placeholder {
   display: flex;
   flex-direction: row;
   margin-bottom: 0.5rem;
+  text-decoration: none;
 }
 
 .footer-link a:hover {
@@ -197,8 +199,8 @@ h3 {
 /* ======= Background styling ======= */
 
 .blog-callout {
-  background-color: #F6FFFD;
-  border:1px solid #003E30;
+  background-color: #F5F3F6;
+  border:1px solid #840A91;
   padding: 3rem;
   margin: 3rem 0;
   line-height: 2em;
