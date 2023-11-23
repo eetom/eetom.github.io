@@ -44,8 +44,8 @@ a:hover.placeholder {
 }
 
 .footer-link a:hover {
-  color: #EEEEEE;
-  text-decoration: underline;
+  color: #808080;
+  text-decoration: none;
   background-color: transparent;
 }
 
@@ -66,6 +66,10 @@ a.main-title, a:hover.main-title, a:visited.main-title {
 .font {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #FEFEFE;
+}
+
+p.playfair {
+  font-family: 'Playfair Display', serif;
 }
 
 h1 {
