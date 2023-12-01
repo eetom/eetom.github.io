@@ -12,7 +12,16 @@ var images = [
 'https://eetom.github.io/img/hosted/pano4.jpg', 
 'https://eetom.github.io/img/hosted/pano5.jpg', 
 'https://eetom.github.io/img/hosted/pano6.jpg', 
-'https://eetom.github.io/img/hosted/pano7.jpg'];
+'https://eetom.github.io/img/hosted/pano7.jpg',
+'https://eetom.github.io/img/hosted/pano8.jpg',
+'https://eetom.github.io/img/hosted/pano9.jpg',
+'https://eetom.github.io/img/hosted/pano10.jpg',
+'https://eetom.github.io/img/hosted/pano11.jpg',
+'https://eetom.github.io/img/hosted/pano12.jpg',
+'https://eetom.github.io/img/hosted/pano13.jpg',
+'https://eetom.github.io/img/hosted/pano14.jpg',
+'https://eetom.github.io/img/hosted/pano15.jpg',
+'https://eetom.github.io/img/hosted/pano16.jpg'];
     
 document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
 }
