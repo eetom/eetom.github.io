@@ -2,6 +2,8 @@ window.onload = function () {
     // Allow for random header image
     $('#footer').load('../footer.html');
     $('#header').load('../header.html');
+    $('#modal').load('../modal.html');
+    
     var images = [
         'https://eetom.github.io/img/hosted/pano1.jpg',
         'https://eetom.github.io/img/hosted/pano2.jpg',
