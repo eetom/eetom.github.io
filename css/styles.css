@@ -424,12 +424,12 @@ hr {
 .popupClose {
   position: absolute;
   right: 45%;
-  bottom: 0.7rem;
+  bottom: 0.4rem;
   color: #230526;
   font-family: 'Playfair Display', serif;
   text-decoration: underline;
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
   z-index: 999999;
 }
@@ -440,7 +440,7 @@ hr {
 }
 
 .popupCnt {
-  padding: 2.5rem;
+  padding: 3%;
   text-align: center;
 }
 
