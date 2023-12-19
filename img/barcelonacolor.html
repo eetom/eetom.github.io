@@ -47,22 +47,22 @@
 
           <div class="row">
             <div class="column">
-              <img src="nowords/Espana-12.jpg" class="db" />
-              <img src="nowords/Espana-18.jpg" class="db" />
-              <img src="nowords/Espana-14.jpg" class="db" />
-              <img src="nowords/Espana-16.jpg" class="db" />
-              <img src="nowords/Espana-22.jpg" class="db" />
-              <img src="nowords/Espana-7.jpg" class="db" />
-              <img src="nowords/Espana-23.jpg" class="db" />
+              <img src="nowords/Espana-12.jpg" class="db myImg" />
+              <img src="nowords/Espana-18.jpg" class="db myImg" />
+              <img src="nowords/Espana-14.jpg" class="db myImg" />
+              <img src="nowords/Espana-16.jpg" class="db myImg" />
+              <img src="nowords/Espana-22.jpg" class="db myImg" />
+              <img src="nowords/Espana-7.jpg" class="db myImg" />
+              <img src="nowords/Espana-23.jpg" class="db myImg" />
             </div>
             <div class="column">
-              <img src="nowords/Espana-13.jpg" class="db" />
-              <img src="nowords/Espana-21.jpg" class="db" />
-              <img src="nowords/Espana-17.jpg" class="db" />
-              <img src="nowords/Espana-8.jpg" class="db" />
-              <img src="nowords/Espana-10.jpg" class="db" />
-              <img src="nowords/Espana-15.jpg" class="db" />
-              <img src="nowords/Espana-1.jpg" class="db" />
+              <img src="nowords/Espana-13.jpg" class="db myImg" />
+              <img src="nowords/Espana-21.jpg" class="db myImg" />
+              <img src="nowords/Espana-17.jpg" class="db myImg" />
+              <img src="nowords/Espana-8.jpg" class="db myImg" />
+              <img src="nowords/Espana-10.jpg" class="db myImg" />
+              <img src="nowords/Espana-15.jpg" class="db myImg" />
+              <img src="nowords/Espana-1.jpg" class="db myImg" />
             </div>
           </div>
           <p class="mb6"></p>
@@ -73,6 +73,24 @@
         <hr class="mb5"/>
       </div>
 
+      <!-- Code for Modal -->
+      <div class="popupHolder" id="popup1">
+        <div class="popupFlex">
+          <div class="popup">
+            <div class="popupClose">Close Image</div>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="popupCnt">
+                    <img class="imgpopup" id="img01">
+                    <br clear="all" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 
@@ -81,5 +99,33 @@
       <!-- reusable footer goes here-->
     </div>
   </footer>
-
 </html>
+
+<script>
+  var modal = document.getElementById("popup1");
+  var images = document.getElementsByClassName("myImg");
+  var modalImg = document.getElementById("img01");
+
+  for (var i = 0; i < images.length; i++) {
+    var img = images[i];
+    img.onclick = function (evt) {
+      console.log(evt);
+      modal.style.visibility = "visible";
+      modalImg.src = this.src;
+    };
+  }
+
+  var span = document.getElementsByClassName("popupClose")[0];
+  span.onclick = function () {
+    modal.style.visibility = "hidden";
+  };
+
+  $(".popupHolder").click(function () {
+    modal.style.visibility = "hidden";
+  });
+
+  $(".popupCnt").click(function (event) {
+    event.stopPropagation();
+    modal.style.visibility = "hidden";
+  });
+</script>
