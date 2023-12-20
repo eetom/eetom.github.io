@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="../script/headerfooterload.js"></script>s
+    <script src="../script/headerfooterload.js"></script>
+    <script src="../script/imageexpand.js"></script>
   </head>
 
   <header class="sans-serif">
@@ -47,19 +48,19 @@
 
           <div class="row">
             <div class="column">
-              <img src="nowords/Acros-2.jpg" class="db" />
-              <img src="nowords/Acros-9.jpg" class="db" />
-              <img src="nowords/Acros-12.jpg" class="db" />
-              <img src="nowords/Acros-17.jpg" class="db" />
-              <img src="nowords/Acros-18.jpg" class="db" />
-              <img src="nowords/Acros-19.jpg" class="db" />
+              <img src="nowords/Acros-2.jpg" class="db myImg" />
+              <img src="nowords/Acros-9.jpg" class="db myImg" />
+              <img src="nowords/Acros-12.jpg" class="db myImg" />
+              <img src="nowords/Acros-17.jpg" class="db myImg" />
+              <img src="nowords/Acros-18.jpg" class="db myImg" />
+              <img src="nowords/Acros-19.jpg" class="db myImg" />
             </div>
             <div class="column">
-              <img src="nowords/Acros-22.jpg" class="db" />
-              <img src="nowords/Acros-24.jpg" class="db" />
-              <img src="nowords/Acros-30.jpg" class="db" />
-              <img src="nowords/Acros-33.jpg" class="db" />
-              <img src="nowords/Acros-34.jpg" class="db" />
+              <img src="nowords/Acros-22.jpg" class="db myImg" />
+              <img src="nowords/Acros-24.jpg" class="db myImg" />
+              <img src="nowords/Acros-30.jpg" class="db myImg" />
+              <img src="nowords/Acros-33.jpg" class="db myImg" />
+              <img src="nowords/Acros-34.jpg" class="db myImg" />
             </div>
           </div>
           <p class="mb6"></p>
@@ -72,6 +73,24 @@
 
     </main>
   </body>
+
+    <div class="popupHolder" id="popup1">
+      <div class="popupFlex">
+        <div class="popup">
+          <div class="popupClose">Close Image</div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="popupCnt">
+                  <img class="imgpopup" id="img01">
+                  <br clear="all" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <footer>
     <div id="footer">

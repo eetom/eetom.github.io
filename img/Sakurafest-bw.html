@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="../script/headerfooterload.js"></script>
+    <script src="../script/imageexpand.js"></script>
   </head>
 
   <header class="sans-serif">
@@ -47,26 +48,26 @@
 
           <div class="row">
             <div class="column">
-              <img src="nowords/Sakura-18.jpg" class="db" />
-              <img src="nowords/Sakura-15.jpg" class="db" />
-              <img src="nowords/Sakura-9.jpg" class="db" />
-              <img src="nowords/Sakura-23.jpg" class="db" />
-              <img src="nowords/Sakura-10.jpg" class="db" />
-              <img src="nowords/Sakura-13.jpg" class="db" />
-              <img src="nowords/Sakura-7.jpg" class="db" />
-              <img src="nowords/Sakura-22.jpg" class="db" />
-              <img src="nowords/Sakura-21.jpg" class="db" />
+              <img src="nowords/Sakura-18.jpg" class="db myImg" />
+              <img src="nowords/Sakura-15.jpg" class="db myImg" />
+              <img src="nowords/Sakura-9.jpg" class="db myImg" />
+              <img src="nowords/Sakura-23.jpg" class="db myImg" />
+              <img src="nowords/Sakura-10.jpg" class="db myImg" />
+              <img src="nowords/Sakura-13.jpg" class="db myImg" />
+              <img src="nowords/Sakura-7.jpg" class="db myImg" />
+              <img src="nowords/Sakura-22.jpg" class="db myImg" />
+              <img src="nowords/Sakura-21.jpg" class="db myImg" />
             </div>
             <div class="column">
-              <img src="nowords/Sakura-26.jpg" class="db" />
-              <img src="nowords/Sakura-6.jpg" class="db" />
-              <img src="nowords/Sakura-2.jpg" class="db" />
-              <img src="nowords/Sakura-14.jpg" class="db" />
-              <img src="nowords/Sakura-17.jpg" class="db" />
-              <img src="nowords/Sakura-3.jpg" class="db" />
-              <img src="nowords/Sakura-25.jpg" class="db" />
-              <img src="nowords/Sakura-24.jpg" class="db" />
-              <img src="nowords/Sakura-16.jpg" class="db" />
+              <img src="nowords/Sakura-26.jpg" class="db myImg" />
+              <img src="nowords/Sakura-6.jpg" class="db myImg" />
+              <img src="nowords/Sakura-2.jpg" class="db myImg" />
+              <img src="nowords/Sakura-14.jpg" class="db myImg" />
+              <img src="nowords/Sakura-17.jpg" class="db myImg" />
+              <img src="nowords/Sakura-3.jpg" class="db myImg" />
+              <img src="nowords/Sakura-25.jpg" class="db myImg" />
+              <img src="nowords/Sakura-24.jpg" class="db myImg" />
+              <img src="nowords/Sakura-16.jpg" class="db myImg" />
             </div>
           </div>
           <p class="mb6"></p>
@@ -79,6 +80,24 @@
 
     </main>
   </body>
+
+    <div class="popupHolder" id="popup1">
+      <div class="popupFlex">
+        <div class="popup">
+          <div class="popupClose">Close Image</div>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="popupCnt">
+                  <img class="imgpopup" id="img01">
+                  <br clear="all" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <footer>
     <div id="footer">
