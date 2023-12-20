@@ -67,8 +67,13 @@ a.main-title, a:hover.main-title, a:visited.main-title {
   padding-left: 25px;
 }
 
-.lockednav-links li {
+.lockednav-links li, .lockednav-exlinks li {
   margin-bottom: 10px;
+}
+
+.lockednav-exlinks {
+  list-style: none;
+  padding-left: 0px;
 }
 
 /* ==================================== */
@@ -146,6 +151,13 @@ h3 {
 
 .headline {
   margin-bottom: 4px;
+}
+
+.work-title {
+  background-color: #dddddd;
+  color: #1B1B1B;
+  padding: 50px 30px;
+  border-left: solid 10px #000;
 }
 
 /* ==================================== */
@@ -262,11 +274,10 @@ tr:nth-child(even) {
 
 #the-sticky-div.sticky {
   position: fixed;
-  top: 25px;
-  width: 200px;
-  float: left;
+  top: 10px;
+  width: 19%;
+  max-width: 275px;
 }
-
 
 /* ======= Line styling ======= */
 
@@ -317,9 +328,17 @@ hr {
   font-size: 16px;
 }
 
-.work-title-logo {
+.tag-section{
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tag{
+  color: #000;;
+  background-color: #ddd;
+  padding: 4px 8px;
+  margin: 8px 8px 0 0;
+  border-radius: 2px;
 }
 
 /* ======= Responsive stuff ======= */
@@ -333,8 +352,10 @@ hr {
       margin-bottom: 16px;
       font-size: 16px;
   }
-  #the-sticky-div {
-    display: none;
+  #the-sticky-div.sticky {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -381,8 +402,10 @@ hr {
     margin-bottom: 16px;
     font-size: 16px;
   }
-  #the-sticky-div {
-    display: none;
+  #the-sticky-div.sticky {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
   }
 }
 

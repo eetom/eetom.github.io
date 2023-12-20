@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="../script/headerfooterload.js"></script>
+    <script src="../script/stickynav.js"></script>
   </head>
 
   <header class="sans-serif">
@@ -26,24 +27,59 @@
         <!-- reusable header goes here-->
       </div>
 
-      <div class="fr w-100 w-80-l mb5">
-        <div class="fl-ns w-100 w-40-l pr3-m pr5-l">
-            <h2>Ledger Admin portal</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam
-              malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.Donec nec justo eget felis facilisis.</p>
-            <p class="sub-title">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-              erat ut turpis.
-            </p>
-          </div>
-          <div class="fl-ns w-100 w-60-l pr3-m pr5-l">
-            <img src="../img/hosted/industrydata.png">
-          </div>
-          
-      </div>
+      <!-- <div class="f5 lh-copy fl w-100 mb0">
+        <div class="fl-ns w-100 w-25-l pr3-m pr5-l">
+          <p class="b ttu">
+          </p>
+        </div>
 
-      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
-        <hr />
+        <div class="fl w-100 w-75-l">
+          <img src="../img/hosted/industrydata.png">
+        </div>
+      </div> -->
+
+
+<!--  ************************************** Nav sidebar -->
+
+      <div class="f5 fl w-100 mb4">
+      
+        <div class="fl-ns w-100 w-25-l pr3-m pr5-l">
+          <p class="b ttu">
+          </p>
+        </div>
+      
+        <div class="fl w-100 w-60-l" id="the-sticky-div">
+          
+          <h2>Ledger Admin portal long name</h2>
+          <p>14.11.2023</p>
+
+          <p class="lh-copy">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada
+            erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.Donec nec justo eget felis
+            facilisis.
+          </p>
+
+          <div class="tag-section mb4">
+            <div class="tag">Graphic Design</div>
+            <div class="tag">Social Media</div>
+            <div class="tag">UI</div>
+            <div class="tag">Front End Coding</div>
+            <div class="tag">Branding</div>
+          </div>
+
+          <ul class="lockednav-links">
+            <li><a href="#part-1">Situation</a></li>
+            <li><a href="#part-2">Task</a></li>
+            <li><a href="#part-3">Action</a></li>
+            <li><a href="#part-3">Result</a></li>
+          </ul>
+
+          <ul class="lockednav-exlinks mt4">
+            <li><a href="#">Website<i class="material-icons" style="font-size: 16px; margin-left: 5px;">open_in_new</i></a></li>
+            <li><a href="#">App Login Page<i class="material-icons" style="font-size: 16px; margin-left: 5px;">open_in_new</i></a></li>
+          </ul>
+        </div>
+
       </div>
 
 
@@ -51,15 +87,14 @@
 
       <div class="f5 lh-copy fl w-100 mb4">
 
-
-        <div class="fl-ns w-100 w-20-l pr5-l">
+        <div class="fl-ns w-100 w-25-l pr3-m pr5-l">
           <p class="b ttu">
           </p>
         </div>
 
-        <div class="fl-ns w-100-m w-60-l pr6-l">
+        <div class="fl w-100 w-60-l">
 
-          <h3 id="part-1">Part 1</h3>
+          <h3 id="part-1" class="work-title">01: Situation</h3>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada
             erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.Donec nec justo eget felis facilisis
             fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Morbi in sem quis dui placerat
@@ -79,7 +114,7 @@
             fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Morbi in sem quis dui placerat
             ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras consequat.</p>
 
-          <div class="pa4">
+          <div class="pa4 mb6">
             <blockquote class="ml0 mt0 pl4 black-90 bl bw2 b--green">
               <p class="f5 f4-m f3-l lh-copy measure mt0">
                 Man has two great gifts: ‘words’ to give sound to thoughts, and ‘writing’ to give thoughts meaning forever.
@@ -88,7 +123,7 @@
             </blockquote>
           </div>
 
-          <h3 id="part-2">Part 2</h3>
+          <h3 id="part-2" class="work-title">02: Task</h3>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada
             erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.Donec nec justo eget felis facilisis
             fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Morbi in sem quis dui placerat
@@ -102,37 +137,44 @@
             ornare.
             Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras consequat.</p>
 
-          <img src="../img/hosted/tele6.png">
+          <img src="../img/hosted/tele6.png" class="mb6">
           
-          <h3 id="part-3">Part 3</h3>
+          <h3 id="part-3" class="work-title">03: Action</h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+            Nullam malesuada
+            erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.Donec nec justo eget felis facilisis
+            fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Morbi in sem quis dui placerat
+            ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras consequat.</p>
+
           <p class="mb6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada
             erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.Donec nec justo eget felis facilisis
             fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Morbi in sem quis dui placerat
             ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras consequat.</p>
-        </div>
+
+          <h3 id="part-4" class="work-title">04: Result</h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+            Nullam malesuada
+            erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.Donec nec justo eget felis facilisis
+            fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Morbi in sem quis dui placerat
+            ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras consequat.</p>
+
+          <p class="mb6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+            Nullam malesuada
+            erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.Donec nec justo eget felis facilisis
+            fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Morbi in sem quis dui placerat
+            ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras consequat.</p>
+  
+          <div class="fr w-100"> <!-- this is a line break -->
+            <hr class="mb5" />
+          </div>
+        
+          </div>
 
         <!-- **************************************  End main content -->
 
-<!-- Right Sidebar hereeeee -->
-        <div class="fl-ns w-100-m w-20-l" id="the-sticky-div">
-          <h3 class="mb0">Project navigation here</h3>
-          <p class="sub-title">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-            erat ut turpis.
-          </p>
-          <ul class="lockednav-links">
-            <li><a href="#part-1">Industry database - anchor links</a></li>
-            <li><a href="#part-2">Industry database - anchor links</a></li>
-            <li><a href="#part-3">Industry database - anchor links</a></li>
-          </ul>
-        </div>
-      </div>
 
-
-
-      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
-        <hr class="mb5" />
-      </div>
 
     </main>
   </body>
@@ -145,13 +187,3 @@
 
 </html>
 
-<script>
-  // Cache selectors outside callback for performance. 
-    var $window = $(window),
-      $stickyEl = $('#the-sticky-div'),
-      elTop = $stickyEl.offset().top;
-
-    $window.scroll(function () {
-      $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
-    });
-</script>
