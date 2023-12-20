@@ -76,6 +76,17 @@ a.main-title, a:hover.main-title, a:visited.main-title {
   padding-left: 0px;
 }
 
+.deprecated-link {
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.deprecated-link:hover {
+  text-decoration: line-through;
+  color: #808080;
+  background-color: #eee;
+}
+
 /* ==================================== */
 
 /* ======= Font styling ======= */
