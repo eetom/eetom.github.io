@@ -73,7 +73,7 @@ a.main-title, a:hover.main-title, a:visited.main-title {
 
 .lockednav-exlinks {
   list-style: none;
-  padding-left: 0px;
+  padding-left: 25px;
 }
 
 .deprecated-link {
