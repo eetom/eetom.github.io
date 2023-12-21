@@ -73,7 +73,7 @@ a.main-title, a:hover.main-title, a:visited.main-title {
 
 .lockednav-exlinks {
   list-style: none;
-  padding-left: 25px;
+  padding-left: 0px;
 }
 
 .deprecated-link {
@@ -368,6 +368,9 @@ hr {
     width: 100%;
     max-width: 100%;
   }
+  .popupClose {
+    display: none;
+  }
 }
 
 /* Small size screen */
@@ -417,6 +420,9 @@ hr {
     position: relative;
     width: 100%;
     max-width: 100%;
+  }
+  .popupClose {
+    display: none;
   }
 }
 
