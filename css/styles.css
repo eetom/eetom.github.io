@@ -68,7 +68,7 @@ a.main-title, a:hover.main-title, a:visited.main-title {
 }
 
 .lockednav-links li, .lockednav-exlinks li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .lockednav-exlinks {
@@ -290,6 +290,10 @@ tr:nth-child(even) {
   max-width: 275px;
 }
 
+#the-sticky-div.sticky hr.small-line {
+  width: 100%;
+}
+
 /* ======= Line styling ======= */
 
 hr {
@@ -300,6 +304,10 @@ hr {
 
 .small-line {
   width: 15%;
+}
+
+.mid-line {
+  width: 35%;
 }
 
 /* ==================================== */
@@ -368,6 +376,9 @@ hr {
     width: 100%;
     max-width: 100%;
   }
+  #the-sticky-div hr.small-line {
+    width: 100%;
+  }
   .popupClose {
     display: none;
   }
@@ -416,11 +427,17 @@ hr {
     margin-bottom: 16px;
     font-size: 16px;
   }
+
   #the-sticky-div.sticky {
     position: relative;
     width: 100%;
     max-width: 100%;
   }
+
+  #the-sticky-div hr.small-line {
+    width: 100%;
+  }
+
   .popupClose {
     display: none;
   }
