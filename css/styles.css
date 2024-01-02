@@ -64,10 +64,18 @@ a.main-title, a:hover.main-title, a:visited.main-title {
 
 .lockednav-links {
   list-style:decimal-leading-zero;
-  padding-left: 25px;
+  padding: 1rem 1rem 1rem 2.5rem;
+  line-height: 2em;
+  margin: 0;
 }
 
-.lockednav-links li, .lockednav-exlinks li {
+.lockednav-links li {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.lockednav-exlinks li {
   margin-bottom: 15px;
 }
 
@@ -76,15 +84,14 @@ a.main-title, a:hover.main-title, a:visited.main-title {
   padding-left: 0px;
 }
 
-.deprecated-link {
-  text-decoration: line-through;
-  color: #808080;
-}
-
-.deprecated-link:hover {
+a.deprecated-link {
   text-decoration: line-through;
   color: #808080;
   background-color: #eee;
+}
+
+a.deprecated-link:hover {
+  cursor: not-allowed;
 }
 
 /* ==================================== */
@@ -290,9 +297,26 @@ tr:nth-child(even) {
   max-width: 275px;
 }
 
+#the-sticky-div.sticky h2 {
+  font-size: 34px;
+}
+
 #the-sticky-div.sticky hr.small-line {
   width: 100%;
 }
+
+#the-sticky-div.sticky .lockednav-links li {
+  margin-bottom: 24px;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* truncate to 3 lines */
+  -webkit-line-clamp: 3;
+}
+
 
 /* ======= Line styling ======= */
 
