@@ -20,7 +20,10 @@ window.onload = function () {
         'https://eetom.github.io/img/hosted/pano13.jpg',
         'https://eetom.github.io/img/hosted/pano14.jpg',
         'https://eetom.github.io/img/hosted/pano15.jpg',
-        'https://eetom.github.io/img/hosted/pano16.jpg'];
+        'https://eetom.github.io/img/hosted/pano16.jpg',
+        'https://eetom.github.io/img/hosted/pano17.jpg',
+        'https://eetom.github.io/img/hosted/pano18.jpg',
+        'https://eetom.github.io/img/hosted/pano19.jpg'];
 
     document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
 }

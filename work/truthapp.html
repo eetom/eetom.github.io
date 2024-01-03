@@ -1,202 +1,157 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>OkayEric!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="../script/headerfooterload.js"></script>
-  </head>
 
-  <header class="sans-serif">
-    <div class="cover bg-left bg-center-l mainview">
-      <div class="bg-black-0 pb5 pb6-m pb7-l">
-        <nav class="dt w-100 mw8 center"> 
-        </nav> 
-      </div>
-    </div> 
-  </header>
+<head>
+  <meta charset="UTF-8">
+  <title>OkayEric!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="../script/headerfooterload.js"></script>
+  <script src="../script/stickynav.js"></script>
+</head>
 
-  <body class="font">
-    <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
-      <div id="header">
-        <!-- reusable header goes here-->
-      </div>
+<header class="sans-serif">
+  <div class="cover bg-left bg-center-l mainview">
+    <div class="bg-black-0 pb5 pb6-m pb7-l">
+      <nav class="dt w-100 mw8 center">
+      </nav>
+    </div>
+  </div>
+</header>
 
-      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
-        <hr class="mb5"/>
-      </div>
+<body class="font">
+  <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
+    <div id="header">
+      <!-- reusable header goes here-->
+    </div>
 
-      <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
+    <!--  ************************************** Nav sidebar -->
 
-        <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
-          <p class="b ttu">
-          </p> 
-        </div>
+    <div class="f5 fl w-100 mb4">
 
-        <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
-          <h3>Ledger Investing (2021-2023)</h3>
-        </div>
-        <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
-            <div class="img-section">
-              <div class="img-sub">
-                <a href="#"><img src="../img/hosted/project_cfds.png"></a>
-                <h3><a href="#">Ledger Admin portal UX</a></h3>
-              </div>
-            
-              <div class="img-sub">
-                <a href="#"><img src="../img/hosted/project_firewall.png"></a>
-                <h3><a href="#">Signature UI: Design system</a></h3>
-              </div>
-            
-              <div class="img-sub">
-                <a href="#"><img src="../img/hosted/industrydata.png"></a>
-                <h3><a href="#">Industry database</a></h3>
-              </div>
-            </div>
-        </div>
+      <div class="fl-ns w-100 w-25-l pr3-m pr5-l">
+        <p class="b ttu">
+        </p>
       </div>
 
-      <div class="fr w-100 w-80-l"> <!-- this is a line break -->
-        <hr class="mb5" />
+      <div class="fl w-100 w-60-l" id="the-sticky-div">
+
+        <h2 class="f1 mb2">Truth: iOS app</h2>
+        <p class="mb4">FEB. 2014</p>
+        <hr class="mb4 ml0 small-line" />
+
+        <p class="lh-copy" id="sticky-description">
+          "Truth" is an anonymous messaging platform that allows users to anonymously message directly to their phone contacts.
+          The goal was to create an network for people to speak their minds to people they knew. I joined the start up "Truth"
+          early in February 2014 as the designer of the team. I was in charge of designing the app from the very start and to work
+          along side the developers.
+          <br /><br />
+          Most of the work was done on paper and Illustrator to create all app assets and plan out UX flow of the app. I pushed
+          for to try out new ways to onboard users, gesture controls, and other app improvements.
+        </p>
+
+        <div class="tag-section mb4 mt4">
+          <div class="tag">Mobile App</div>
+          <div class="tag">Branding</div>
+          <div class="tag">Startup</div>
+        </div>
+
+        <ul class="lockednav-exlinks mb4 mt4">
+          <li><a href="https://itunes.apple.com/us/app/truth-just-say-it/id791407399?mt=8" class="deprecated-link">Deprecated: iOS app store<i class="material-icons"
+                style="font-size: 16px; margin-left: 5px;">open_in_new</i></a></li>
+          <li><a href="https://web.archive.org/web/20150313105447/https://www.usetruth.com/">Wayback machine: Truth Website<i class="material-icons"
+                style="font-size: 16px; margin-left: 5px;">open_in_new</i></a></li>
+        </ul>
+
+        <hr class="mb4 mt4 ml0 small-line" />
+
+        <ul class="lockednav-links">
+          <li><a href="#part-1">Context</a></li>
+          <li><a href="#part-2">Task</a></li>
+          <li><a href="#part-3">Action</a></li>
+          <li><a href="#part-3">Result</a></li>
+        </ul>
+
       </div>
 
-      <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
+    </div>
 
-        <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
-          <p class="b ttu">
-          </p>
+
+    <!-- **************************************  Begin main content -->
+
+    <div class="f5 lh-copy fl w-100 mb4">
+
+
+      <div class="fl-ns w-100 w-25-l pr3-m pr5-l">
+        <p class="b ttu">
+        </p>
+      </div>
+
+      <div class="fl w-100 w-60-l">
+
+        <div class="fr w-100"> <!-- this is a line break -->
+          <hr />
         </div>
 
-        <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
-          <h3>Amazon AWS (2019-2021)</h3>
-        </div>
-        <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
+        <h3 id="part-1" class="work-title mt5">01. Context</h3>
+        <p>Truth was created in an era where people were starting up see where annonymity and social media could intersect.
+          With image apps like Snapchat and local messaging with Secret app starting off the trend, we wanted to see
+          if we could build the next online chatroom for anonymous friend conversations.
+        </p>
 
-            <div class="img-section">
-              <div class="img-sub">
-                <a href="#"><img src="../img/hosted/codeconnections.png"></a>
-                <h3><a href="#">AWS Codestar Connections</a></h3>
-              </div>
-            
-              <div class="img-sub">
-                <a href="#"><img src="../img/hosted/codenotifications.png"></a>
-                <h3><a href="#">AWS Codestar platform notifications</a></h3>
-              </div>
-            </div>
-        </div>
-        <div class="fr w-100 w-80-l"> <!-- this is a line break -->
+        <p>The team was comprised of 3 people. Ali was the face of the company while building the back-end, Bio worked full stack on everything else, and I focused
+          on all things visual, UI and marketing.
+        </p>
+
+
+        <h3 id="part-2" class="work-title">02. Task</h3>
+        
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam
+          malesuada
+          erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.Donec nec justo eget felis
+          facilisis
+          fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Morbi in sem quis dui
+          placerat
+          ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras consequat.</p>
+
+
+        <h3 id="part-3" class="work-title">03. Action</h3>
+
+        <p>Along with the design of the app, I was also creating branding and marketing materials. To do this it was
+        important to create a brand identity that was consistent both on screen on off screen. This included: T-shirts, business
+        cards, social media ads, stickers, presentations, and reports.</p>
+
+        <img src="https://eetom.github.io/projects/new-new-port/assets/img/analytics/analytics-1x.png">
+
+        <h3 id="part-4" class="work-title">04. Result</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+          Nullam malesuada
+          erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.Donec nec justo eget felis
+          facilisis
+          fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Morbi in sem quis dui
+          placerat
+          ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras consequat.</p>
+
+        <div class="fr w-100"> <!-- this is a line break -->
           <hr class="mb5" />
         </div>
 
-        <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
-        
-          <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
-            <p class="b ttu">
-            </p>
-          </div>
-        
-          <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
-            <h3>Cloudflare <br>(2016-2019)</h3>
-          </div>
-          <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
-        
-            <div class="img-section">
-              <div class="img-sub">
-                <a href="#"><img src="../img/hosted/analytics-bite.png"></a>
-                <h3><a href="#">Cloudflare Analytics</a></h3>
-              </div>
-            
-              <div class="img-sub">
-                <a href="#"><img src="../img/hosted/style-guide.png"></a>
-                <h3><a href="#">Cloudflare Design System</a></h3>
-              </div>
-            
-              <div class="img-sub">
-                <a href="#"><img src="../img/hosted/firewall.png"></a>
-                <h3><a href="#">Cloudflare Firewall</a></h3>
-              </div>
-            </div>
-          </div>
-          <div class="fr w-100 w-80-l"> <!-- this is a line break -->
-            <hr class="mb5" />
-          </div>
-
-
-          <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
-          
-            <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
-              <p class="b ttu">
-              </p>
-            </div>
-          
-            <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
-              <h3>Various startups (2014-2016)</h3>
-            </div>
-            <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
-          
-              <div class="img-section">
-                <div class="img-sub">
-                  <a href="#"><img src="../img/hosted/runscope1.png"></a>
-                  <h3><a href="#">Runscope</a></h3>
-                </div>
-              
-                <div class="img-sub">
-                  <a href="#"><img src="../img/hosted/ghost-bite.png"></a>
-                  <h3><a href="#">Ghost Inspector</a></h3>
-                </div>
-              
-                <div class="img-sub">
-                  <a href="#"><img src="../img/hosted/tele6.png"></a>
-                  <h3><a href="#">Teleborder</a></h3>
-                </div>
-              </div>
-            </div>
-            <div class="fr w-100 w-80-l"> <!-- this is a line break -->
-              <hr class="mb5" />
-            </div>
-
-          <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
-          
-            <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
-              <p class="b ttu">
-              </p>
-            </div>
-          
-            <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
-              <h3>Older work (Pre 2014)</h3>
-            </div>
-            <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
-          
-              <div class="img-section">
-                <div class="img-sub">
-                  <a href="#"><img src="../img/hosted/truth1.png"></a>
-                  <h3><a href="#">Truth app</a></h3>
-                </div>
-              
-                <div class="img-sub">
-                  <a href="#"><img src="../img/hosted/sasvm-bite.png"></a>
-                  <h3><a href="#">SASVM</a></h3>
-                </div>
-              </div>
-            </div>
-            <div class="fr w-100 w-80-l"> <!-- this is a line break -->
-              <hr class="mb5" />
-            </div>
-
-
-
       </div>
-    </main>
-  </body>
 
-  <footer>
-    <div id="footer">
-      <!-- reusable footer goes here-->
-    </div>
-  </footer>
+      <!-- **************************************  End main content -->
+
+
+  </main>
+</body>
+
+<footer>
+  <div id="footer">
+    <!-- reusable footer goes here-->
+  </div>
+</footer>
 
 </html>
