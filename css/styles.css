@@ -293,7 +293,7 @@ tr:nth-child(even) {
 #the-sticky-div.sticky {
   position: fixed;
   top: 10px;
-  width: 19%;
+  width: 9%;
   max-width: 275px;
 }
 
