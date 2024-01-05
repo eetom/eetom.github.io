@@ -610,9 +610,6 @@ body.dark a:hover {
 
 body.dark a.placeholder, body.dark a:visited.placeholder, body.dark a:hover.placeholder {
   color: #60A1EE;
-  font-style: italic;
-  background-color: transparent;
-  text-decoration: line-through;
 }
 
 body.dark cite {
@@ -622,8 +619,6 @@ body.dark cite {
 body.dark td,
 body.dark th {
   border: 1px solid #121212;
-  text-align: left;
-  padding: 8px;
   color: #fff;
 }
 
@@ -635,7 +630,10 @@ body.dark .blog-callout {
   color: #fff;
   background-color: #28252B;
   border: 1px solid #121212;
-  padding: 3rem;
-  margin: 3rem 0;
-  line-height: 2em;
+}
+
+body.dark .code {
+  color: #B885F9;
+  background-color: #28252B;
+  border: 1px solid #121212;
 }
