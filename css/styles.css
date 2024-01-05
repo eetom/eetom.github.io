@@ -537,7 +537,7 @@ hr {
 }
 
 .checkbox-label {
-  background-color: #111;
+  background-color: #D9EFF4;
   width: 40px;
   height: 16px;
   border-radius: 50px;
@@ -550,7 +550,7 @@ hr {
 }
 
 .moon {
-  color: #f1c40f;
+  color: #FFE992;
 }
 
 .sun {
@@ -582,4 +582,8 @@ body.dark h3,
 body.dark p
 {
   color: #fff;
+}
+
+body.dark .checkbox-label {
+  background-color: #111;
 }
