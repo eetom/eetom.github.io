@@ -23,7 +23,7 @@ a.placeholder,
 a:visited.placeholder,
 a:hover.placeholder,
 .horizontal-nav a.placeholder {
-  color: rgb(191, 122, 132);
+  color: #2D72C2;
   font-style: italic;
   background-color: transparent;
   text-decoration: line-through;
@@ -169,6 +169,10 @@ h3 {
   border-left: solid 10px #000;
 }
 
+blockquote {
+  border-color: #B885F9;
+}
+
 /* ==================================== */
 
 /* ======= Image styling ======= */
@@ -244,6 +248,10 @@ h3 {
   border: 1px solid #333;
 }
 
+footer {
+  background-color: #121212;
+}
+
 /* ==================================== */
 
 /* ======= Table styling ======= */
@@ -260,6 +268,7 @@ th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+  font-weight: normal;
 }
 
 tr:nth-child(even) {
@@ -567,13 +576,14 @@ hr {
 }
 
 body.dark {
-  background-color: #292c35;
+  background-color: #292929;
 }
 
 body.dark h1,
 body.dark h2,
 body.dark h3,
-body.dark p
+body.dark p,
+body.dark li
 {
   color: #fff;
 }
@@ -583,24 +593,49 @@ body.dark hr {
 }
 
 body.dark .checkbox-label {
-  background-color: #111;
+  background-color: #0D1347;
 }
 
 body.dark a, body.dark a:visited {
-  color: #8E57B9;
+  color: #B885F9;
   text-decoration: underline;
   background-color: transparent;
 }
 
 body.dark a:hover {
-  color: #8E57B9;
-  background-color: #3B135A;
+  color: #B885F9;
+  background-color: #362748;
   text-decoration: underline;
 }
 
 body.dark a.placeholder, body.dark a:visited.placeholder, body.dark a:hover.placeholder {
-  color: #4B458A;
+  color: #60A1EE;
   font-style: italic;
   background-color: transparent;
   text-decoration: line-through;
+}
+
+body.dark cite {
+  color: #BDBDBD;
+}
+
+body.dark td,
+body.dark th {
+  border: 1px solid #121212;
+  text-align: left;
+  padding: 8px;
+  color: #fff;
+}
+
+body.dark tr:nth-child(even) {
+  background-color: #212121;
+}
+
+body.dark .blog-callout {
+  color: #fff;
+  background-color: #28252B;
+  border: 1px solid #121212;
+  padding: 3rem;
+  margin: 3rem 0;
+  line-height: 2em;
 }
