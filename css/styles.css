@@ -602,6 +602,11 @@ body.dark a, body.dark a:visited {
   background-color: transparent;
 }
 
+body.dark a:visited.main-title,
+body.dark a.main-title {
+  text-decoration: none;
+}
+
 body.dark a:hover {
   color: #B885F9;
   background-color: #362748;
