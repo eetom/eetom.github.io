@@ -19,19 +19,10 @@ a:hover {
   text-decoration: underline;
 }
 
-a.placeholder, .horizontal-nav a.placeholder {
-  color: rgb(191, 122, 132);
-  font-style: italic;
-  text-decoration: line-through;
-}
-
-a:visited.placeholder {
-  color: rgb(191, 122, 132);
-  font-style: italic;
-  text-decoration: line-through;
-}
-
-a:hover.placeholder {
+a.placeholder,
+a:visited.placeholder,
+a:hover.placeholder,
+.horizontal-nav a.placeholder {
   color: rgb(191, 122, 132);
   font-style: italic;
   background-color: transparent;
@@ -529,7 +520,10 @@ hr {
   height: 50%;
 }
 
-/* Testing dark mode */
+
+/* ########################## */
+/* DARK mode */
+/* ########################## */
 
 .checkbox {
   opacity: 0;
@@ -537,7 +531,7 @@ hr {
 }
 
 .checkbox-label {
-  background-color: #D9EFF4;
+  background-color: #f39c12;
   width: 40px;
   height: 16px;
   border-radius: 50px;
@@ -554,7 +548,7 @@ hr {
 }
 
 .sun {
-  color: #f39c12;
+  color: #fff;
 }
 
 .checkbox-label .ball {
@@ -584,6 +578,29 @@ body.dark p
   color: #fff;
 }
 
+body.dark hr {
+  border-top: 2px dotted #fff;
+}
+
 body.dark .checkbox-label {
   background-color: #111;
+}
+
+body.dark a, body.dark a:visited {
+  color: #8E57B9;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+body.dark a:hover {
+  color: #8E57B9;
+  background-color: #3B135A;
+  text-decoration: underline;
+}
+
+body.dark a.placeholder, body.dark a:visited.placeholder, body.dark a:hover.placeholder {
+  color: #4B458A;
+  font-style: italic;
+  background-color: transparent;
+  text-decoration: line-through;
 }
