@@ -12,12 +12,11 @@
         <a href="../words/words.html">/words</a>
         <a href="../img/images.html">/images</a>
         <a href="../about/about.html">/about</a>
-        <p>Light/Dark</p>
-        <div>
+        <div class="ml4">
           <input type="checkbox" class="checkbox" id="checkbox">
           <label for="checkbox" class="checkbox-label">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
+            <i class="material-icons moon" style="font-size: 16px;">dark_mode</i>
+            <i class="material-icons sun" style="font-size: 16px;">light_mode</i>
             <span class="ball"></span>
           </label>
         </div>
@@ -27,3 +26,11 @@
   </div>
 </div>
 <!-- End header -->
+
+
+<script>
+      const checkbox = document.getElementById("checkbox")
+      checkbox.addEventListener("change", () => {
+        document.body.classList.toggle("dark")
+      })
+</script>
