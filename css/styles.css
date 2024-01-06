@@ -27,6 +27,7 @@ a:hover.placeholder,
   font-style: italic;
   background-color: transparent;
   text-decoration: line-through;
+  cursor: not-allowed;
 }
 
 .footer-link a, .footer-link a:visited {
@@ -615,9 +616,19 @@ body.dark a, body.dark a:visited {
 }
 
 body.dark a:visited.main-title,
+body.dark a:hover.main-title,
+body.dark .header-text a,
+body.dark .header-text a:visited,
 body.dark a.main-title {
   text-decoration: none;
+  background-color: transparent;
   color: #fff;
+}
+
+body.dark .header-text a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+    color: #fff;
 }
 
 body.dark a:hover {

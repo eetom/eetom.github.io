@@ -49,6 +49,8 @@
 
   if (darkMode === "dark") {
     enableDarkMode(); // set state of darkMode on page load
+  } else {
+    disableDarkMode(); // start with light mode
   }
 
   toggleBtn.addEventListener("click", (e) => {
