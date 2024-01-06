@@ -249,7 +249,18 @@ blockquote {
 }
 
 footer {
-  background-color: #121212;
+  background-color: #222222;
+}
+
+.toggle-callout {
+  background-color: #FFF6E8;
+  color: #656565;
+  font-weight: 100;
+  padding: 0.4rem 0.7rem;
+  margin: 0;
+  width:fit-content;
+  display: flex;
+  align-items: center;
 }
 
 /* ==================================== */
@@ -619,6 +630,18 @@ body.dark a.placeholder, body.dark a:visited.placeholder, body.dark a:hover.plac
   color: #60A1EE;
 }
 
+body.dark .footer-link a,
+body.dark .footer-link a:hover,
+body.dark .footer-link a:visited {
+  color: hsla(0, 0%, 100%, .7);
+  text-decoration: none;
+}
+
+body.dark .footer-link a:hover {
+  background-color: transparent;
+  color: hsla(0, 0%, 100%, .9);
+}
+
 body.dark cite {
   color: #BDBDBD;
 }
@@ -627,6 +650,10 @@ body.dark td,
 body.dark th {
   border: 1px solid #121212;
   color: #fff;
+}
+
+body.dark .toggle-callout {
+  background-color: #23242C;
 }
 
 body.dark tr:nth-child(even) {

@@ -27,10 +27,9 @@
           <h1 class="lh-title mt2 mb1">OkayEric!</h1>
           <p class="f5 ttu spaced-out mt0 mb0">Projects, Learning, and Resources</p>
         </div>
-        <hr class="mb5 mt4 ml0 small-line" />
-
-          <p>Toggle light/dark mode</p>
-          <div>
+        <div class="toggle-callout">
+          <h4 class="mt0 mb0">Light/dark mode</h4>
+          <div class="ml3">
             <input type="checkbox" class="checkbox" id="checkbox">
             <label for="checkbox" class="checkbox-label">
               <i class="material-icons moon" style="font-size: 16px;">dark_mode</i>
@@ -38,6 +37,8 @@
               <span class="ball"></span>
             </label>
           </div>
+        </div>
+        <hr class="mb5 mt5 ml0 small-line" />
       </div>
 
       <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
@@ -119,7 +120,7 @@
   </body>
 
   <footer>
-    <footer class="bg-dark-gray white-70 pv5 pv5-l">
+    <footer class="white-70 pv5 pv5-l">
       <div class="cf pa3 pa4-m pa5-l mw9 center">
         <div class="fr w-100 w-80-l">
           <p class="f6">© 2024 Eric Tsai <br />Last updated in January 2024</p>
@@ -164,4 +165,37 @@
         'https://eetom.github.io/img/hosted/pano18.jpg',
         'https://eetom.github.io/img/hosted/pano19.jpg'];
   document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+</script>
+
+<script>
+  const toggleBtn = document.getElementById("checkbox");
+  let darkMode = localStorage.getItem("dark-mode");
+  // console.log(darkMode);
+
+  const enableDarkMode = () => {
+    document.body.classList.add("dark");
+    localStorage.setItem("dark-mode", "dark");
+    // console.log("dark mode on!");
+    // console.log(darkMode)
+  };
+
+  const disableDarkMode = () => {
+    document.body.classList.remove("dark");
+    localStorage.setItem("dark-mode", "light");
+    // console.log("dark mode off!");
+    // console.log(darkMode)
+  };
+
+  if (darkMode === "dark") {
+    enableDarkMode(); // set state of darkMode on page load
+  }
+
+  toggleBtn.addEventListener("click", (e) => {
+    darkMode = localStorage.getItem("dark-mode"); // update darkMode when clicked
+    if (darkMode === "light") {
+      enableDarkMode();
+    } else {
+      disableDarkMode();
+    }
+  });
 </script>
