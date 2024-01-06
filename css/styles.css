@@ -27,7 +27,6 @@ a:hover.placeholder,
   font-style: italic;
   background-color: transparent;
   text-decoration: line-through;
-  cursor: not-allowed;
 }
 
 .footer-link a, .footer-link a:visited {
