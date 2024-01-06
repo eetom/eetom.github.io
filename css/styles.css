@@ -614,11 +614,11 @@ body.dark a, body.dark a:visited {
   background-color: transparent;
 }
 
-body.dark a:visited.main-title,
-body.dark a:hover.main-title,
+body.dark .header-tex a:visited.main-title,
+body.dark .header-tex a:hover.main-title,
 body.dark .header-text a,
 body.dark .header-text a:visited,
-body.dark a.main-title {
+body.dark .header-tex a.main-title {
   text-decoration: none;
   background-color: transparent;
   color: #fff;
@@ -638,6 +638,7 @@ body.dark a:hover {
 
 body.dark a.placeholder, body.dark a:visited.placeholder, body.dark a:hover.placeholder {
   color: #60A1EE;
+  background-color:transparent;
 }
 
 body.dark .footer-link a,
