@@ -29,8 +29,39 @@
 
 
 <script>
-      const checkbox = document.getElementById("checkbox")
-      checkbox.addEventListener("change", () => {
-        document.body.classList.toggle("dark")
-      })
+      // const checkbox = document.getElementById("checkbox")
+      // checkbox.addEventListener("change", () => {
+      //   document.body.classList.toggle("dark")
+      // })
+
+const toggleBtn = document.getElementById("checkbox");
+  let darkMode = localStorage.getItem("dark-mode");
+  console.log(darkMode);
+
+  const enableDarkMode = () => {
+    document.body.classList.add("dark");
+    localStorage.setItem("dark-mode", "dark");
+    console.log("dark mode on!");
+    console.log(darkMode)
+  };
+
+  const disableDarkMode = () => {
+    document.body.classList.remove("dark");
+    localStorage.setItem("dark-mode", "light");
+    console.log("dark mode off!");
+    console.log(darkMode)
+  };
+
+  if (darkMode === "dark") {
+    enableDarkMode(); // set state of darkMode on page load
+  }
+
+  toggleBtn.addEventListener("click", (e) => {
+    darkMode = localStorage.getItem("dark-mode"); // update darkMode when clicked
+    if (darkMode === "light") {
+      enableDarkMode();
+    } else {
+      disableDarkMode();
+    }
+  });
 </script>

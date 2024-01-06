@@ -606,6 +606,7 @@ body.dark a, body.dark a:visited {
 body.dark a:visited.main-title,
 body.dark a.main-title {
   text-decoration: none;
+  color: #fff;
 }
 
 body.dark a:hover {
