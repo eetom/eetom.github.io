@@ -568,11 +568,11 @@ hr {
 }
 
 .sun {
-  color: #fff;
+  color: #FEFEFE;
 }
 
 .checkbox-label .ball {
-  background-color: #fff;
+  background-color: #FEFEFE;
   width: 22px;
   height: 22px;
   position: absolute;
@@ -597,11 +597,11 @@ body.dark h4,
 body.dark p,
 body.dark li
 {
-  color: #fff;
+  color: #FEFEFE;
 }
 
 body.dark hr {
-  border-top: 2px dotted #fff;
+  border-top: 2px dotted #FEFEFE;
 }
 
 body.dark .checkbox-label {
@@ -621,13 +621,13 @@ body.dark .header-text a:visited,
 body.dark .header-tex a.main-title {
   text-decoration: none;
   background-color: transparent;
-  color: #fff;
+  color: #FEFEFE;
 }
 
 body.dark .header-text a:hover {
     text-decoration: underline;
     background-color: transparent;
-    color: #fff;
+    color: #FEFEFE;
 }
 
 body.dark a:hover {
@@ -660,7 +660,7 @@ body.dark cite {
 body.dark td,
 body.dark th {
   border: 1px solid #121212;
-  color: #fff;
+  color: #FEFEFE;
 }
 
 body.dark .toggle-callout {
@@ -672,7 +672,7 @@ body.dark tr:nth-child(even) {
 }
 
 body.dark .blog-callout {
-  color: #fff;
+  color: #FEFEFE;
   background-color: #28252B;
   border: 1px solid #121212;
 }

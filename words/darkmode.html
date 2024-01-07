@@ -38,48 +38,200 @@
         </div>
 
         <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
-          <h2>Job Stories</h2>
+          <h2>Dark mode: the other side of the UI</h2>
           <p class="sub-title">
-            June 27, 2018 <br>
-            San Francisco, CA
+            January 6th, 2024 <br>
+            Bellevue, WA
           </p>
         </div>
 
         <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
-          <p class="code">When _____ , I want to _____ , so I can _____ .</p>
-          <p>
-            This is the format of a Job story. The goal is to break down user stories that are tied to specific user personas to
-            just focus on a set of discreet "jobs".
+          <img src="../img/hosted/jonatan-pie-h8nxGssjQXs-unsplash.jpg">
+          <p class="caption"><a
+            href="https://unsplash.com/photos/silhouette-of-off-road-car-h8nxGssjQXs?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">Photo by Jonatan Pie on Unsplash</a></p>
+
+
+          <h2>Hello darkness, my old friend...</h2>
+          <p class="caption">For best reading experince, try this in dark mode!!!</p>
+          <p>Seriously though, there are too many times at night or in a low lit environment where I wanted to open up a webpage on my phone and the website
+            is glaringly bright burn-through-your-retinas bright. Thank goodness for the wave of darkmode websites and mobile OS level settings that were all the
+            rage the last few years. I think it's very cool to use darkmode as a way for users to have some customized control over their web experience, both
+            in the browser and at the app/platform level.
           </p>
+
+          <img class="blog-img" src="../img/hosted/bright_screen.png">
+          <p class="caption"><a
+              href="https://unsplash.com/photos/man-in-black-jacket-sitting-on-the-edge-of-a-building-tR31ZX01wIE?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">Photo by Ben Collins on Unsplash</a> Edited by me for dramatic effect.</p>
+
+
           <p>
-            One of the main arguments for this is that personas are hard. They're hard to create, maintain, and really makes a lot
-            of assumptions.
+            There are a lot of 3rd party browser extensions that one could install to force that experience on to web pages that don't have dark mode enabled.
+            This is a nice option, but requires the user to install an extention for each of the browser they experience the web through. There really isn't much
+            choice sometimes. 
           </p>
+          <img class="blog-img" src="../img/hosted/darkmode_extention.png">
+          <p class="caption"><a href="https://chromewebstore.google.com/search/darkmode">Source: chrome web store</a></p>
+
+          <hr class="mb5 mt4 ml0 small-line" />
+          <h3>Part 1: Implementation, the how?</h3>
           <p>
-            Job stories focus on just the main function of the product.
+            What I've decided to do was to add dark mode to this website, but without the user having to toggle on/off their desired experience each time
+            they land here. (Not saying that I have that many repeat readers, so mostly for my own benefit.) The idea was to use <code>windows.localStorage</code> to save
+            the preference for beyond the session. (That would be using <code>sessionStorage</code> which would wipe clean once they close the tab/window.)
           </p>
+
+          <p>
+            First things first, we'll create a button to toggle between the modes.
+            I've added into my header a simple button that will toggle between a sun icon and a moon icon to indicate the two modes.
+          </p>
+
           <p class="code">
-            When [condition] + What [action] = What [result]
+              &lt;input type="checkbox" class="checkbox" id="checkbox"&gt; <br />
+              &lt;label for="checkbox" class="checkbox-label"&gt; <br />
+                &lt;i class="material-icons moon" style="font-size: 16px;"&gt;dark_mode&lt;/i&gt; <br />
+                &lt;i class="material-icons sun" style="font-size: 16px;"&gt;light_mode&lt;/i&gt; <br />
+                &lt;span class="ball"&gt;&lt;/span&gt; <br />
+              &lt;/label> <br />
           </p>
-          <p>
-            Example Time!
-          </p>
+          <p>This creates a nice little toggle like this...</p>
           <p class="code">
-            When I go to sleep, I want to set an alarm, so that I can wake up in the morning.
+              <input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox" class="checkbox-label">
+                <i class="material-icons moon" style="font-size: 16px;">dark_mode</i>
+                <i class="material-icons sun" style="font-size: 16px;">light_mode</i>
+                <span class="ball"></span>
+              </label>
           </p>
+
+          <p>Then we have to have a trigger for when the checkbox element is click we can move the ball to give that toggle animation effect</p>
+
+          <p class="code">
+            .checkbox-label { <br />
+            background-color: #f39c12; <br />
+            width: 40px; <br />
+            height: 16px; <br />
+            border-radius: 50px; <br />
+            position: relative; <br />
+            padding: 5px; <br />
+            cursor: pointer; <br />
+            display: flex; <br />
+            justify-content: space-between; <br />
+            align-items: center; <br />
+            }
+            <br />
+            .moon {<br />
+            color: #FFE992; /* add some color for the moon. */<br />
+            } <br />
+            <br />
+            .sun { <br />
+            color: #fff; /* add some color for the sun. */<br />
+            } <br />
+            <br />
+            .checkbox-label .ball { <br />
+            background-color: #fff; <br />
+            width: 22px; <br />
+            height: 22px; <br />
+            position: absolute; <br />
+            left: 2px; <br />
+            top: 2px; <br />
+            border-radius: 50%; <br />
+            transition: transform 0.2s linear; <br />
+            } <br />
+            <br />
+            /* here's the magic when checkbox is checked, this will move/transform the ball */
+            .checkbox:checked+.checkbox-label .ball { <br />
+            transform: translateX(24px);<br />
+            }<br />
+          </p>
+
+          <p>Once we have that set up the next thing will be to set up some Javascript to allow us to implement dark mode or switch back to light mode.</p>
+          <p>The idea here is that when the toggle is activated ("clicked on") it will prompt the code to add an extra CSS class ("dark") to the <code>Body</code> element.
+          We'll use this CSS class to then override the normal CSS "light mode" styling with a set of custom "dark mode" colors and styles.</p>
+
+          <p>The other thing we will want to implment is was concept we had earlier for have <code>windows.localStorage</code> to save values beyond the individual page.</p>
+
+          <p class="code">
+            &lt;script&gt; <br />
+              const toggleBtn = document.getElementById("checkbox"); <br />
+              let darkMode = localStorage.getItem("dark-mode"); <br />
+              <br />
+              const enableDarkMode = () => { <br />
+                document.body.classList.add("dark"); <br />
+                localStorage.setItem("dark-mode", "dark"); <br /> 
+              };<br />
+              <br />
+              const disableDarkMode = () => {<br />
+                document.body.classList.remove("dark");<br />
+                localStorage.setItem("dark-mode", "light");<br />
+              };<br />
+              <br />
+              if (darkMode === "dark") {<br />
+                enableDarkMode(); // set state of darkMode on page load<br />
+              } else {<br />
+                disableDarkMode(); // start with light mode<br />
+              }<br />
+              <br />
+              toggleBtn.addEventListener("click", (e) => {<br />
+                darkMode = localStorage.getItem("dark-mode"); // update darkMode when clicked<br />
+                if (darkMode === "light") {<br />
+                  enableDarkMode();<br />
+                } else {<br />
+                  disableDarkMode();<br />
+                }<br />
+              });<br />
+            &lt;/script&gt;<br />
+          </p>
+
+          <p>To be honest, I'm still having some issues with this, maybe i'll figure it out later. The on load state of the toggle sometimes is reversed. It'll be in light mode but the icon is the moon.
+            and then clicking on it will turn to dark mode, but the icon will be the sun. I'll leave it for future Eric to solve that problem.
+          </p>
+
+          <hr class="mb5 mt4 ml0 small-line" />
+            
+          <h3>Part 2: Designing a dark mode experience</h3>
           <p>
-            If we try to use a user story =
-            As a person who needs to wake up in the morning at a specific time and often oversleeps (?) I want to set an alarm, so
-            that I can wake up in the morning.
+            So now we have a cool toggle button, we still need to decide what dark mode how will actually look and feel. I'm more use to designing for white backgrounds 
+            and the required amount of contrast from the fonts and colors. But how different will dark mode alterantive be?
           </p>
+
+          <img class="blog-img" src="../img/hosted/google_material_design_dark.png">
+          <p class="caption"><a href="https://m2.material.io/design/color/dark-theme.html">Material Design dark theme</a>. Google has a lot of documentation they set up for working with dark themes in Android.</p>
+
           <p>
-            Replace persona with situation. Because situations are universal, anyone can be in that situation.
+            For example, the background color that is recommended is <code>dark grey #121212</code>. This is because dark grey is less contrasty than black and is better for less eye strain.
+            White/light color text on dark grey is a bit more readable.
           </p>
+
+          <p>
+            Another point from Material design, is the use of the theme primary color. In light mode / light backgrounds, there is a case to use the primary color more frequently.
+            But in the world of dark mode, the suggestion is to use color more sparingly, a bit more of a desaturated theme rather than just inverted light theme.
+          </p>
+
+
+          <hr class="mb5 mt4 ml0 small-line" />
           
+          <h3>Part 3: Other considerations</h3>
+
+          <h4>Operating system level dark mode</h4>
           <p>
-            Sources: <a href="https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27">Job to be done - Medium
-              Article</a>
+            asdfasdf
           </p>
+
+          <h4>Other ways to store user preferences</h4>
+          <p>
+            asdfasdf
+          </p>
+
+          <h4>Darkend dark images</h4>
+          <p>
+            asdfasdf
+          </p>
+
+          <h4>Dark mode shadows</h4>
+          <p>
+            asdfasdf
+          </p>
+        </div>
       </div>
       
       <div class="fr w-100 w-80-l"> <!-- this is a line break -->
