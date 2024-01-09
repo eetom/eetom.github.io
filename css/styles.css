@@ -657,6 +657,10 @@ body.dark cite {
   color: #BDBDBD;
 }
 
+body.dark img {
+  filter: brightness(.8) contrast(1.2);
+}
+
 body.dark td,
 body.dark th {
   border: 1px solid #121212;
