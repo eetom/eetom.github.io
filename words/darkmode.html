@@ -46,10 +46,10 @@
         </div>
 
         <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
-          <img src="../img/hosted/jonatan-pie-h8nxGssjQXs-unsplash.jpg">
+          <img class="blog-img" src="../img/hosted/bright_screen.png">
           <p class="caption"><a
-            href="https://unsplash.com/photos/silhouette-of-off-road-car-h8nxGssjQXs?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">Photo by Jonatan Pie on Unsplash</a></p>
-
+              href="https://unsplash.com/photos/man-in-black-jacket-sitting-on-the-edge-of-a-building-tR31ZX01wIE?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">Photo
+              by Ben Collins on Unsplash</a> Edited by me for dramatic effect.</p>
 
           <h2>Hello darkness, my old friend...</h2>
           <p class="caption">For best reading experince, try this in dark mode!!!</p>
@@ -58,11 +58,6 @@
             rage the last few years. I think it's very cool to use darkmode as a way for users to have some customized control over their web experience, both
             in the browser and at the app/platform level.
           </p>
-
-          <img class="blog-img" src="../img/hosted/bright_screen.png">
-          <p class="caption"><a
-              href="https://unsplash.com/photos/man-in-black-jacket-sitting-on-the-edge-of-a-building-tR31ZX01wIE?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">Photo by Ben Collins on Unsplash</a> Edited by me for dramatic effect.</p>
-
 
           <p>
             There are a lot of 3rd party browser extensions that one could install to force that experience on to web pages that don't have dark mode enabled.
@@ -186,6 +181,10 @@
             and then clicking on it will turn to dark mode, but the icon will be the sun. I'll leave it for future Eric to solve that problem.
           </p>
 
+          <img class="blog-img" src="../img/hosted/toggleerror.png">
+          <p class="caption">You can see here that the "sun" is dark...and when you click on it, the moon is bright.</p>
+
+
           <hr class="mb5 mt4 ml0 small-line" />
             
           <h3>Part 2: Designing a dark mode experience</h3>
@@ -202,35 +201,152 @@
             White/light color text on dark grey is a bit more readable.
           </p>
 
+          <img class="blog-img" src="../img/hosted/materialdark.png">
+          <p class="caption"><a href="https://m2.material.io/design/color/dark-theme.html">Material Design dark theme</a>. Google
+            suggestion on how to create and design dark mode color themes.</p>
+
           <p>
             Another point from Material design, is the use of the theme primary color. In light mode / light backgrounds, there is a case to use the primary color more frequently.
             But in the world of dark mode, the suggestion is to use color more sparingly, a bit more of a desaturated theme rather than just inverted light theme.
           </p>
 
+          <p>What I ended up with for my color themes are ..</p>
+
+          <img class="blog-img" src="../img/hosted/mycolorthemes.png">
+          <p class="caption">I'm sure this will change over time, I'm always adjusting and changing things as I add or remove new stuff to this website.</p>
+
+
+          <img class="blog-img" src="../img/hosted/darklightfinal.png">
+          <p class="caption">Here the side by side for my dark mode theme and light mode theme.</p>
+
+
 
           <hr class="mb5 mt4 ml0 small-line" />
           
-          <h3>Part 3: Other considerations</h3>
+          <h3>Part 3: Other considerations for working with dark mode</h3>
 
-          <h4>Operating system level dark mode</h4>
+          <ul>
+            <li>Operating system level dark mode</li>
+            <p>
+              Something you can add to your code is to align with system level dark/light mode settings. To do this we'll be working with the <code>prefers-color-scheme</code> CSS custom property.
+              You can have it at either <code>no preference</code>, <code>light</code>, or <code>dark</code>. The place to apply this is in your CSS media queries (this is activated by the state of your
+              viewport/screen). In this case, we'll be looking for any system level light/dark mode settings.
+            </p>
+
+            <p class="code">
+              /* For example, if you have this code.. */
+              <br />
+              @media (prefers-color-scheme: dark) {<br />
+              body {<br />
+              color: #eee;<br />
+              background: #121212;<br />
+              }<br />
+              <br />
+              a {<br />
+              color: #809fff;<br />
+              }<br />
+              }<br />
+
+              /* When the system is set to dark mode, the browser settings will also be set to dark mode. */
+            </p>
+            
+            <li>Other ways to store user preferences</li>
+            <p>
+              The two main ways that I've researched for storing user preferences for websites are to either use
+              <code>localStorage</code> or cookies (with a server side language).
+              I've opted to use the <code>localStorage</code> as I didn't want to get into optimizing cookies and working with PHP.
+            </p>
+
+            <p>I'm not very familiar with PHP and other server side languages, but for those who want to find out more check out this 
+              <a href="https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#storing-preferences">section</a> of the CSS-tricks: a complete
+            guide to dark mode on the web.</p>
+            
+            <li>Darkend dark images</li>
+            <p>
+              Something to consider when switching over to dark mode is to think about how images look in dark mode. We have made
+              changes to the text and background colors, but images can be still very bright and harsh on the eyes in a dark
+              envrionment.
+              Something that can be suggested it to lower the brightness of the image, but slight up the contrast to retain the
+              details. From the <a href="https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/">CSS-tricks: a complete
+                guide to dark mode on the web</a>,
+              I've used their suggestion to add an css <code>filter: brightness (.8) contrast (1.2)</code> to my images to adjust
+              for a dark viewing environment.
+            </p>
+            
+            <p class="code">
+              body.dark img { <br />
+              filter: brightness(.8) contrast(1.2);<br />
+              }<br />
+            </p>
+
+            <img class="blog-img" src="../img/hosted/filterbrightness.png">
+            <p class="caption">Adjusting the brightness and contrast to keep the image from being too bright for viewing in dark mode</p>
+
+            
+            <li>Dark mode shadows</li>
+            <p>
+              Something that is suggested is to also consider the shadows used in light mode and dark mode. My website doesn't
+              really use shadows so this probably won't be something I'll add, but the idea
+              is that it doesn't look good inverted. Instead of using shadows, try changing the background color of the components
+              so that there is a dept effect, where lighter elements "float" to the top
+              and darker elements are "lower".
+            </p>
+
+            <img class="blog-img" src="../img/hosted/dropshadow.png">
+            <p class="caption">Light shadow looks strange on dark backgrounds. We're more use to seeing shadows as additional darkness not light.</p>
+
+
+            <li>Browser User Agent theme</li>
+            <p>When you are working with default browser ui, such as buttons, scroll bars and checkboxes, you can also adjust this over to match the mode your page is in.
+              Using the <code>color-scheme</code> css attribute, you can set the system colors to <code>dark</code>, <code>light</code>, <code>only dark</code> and <code>only light</code>.
+              Note that <code>only dark</code> and <code>only light</code> are not supported across many browsers (I think only iOS Safari and desktop Safari support it currently.) Check out
+              <a href="https://css-tricks.com/almanac/properties/c/color-scheme/">css-tricks: CSS Almanac → Properties → C → color-scheme</a> for more about color scheme.
+            </p>
+            <p class="code">
+              color-scheme: normal; <br />
+              color-scheme: light;<br />
+              color-scheme: dark;<br />
+              color-scheme: light dark;<br />
+              color-scheme: dark light;<br />
+              color-scheme: only light;<br />
+              color-scheme: only dark;<br />
+            </p>
+          </ul>
+
+          <hr class="mb5 mt4 ml0 small-line" />
+
+          <h3>Conclusion: Dark learnings</h3>
+
           <p>
-            asdfasdf
+            Adding in a dark theme mode, even if its to just match the system prefereces is not hard, but it can have very visible impact on user experience on the website.
+            I've had many times where I open my web page to show friends only to be blasted by light in a darker environment. (This may be due to how dark and gloomy it is here
+            in the pacific northwest in the winter time.) But getting to back to the topic at hand, dark mode really adds another layer of thinking to how you might approach
+            varible experiences for web. Regardless of the reason, there are considerations for colors, fonts, layouts, and even how images sit on different background colors.
+            This was a good exercies for me to really think about even how I appraoch these factors in light mode. I hope you also consider the learnings and maybe add a 
+            dark mode option for your website.
           </p>
 
-          <h4>Other ways to store user preferences</h4>
-          <p>
-            asdfasdf
-          </p>
+          <hr class="mb5 mt4 ml0 small-line" />
 
-          <h4>Darkend dark images</h4>
-          <p>
-            asdfasdf
-          </p>
+          <h3>References</h3>
+          <ul class="mb6">
+            <li><a href="https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/">CSS-tricks: a complete
+              guide to dark mode on the web</a>, this was about 90% of where I learned about dark mode, can't get any better than this. Great resource.</li>
+            <li><a href="https://chromewebstore.google.com/search/darkmode">Chrome web store: Dark mode apps</a> This was used just to get a sense of what
+            types of dark mode apps and UIs were out there.</li>
+            <li><a href="https://m2.material.io/design/color/dark-theme.html">Material Design dark theme</a>. This was the other 10% of my resources for learning
+            dark mode. The materials design team really put some good thought into how to standarize dark mode systematically.</p></li>
+            <li>Of course this wouldn't be a coding experiment from me with out...StackOverflow!</li>
+            <ul>
+              <li><a
+                  href="https://stackoverflow.com/questions/56980241/is-there-a-way-to-make-a-constant-dark-mode-by-using-local-storage">Is
+                  there a way to make a constant dark mode by using local storage</a></li>
+              <li><a href="https://stackoverflow.com/questions/61045285/how-do-i-set-dark-mode-theme-across-multiple-pages">How do I
+                  set dark mode theme across multiple pages</a></li>
+            </ul>
+          </ul>
 
-          <h4>Dark mode shadows</h4>
-          <p>
-            asdfasdf
-          </p>
+
         </div>
       </div>
       
