@@ -37,7 +37,7 @@
           </p> 
         </div>
 
-        <div class="fl-ns w-50-m w-20-l pr3-m pr5-l"> <!-- Side Title -->
+        <div class="fl-ns w-100 w-20-l pr3-m pr5-l"> <!-- Side Title -->
           <h2>Moving Commits into a new branch</h2>
           <p class="sub-title">
             October 24, 2017 <br>
@@ -45,13 +45,13 @@
           </p>
         </div>
 
-        <div class="fl-ns w-50-m w-60-l pr3-m pr5-l">
+        <div class="fl-ns w-100 w-60-l pr3-m pr5-l">
           <p>Sometimes I make the mistake of not starting a new branch before I start editing code, especially if i'm the only one
             working on a repository and there is only the master branch.</p>
           
           <p>To fix this I looked it up on stackoverflow and this is the best answer I have found.</p>
 
-          <br />
+          <hr class="mb5 mt4 ml0 small-line" />
           
           <h3 class="writing-subtitle">Step 1: How many commits in are we?</h3>
           <p class="code">User$ git log</p>
@@ -69,20 +69,20 @@
             This is fine, leave this in master
           </p>
           
-          <br />
+          <hr class="mb5 mt4 ml0 small-line" />
           
           <h3 class="writing-subtitle">Step 2: Discarding the commits temporarily</h3>
           <p class="code">User$ git reset --keep HEAD~3</p>
           <p>This discards the "3" most recent commits temporarily because it doesn't "throw away" the changes, change
             this number to the number of commits you want to roll back</p>
           
-          <br />
+          <hr class="mb5 mt4 ml0 small-line" />
           
           <h3 class="writing-subtitle">Step 3: Creating a new branch</h3>
           <p class="code">User$ git checkout -t -b newbranchname</p>
           <p>This creates and switches to a new branch based off of the new master branch that has been rolled back</p>
           
-          <br />
+          <hr class="mb5 mt4 ml0 small-line" />
           
           <h3 class="writing-subtitle">Step 4: Cherry pick it</h3>
           <p class="code">User$ git cherry-pick ..HEAD@{2}</p>
@@ -97,13 +97,15 @@
             Your branch is ahead of 'master' by 1 commit. <br>
             (use "git push" to publish your local commits)
           </p>
+
+          <hr class="mb5 mt4 ml0 small-line" />
           
-          <p>And that's all there is to it. A simple 4 step process! To read more about this
+          <p>And that's all there is to it. A simple 4 step process! <br> To read more about this
             go to the <a
               href="https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git/36463546#36463546">stackoverflow
               page</a>.</p>
 
-          <p class="mb6"></p>
+          <p class="mb5"></p>
         </div>
       </div>
 
