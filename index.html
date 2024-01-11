@@ -171,31 +171,32 @@
 <script>
   const toggleBtn = document.getElementById("checkbox");
   let darkMode = localStorage.getItem("dark-mode");
-  // console.log(darkMode);
+  console.log(darkMode);
 
   const enableDarkMode = () => {
     document.body.classList.add("dark");
     localStorage.setItem("dark-mode", "dark");
-    // console.log("dark mode on!");
-    // console.log(darkMode)
   };
 
   const disableDarkMode = () => {
     document.body.classList.remove("dark");
     localStorage.setItem("dark-mode", "light");
-    // console.log("dark mode off!");
-    // console.log(darkMode)
+
   };
 
   if (darkMode === "dark") {
     enableDarkMode(); // set state of darkMode on page load
+  } else {
+    disableDarkMode(); // start with light mode
   }
 
   toggleBtn.addEventListener("click", (e) => {
     darkMode = localStorage.getItem("dark-mode"); // update darkMode when clicked
     if (darkMode === "light") {
+      document.getElementById("checkbox").checked = true;
       enableDarkMode();
     } else {
+      document.getElementById("checkbox").checked = false;
       disableDarkMode();
     }
   });

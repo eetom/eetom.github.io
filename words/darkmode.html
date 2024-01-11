@@ -178,11 +178,24 @@
           </p>
 
           <p>To be honest, I'm still having some issues with this, maybe i'll figure it out later. The on load state of the toggle sometimes is reversed. It'll be in light mode but the icon is the moon.
-            and then clicking on it will turn to dark mode, but the icon will be the sun. I'll leave it for future Eric to solve that problem.
+            and then clicking on it will turn to dark mode, but the icon will be the sun. I'll leave it for Future-Eric™ to solve that problem.
           </p>
 
           <img class="blog-img" src="../img/hosted/toggleerror.png">
           <p class="caption">You can see here that the "sun" is dark...and when you click on it, the moon is bright.</p>
+
+          <div class="blog-callout">
+            <h3>Future-Eric™ here!</h3>
+            <p>
+              I've fixed the problem. The issue was that when the <code>localStorage</code> was set to <code>dark</code> and the page was refreshed, the default
+              position for the label is "light mode". So what I've added was when the page loads and it's checking if <code>localStorage</code> is <code>dark</code> it'll also check the
+              <code>#checkbox</code> automatically to set it to the correct toggle position. 
+            </p>
+            <p><code>document.getElementById("checkbox").checked = true;</code></p>
+            <p>and</p>
+            <p><code>document.getElementById("checkbox").checked = false;</code></p>
+            <p>if it's light mode just to make sure the checkbox is unchecked and toggle in the light mode position.</p>
+          </div>
 
 
           <hr class="mb5 mt4 ml0 small-line" />
