@@ -304,7 +304,7 @@ tr:nth-child(even) {
 #the-sticky-div.sticky {
   position: fixed;
   top: 10px;
-  width: 14em;
+  width: 13em;
   max-width: 275px;
 }
 
@@ -395,9 +395,14 @@ hr {
   border-radius: 2px;
 }
 
-/* ======= Responsive stuff ======= */
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Responsive stuff etc */
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
-/* Medium size screen */
+/* ########################## */
+/* MEDIUM size screen */
+/* ########################## */
+
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .img-nav {
       width: 40%;
@@ -417,9 +422,16 @@ hr {
   .popupClose {
     display: none;
   }
+  h2.f1 {
+    font-size: 2.5rem;
+  }
 }
 
-/* Small size screen */
+
+/* ########################## */
+/* SMALL MOBILE size screen */
+/* ########################## */
+
 @media screen and (max-width: 30em) {
   .horizontal-nav {
       display: block;
@@ -476,10 +488,17 @@ hr {
   .popupClose {
     display: none;
   }
+
+  h2.f1 {
+    font-size: 2rem;
+  }
 }
 
 
-/* Image modal pop up */
+/* ########################## */
+/* IMAGE MODAL pop up */
+/* ########################## */
+
 .popupHolder {
   visibility: hidden;
   position: fixed;
@@ -643,6 +662,7 @@ body.dark a:hover {
 body.dark a.placeholder, body.dark a:visited.placeholder, body.dark a:hover.placeholder {
   color: #60A1EE;
   background-color:transparent;
+  text-decoration: line-through;
 }
 
 body.dark .footer-link a,
