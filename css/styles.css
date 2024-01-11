@@ -183,6 +183,7 @@ blockquote {
 
 .blog-img {
   max-height: 450px;
+  border: 1px solid #333;
 }
 
 .small-img {
@@ -242,10 +243,6 @@ blockquote {
 
 .blog-callout h3 {
   margin-top: 0;
-}
-
-.blog-img-border {
-  border: 1px solid #333;
 }
 
 footer {
@@ -605,12 +602,20 @@ hr {
   transform: translateX(24px);
 }
 
+body.dark .blog-img {
+  border: 1px solid #777;
+}
+
 body.dark {
   background-color: #292929;
 }
 
 body.dark .work-title {
   background-color: #4A4A4A;
+}
+
+body.dark .popup {
+  background: #292929;
 }
 
 body.dark h1,
