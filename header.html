@@ -45,18 +45,18 @@
   };
 
   if (darkMode === "dark") {
+    document.getElementById("checkbox").checked = true;
     enableDarkMode(); // set state of darkMode on page load
   } else {
+    document.getElementById("checkbox").checked = false;
     disableDarkMode(); // start with light mode
   }
 
   toggleBtn.addEventListener("click", (e) => {
     darkMode = localStorage.getItem("dark-mode"); // update darkMode when clicked
     if (darkMode === "light") {
-      document.getElementById("checkbox").checked = true;
       enableDarkMode();
     } else {
-      document.getElementById("checkbox").checked = false;
       disableDarkMode();
     }
   });

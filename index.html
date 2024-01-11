@@ -98,6 +98,7 @@
         </div>
       
         <div class="fl-ns w-100 w-60-l pr3-m pr5-l mb5">
+            <p><b>01/11/2024</b>  <a href="seattle2023.html">🧭 Seattle Recommendations - 2023 version</a></p>
             <p><b>01/10/2024</b>  <a href="/words/darkmode.html">🕶️ Dark mode: the other side of the UI</a></p>
             <p><b>12/14/2023</b>  <a href="/img/roadtrippt2.html">📷 California Roadtrip 2023 part 2 - San Francisco to Solvang, CA: Color</a></p>
             <p><b>12/14/2023</b>  <a href="/img/sfbw.html">📷 May in San Francisco, CA: Black & White (Updated photos)</a></p>
@@ -109,8 +110,6 @@
             <p><b>11/06/2023</b>  <a href="/img/oregoncoastleica.html">📷 Oregon coast part 2 Cannon Beach,OR: Black & white</a></p>
             <p><b>11/03/2023</b>  <a href="/words/sniptest.html">🎞️ Snip test: Test your film chemicals</a></p>
             <p><b>11/02/2023</b>  <a href="/img/oregoncoastwp1.html">📷 Oregon coast part 1 Cannon Beach,OR: Black & white</a></p>
-            <p><b>11/01/2023</b>  <a href="/img/bobcorn.html">📷 Bob's corn maze Snohomish, WA: Black & White</a></p>
-            <p><b>10/30/2023</b>  <a href="/words/turboshot.html">☕ Turbo shot espresso: Need for speed</a></p>
         </div>
 
         <div class="fr w-100 w-80-l"> <!-- this is a line break -->
@@ -185,18 +184,18 @@
   };
 
   if (darkMode === "dark") {
+    document.getElementById("checkbox").checked = true;
     enableDarkMode(); // set state of darkMode on page load
   } else {
+    document.getElementById("checkbox").checked = false;
     disableDarkMode(); // start with light mode
   }
 
   toggleBtn.addEventListener("click", (e) => {
     darkMode = localStorage.getItem("dark-mode"); // update darkMode when clicked
     if (darkMode === "light") {
-      document.getElementById("checkbox").checked = true;
       enableDarkMode();
     } else {
-      document.getElementById("checkbox").checked = false;
       disableDarkMode();
     }
   });
