@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Password protected area"
+AuthUserFile work/.htpassword
+Require valid-user
