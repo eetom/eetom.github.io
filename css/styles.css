@@ -333,12 +333,13 @@ tr:nth-child(even) {
 #the-sticky-div.sticky {
   position: fixed;
   top: 10px;
-  width: 13em;
+  left: 70%;
+  width: 16em;
   max-width: 275px;
 }
 
 #the-sticky-div.sticky h2 {
-  font-size: 34px;
+  font-size: 30px;
 }
 
 #the-sticky-div.sticky hr.small-line {
@@ -429,6 +430,33 @@ hr {
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 /* ########################## */
+/* Custom sizes for side nav */
+/* ########################## */
+
+
+@media screen and (min-width: 1800px) {
+  #the-sticky-div.sticky {
+    left: 68vw;
+    width: 20rem;
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #the-sticky-div.sticky {
+    left: 66vw;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  #the-sticky-div.sticky {
+    left: 64vw;
+  }
+}
+
+
+
+/* ########################## */
 /* MEDIUM size screen */
 /* ########################## */
 
@@ -444,6 +472,7 @@ hr {
     position: relative;
     width: 100%;
     max-width: 100%;
+    left: 0%
   }
   #the-sticky-div hr.small-line {
     width: 100%;
