@@ -3,20 +3,37 @@
 
 /* ======= Link styling ======= */
 a {
-	color: #230526;
+	color: #9869D3;
   text-decoration: underline;
   background-color: transparent;
+  padding: 0.1rem;
 }
 
 a:visited {
-	color: #362B37;
+	color: #9B7C9E;
   text-decoration: underline;
 }
 
 a:hover {
-	color: #840A91;
-  background-color: #EFE4F0;
+	color: #48118F;
+  background-color: #E0D8FF;
   text-decoration: underline;
+}
+
+.img-nav a.placeholder,
+.img-nav a:visited.placeholder,
+.img-nav a:hover.placeholder,
+.img-sub a,
+.img-sub a:visited,
+.img-sub a:hover {
+  padding: 0;
+  background-color: transparent;
+}
+
+.img-sub h3 a:hover {
+  background-color: #E0D8FF;
+  text-decoration: underline;
+  padding: 0.1rem;
 }
 
 a.placeholder,
@@ -30,7 +47,7 @@ a:hover.placeholder,
 }
 
 .footer-link a, .footer-link a:visited {
-  color: hsla(0, 0%, 100%, .7);
+  /* color: hsla(0, 0%, 100%, .7); */
   display: flex;
   flex-direction: row;
   margin-bottom: 0.5rem;
@@ -117,6 +134,10 @@ h3 {
   color: #1B1B1B;
   font-weight:100;
   font-size: 1.4rem;
+}
+
+.img-nav h3{
+  margin-top: 1rem;
 }
 
 .sub-title {
@@ -246,8 +267,19 @@ blockquote {
 }
 
 footer {
-  background-color: #222222;
+  /* background-color: #222222; */
+  background-color: #F6F5F1;
+  color: #1B1B1B;
 }
+
+.footer-link a,
+.footer-link a:hover,
+.footer-link a:visited {
+  color: hsla(0, 0%, 100%, .7);
+  text-decoration: none;
+}
+
+
 
 .toggle-callout {
   background-color: #FFF6E8;
@@ -607,7 +639,11 @@ body.dark .blog-img {
 }
 
 body.dark {
-  background-color: #292929;
+  background-color: #121212;
+}
+
+body.dark footer {
+  background-color: #0B0B0B;
 }
 
 body.dark .work-title {
@@ -636,10 +672,20 @@ body.dark .checkbox-label {
   background-color: #0D1347;
 }
 
-body.dark a, body.dark a:visited {
+body.dark a {
   color: #B885F9;
   text-decoration: underline;
   background-color: transparent;
+}
+
+body.dark a:visited {
+  color: #9B7C9E;
+}
+
+body.dark a:hover {
+  color: #48118F;
+  background-color: #AFA9C3;
+  text-decoration: underline;
 }
 
 body.dark .header-tex a:visited.main-title,
@@ -658,13 +704,9 @@ body.dark .header-text a:hover {
     color: #FEFEFE;
 }
 
-body.dark a:hover {
-  color: #B885F9;
-  background-color: #362748;
-  text-decoration: underline;
-}
-
-body.dark a.placeholder, body.dark a:visited.placeholder, body.dark a:hover.placeholder {
+body.dark a.placeholder, 
+body.dark a:visited.placeholder, 
+body.dark a:hover.placeholder {
   color: #60A1EE;
   background-color:transparent;
   text-decoration: line-through;
