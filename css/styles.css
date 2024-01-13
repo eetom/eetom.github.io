@@ -654,6 +654,10 @@ hr {
     max-width: 100%;
   }
 
+  .small-line {
+    width: 35%;
+  }
+
   .img-nav {
     width: 50%;
   }
@@ -839,7 +843,7 @@ body.dark .checkbox-label {
 }
 
 body.dark a {
-  color: #B885F9;
+  color: #9B7C9E;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -849,8 +853,8 @@ body.dark a:visited {
 }
 
 body.dark a:hover {
-  color: #48118F;
-  background-color: #AFA9C3;
+  color: #B885F9;
+  background-color: #261931;
   text-decoration: underline;
 }
 
