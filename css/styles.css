@@ -378,7 +378,7 @@ tr:nth-child(even) {
 
 .horizontal-nav-index {
   display: flex;
-  margin-left: 16px;
+  flex-wrap: wrap;
 }
 
 .horizontal-nav-index a{
@@ -649,7 +649,7 @@ hr {
   }
 
   .img-nav {
-    width: 100%;
+    width: 50%;
   }
 
   .math-box {
@@ -666,10 +666,6 @@ hr {
 
   #the-sticky-div hr.small-line {
     width: 100%;
-  }
-
-  .horizontal-nav-index {
-    display: block;
   }
 
   .popupClose {
