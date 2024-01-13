@@ -147,7 +147,8 @@ a.deprecated-link:hover {
 
 .font {
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: linear-gradient(0deg, #F6F5F1, #FEFEFE 20%);
+  /* background: linear-gradient( red, #FEFEFE 40%); */
+  background: linear-gradient(#fff, #F0EAF2 15%, #FEFEFE 45%);
 }
 
 p.playfair {
@@ -300,16 +301,16 @@ blockquote {
 }
 
 footer {
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
-  border-top: 1px solid #CCC;
-  background-color: #F6F5F1;
-  color: #1B1B1B;
+  border-top: 1px solid #DDD;
+  background-color: #F1EEF2;
+  color: #796F81;
 }
 
 .footer-link a,
 .footer-link a:visited {
-  color: #292929;
+  color: #796F81;
   text-decoration: none;
 }
 
