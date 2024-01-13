@@ -307,6 +307,12 @@ footer {
   color: #796F81;
 }
 
+.footer-flex-columns {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+
 .footer-link a,
 .footer-link a:visited {
   color: #796F81;
@@ -800,6 +806,10 @@ body.dark {
 body.dark footer {
   background-color: #0B0B0B;
   border-top: 1px solid #2A2A2A;
+}
+
+body.dark footer p {
+  color: #AAAAAA;
 }
 
 body.dark .work-title {
