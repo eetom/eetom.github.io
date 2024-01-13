@@ -376,6 +376,15 @@ tr:nth-child(even) {
   margin-left: 16px;
 }
 
+.horizontal-nav-index {
+  display: flex;
+  margin-left: 16px;
+}
+
+.horizontal-nav-index a{
+  margin-right: 1rem;
+}
+
 .horizontal-flex {
   display: flex;
   flex-direction: row;
@@ -657,6 +666,10 @@ hr {
 
   #the-sticky-div hr.small-line {
     width: 100%;
+  }
+
+  .horizontal-nav-index {
+    display: block;
   }
 
   .popupClose {
