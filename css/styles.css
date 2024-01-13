@@ -6,7 +6,7 @@ a {
 	color: #9869D3;
   text-decoration: underline;
   background-color: transparent;
-  padding: 0.1rem;
+  padding: 0.2rem;
 }
 
 a:visited {
@@ -60,14 +60,16 @@ a:hover.placeholder,
   background-color: transparent;
 }
 
-.horizontal-nav a {
+.horizontal-nav a, .horizontal-nav a:hover {
   margin-right: 1rem;
   color:#1B1B1B;
+  background-color: transparent;
 }
 
 a.main-title, a:hover.main-title, a:visited.main-title {
   text-decoration: none;
   color: #1B1B1B;
+  background-color: transparent;
 }
 
 .lockednav-links {
@@ -147,7 +149,7 @@ a.deprecated-link:hover {
 
 .font {
   font-family: 'Roboto Condensed', sans-serif;
-  background: linear-gradient(#fff, #F0EAF2 15%, #FEFEFE 45%);
+  background: linear-gradient(#F5F0F7, #F5F0F7 10%, #FEFEFE 45%);
 }
 
 p.playfair {
@@ -194,7 +196,7 @@ h3 {
 }
 
 .code {
-  /* font-family: 'Courier', 'Monaco'; */
+  font-family: 'Space Mono', monospace;
   color: #56215C;
   padding: 1.5rem;
   background-color: #F5F3F6;
@@ -552,6 +554,8 @@ hr {
 
   .horizontal-nav.active a {
     padding: 1.5rem 0;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
   }
 
   .horizontal-nav.active a:hover {
@@ -560,11 +564,12 @@ hr {
 
   .horizontal-nav.active a:hover.placeholder {
     background-color: transparent;
-    color: #60A1EE;
+    color: #2D72C2;
   }
 
   .horizontal-nav.active a.closeout {
     display: inline;
+    font-size: 16px;
     background-color: transparent;
     text-decoration: none;
     margin-top: 2rem;
