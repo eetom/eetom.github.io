@@ -147,7 +147,6 @@ a.deprecated-link:hover {
 
 .font {
   font-family: 'Roboto Condensed', sans-serif;
-  /* background: linear-gradient( red, #FEFEFE 40%); */
   background: linear-gradient(#fff, #F0EAF2 15%, #FEFEFE 45%);
 }
 
@@ -794,7 +793,8 @@ body.dark .blog-img {
 }
 
 body.dark {
-  background-color: #121212;
+  /* background-color: #121212; */
+  background: linear-gradient(#151515, #121212 15%, #151515 45%);
 }
 
 body.dark footer {
