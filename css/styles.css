@@ -16,7 +16,7 @@ a:visited {
 
 a:hover {
 	color: #48118F;
-  background-color: #E0D8FF;
+  background-color: #F1EEFF;
   text-decoration: underline;
 }
 
@@ -102,13 +102,52 @@ a.deprecated-link:hover {
   cursor: not-allowed;
 }
 
+.dropdown-nav {
+  display: none;
+  margin: 0 1rem;
+}
+
+.dropdown-nav button {
+  background-color: #FAFAFA;
+  color: #1b1b1b;
+  border: 1px solid #D6D8DB;
+  border-radius: 8px;
+  padding: 10px 14px;
+  min-height: 32px;
+  min-width: 40px;
+}
+
+.dropdown-nav button:hover {
+  background-color: #F3F3F3;
+  color: #1b1b1b;
+  border: 1px solid #B3B5B8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin: 4px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #1b1b1b;
+}
+
+.avatar-group {
+  display: flex;
+  align-items: center;
+}
+
+
 /* ==================================== */
 
 /* ======= Font styling ======= */
 
 .font {
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #FEFEFE;
+  background-color: linear-gradient(0deg, #F6F5F1, #FEFEFE 20%);
 }
 
 p.playfair {
@@ -166,12 +205,6 @@ h3 {
 .header {
   display: flex;
   align-items: center;
-}
-
-.header-text {
-  display: flex;
-  flex-direction: column;
-  margin-left: 16px;
 }
 
 .header-index-text {
@@ -267,19 +300,36 @@ blockquote {
 }
 
 footer {
-  /* background-color: #222222; */
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid #CCC;
   background-color: #F6F5F1;
   color: #1B1B1B;
 }
 
 .footer-link a,
-.footer-link a:hover,
 .footer-link a:visited {
-  color: hsla(0, 0%, 100%, .7);
+  color: #292929;
   text-decoration: none;
 }
 
+.footer-link a:hover {
+  color: #4F4F4F;
+}
 
+.footer-link a i {
+  font-size: 14px;
+  margin-left: 2px;
+  transition: all .2s ease-out;
+}
+
+.footer-link a:hover i {
+  webkit-transform: translate(5px, 0);
+  -moz-transform: translate(5px, 0);
+  -o-transform: translate(5px, 0);
+  -ms-transform: translate(5px, 0);
+  transform: translate(5px, 0);
+}
 
 .toggle-callout {
   background-color: #FFF6E8;
@@ -317,17 +367,20 @@ tr:nth-child(even) {
 
 /* ==================================== */
 
+.closeout {
+  display: none;
+}
 
 .horizontal-nav {
   display: flex;
-  align-items: center;
   margin-left: 16px;
 }
 
 .horizontal-flex {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #the-sticky-div.sticky {
@@ -357,7 +410,6 @@ tr:nth-child(even) {
   /* truncate to 3 lines */
   -webkit-line-clamp: 3;
 }
-
 
 /* ======= Line styling ======= */
 
@@ -430,7 +482,7 @@ hr {
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 /* ########################## */
-/* Custom sizes for side nav */
+/* Custom CSS screen sizes */
 /* ########################## */
 
 
@@ -451,6 +503,77 @@ hr {
 @media screen and (min-width: 2200px) {
   #the-sticky-div.sticky {
     left: 64vw;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .avatar-group h1 {
+    margin-right: 1rem;
+  }
+
+  .horizontal-nav {
+    display: none;
+    margin-left: 0;
+  }
+
+  .horizontal-nav.active {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background-color: #F2F2f2;
+    padding-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    opacity: 95%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+      0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .horizontal-nav.active a {
+    padding: 1.5rem 0;
+  }
+
+  .horizontal-nav.active a:hover {
+    background-color: #E0D8FF;
+  }
+
+  .horizontal-nav.active a:hover.placeholder {
+    background-color: transparent;
+    color: #60A1EE;
+  }
+
+  .horizontal-nav.active a.closeout {
+    display: inline;
+    background-color: transparent;
+    text-decoration: none;
+    margin-top: 2rem;
+  }
+
+  .horizontal-nav.active a:hover.closeout {
+    text-decoration: underline;
+  }
+
+  .horizontal-flex {
+    width: 90vw;
+  }
+
+  .dropdown-nav {
+    display: inline;
+  }
+
+  body.dark .horizontal-nav.active {
+    background-color: #292929;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.8;
   }
 }
 
@@ -491,10 +614,6 @@ hr {
 /* ########################## */
 
 @media screen and (max-width: 30em) {
-  .horizontal-nav {
-      display: block;
-      margin-left: 0;
-    }
 
   .img-nav {
     display: flex;
@@ -520,10 +639,6 @@ hr {
     max-width: 100%;
   }
 
-  .horizontal-flex {
-    flex-direction: column;
-  }
-
   .img-nav {
     width: 100%;
   }
@@ -537,6 +652,7 @@ hr {
     position: relative;
     width: 100%;
     max-width: 100%;
+    left: 0%
   }
 
   #the-sticky-div hr.small-line {
@@ -698,7 +814,7 @@ body.dark hr {
 }
 
 body.dark .checkbox-label {
-  background-color: #0D1347;
+  background-color: #1B2687;
 }
 
 body.dark a {
@@ -717,11 +833,11 @@ body.dark a:hover {
   text-decoration: underline;
 }
 
-body.dark .header-tex a:visited.main-title,
-body.dark .header-tex a:hover.main-title,
+body.dark .header-text a:visited.main-title,
+body.dark .header-text a:hover.main-title,
 body.dark .header-text a,
 body.dark .header-text a:visited,
-body.dark .header-tex a.main-title {
+body.dark .header-text a.main-title {
   text-decoration: none;
   background-color: transparent;
   color: #FEFEFE;
@@ -744,7 +860,7 @@ body.dark a:hover.placeholder {
 body.dark .footer-link a,
 body.dark .footer-link a:hover,
 body.dark .footer-link a:visited {
-  color: hsla(0, 0%, 100%, .7);
+  color: hsla(0, 0%, 100%, .5);
   text-decoration: none;
 }
 
@@ -785,4 +901,34 @@ body.dark .code {
   color: #B885F9;
   background-color: #28252B;
   border: 1px solid #121212;
+}
+
+body.dark .dropdown-nav button {
+  background-color: #21262D;
+  border: 1px solid #363B42;
+}
+
+body.dark .dropdown-nav button:hover {
+  background-color: #282E35;
+  border: 1px solid #8B949E;
+}
+
+body.dark .bar {
+  background-color: #fefefe;
+}
+
+body.dark .horizontal-nav.active a:hover {
+  background-color: #E0D8FF;
+  color: #48118F;
+}
+
+body.dark .horizontal-nav.active a:hover.placeholder {
+  background-color: transparent;
+  color: #60A1EE;
+}
+
+body.dark .horizontal-nav.active a:hover.closeout {
+  background-color: transparent;
+  color: #FEFEFE;
+  text-decoration: underline;
 }
