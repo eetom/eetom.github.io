@@ -802,6 +802,7 @@ body.dark {
 
 body.dark footer {
   background-color: #0B0B0B;
+  border-top: 1px solid #2A2A2A;
 }
 
 body.dark .work-title {
