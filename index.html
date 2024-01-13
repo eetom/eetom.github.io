@@ -119,50 +119,44 @@
   </body>
 
   <footer>
-    <footer class="pv5 pv5-l">
-      <div class="cf pa3 pa4-m pa5-l mw9 center">
-        <div class="fr w-100 w-90-l">
-          <p class="f6">©2024 Eric Tsai <br />Last updated in January 2024</p>
-          <p class="f3 playfair">👋 Thanks for checking out my photos, words, and projects.</p>
-          <div class="footer-link mt4">
-            <a href="mailto:erictsaidesign@gmail.com" class="ttu f6">email<i class="material-icons"
-                style="font-size: 16px; margin-left: 5px;">arrow_forward</i></a>
-            <a href="https://github.com/eetom" class="ttu f6">github <i class="material-icons"
-                style="font-size: 16px; margin-left: 5px;">arrow_forward</i></a>
-            <a href="https://dribbble.com/Eetom" class="ttu f6">dribbble <i class="material-icons"
-                style="font-size: 16px; margin-left: 5px;">arrow_forward</i></a>
-            <a href="../projects/digital-resume/index.html" class="ttu f6">resum&eacute; <i class="material-icons"
-                style="font-size: 16px; margin-left: 5px;">arrow_forward</i></a>
-          </div>
+    <div class="cf pa3 pa4-m pa5-l mw9 center">
+      <div class="fr w-100 w-90-l">
+        <p class="f6">©2024 Eric Tsai <br />Last updated in January 2024</p>
+        <p class="f3 playfair">👋 Thanks for checking out my photos, words, and projects.</p>
+        <div class="footer-link mt4">
+          <a href="mailto:erictsaidesign@gmail.com" class="ttu f6">email<i class="material-icons">arrow_forward</i></a>
+          <a href="https://github.com/eetom" class="ttu f6">github <i class="material-icons">arrow_forward</i></a>
+          <a href="https://dribbble.com/Eetom" class="ttu f6">dribbble <i class="material-icons">arrow_forward</i></a>
+          <a href="../projects/digital-resume/index.html" class="ttu f6">resum&eacute; <i
+              class="material-icons">arrow_forward</i></a>
         </div>
       </div>
-    </footer>
+    </div>
   </footer>
-
 </html>
 
 <script type="text/javascript">
 // Allow for random header image
-      var images = [
-        'https://eetom.github.io/img/hosted/pano1.jpg',
-        'https://eetom.github.io/img/hosted/pano2.jpg',
-        'https://eetom.github.io/img/hosted/pano3.jpg',
-        'https://eetom.github.io/img/hosted/pano4.jpg',
-        'https://eetom.github.io/img/hosted/pano5.jpg',
-        'https://eetom.github.io/img/hosted/pano6.jpg',
-        'https://eetom.github.io/img/hosted/pano7.jpg',
-        'https://eetom.github.io/img/hosted/pano8.jpg',
-        'https://eetom.github.io/img/hosted/pano9.jpg',
-        'https://eetom.github.io/img/hosted/pano10.jpg',
-        'https://eetom.github.io/img/hosted/pano11.jpg',
-        'https://eetom.github.io/img/hosted/pano12.jpg',
-        'https://eetom.github.io/img/hosted/pano13.jpg',
-        'https://eetom.github.io/img/hosted/pano14.jpg',
-        'https://eetom.github.io/img/hosted/pano15.jpg',
-        'https://eetom.github.io/img/hosted/pano16.jpg',
-        'https://eetom.github.io/img/hosted/pano17.jpg',
-        'https://eetom.github.io/img/hosted/pano18.jpg',
-        'https://eetom.github.io/img/hosted/pano19.jpg'];
+  var images = [
+    'https://eetom.github.io/img/hosted/pano1.jpg',
+    'https://eetom.github.io/img/hosted/pano2.jpg',
+    'https://eetom.github.io/img/hosted/pano3.jpg',
+    'https://eetom.github.io/img/hosted/pano4.jpg',
+    'https://eetom.github.io/img/hosted/pano5.jpg',
+    'https://eetom.github.io/img/hosted/pano6.jpg',
+    'https://eetom.github.io/img/hosted/pano7.jpg',
+    'https://eetom.github.io/img/hosted/pano8.jpg',
+    'https://eetom.github.io/img/hosted/pano9.jpg',
+    'https://eetom.github.io/img/hosted/pano10.jpg',
+    'https://eetom.github.io/img/hosted/pano11.jpg',
+    'https://eetom.github.io/img/hosted/pano12.jpg',
+    'https://eetom.github.io/img/hosted/pano13.jpg',
+    'https://eetom.github.io/img/hosted/pano14.jpg',
+    'https://eetom.github.io/img/hosted/pano15.jpg',
+    'https://eetom.github.io/img/hosted/pano16.jpg',
+    'https://eetom.github.io/img/hosted/pano17.jpg',
+    'https://eetom.github.io/img/hosted/pano18.jpg',
+    'https://eetom.github.io/img/hosted/pano19.jpg'];
   document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
 </script>
 
@@ -198,4 +192,21 @@
       disableDarkMode();
     }
   });
+
+  const dropdown = document.querySelector(".dropdown-nav");
+  const closemenu = document.querySelector(".closeout");
+  const horizontal = document.querySelector(".horizontal-nav");
+
+  dropdown.addEventListener("click", mobileMenu);
+  closemenu.addEventListener("click", hideMenu);
+
+  function mobileMenu() {
+    dropdown.classList.toggle("active");
+    horizontal.classList.toggle("active");
+  }
+
+  function hideMenu() {
+    dropdown.classList.toggle("active");
+    horizontal.classList.toggle("active");
+  }
 </script>

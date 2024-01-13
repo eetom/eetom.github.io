@@ -9,4 +9,5 @@ $(document).ready(function () {
     $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
     $stickyE2.toggleClass('line-clamp-3', $window.scrollTop() > elTop);
   });
+  
 }); 
