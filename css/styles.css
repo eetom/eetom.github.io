@@ -182,7 +182,7 @@ h3 {
 }
 
 .img-nav p {
-  width: 100%;
+  width:90%;
   margin-top: 0.5rem;
 }
 
@@ -615,6 +615,7 @@ hr {
 
   .img-nav p {
     font-size: 16px;
+    line-height: 1.2;
   }
 
   .math-box {
@@ -660,6 +661,7 @@ hr {
   .img-nav p {
     font-size: 16px;
     width: 80%;
+    line-height: 1.2;
   }
 
   .img-section {
@@ -904,6 +906,10 @@ body.dark a:hover.placeholder {
   color: #60A1EE;
   background-color:transparent;
   text-decoration: line-through;
+}
+
+body.dark .img-nav p {
+  color: #AAAAAA;
 }
 
 body.dark .footer-link a,
