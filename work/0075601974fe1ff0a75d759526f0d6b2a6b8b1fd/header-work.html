@@ -1,0 +1,89 @@
+<!-- Reusable header -->
+<div class="fr w-100 w-90-l header">
+  <div class="header-text">
+    <div class="horizontal-flex">
+      <div class="avatar-group">
+        <img src="https://eetom.github.io/img/hosted/me3.png" class="br-100 ba h3 w3 dib mb4 mt4 mr2" alt="avatar">
+        <h1 class="f2 f2-l lh-title mt0 mb0">
+          <a href="../../index.html" class="main-title">OkayEric!</a>
+        </h1>
+        <div class="horizontal-nav">
+          <a href="#">/work</a>
+          <a href="../../projects/projects.html">/projects</a>
+          <a href="../../words/words.html">/words</a>
+          <a href="../../img/images.html">/images</a>
+          <a href="../../about/about.html">/about</a>
+          <a class="closeout" href="#">Close Menu</a>
+        </div>
+        <div class="fr">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="checkbox-label">
+            <i class="material-icons moon" style="font-size: 16px;">dark_mode</i>
+            <i class="material-icons sun" style="font-size: 16px;">light_mode</i>
+            <span class="ball"></span>
+          </label>
+        </div>
+      </div>
+      <div class="dropdown-nav">
+        <button>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End header -->
+
+
+<script>
+  const toggleBtn = document.getElementById("checkbox");
+  let darkMode = localStorage.getItem("dark-mode");
+  console.log(darkMode);
+
+  const enableDarkMode = () => {
+    document.body.classList.add("dark");
+    localStorage.setItem("dark-mode", "dark");
+  };
+
+  const disableDarkMode = () => {
+    document.body.classList.remove("dark");
+    localStorage.setItem("dark-mode", "light");
+
+  };
+
+  if (darkMode === "dark") {
+    document.getElementById("checkbox").checked = true;
+    enableDarkMode(); // set state of darkMode on page load
+  } else {
+    document.getElementById("checkbox").checked = false;
+    disableDarkMode(); // start with light mode
+  }
+
+  toggleBtn.addEventListener("click", (e) => {
+    darkMode = localStorage.getItem("dark-mode"); // update darkMode when clicked
+    if (darkMode === "light") {
+      enableDarkMode();
+    } else {
+      disableDarkMode();
+    }
+  });
+
+  const dropdown = document.querySelector(".dropdown-nav");
+  const closemenu = document.querySelector(".closeout");
+  const horizontal = document.querySelector(".horizontal-nav");
+
+  dropdown.addEventListener("click", mobileMenu);
+  closemenu.addEventListener("click", hideMenu);
+
+  function mobileMenu() {
+    dropdown.classList.toggle("active");
+    horizontal.classList.toggle("active");
+  }
+
+  function hideMenu() {
+    dropdown.classList.toggle("active");
+    horizontal.classList.toggle("active");
+  }
+</script>
