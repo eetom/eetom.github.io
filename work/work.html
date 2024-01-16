@@ -29,15 +29,6 @@
         var button = document.querySelectorAll('[data-id="button"]')
         var password = document.querySelectorAll('[data-id="password"]')
 
-        let paramString = window.location.search.split('?')[1]
-            let queryString = new URLSearchParams(paramString)
-            let nva = parseInt(queryString.get('nva'))
-            let now = new Date().getTime()
-            if (Number.isNaN(nva) || now > nva) {
-                console.log('not-valid-after invalid, going to redirect to /')
-                window.location = '/'
-            }
-
         function login(secret) {
             var hash = sha1(secret)
             var url = hash + "/index.html"

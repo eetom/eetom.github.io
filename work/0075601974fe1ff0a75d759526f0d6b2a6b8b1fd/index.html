@@ -223,5 +223,15 @@
 
       document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
     }
+
+    let paramString = window.location.search.split('?')[1]
+      let queryString = new URLSearchParams(paramString)
+      let nva = parseInt(queryString.get('nva'))
+      let now = new Date().getTime()
+      if (Number.isNaN(nva) || now > nva) {
+        console.log('not-valid-after invalid, going to redirect to /')
+        window.location = '/'
+      }
+
   
 </script>
