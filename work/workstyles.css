@@ -6,10 +6,8 @@
 
 body,
 html {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    background: #f2f2f2;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: linear-gradient(#F5F0F7, #F5F0F7 10%, #FEFEFE 45%);
     color: #2D3737;
     display: flex;
     align-items: center;
@@ -22,19 +20,13 @@ html {
     -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
     border-radius: 3px;
-    min-width: 500px;
+    min-width: 300px;
+    max-width: 600px;
 
 }
 
 .protected__content {
-    padding: 24px 28px;
-}
-
-.protected__content__heading {
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0 0 12px;
-    line-height: 1;
+    padding: 3rem 4rem;
 }
 
 .protected__alert {
@@ -56,28 +48,22 @@ html {
     font-size: 16px;
     width: 100%;
     border-radius: 3px;
-
-    margin-bottom: 12px;
 }
 
 .protected__content__input:focus {
     outline: none;
-    border-color: #228843;
+    border-color: #362748;
 }
 
 .protected__content__btn {
-    background-color: #228843;
+    background-color: #840A91;
     border-radius: 3px;
     cursor: pointer;
     border: none;
     color: #fff;
     padding: 12px 14px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-
 }
 
 .protected__content__btn:hover {
-    background-color: #1C6D36;
+    background-color: #56215C;
 }

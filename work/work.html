@@ -2,20 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Entering Password Protected Section</title>
+    <title>Password Protected Section</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
     <link rel="stylesheet" type="text/css" href="workstyles.css">
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css">
 
 </head>
 
 <body>
 
     <div class="protected">
-        <div class="protected__alert" data-id="alert">You entered the wrong password</div>
+        <div class="protected__alert" data-id="alert">You have entered the wrong password!</div>
         <div class="protected__content">
-            <h1 class="protected__content__heading">You need a password to continue</h1>
-            <input class="protected__content__input" data-id="password" type="password" placeholder="password" />
+            <h2>Hello, thanks for being interested in my portfolio. </h2>
+            <p class="mb4 lh-copy">Please note that this section will be password protected. <a href="mailto:erictsaidesign@gmail.com?subject=Portfolio Access Request">Email me</a> for password.</p>
+            <input class="protected__content__input mb3" data-id="password" type="password" placeholder="Enter Password" />
             <button data-id="button" type="button" class="protected__content__btn">Continue</button>
         </div>
     </div>
@@ -25,6 +28,15 @@
         "use strict"
         var button = document.querySelectorAll('[data-id="button"]')
         var password = document.querySelectorAll('[data-id="password"]')
+
+        let paramString = window.location.search.split('?')[1]
+            let queryString = new URLSearchParams(paramString)
+            let nva = parseInt(queryString.get('nva'))
+            let now = new Date().getTime()
+            if (Number.isNaN(nva) || now > nva) {
+                console.log('not-valid-after invalid, going to redirect to /')
+                window.location = '/'
+            }
 
         function login(secret) {
             var hash = sha1(secret)
@@ -36,7 +48,8 @@
 
             request.onload = function () {
                 if (request.status >= 200 && request.status < 400) {
-                    window.location = url
+                    let nva = new Date().getTime() + 1_000
+                    window.location = url + "?nva=" + nva
                 } else {
                     parent.location.hash = hash
                     alert[0].style.display = 'block'
