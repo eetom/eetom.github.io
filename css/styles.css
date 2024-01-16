@@ -181,6 +181,11 @@ h3 {
   margin-top: 1rem;
 }
 
+.img-nav p {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
 .sub-title {
   color: #828282;
 }
@@ -607,22 +612,31 @@ hr {
   .img-nav {
       width: 40%;
     }
+
+  .img-nav p {
+    font-size: 16px;
+  }
+
   .math-box {
       margin-bottom: 16px;
       font-size: 16px;
   }
+
   #the-sticky-div.sticky {
     position: relative;
     width: 100%;
     max-width: 100%;
     left: 0%
   }
+
   #the-sticky-div hr.small-line {
     width: 100%;
   }
+
   .popupClose {
     display: none;
   }
+
   h2.f1 {
     font-size: 2.5rem;
   }
@@ -642,7 +656,12 @@ hr {
     justify-content: space-between;
     width: 98%;
   }
-  
+
+  .img-nav p {
+    font-size: 16px;
+    width: 80%;
+  }
+
   .img-section {
     display: block;
   }
