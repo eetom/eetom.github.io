@@ -316,7 +316,7 @@ footer {
 
 .footer-flex-columns {
   display: flex;
-  width: 200px;
+  width: 250px;
   justify-content: space-between;
 }
 
