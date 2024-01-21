@@ -27,47 +27,46 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.min.js"></script>
     <script type="text/javascript">
         "use strict"
-        var button = document.querySelectorAll('[data-id="button"]')
-        var password = document.querySelectorAll('[data-id="password"]')
+            var button = document.querySelectorAll('[data-id="button"]')
+            var password = document.querySelectorAll('[data-id="password"]')
 
-        function login(secret) {
-            var hash = sha1(secret)
-            var url = hash + "/index-work.html"
-            var alert = document.querySelectorAll('[data-id="alert"]')
+            function login(secret) {
+                var hash = sha1(secret)
+                var url = hash + "/index.html"
+                var alert = document.querySelectorAll('[data-id="alert"]')
 
-            var request = new XMLHttpRequest()
-            request.open('GET', url, true)
+                var request = new XMLHttpRequest()
+                request.open('GET', url, true)
 
-            request.onload = function () {
-                if (request.status >= 200 && request.status < 400) {
-                    let nva = new Date().getTime() + 1_000
-                    window.location = url + "?nva=" + nva
-                } else {
+                request.onload = function () {
+                    if (request.status >= 200 && request.status < 400) {
+                        window.location = url
+                    } else {
+                        parent.location.hash = hash
+                        alert[0].style.display = 'block'
+                        password[0].setAttribute('placeholder', 'Incorrect password')
+                        password[0].value = ''
+                    }
+                }
+                request.onerror = function () {
                     parent.location.hash = hash
                     alert[0].style.display = 'block'
                     password[0].setAttribute('placeholder', 'Incorrect password')
                     password[0].value = ''
                 }
+                request.send()
             }
-            request.onerror = function () {
-                parent.location.hash = hash
-                alert[0].style.display = 'block'
-                password[0].setAttribute('placeholder', 'Incorrect password')
-                password[0].value = ''
-            }
-            request.send()
-        }
 
-        button[0].addEventListener("click", function () {
-            login(password[0].value)
-        })
-
-        document.onkeydown = function (e) {
-            e = e || window.event
-            if (e.keyCode == 13) {
+            button[0].addEventListener("click", function () {
                 login(password[0].value)
+            })
+
+            document.onkeydown = function (e) {
+                e = e || window.event
+                if (e.keyCode == 13) {
+                    login(password[0].value)
+                }
             }
-        }
     </script>
 </body>
 
