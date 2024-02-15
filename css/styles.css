@@ -433,6 +433,10 @@ tr:nth-child(even) {
   -webkit-line-clamp: 3;
 }
 
+.hidden-on-scroll {
+  display: none;
+}
+
 /* ======= Line styling ======= */
 
 hr {
