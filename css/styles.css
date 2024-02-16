@@ -406,6 +406,11 @@ tr:nth-child(even) {
   align-items: center;
 }
 
+#banner {
+  width: 20vh;
+}
+
+
 #the-sticky-div.sticky {
   position: fixed;
   top: 10px;
