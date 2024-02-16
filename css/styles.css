@@ -149,7 +149,7 @@ a.deprecated-link:hover {
 
 .font {
   font-family: 'Roboto Condensed', sans-serif;
-  background: linear-gradient(#F5F0F7, #F5F0F7 10%, #FEFEFE 45%);
+  background: linear-gradient(#F8F6F9, #F8F6F9 10%, #FEFEFE 45%);
 }
 
 p.playfair {
@@ -224,10 +224,11 @@ h3 {
 }
 
 .work-title {
-  background-color: #dddddd;
+  background-color: #fff;
   color: #1B1B1B;
   padding: 50px 30px;
-  border-left: solid 10px #000;
+  margin-top: 3rem;
+  border-left: solid 10px #9869D3;
 }
 
 blockquote {
@@ -847,7 +848,7 @@ body.dark footer p {
 }
 
 body.dark .work-title {
-  background-color: #4A4A4A;
+  background-color: #2a2a2a;
 }
 
 body.dark .popup {
