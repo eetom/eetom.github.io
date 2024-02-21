@@ -53,17 +53,9 @@
         <hr class="mb4 ml0 small-line" />
 
         <p class="lh-copy" id="sticky-description">
-          Analytics is a key part of how a customer want to use Cloudflare, but currently the existing analytics has 3
-          major
-          problems. One, there’s a lot of data that could be better visualized and organized for easier comprehension.
-          Two,
-          there’s a lot of data we can show to customers but currently we don’t. And lastly, we have a lot of data we
-          aren’t
-          capturing and customer would like to have. The goal of this project would be to redesign analytics so that we
-          have a
-          well design system that would allow us to restructure the existing charts, easily create new charts, and start
-          planning
-          out future charts.
+          Firewall is a key application of Cloudflare but for a long time access and usage of the more powerful parts of the app wasn't as accessible or easy to for most of
+          Cloudflare's customer base. Ever for those enterprise teams who had the people and expertise to set up Cloudflare custom Firewall, it was 
+          not an easy process. The goal here was to update and simplify custom firewall across all customer types from enterprise to free customers.
         </p>
 
         <div class="tag-section mb4 mt4">
@@ -111,58 +103,98 @@
         </div>
 
         <h3 id="part-1" class="work-title mt5">01. Problem</h3>
-        <p>
-          Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras
-          consequat.
-        </p>
+          <p class="work-content">
+            One of the main driving purpose for the founders or Cloudflare to create Cloudflare was that they were tired of spam emails and wanted to build something
+            that would be able to intercept and prevent this unwanted traffic. <br><br> Cloudflare basic firewall is super easy to use and set up. And this works
+            great as long as you stay within the confines of the presets. Once you start with wanting to have more control and precision with your firewall the first
+            thing you must overcome is where to even start.
+          </p>
         <img class="work-img" src="work-img/firewall-1.png">
+          <p class="work-content">
+            The starting point of the WAF (Web application Firewall) was just a box that said, "Please contact our team." To get set up, the Cloudflare team would 
+            have to set up your custom WAF rules internally for you. And if you wanted to make any changes to those rules? You'd have to contact our team again.
+          </p>
+
         <img class="work-img" src="work-img/firewall-2.png">
+          <p class="work-content">
+            Even just looking at the traffic to the Firewall page, you could see that (labeled: None) our internal team working with customers to build their
+            custom rules was a good chunk of the traffic to the Firewall page.
+          </p>
         
         <h3 id="part-2" class="work-title">02. Research</h3>
-        <p>
-          Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras
-          consequat.
-        </p>
+          <p class="work-content">
+            We wanted to see how we can give back control to the users so that they could create and manage their own custom firewall rules.
+          </p>
 
         <img class="work-img" src="work-img/firewall-3.png">
+          <p class="work-content">
+            We looked at all different types and shapes of rule builders. From operating specific tools to 3rd party extentions. Trying to understand the
+            fundamental components and what made sense.
+          </p>
         <img class="work-img" src="work-img/firewall-5.png">
+            <p class="work-content">
+              Some were very complex and other were overly visual. Understanding the key functions that had to be there was vitial to deciding where Cloudflare's
+              custom WAF rule build would sit. On one end we wanted to make it easy for even beginners to use, but without missing features for highly technical users
+              who would want precise control via a DSL (Domain specific language).
+            </p>
         <img class="work-img" src="work-img/firewall-4.png">
+            <p class="work-content">
+              A good place where I started was sitting down with some of those internal sales-engineers who worked with our key customers building those
+              custom rules in the first place. Getting a scope of how our firewall works and what levels of customization really help me grasp the complexity
+              and range where the solution needs to come from. <br><br>
+              Fun fact, after I created this flow chart to understand our firewall flow, the sales engineer I worked with requested the chart to use to explain
+              our firewall product to enterprise customers.
+            </p>
         
         
         <h3 id="part-3" class="work-title">03. Analysis</h3>
-        <p>
-          Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras
-          consequat.
-        </p>
+          <p class="work-content">
+            Once I had a fundamental understand of how the firewall worked and differet approaches to rule builders it was time to see what fits.
+          </p>
         <img class="work-img" src="work-img/firewall-6.png">
+          <p class="work-content">
+            We needed to start with an overall flow to understand the different UI we might need to build to allow basic CRUD (create, read, update, and destroy) processes.
+          </p>
         <img class="work-img" src="work-img/firewall-7.png">
-        <img class="work-img" src="work-img/firewall-8.png">
+          <p class="work-content">
+            I broke down the basic components we'll want to have for the visual part of rule builder. Setting up an action based on triggers. The triggers can be additive or subtrative.
+            Depending on the type of operand that was used. <br><br>
+            By understanding the range of possible types of customizations, we played an assortment of possible options for each
+            section of filter functions. We also experimented
+            with a concept of drag-and-drop to visually re-order rules (a common request when customers were looking to update
+            rules)
+          </p>
 
 
         <h3 id="part-4" class="work-title">04. Testing</h3>
-        <p>
-          Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras
-          consequat.
-        </p>
+          <p class="work-content">
+            Part of the team I was working with was in the London office, I brought some paper prototypes and worked with the engineers and sales team to see how they might interpret customer
+            wants and needs. We worked on various UI components that could give more feedback on existing firewall rules and their effectiveness. Along with a very rudimentary rule builder
+            that allowed jumping between the visual rule builder and a dedicated DSL view.
+          </p>
         <img class="work-img" src="work-img/firewall-9.png">
         <img class="work-img" src="work-img/firewall-10.png">
         <img class="work-img" src="work-img/firewall-11.png">
+          <p class="work-content">
+            Working with the PM Alex, we arranged and ordered customer pains and priorities to help us focus in on what we can accomplish for a round one. And which features should
+            be set as a fast follow up in the next update.
+          </p>
 
 
         <h3 id="part-5" class="work-title">05. Design</h3>
-        <p>
-          Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras
-          consequat.
-        </p>
+          <p class="work-content">
+            Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras
+            consequat.
+          </p>
         <img class="work-img" src="work-img/firewall-13.png">
         <img class="work-img" src="work-img/firewall-14.png">
         <img class="work-img" src="work-img/firewall-15.png">
 
         <h3 id="part-6" class="work-title">06. Results</h3>
-        <p>
-          Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras
-          consequat.
-        </p>
+          <p class="work-content">
+            Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras
+            consequat.
+          </p>
         <img class="work-img" src="work-img/firewall-16.png">
         <img class="work-img" src="work-img/firewall-17.png">
         <img class="work-img" src="work-img/firewall-18.png">
