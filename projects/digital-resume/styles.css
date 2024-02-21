@@ -64,6 +64,14 @@ a:hover {
   max-width: 560px;
 }
 
+h1  .title {
+  margin-bottom: 0px;
+}
+
+.sub-title {
+  margin-top: 0px;
+}
+
 hr {
   margin: 3em 0;
   height: 1px;
