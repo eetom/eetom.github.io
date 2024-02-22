@@ -53,7 +53,10 @@
         <hr class="mb4 ml0 small-line" />
 
         <p class="lh-copy" id="sticky-description">
-          Logpush
+          As a part of the Data product team, one of the projects we worked on was Data Logpush. For many customers of Cloudflare, theres a lot of data that is collected via web traffic 
+          passing through Cloudflare's network. Customers can use this data to better understand traffic pattern, audience behaviors, and even better protect their sites from DDoS 
+          (Distributed Denial of Service) attacks from malicious sources. <br><br> Logpush allows this data to be push directly from Cloudflare to the customer's own data store. What's
+          important here is to create and maintain a link from Cloudflare to the external data store by getting access and maintaining a secure connection.
         </p>
 
         <div class="tag-section mb4 mt4">
@@ -98,44 +101,97 @@
         </div>
 
           <h3 id="part-1" class="work-title mt5">01. Problem</h3>
-          <p class="work-content">
-            Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras
-            consequat.
-          </p>
+
           <img class="work-img" src="work-img/logpush-1.png">
+              <p class="work-content">
+                On the data product team, we work closely between product, design, and engineering. Our team has been working on many projects up to this point
+                such as the analytics app and data storage.
+              </p>
           <img class="work-img" src="work-img/logpush-2.png">
+              <p class="work-content">
+                One of the early feedback we got was that we had to add in an extra step inbetween to set up a confirmation that the user who was linking
+                the data store is an owner of that data store. We wanted to prevent a user from linking a data store that they didn't own but knew/guessed
+                the name of.
+              </p>
           <img class="work-img" src="work-img/logpush-3.png">
-          
+              <p class="work-content">
+                A good amount of traffic on the Cloudflare Analytics and Data app page were internal team support engineers that have been dealing with a lot
+                of the data requests manually. So much so that internal traffic was the 2nd highest category of traffic just after free users.
+                <br><br>
+                 If our logpush feature was successful, we would able to allow Pro and Ent users to self-sever data access and reduce load on the support teams while giving
+                more autonomy to the customer to get their data.
+              </p>
           
           <h3 id="part-2" class="work-title">03. Design</h3>
-          <p class="work-content">
-            Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras
-            consequat.
-          </p>
+              <p class="work-content">
+                We created this design to be a linear step-by-step process to guide the user through setting up logpush.
+              </p>
           <img class="work-img" src="work-img/logpush-4.png">
+              <p class="work-content">
+                Step 1: The user would select from a list of different data stores that was supported for logpush.
+              </p>
           <img class="work-img" src="work-img/logpush-5.png">
+              <p class="work-content">
+                Step 2a: If the user selected Google Cloud Storage, there would be a set
+                of instructions they had to do in the GCS app to allow for 3rd party access.
+              </p>
           <img class="work-img" src="work-img/logpush-6.png">
+              <p class="work-content">
+                Step 2b: Similarily, for AWS there would be some forms that needed to be filled out.
+              </p>
           <img class="work-img" src="work-img/logpush-13.png">
+              <p class="work-content">
+                Step 3: The next step was important. To prove that you were the owner of the data store, we wanted you to add in a file
+                that we could read and confirm that you were the owner. <br><br> We create this step to be unique to each of the services that we supported to give specific and
+                clear instructions to the customer. With a convenient click-to-copy section, it was easy for the customer to grab the code snippit without downloading an additional file.
+              </p>
           <img class="work-img" src="work-img/logpush-7.png">
+              <p class="work-content">
+                Step 4: In this step, we had a multi-select that allowed the user to choose the conditions on which logpush would send data over. Just turning on full access
+                to the data might overwhelm the data store and end up with a lot of noise to signal. <br><br>
+                Therefore by allowing specific conditions for when to send the data to a specific folder, the user can better group and organize the relevant data. We turned all the possible options from the possible server into organized
+                groups that can be fully selected or partially selected.
+              </p>
+
           <img class="work-img" src="work-img/logpush_demo.gif">
+              <p class="work-content">
+                Here is a short clip of the logpush set up flow from start to finish.
+              </p>
           
           
           <h3 id="part-3" class="work-title">04. Testing</h3>
           <p class="work-content">
-            Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras
-            consequat.
+            It was important for us to confirm though testing how our design and implementation fared with our internal stakeholders and customers.
           </p>
           <img class="work-img" src="work-img/logpush-8.png">
+            <p class="work-content">
+              We worked on setting up questions to understand the background of our customers, if they would use Logpush, and how they currently accessed this data.
+            </p>
           <img class="work-img" src="work-img/logpush-9.png">
+            <p class="work-content">
+              We had set up 12 sessions to review the prototype with our sales and support engineers and customers.<br><br>
+               <i>*The customer names have been redacted from this schedule.</i>
+            </p>
           <img class="work-img" src="work-img/logpush-10.png">
+            <p class="work-content">
+              During the user testing, we also walked the customer through the prototype. We allowed them to drive where neccessary so that we can see how
+              they might react to the design if they were implementing it without observers. This allowed us to see where they might get stuck and which
+              parts of the design we can futher refine.
+            </p>
 
           <h3 id="part-4" class="work-title">05. Results</h3>
-          <p class="work-content">
-            Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras
-            consequat.
-          </p>
+            <p class="work-content">
+              We were able to design, build, test, and launch this product within the set timelines for an April 2019 launch.
+            </p>
           <img class="work-img" src="work-img/logpush-11.png">
+            <p class="work-content">
+              From 2 months from launch, we had established a steady rate of aproximately just under 3000 daily logpush jobs.
+            </p>
           <img class="work-img" src="work-img/logpush-12.png">
+            <p class="work-content">
+              And a lot of positive feedback from our sales and support engineers. Overall, we were able to reduce dependancy on our sales and
+              support enginers while allowing customers to have better control and access to their data.
+            </p>
 
         <div class="fr w-100"> <!-- this is a line break -->
           <hr class="mb5" />
