@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OkayEric!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="../script/headerfooterload.js"></script>
+  </head>
+
+  <header class="sans-serif">
+    <div class="cover bg-left bg-center-l mainview">
+      <div class="bg-black-0 pb5 pb6-m pb7-l">
+        <nav class="dt w-100 mw8 center"> 
+        </nav> 
+      </div>
+    </div> 
+  </header>
+
+  <body class="font">
+    <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
+      <div id="header">
+        <!-- reusable header goes here-->
+      </div>
+
+      <div class="fr w-100 w-90-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+      <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
+
+         <div class="fl-ns w-100 w-10-l pr3-m pr5-l">
+          <p class="b ttu">
+          </p> 
+        </div>
+
+         <div class="fl-ns w-100 w-20-l pr4-l"> <!-- Side Title -->
+          <h2>DF96 development notes</h2>
+          <p class="sub-title">
+            02/28/2024<br>
+            Bellevue, WA
+          </p>
+        </div>
+
+        <div class="fl-ns w-100 w-60-l pr3-m pr5-l">
+          <p>A quick reference note on development times and methodology for Cinestill's DF96 black and white film monobath. But mostly because I'm tired of looking all this
+            information up every time it's been a month since I last developed some B&W film and need to look up all the temperatures and timings.
+          </p>
+
+          <hr class="mb5 mt4 ml0 small-line" />
+
+          <h3>3 development agitation options</h3>
+            <table>
+              <tr>
+                <th>Temperature</th>
+                <th>Type of agitation</th>
+                <th>Base time</th>
+              </tr>
+              <tr>
+                <td>80°F (27°C)</td>
+                <td>Constant agitation while developing</td>
+                <td>≥ 3 min</td>
+              </tr>
+              <tr>
+                <td>75°F (24°C)</td>
+                <td>Intermittent agitation while developing</td>
+                <td>≥ 4 min</td>
+              </tr>
+              <tr>
+                <td>70°F (21°C)</td>
+                <td>Minimal agitation while developing</td>
+                <td>≥ 6 min</td>
+              </tr>
+            </table>
+
+          <div class="blog-callout">
+            <h3>Note on agitation</h3>
+            <p>The supposed effects of constant agitation on development results. There isn't any offical consensus on this opinion.<br><br>
+              1) <b>Sharpness</b> Continuous agitation suppresses the creation of sharpness-enhancing edge effects.<br><br>
+              2) <b>Film speed</b> Continous agitation minimizes development time because the highlights developer quicker than they would
+              otherwise. However, this decrease in development time can also result in diminished shadow detail because the shadows
+              continue to develop (albeit to a steadily decreasing extend) with longer development times.</p>
+          </div>
+
+          <hr class="mb5 mt4 ml0 small-line" />
+
+          <h3>Development time adjustments for multiple use of DF96</h3>
+          <p>An 1000ml (Quart) size container of DF96 can develop up to 16 rolls of film.<br>
+          A 500ml (18oz) size container can only develop up to 8 rolls</p>
+          <p>The general rule is to add +15 seconds of development time per number of rolls already developed.</p>
+
+          <table>
+            <tr>
+              <th># of rolls developed</th>
+              <th>80°F (27°C) time</th>
+              <th>75°F (24°C) time</th>
+              <th>70°F (21°C) time</th>
+            </tr>
+            <tr>
+              <td>0</td>
+              <td>3:00 mins</td>
+              <td>4:00 mins</td>
+              <td>6:00 mins</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>3:15 mins</td>
+              <td>4:15 mins</td>
+              <td>6:15 mins</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>3:30 mins</td>
+              <td>4:30 mins</td>
+              <td>6:30 mins</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>3:45 mins</td>
+              <td>4:45 mins</td>
+              <td>6:45 mins</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>4:00 mins</td>
+              <td>5:00 mins</td>
+              <td>7:00 mins</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>4:15 mins</td>
+              <td>5:15 mins</td>
+              <td>7:15 mins</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>4:30 mins</td>
+              <td>5:30 mins</td>
+              <td>7:30 mins</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>4:45 mins</td>
+              <td>5:45 mins</td>
+              <td>7:45 mins</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>5:00 mins</td>
+              <td>6:00 mins</td>
+              <td>8:00 mins</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>5:15 mins</td>
+              <td>6:15 mins</td>
+              <td>8:15 mins</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>5:30 mins</td>
+              <td>6:30 mins</td>
+              <td>8:30 mins</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>5:45 mins</td>
+              <td>6:45 mins</td>
+              <td>8:45 mins</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>6:00 mins</td>
+              <td>7:00 mins</td>
+              <td>9:00 mins</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>6:15 mins</td>
+              <td>7:15 mins</td>
+              <td>9:15 mins</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>6:30 mins</td>
+              <td>7:30 mins</td>
+              <td>9:30 mins</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>6:45 mins</td>
+              <td>7:45 mins</td>
+              <td>9:45 mins</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>7:00 mins</td>
+              <td>8:00 mins</td>
+              <td>10:00 mins</td>
+            </tr>
+          </table>
+
+          <hr class="mb5 mt4 ml0 small-line" />
+
+          <h3>Note on pushing and pulling film</h3>
+          <p>To push or pull film using DF96, adjust the tempurature up or down 5°F (3°C) for every half stop.</p>
+
+          <table>
+            <tr>
+              <th>Temperature</th>
+              <th>Constant agitation</th>
+              <th>Intermittant agitation</th>
+              <th>Minimal agitation</th>
+            </tr>
+            <tr>
+              <td>65°F (18°C)</td>
+              <td> - </td>
+              <td>Pull -1 exposure</td>
+              <td>Pull -1/2 exposure</td>
+            </tr>
+            <tr>
+              <td>70°F (21°C)</td>
+              <td>Pull -1 exposure</td>
+              <td>Pull -1/2 exposure</td>
+              <td>Normal</td>
+            </tr>
+            <tr>
+              <td>75°F (24°C)</td>
+              <td>Pull -1/2 exposure</td>
+              <td>Normal</td>
+              <td>Push +1/2 exposure</td>
+            </tr>
+            <tr>
+              <td>80°F (27°C)</td>
+              <td>Normal</td>
+              <td>Push +1/2 exposure</td>
+              <td>Push +1 exposure</td>
+            </tr>
+            <tr>
+              <td>85°F (27°C)</td>
+              <td>Push +1/2 exposure</td>
+              <td>Push +1 exposure</td>
+              <td>Use for 3200 film</td>
+            </tr>
+            <tr>
+              <td>90°F (32°C)</td>
+              <td>Push +1 exposure</td>
+              <td>Use for 3200 film</td>
+              <td>Push +2 exposure</td>
+            </tr>
+            <tr>
+              <td>95°F (35°C)</td>
+              <td>Use for 3200 film</td>
+              <td>Push +2 exposure</td>
+              <td> - </td>
+            </tr>
+          </table>
+
+          <hr class="mb5 mt4 ml0 small-line" />
+
+          <h3>Additional notes</h3>
+          <ul>
+            <li>When it turns from yellowish to dark amber, the developer is close to exhaustion.</li>
+            <li>Before using used developer, do a snip test. The results on a daylit piece of film should be opaque.</li>
+            <li>The shelf life of DF96 is 1 year.</li>
+            <li>The opened shelf life of DF96 is 2 months.</li>
+            <li>Used Df96 Monobath contains dissolved silver that is harmful to the environment if improperly disposed of. After your
+            chemistry has been exhausted, you should contact your local waste management department.</li>
+          </ul>
+
+          <hr class="mb5 mt4 ml0 small-line" />
+
+          <h3>Opinions on DF96</h3>
+          <blockquote class="ml0 mt0 pl4 black-90 bl bw2  ">
+            <p class="f5 f4-m f3-l lh-copy measure mt0">
+              If I were you I'd throw it away, and buy some separate developer, stop and fixer. Speed/complexity gains from monobaths
+              are minimal, compared to consistency risks. XTOL, D76, DDX are excellent general purpose developers. Any stop and fixer
+              will do.
+            </p>
+            <cite class="f6 ttu tracked fs-normal">― Reddit user Tach, 2020</cite>
+          </blockquote>
+
+          <blockquote class="ml0 mt5 pl4 black-90 bl bw2  ">
+            <p class="f5 f4-m f3-l lh-copy measure mt0">
+              A gentleman on RFF tipped me to filter the DF96 before I try to use it again, and then check with a test piece of film
+              to see if it is still ok. Using a paper coffee filter, it removed sludge from the solution! Guess that was the emulsion stripped off the Silberra
+              film, The dev was now clear again..
+            </p>
+            <cite class="f6 ttu tracked fs-normal">― Phototrio user Huss, Apr 2020</cite>
+          </blockquote>
+
+          <blockquote class="ml0 mt5 pl4 black-90 bl bw2  ">
+            <p class="f5 f4-m f3-l lh-copy measure mt0">
+              I developed my first two rolls (Tri-X and HP5) in Cinestill D96 and a Lab-Box just this past week. 3 minutes at 80F,
+              then rinse for about sixty seconds in fresh water. I got great negatives, and they were more consistent than using D76
+              or any other multi-step process. I'll definitely keep using the method.
+              
+              I took the closed bottle, put it in the sink, covered it with hot water, and when it was 80F, poured it into the
+              Lab-Box. Easy Peasy.
+            </p>
+            <cite class="f6 ttu tracked fs-normal">― RFF user David_Manning, Apr 2020</cite>
+          </blockquote>
+
+
+          <hr class="mb5 mt4 ml0 small-line" />
+
+          <h3>Resources</h3>
+          <p><a href="https://www.fotoimpex.com/shop/images/products/media/63120_5_PDF-Datasheet.pdf">DF96 datasheet</a>most of the charts and data came from this page.</p>
+          <p><a href="https://cinestillfilm.com/products/df96-developer-fix-b-w-monobath-single-step-solution-for-processing-at-home?variant=7367677247522">DF96 product page</a> on the Cinestill website.</p>
+
+          <p class="mb6"></p>
+        </div>
+      </div>
+
+      <div class="fr w-100 w-90-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+    </main>
+  </body>
+
+  <footer>
+    <div id="footer">
+      <!-- reusable footer goes here-->
+    </div>
+  </footer>
+
+</html>
+
