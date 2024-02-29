@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OkayEric!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="../script/headerfooterload.js"></script>
+  </head>
+
+  <header class="sans-serif">
+    <div class="cover bg-left bg-center-l mainview">
+      <div class="bg-black-0 pb5 pb6-m pb7-l">
+        <nav class="dt w-100 mw8 center"> 
+        </nav> 
+      </div>
+    </div> 
+  </header>
+
+  <body class="font">
+    <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
+      <div id="header">
+        <!-- reusable header goes here-->
+      </div>
+
+      <div class="fr w-100 w-90-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+      <div class="f5 lh-copy fl w-100 mb4"> <!-- Coding links section -->
+
+         <div class="fl-ns w-100 w-10-l pr3-m pr5-l">
+          <p class="b ttu">
+          </p> 
+        </div>
+
+         <div class="fl-ns w-100 w-20-l pr4-l"> <!-- Side Title -->
+          <h2>CS41 development notes</h2>
+          <p class="sub-title">
+            02/29/2024<br>
+            Bellevue, WA
+          </p>
+        </div>
+
+        <div class="fl-ns w-100 w-60-l pr3-m pr5-l">
+          <p>A quick reference note on development times and methodology for Cinestill's CS41 two-bath kit for color C-41 home development. But mostly because I'm tired of looking all this
+            information up every time it's been 3 to 4 months since I last developed some color film and need to look up all the temperatures and timings.
+          </p>
+
+          <p>The CS41 comes in two varaieties, the powdered form or the liquid form. Both will make 1000ml or 1 quart of developer and develop about 24 color rolls. The main
+            difference between the powdered form and the liquid form is that you have to mix them differently to create the 2 baths.
+          </p>
+
+          <p>Start by mixing the chemicals to form the two baths.</p>
+
+          <h3>Powedered instructions</h3>
+          <table class="mb5">
+            <tr>
+              <td>Color Developer Bath</td>
+              <td>Start with 600-700ml of water. Add and stir the contents of the Color developer package into a 1000ml container with water. Top off to 1000ml with additional water.</td>
+            </tr>
+            <tr>
+              <td>Blix Bath</td>
+              <td>Start with 600-700ml of water. Add and stir the contents of the Blix package A into a 1000ml container with water. Stir well. Then add the contents of Blix package B. This 
+                will create an endothemic reaction. Pour this solution back and forth between another clean pitcher. Then top off to 1000ml with additional water.
+              </td>
+            </tr>
+          </table>
+
+          <h3>Liquid instructions</h3>
+          <table>
+            <tr>
+              <td>Color Developer Bath</td>
+              <td>Start with 600-700ml of water. Add and stir the contents of the Color developer bottle A into a 1000ml container with
+                water. Then add Color developer bottle B and C respectively. Top off to 1000ml with additional water.</td>
+            </tr>
+            <tr>
+              <td>Blix Bath</td>
+              <td>Start with 600-700ml of water. Add the contents of the Blix package A into a 1000ml container with water. Stir
+                well. Then add the contents of Blix package B. This
+                will create an endothemic reaction. Pour this solution back and forth between another clean pitcher. Then top off
+                to 1000ml with additional water.
+              </td>
+            </tr>
+          </table>
+
+          <hr class="mb5 mt4 ml0 small-line" />
+
+          <h3>Standard 6-step process for development</h3>
+            <table>
+              <tr>
+                <th>Step name</th>
+                <th>Time</th>
+                <th>Tempurature</th>
+                <th>Agitation</th>
+              </tr>
+              <tr>
+                <td>Step 1: Optional pre-soak</td>
+                <td>1 min</td>
+                <td>Developer temp</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <td>Step 2: Developer</td>
+                <td>3:30 mins fresh</td>
+                <td>105°F (39°C)</td>
+                <td>Continuous for first 10 sec., then 4 lifts or 4 inversion cycles every 30 sec. thereafter</td>
+              </tr>
+              <tr>
+                <td>Step 3: Blix</td>
+                <td>8:00 mins</td>
+                <td>75°F - 105°F (24°C - 39°C)</td>
+                <td>Continuous for first 10 sec., then 4 lifts or 4 inversion cycles every 30 sec. thereafter</td>
+              </tr>
+              <tr>
+                <td>Step 4: Wash</td>
+                <td>3:00 mins</td>
+                <td>75°F - 105°F (24°C - 39°C)</td>
+                <td>Running water or fill and empty tank 7 times</td>
+              </tr>
+              <tr>
+                <td>Step 5: Optional stabilize</td>
+                <td>0:30 min - 1 min</td>
+                <td>Room</td>
+                <td>Agitate for the first 15 sec</td>
+              </tr>
+              <tr>
+                <td>Step 6: Hang dry</td>
+                <td>Overnight</td>
+                <td>< 140°F (60°C)</td>
+                <td>None</td>
+              </tr>
+            </table>
+
+          <div class="blog-callout">
+            <h3>Note on agitation</h3>
+            <p>The supposed effects of constant agitation on development results. There isn't any offical consensus on this opinion.<br><br>
+              1) <b>Sharpness</b> Continuous agitation suppresses the creation of sharpness-enhancing edge effects.<br><br>
+              2) <b>Film speed</b> Continous agitation minimizes development time because the highlights developer quicker than they would
+              otherwise. However, this decrease in development time can also result in diminished shadow detail because the shadows
+              continue to develop (albeit to a steadily decreasing extend) with longer development times.</p>
+          </div>
+
+          <hr class="mb5 mt4 ml0 small-line" />
+
+          <h3>Development time adjustments for multiple use of DF96</h3>
+          <p>An 1000ml (Quart) size container of DF96 can develop up to 16 rolls of film.<br>
+          A 500ml (18oz) size container can only develop up to 8 rolls</p>
+          <p>The general rule is to add +15 seconds of development time per number of rolls already developed.</p>
+
+
+          <hr class="mb5 mt4 ml0 small-line" />
+
+          <h3>Note on pushing and pulling film</h3>
+          <p>To push or pull film using DF96, adjust the tempurature up or down 5°F (3°C) for every half stop.</p>
+
+          <table>
+            <tr>
+              <th>Temperature</th>
+              <th>Constant agitation</th>
+              <th>Intermittant agitation</th>
+              <th>Minimal agitation</th>
+            </tr>
+            <tr>
+              <td>65°F (18°C)</td>
+              <td> - </td>
+              <td>Pull -1 exposure</td>
+              <td>Pull -1/2 exposure</td>
+            </tr>
+            <tr>
+              <td>70°F (21°C)</td>
+              <td>Pull -1 exposure</td>
+              <td>Pull -1/2 exposure</td>
+              <td>Normal</td>
+            </tr>
+            <tr>
+              <td>75°F (24°C)</td>
+              <td>Pull -1/2 exposure</td>
+              <td>Normal</td>
+              <td>Push +1/2 exposure</td>
+            </tr>
+            <tr>
+              <td>80°F (27°C)</td>
+              <td>Normal</td>
+              <td>Push +1/2 exposure</td>
+              <td>Push +1 exposure</td>
+            </tr>
+            <tr>
+              <td>85°F (27°C)</td>
+              <td>Push +1/2 exposure</td>
+              <td>Push +1 exposure</td>
+              <td>Use for 3200 film</td>
+            </tr>
+            <tr>
+              <td>90°F (32°C)</td>
+              <td>Push +1 exposure</td>
+              <td>Use for 3200 film</td>
+              <td>Push +2 exposure</td>
+            </tr>
+            <tr>
+              <td>95°F (35°C)</td>
+              <td>Use for 3200 film</td>
+              <td>Push +2 exposure</td>
+              <td> - </td>
+            </tr>
+          </table>
+
+          <hr class="mb5 mt4 ml0 small-line" />
+
+          <h3>Additional notes</h3>
+          <ul>
+            <li>When it turns from yellowish to dark amber, the developer is close to exhaustion.</li>
+            <li>Before using used developer, do a snip test. The results on a daylit piece of film should be opaque.</li>
+            <li>The shelf life of DF96 is 1 year.</li>
+            <li>The opened shelf life of DF96 is 2 months.</li>
+            <li>Used Df96 Monobath contains dissolved silver that is harmful to the environment if improperly disposed of. After your
+            chemistry has been exhausted, you should contact your local waste management department.</li>
+          </ul>
+
+          <hr class="mb5 mt4 ml0 small-line" />
+
+          <h3>Opinions on DF96</h3>
+          <blockquote class="ml0 mt0 pl4 black-90 bl bw2  ">
+            <p class="f5 f4-m f3-l lh-copy measure mt0">
+              If I were you I'd throw it away, and buy some separate developer, stop and fixer. Speed/complexity gains from monobaths
+              are minimal, compared to consistency risks. XTOL, D76, DDX are excellent general purpose developers. Any stop and fixer
+              will do.
+            </p>
+            <cite class="f6 ttu tracked fs-normal">― Reddit user Tach, 2020</cite>
+          </blockquote>
+
+          <blockquote class="ml0 mt5 pl4 black-90 bl bw2  ">
+            <p class="f5 f4-m f3-l lh-copy measure mt0">
+              A gentleman on RFF tipped me to filter the DF96 before I try to use it again, and then check with a test piece of film
+              to see if it is still ok. Using a paper coffee filter, it removed sludge from the solution! Guess that was the emulsion stripped off the Silberra
+              film, The dev was now clear again..
+            </p>
+            <cite class="f6 ttu tracked fs-normal">― Phototrio user Huss, Apr 2020</cite>
+          </blockquote>
+
+          <blockquote class="ml0 mt5 pl4 black-90 bl bw2  ">
+            <p class="f5 f4-m f3-l lh-copy measure mt0">
+              I developed my first two rolls (Tri-X and HP5) in Cinestill D96 and a Lab-Box just this past week. 3 minutes at 80F,
+              then rinse for about sixty seconds in fresh water. I got great negatives, and they were more consistent than using D76
+              or any other multi-step process. I'll definitely keep using the method.
+              
+              I took the closed bottle, put it in the sink, covered it with hot water, and when it was 80F, poured it into the
+              Lab-Box. Easy Peasy.
+            </p>
+            <cite class="f6 ttu tracked fs-normal">― RFF user David_Manning, Apr 2020</cite>
+          </blockquote>
+
+
+          <hr class="mb5 mt4 ml0 small-line" />
+
+          <h3>Resources</h3>
+          <p><a href="https://www.fotoimpex.com/shop/images/products/media/63120_5_PDF-Datasheet.pdf">DF96 datasheet</a>most of the charts and data came from this page.</p>
+          <p><a href="https://cinestillfilm.com/products/df96-developer-fix-b-w-monobath-single-step-solution-for-processing-at-home?variant=7367677247522">DF96 product page</a> on the Cinestill website.</p>
+
+          <p class="mb6"></p>
+        </div>
+      </div>
+
+      <div class="fr w-100 w-90-l"> <!-- this is a line break -->
+        <hr class="mb5"/>
+      </div>
+
+    </main>
+  </body>
+
+  <footer>
+    <div id="footer">
+      <!-- reusable footer goes here-->
+    </div>
+  </footer>
+
+</html>
+
