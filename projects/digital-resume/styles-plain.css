@@ -87,6 +87,11 @@ a, a:visited, a:hover {
   justify-content: space-between;
 }
 
+.signature-cover {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 2rem;
+}
+
 .no-title {
   margin: 0;
 }
