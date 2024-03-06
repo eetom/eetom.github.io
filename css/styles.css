@@ -431,13 +431,32 @@ tr:nth-child(even) {
   width: 30vh;
 }
 
+#sticky-description {
+  width: 65vh;
+}
+
+#the-sticky-div {
+  position: relative;
+  width: 60%;
+  transform: translate(0%, 0%);
+  transition: 0.5s all;
+}
+
 #the-sticky-div.sticky {
   position: fixed;
-  top: 10px;
-  left: 70%;
+  top: 150px;
+  width: 100%;
+  left: 72vw;
+  height: auto;
   width: 16em;
-  max-width: 275px;
+  transform: translate(0%, -15%);
+  transition: 0.5s all;
 }
+
+#the-sticky-div.sticky #sticky-description {
+  width: 25vh;
+}
+
 
 #the-sticky-div.sticky h2 {
   font-size: 30px;
@@ -473,6 +492,10 @@ hr {
 
 .small-line {
   width: 15%;
+}
+
+.small-locked-line {
+  width: 150px;
 }
 
 .mid-line {
@@ -653,11 +676,26 @@ hr {
       font-size: 16px;
   }
 
+  #the-sticky-div {
+    width: 100%;
+  }
+
   #the-sticky-div.sticky {
     position: relative;
     width: 100%;
     max-width: 100%;
-    left: 0%
+    left: 0%;
+    top: 0;
+    transform: none;
+    transition: none;
+  }
+
+  #sticky-description {
+    width: 100%;
+  }
+
+  #the-sticky-div.sticky #sticky-description {
+    width: 100%;
   }
 
   #the-sticky-div hr.small-line {
@@ -723,11 +761,26 @@ hr {
     font-size: 16px;
   }
 
+  #the-sticky-div {
+    width: 100%;
+  }
+
   #the-sticky-div.sticky {
     position: relative;
     width: 100%;
     max-width: 100%;
-    left: 0%
+    left: 0%;
+    top: 0;
+    transform: none;
+    transition: none;
+  }
+
+  #sticky-description {
+    width: 100%;
+  }
+
+  #the-sticky-div.sticky #sticky-description {
+    width: 100%;
   }
 
   #the-sticky-div hr.small-line {
