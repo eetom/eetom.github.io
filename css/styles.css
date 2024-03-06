@@ -448,7 +448,7 @@ tr:nth-child(even) {
   width: 100%;
   left: 72vw;
   height: auto;
-  width: 16em;
+  width: 60%;
   transform: translate(0%, -15%);
   transition: 0.5s all;
 }
@@ -564,7 +564,7 @@ hr {
 @media screen and (min-width: 1800px) {
   #the-sticky-div.sticky {
     left: 68vw;
-    width: 20rem;
+    width: 60%;
     max-width: 350px;
   }
 }
