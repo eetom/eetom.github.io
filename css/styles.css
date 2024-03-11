@@ -1041,6 +1041,11 @@ body.dark .code {
   border: 1px solid #121212;
 }
 
+body.dark .bg-stripe {
+  background-color: #383838;
+  padding: 4px 8px;
+}
+
 body.dark .dropdown-nav button {
   background-color: #21262D;
   border: 1px solid #363B42;
