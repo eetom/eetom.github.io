@@ -76,7 +76,7 @@ a.main-title, a:hover.main-title, a:visited.main-title {
   list-style:decimal-leading-zero;
   padding: 1rem 1rem 1rem 2.5rem;
   line-height: 2em;
-  margin: 0;
+  margin: 1rem 0 0 0;
 }
 
 .lockednav-links li {
@@ -457,7 +457,6 @@ tr:nth-child(even) {
   width: 25vh;
 }
 
-
 #the-sticky-div.sticky h2 {
   font-size: 30px;
 }
@@ -468,6 +467,10 @@ tr:nth-child(even) {
 
 #the-sticky-div.sticky .lockednav-links li {
   margin-bottom: 20px;
+}
+
+#the-sticky-div.sticky .project-title {
+  margin: 2rem 0;
 }
 
 .line-clamp-3 {
@@ -495,7 +498,16 @@ hr {
 }
 
 .small-locked-line {
-  width: 150px;
+  width: 100px;
+}
+
+.medium-locked-line {
+  width: 100%;
+  border-top: solid 4px #9869D3;
+}
+
+.project-title {
+  margin: 7rem 0;
 }
 
 .mid-line {
