@@ -41,6 +41,11 @@ h3 {
   font-size: 1em;
 }
 
+h3.title {
+  margin-top: 5px;
+  color: #888;
+}
+
 hr {
   margin: 1em 2em;
 }
@@ -155,3 +160,10 @@ a, a:visited, a:hover {
   font-size: 1rem;
   margin-right: 1rem;
 }
+
+.contacts i {
+  color: #56215C;
+  margin-left: 4px;
+}
+
+
