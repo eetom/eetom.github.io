@@ -164,6 +164,7 @@ a, a:visited, a:hover {
   padding: 4px 8px;
   margin-left: 4px;
   background-color:#ede2fd ;
+  print-color-adjust: exact;
 }
 
 
