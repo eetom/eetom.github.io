@@ -5,9 +5,10 @@ body {
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 0.8em;
   line-height: 1.4;
   opacity: 0.7;
+  margin: 0.5rem 0;
 }
 
 a {
@@ -15,12 +16,25 @@ a {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
+h1.title {
+  margin-top: 0;
+}
+
+
 h2 {
-  font-size: 1.2em;
+  font-size: 1em;
+  color: #888;
   margin: 15px;
+}
+
+h2.title {
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  color: #721BE4;
+  margin: 0;
 }
 
 h3 {
@@ -28,7 +42,7 @@ h3 {
 }
 
 hr {
-  margin: 1.5em 0;
+  margin: 1em 2em;
 }
 
 a, a:visited, a:hover {
@@ -46,11 +60,15 @@ a, a:visited, a:hover {
 }
 
 .section-title {
-  width: 100%;
+  width: 90%;
   max-width: none;
-  background-color: #f2f2f2;
+  text-align: right;
   print-color-adjust: exact;
   margin-bottom: 1.5rem;
+}
+
+.section-title h2 {
+  margin-top: 0;
 }
 
 .section-content {
@@ -66,18 +84,44 @@ a, a:visited, a:hover {
 
 .date {
   display: block;
+  color: #444;
+  font-weight: 500;
   font-size: 0.9rem;
   opacity: 0.8;
   padding-left: 0px;
   margin-top: 2px;
 }
 
+.triple-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tc-1 {
+  width: 30%;
+}
+
+.company {
+  color: #444;
+  font-size: 1rem;
+}
+
+.role {
+  color: #721BE4;
+  font-size: 1rem;
+  margin-bottom: 0rem;
+}
+
 .right-align {
   text-align: right;
 }
 
-.section-content-2col {
-  width: 48%;
+.section-content-2cola {
+  width: 30%;
+}
+
+.section-content-2colb {
+  width: 65%;
 }
 
 .work-wrapper {
@@ -85,6 +129,15 @@ a, a:visited, a:hover {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.contacts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .signature-cover {
@@ -93,5 +146,12 @@ a, a:visited, a:hover {
 }
 
 .no-title {
-  margin: 0;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.contacts {
+  font-size: 1rem;
+  margin-right: 1rem;
 }
