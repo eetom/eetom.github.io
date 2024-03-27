@@ -252,6 +252,13 @@ h3 {
   max-width: 650px;
 }
 
+.work-content2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  max-width: 650px;
+}
+
 blockquote {
   border-color: #B885F9;
 }

@@ -53,9 +53,9 @@
         <hr class="mb4 ml0 small-locked-line" />
 
         <p class="lh-copy" id="sticky-description">
-          Firewall is a key application of Cloudflare but for a long time access and usage of the more powerful parts of the app wasn't as accessible or easy to for most of
-          Cloudflare's customer base. Ever for those enterprise teams who had the people and expertise to set up Cloudflare custom Firewall, it was 
-          not an easy process. The goal here was to update and simplify custom firewall across all customer types from enterprise to free customers.
+          Cloudflare Firewall is a critical security tool for many of our users, but accessing its advanced features was a challenge for many of our
+          users. This project aimed to simplify the custom firewall experience for all customer segments, from enterprise teams to
+          free plan users.
         </p>
 
         <div class="tag-section mb4 mt4">
@@ -107,137 +107,195 @@
         </div>
 
         <h3 id="part-1" class="work-title mt5">01. Problem</h3>
+
+
           <p class="work-content">
-            One of the main driving purpose for the founders or Cloudflare to create Cloudflare was that they were tired of spam emails and wanted to build something
-            that would be able to intercept and prevent this unwanted traffic. <br><br> Cloudflare basic firewall is super easy to use and set up. And this works
-            great as long as you stay within the confines of the presets. Once you start with wanting to have more control and precision with your firewall the first
-            thing you must overcome is where to even start.
+            The frustration of spam emails fueled Cloudflare's creation. The founders (Matthew, Michelle, and Lee) aimed to build a solution that could intercept
+            and prevent this unwanted traffic. While Cloudflare's basic firewall is user-friendly and sufficient for basic needs,
+            users seeking more control and precision face a significant hurdle: figuring out where to begin.
           </p>
+
+          <div class="blog-callout">
+            <ul>
+              <h3>Key problems</h3>
+              <li>Limited Accessibility: Powerful firewall settings were previously inaccessible to most users, requiring manual
+                internal team
+                intervention and lot of back-and-forth emails.</li>
+              <li>Complex Setup: Custom firewall configurations were cumbersome and time-consuming, even for technical users.</li>
+            </ul>
+          </div>
+
+
+
         <img class="work-img" src="work-img/firewall-1.png">
           <p class="work-content">
-            The starting point of the WAF (Web application Firewall) was just a box that said, "Please contact our team." To get set up, the Cloudflare team would 
-            have to set up your custom WAF rules internally for you. And if you wanted to make any changes to those rules? You'd have to contact our team again.
+            The starting point for custom WAF (Web Application Firewall) rules was a frustrating dead end: a prompt to "Please
+            contact our team." This meant relying on Cloudflare's internal team to manually configure your rules, and any changes
+            required repeating the entire process.
           </p>
 
         <img class="work-img" src="work-img/firewall-2.png">
           <p class="work-content">
-            Even just looking at the traffic to the Firewall page, you could see that (labeled: None) our internal team working with customers to build their
-            custom rules was a good chunk of the traffic to the Firewall page.
+            Traffic data for the Firewall page was telling. A significant portion (labeled user as "None") represented interactions with our
+            internal team building custom rules for customers. This highlighted the inefficiency of the existing system.
           </p>
         
         <h3 id="part-2" class="work-title">02. Research</h3>
           <p class="work-content">
-            We wanted to see how we can give back control to the users so that they could create and manage their own custom firewall rules.
+            Our core goal was to shift control back to the user. This meant designing a user interface that enabled users to
+            create and manage their own custom firewall rules, eliminating the need for internal support and minimizing friction in
+            the user experience
           </p>
 
         <img class="work-img" src="work-img/firewall-3.png">
           <p class="work-content">
-            We looked at all different types and shapes of rule builders. From operating specific tools to 3rd party extentions. Trying to understand the
-            fundamental components and what made sense.
+            To understand the best approach for the custom firewall rule builder, we conducted a comprehensive comparative research
+            analysis. We evaluated a wide range of existing rule builders, including operating system tools and third-party
+            extensions. This exploration helped us identify the core components and user interactions that were most effective and
+            intuitive.
           </p>
         <img class="work-img" src="work-img/firewall-5.png">
             <p class="work-content">
-              Some were very complex and other were overly visual. Understanding the key functions that had to be there was vitial to deciding where Cloudflare's
-              custom WAF rule build would sit. On one end we wanted to make it easy for even beginners to use, but without missing features for highly technical users
-              who would want precise control via a DSL (Domain specific language).
+              Analyzing existing rule builders revealed a spectrum of approaches. Some were overly complex, while others relied
+              heavily on visual elements and metaphors. Our challenge was to identify the core functionalities essential for Cloudflare's custom WAF
+              rule builder. Striking a balance was key: ensuring ease of use for beginners while not compromising the precise control
+              desired by technical users who might leverage a Domain Specific Language (DSL) for advanced customization.
             </p>
         <img class="work-img" src="work-img/firewall-4.png">
             <p class="work-content">
-              A good place where I started was sitting down with some of those internal sales-engineers who worked with our key customers building those
-              custom rules in the first place. Getting a scope of how our firewall works and what levels of customization really help me grasp the complexity
-              and range where the solution needs to come from. <br><br>
-              Fun fact, after I created this flow chart to understand our firewall flow, the sales engineer I worked with requested the chart to use to explain
-              our firewall product to enterprise customers.
+              To gain a deep understanding of the existing workflow and user needs, I collaborated with internal sales engineer who
+              built custom firewall rules for our key customers. By discussing firewall functionalities and the level of customization
+              required, I was able to grasp the complexity and scope of the solution needed. This collaborative approach proved
+              valuable: the flow chart I created to visualize the firewall process was even adopted by the sales engineer to explain
+              the product to enterprise clients.
             </p>
         
         
         <h3 id="part-3" class="work-title">03. Analysis</h3>
           <p class="work-content">
-            Once I had a fundamental understand of how the firewall worked and differet approaches to rule builders it was time to see what fits.
+            Armed with a solid understanding of the firewall's functionality and having explored diverse rule builder approaches, it
+            was time to move on to the next phase: evaluating which elements would best fit our user needs and the Cloudflare
+            experience.
           </p>
         <img class="work-img" src="work-img/firewall-6.png">
           <p class="work-content">
-            We needed to start with an overall flow to understand the different UI we might need to build to allow basic CRUD (create, read, update, and destroy) processes.
+          To ensure a seamless user experience, I began by mapping out the overall workflow for creating, reading, updating, and
+          deleting (CRUD) firewall rules. This user flow analysis helped us identify the different UI components needed to support
+          each stage of the process effectively.
           </p>
         <img class="work-img" src="work-img/firewall-7.png">
           <p class="work-content">
-            I broke down the basic components we'll want to have for the visual part of rule builder. Setting up an action based on triggers. The triggers can be additive or subtrative.
-            Depending on the type of operand that was used. 
+          The visual interface, a key component of the rule builder, needed to provide clear and intuitive functionality. I
+          focused on breaking down the core elements: defining actions triggered by user-selected events. These triggers could be
+          either additive (including specific elements) or subtractive (excluding elements), depending on the chosen operand (data
+          point used in the rule).
           </p>
 
           <img class="work-img" src="work-img/firewall-14b.png">
           <p class="work-content">
-            By understanding the range of possible types of customizations, we played an assortment of possible options for each
-            section of filter functions. We also experimented
-            with a concept of drag-and-drop to visually re-order rules (a common request when customers were looking to update
-            rules)
+            To accommodate the full range of potential customizations, we brainstormed and prototyped various options for each
+            filter function section. This exploration ensured we could address diverse user needs. Additionally, I experimented
+            with a drag-and-drop functionality for visually reordering rules, a feature frequently requested by customers for easier
+            rule management.
           </p>
 
 
         <h3 id="part-4" class="work-title">04. Testing</h3>
-          <p class="work-content">
-            Part of the team I was working with was in the London office, I brought some paper prototypes and worked with the engineers and sales team to see how they might interpret customer
-            wants and needs. We worked on various UI components that could give more feedback on existing firewall rules and their effectiveness. Along with a very rudimentary rule builder
-            that allowed jumping between the visual rule builder and a dedicated DSL view.
-          </p>
+          <p class="work-content2">
+            To ensure the user interface (UI) effectively addressed customer needs, I collaborated with engineers and the
+            London-based engineering and sales team. Through paper prototyping sessions, we gained valuable insights into how both teams interpreted
+            customer wants and translated them into actionable design decisions. This teamwork led to the development of several key
+            UI components:
+            </p>
+            <ul class="mb5">
+              <li>Enhanced feedback mechanisms that provided users with clearer information on existing firewall rules and their
+              effectiveness.</li><br>
+              <li>A basic rule builder prototype that allowed users to switch between the visual interface and a dedicated Domain Specific
+              Language (DSL) view. This addressed the needs of both technical and non-technical users.</li>
+            </ul>
+
         <img class="work-img" src="work-img/firewall-9.png">
         <img class="work-img" src="work-img/firewall-11.png">
           <p class="work-content">
-            Working with the PM Alex, we arranged and ordered customer pains and priorities to help us focus in on what we can accomplish for a round one. And which features should
-            be set as a fast follow up in the next update.
+            In collaboration with Firewall Product Manager Alex, we conducted a customer pain point and priority analysis. This analysis
+            helped us define the scope of work for the initial launch (round one). By focusing on the most critical user needs, we
+            were able to prioritize features for round one and identify those best suited for a fast follow-up update in the next
+            release.
           </p>
 
 
         <h3 id="part-5" class="work-title">05. Design</h3>
-          <p class="work-content">
-            Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras
-            consequat.
-          </p>
+
         <img class="work-img" src="work-img/firewall-15.png">
           <p class="work-content">
-            The design that we launched was a more simplified rule builder. We decided to cut the drag-and-drop feature to reorder the conditionals in favor of launching 
-            with something more basic.
+            To prioritize user adoption for the initial launch, we opted for a streamlined rule builder design. This meant
+            strategically deferring the drag-and-drop functionality for reordering conditionals. 
           </p>
         <img class="work-img" src="work-img/firewall-15b.png">
           <p class="work-content">
-            To test out interactions for the rule builder, I created simple HTML prototypes for different variations. Check out <a href="..\..\projects\fbf-test\index1_basic.html">a simplified prototype</a>
-            in my side-project section.
+            To ensure the rule builder's interaction design was intuitive, I created a series of simple HTML prototypes showcasing
+            different variations. This iterative prototyping allowed for early user feedback and helped refine the final interface.
+            You can experience <a href="..\..\projects\fbf-test\index1_basic.html">a simplified prototype</a> in my side-project section.
           </p>
         <img class="work-img" src="work-img/firewall-15c.png">
           <p class="work-content">
-            Along with the updated WAF rule builder we created some additional feedback and data points for the user to see the results of the firewall.
+            In conjunction with the revamped WAF rule builder, we implemented additional feedback mechanisms and data points. This
+            empowered users with greater visibility into their firewall's effectiveness. Users could now access valuable insights
+            such as the impact of specific rules and the overall performance of their firewall.
           </p>
         <img class="work-img" src="work-img/firewall-15d.png">
           <p class="work-content">
-            As well as additional features like rate-limited notification and a event log to see which rules were being triggered.
+            Additionally, features like rate-limited notifications and an event log provided real-time awareness of triggered rules,
+            allowing for proactive management and fine-tuning of security measures.
           </p>
 
 
         <h3 id="part-6" class="work-title">06. Results</h3>
           <p class="work-content">
-            We were able to attain some pretty interesting results that would be able for us to further refine the Custom firewall into the future.
-          </p>
-        <img class="work-img" src="work-img/firewall-16.png">
-          <p class="work-content">
-            We had some users try out the advanced DSL expression editor we created for professionals who wanted to code their own firewall rules.
-            As expected there weren't as many customers who went down this route, but the ones who did, almost all ended up completing the rule creation
-            via the expression editor.
+          High User Engagement: Within the first 6 days of launch, nearly 4,000 users actively participated by creating a new
+          custom rule. Over half (over 2,000 users) successfully completed the rule creation process, saving and deploying at
+          least one rule. This suggests the core user experience resonated well with a significant portion of the user base.
           </p>
         <img class="work-img" src="work-img/firewall-17.png">
           <p class="work-content">
-            We had a good number of users try out and create rules with about 60% of users completing the flow. I think this would be a great area
-            to dig into a bit deeper to understand where customers were getting stuck or just trying out the new feature. The next goal here would 
-            be to improve the conversion rate.
+            Advanced User Success: For highly technical users, the new DSL expression editor proved valuable. While a smaller group
+            (approximately 362 users) explored this advanced feature, a significant percentage (217 users) successfully created and
+            deployed custom rules using the editor.
+          </p>
+        <img class="work-img" src="work-img/firewall-16.png">
+          <p class="work-content">
+            Areas for Optimization: The 60% completion rate for creating custom rules offers an opportunity to further improve the
+            user experience. Analyzing user behavior can pinpoint specific areas where users might encounter friction, allowing for
+            targeted improvements.
           </p>
         <img class="work-img" src="work-img/firewall-18.png">
-          <p class="work-content">
-            Another good sign was the number of support tickets created specifically around Firewall and Customer Firewall rules. The number of
-            tickets went up upon launch of the new feature but quickly dropped once the inital round of customers got use to using and creating their own
-            custom rules.
+          <p class="work-content2">
+            Reduced Support Burden and User Empowerment: The impact of the redesigned custom firewall experience extended beyond
+            user adoption. Support ticket data revealed a significant decrease in inquiries related to firewall rules.
+          </p>
+            <ul>
+              <li><b>Initial Inquiry Spike:</b> As expected, the launch week saw a temporary increase in support tickets (21 tickets), likely due
+              to users familiarizing themselves with the new features. However, this initial rise was quickly followed by a
+              substantial decrease.</li><br>
+              <li><b>Sustainable Reduction:</b> Just two weeks after launch, support tickets related to firewall rules dropped by 33%
+              week-over-week (33 tickets). This downward trend continued, with a further 28% reduction the following week (13
+              tickets).</li>
+            </ul>
+            <p class="work-content">
+              Sustainable Reduction: Just two weeks after launch, support tickets related to firewall rules dropped by 33%
+              week-over-week (33 tickets). This downward trend continued, with a further 28% reduction the following week (13
+              tickets).
           </p>
         <img class="work-img" src="work-img/firewall-18b.png">
           <p class="work-content">
-            Design of the marketing component for custom Firewall rules on launch day.
+            The redesigned custom firewall experience, showcased in the visual marketing materials (see above), proved to be a
+            success. User engagement metrics, reduced support tickets, and positive feedback all indicate a significant improvement
+            for our customers.<br><br>
+            
+            This project serves as a springboard for continued innovation. By prioritizing an intuitive user experience and
+            empowering users with self-service tools, we have empowered them to take control of their firewall security. Looking
+            ahead, the team plan to leverage the learnings from this project to introduce even more advanced functionalities while
+            ensuring a streamlined experience for all user levels.
           </p>
 
         <div class="fr w-100"> <!-- this is a line break -->
