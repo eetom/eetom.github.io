@@ -53,9 +53,10 @@
         <hr class="mb4 ml0 small-locked-line" />
 
         <p class="lh-copy" id="sticky-description">
-          Industry database is a on-going project for Ledger Investing that was created to give customers and potential customers some industry
-          based data both as a reference but also as a show of how Ledger works with data. It currently is a part of the new "Learn" section
-          in the navigation on the Ledger website.
+          Oftentimes it's very difficult to effectively communicate their data analysis capabilities to potential customers. 
+          This ongoing project for Ledger Investing tackled this challenge head-on by creating a publicly accessible industry database, 
+          serving as both a reference for customers and a showcase of Ledger's data analysis capabilities. Now a part of the "Learn" tab 
+          on the Ledger website, the database empowers users with industry data visualizations and research.
         </p>
 
         <div class="tag-section mb4 mt4">
@@ -108,128 +109,315 @@
 
         <h3 id="part-1" class="work-title mt5">01. Problem</h3>
             <p class="work-content">
-              This project primarily started from many different teams having different challenges. The sales team was relying on using the "old database"
-              as a means to show potential customers some of the cool data analysis our team was working on, they needed something more accessible and updated to 
-              show where Ledger was moving towards. The data science team has been working on researching and writing a number of different topics, but didn't have
-              a space where they can share with the actuaries on the customers side, they often had to create custom PDFs and spend a lot of time answering basic
-              questions. <br><br> 
-              Finally, I felt that overall Ledger was very much a "black box" to a lot of people and even some customers, having some documentation and
-              resouces would be able to help both active customers and potential customers get to know Ledger better.
-            </p>
-        <img class="work-img" src="work-img/database-2.png">
-            <p class="work-content">
-              We looked into various other examples of Resource pages and Knowledge bases. There were a lot of benefit besides just the data itself, it could position your
-              company as a industry resource and thought leader.
-            </p>
-        <img class="work-img" src="work-img/database-3.png">
-            <p class="work-content">
-              I had experimented with the idea of the Ledger "Library" to house some of the existing materials.
-            </p>
-        <img class="work-img" src="work-img/database-1.png">
-            <p class="work-content">
-              The Library would be more like a storage and organization of the Data Science team's white papers, but could include some interactive "labs".
+              Multiple challenges emerged from having scattered data resources across Ledger.
+              This project aimed to address these issues by creating a unified, accessible database that would empower communication
+              and transparency across all stakeholders.
             </p>
 
+            <div class="blog-callout">
+              <ul>
+                <h3>Project origination: pain points</h3>
+                <li><b>Sales Frustration:</b> The sales team relied on an outdated "old database" to showcase data analysis capabilities to
+                potential customers. This solution was limited in access and didn't reflect Ledger's current platform and dataset.</li><br>
+                <li><b>Data Science Bottleneck:</b> Valuable research conducted by the data science team was siloed, lacking a dedicated platform
+                for sharing insights with actuaries on the customer side. This resulted in time-consuming efforts creating custom PDFs
+                and answering basic questions on customer calls.</li><br>
+                <li><b>Limited Brand Awareness:</b> Without a centralized resource, Ledger appeared as a "black box" to many, hindering customer
+                understanding and trust.</li>
+              </ul>
+            </div>
+
+            <img class="work-img" src="work-img/database-2.png">
+
+            <p class="work-content2">
+              To identify the full potential of the industry database, we conducted a comprehensive analysis of existing resource
+              pages and knowledge bases. This research extended beyond the insurance industry, examining acclaimed examples from
+              companies like Redfin and Stripe. We also looked within the car insurance industry, analyzing GetJerry's extensive car
+              insurance database.
+              <br><br>
+              This competitive research revealed several key benefits beyond simply presenting data:
+            </p>
+              
+            <ul class="mb5">
+              <li><b>Industry Authority:</b> A well-designed database could position Ledger as a thought leader within the insurance industry.</li><br>
+              <li><b>Enhanced Credibility:</b> Providing valuable resources fosters trust and establishes Ledger as a reliable data source.</li><br>
+              <li><b>User Engagement:</b> A compelling user experience fosters exploration and deeper engagement with Ledger's services.</li>
+            </ul>
+
+            <img class="work-img" src="work-img/database-3.png">
+            <p class="work-content2">
+              Initially, I experimented with the concept of a "Ledger Library" to centralize existing materials. This involved
+              collaborating with some engineers to explore various options, including pre-built documentation software. We also
+              considered housing additional resources beyond written content, such as company videos and sales presentation slides.
+              <br><br>
+              However, after careful evaluation, we determined a custom-built solution would best serve Ledger's needs. This approach
+              offered several advantages:
+              </p>
+
+              <ul>
+                <li><b>Tailored Functionality:</b> A custom platform could cater to the specific needs of Ledger's data and diverse audience
+                segments. This includes a section for user who are logged in to access locked content.</li><br>
+                <li><b>Scalability and Flexibility:</b> Building from scratch allowed for future expansion and integration of additional resources
+                beyond the initial focus.</li><br>
+                <li><b>Seamless User Experience:</b> Custom development facilitated a cohesive user experience that seamlessly integrates with the
+                existing Ledger website.</li>
+              </ul>
+              
+              <p class="work-content">
+                While pre-built solutions offered convenience, the custom approach ultimately provided a more comprehensive and
+                adaptable platform for Ledger's evolving needs.
+              </p>
+              
+            </p>
+            <img class="work-img" src="work-img/database-1.png">
+            <p class="work-content2">
+              To explore the potential of the "Ledger Library" concept, I collaborated with Ben from the data science team. We
+              leveraged some of their existing white papers as a starting point. This collaboration allowed us to develop a prototype
+              showcasing the core functionality of the Library, including:
+            </p>
+              
+            <ul>
+              <li><b>Centralized Storage:</b> Organization and easy access to the Data Science team's valuable research papers.</li><br>
+              <li><b>Interactive Elements:</b> The prototype incorporated interactive "labs" as potential tools for user engagement. These labs would have code snippets that users could
+                run on their own machines based on Jupiter notebooks.</li>
+            </ul>
+              
+            <p class="work-content">
+              While the Library concept ultimately evolved into 2 separate database, this initial exploration with Ben proved valuable
+              in solidifying the need for a knowledge hub.
+            </p>
+              
 
         <h3 id="part-2" class="work-title">02. The old database</h3>
             <p class="work-content">
-              The old database was something the founding team had created to be the original platform. It leveraged publicly available data on various insurance
-              companies' financial reports to build a foundational resource for investors. This version of the platform was never offically released.
+              The Industry Database project built upon the groundwork established by the founding team's "legacy database." This
+              initial platform, though never officially released, leveraged publicly available data on insurance companies' financial
+              reports. It served as a valuable foundational resource for investors, offering insights into the insurance industry
+              landscape.
             </p>
         <img class="work-img" src="work-img/database-4.png">
             <p class="work-content">
-              Despite never being released, the sales teams would show the data and charts on it to potential customers as a show of Ledger's ability to
-              gather and analyze data. 
+              While the legacy database wasn't officially launched, its data and charts proved valuable to the sales team. These
+              elements functioned as a powerful pre-release sales tool, allowing them to showcase Ledger's capabilities in data
+              gathering and analysis to potential customers. This unofficial use case highlighted the clear need for a more accessible
+              and comprehensive platform, ultimately leading to the development of the Industry Database.
             </p>
         <img class="work-img" src="work-img/database-5.png">
             <p class="work-content">
-              A lot of data science writing by one of the Ledger cofounders (Julien) was also hosted here but no one to read it.
+              The legacy database also housed a significant amount of data science writing by Ledger co-founder Julien. However, this
+              valuable resource remained largely unseen due to the platform's limited accessibility. This untapped potential for
+              sharing insights with a wider audience became a key driver for the development of the Industry Database project.
             </p>
         <img class="work-img" src="work-img/database-6.png">
             <p class="work-content">
-              Separate from the old database, the Data Science team worked putting together their writing online in the form of a "wiki". <br><br>
-              <i>Note: it's not really a wiki, as it does not allows collaborative editing of its content and structure.</i>
+              While the legacy database offered a glimpse into Ledger's data analysis capabilities, it wasn't designed for ongoing
+              knowledge sharing. Recognizing this limitation, the Data Science team independently created their own online resource –
+              a wiki – to compile their research and writing.<br><br>
+              <i>Note: While this resource shared some characteristics with a wiki, it is <b>not</b> a wiki as it does not offer collaborative editing features.
+              I also helped Mark create the above design for the print version of the data science publications.</i>
             </p>
 
         <h3 id="part-3" class="work-title">03. Design</h3>
-            <p class="work-content">
-              So the goal we started out with was to take all this different pieces of content and resources and put them together on the website. The goal of this website would 
-              be to <br><br>
-              1. Have a location to show the charts and data that was also being shown in the Old Database for customers and non-customers <br>
-              2. Also have a place for academic writing such as Data Science papers could be accessed.<br>
-              3. Use this on our public facing website to position Ledger as a resource center and thought leader.<br><br>
+            <p class="work-content2">
+              The project's core objective was to unify scattered data and resources into a user-friendly platform accessible on the
+              Ledger website. This centralized hub aimed to achieve three key results that we would measure success against:
+            </p>
+              
+            <ul>
+              <li><b>Enhanced Accessibility:</b> Replicate the charts and data from the old database, making it readily available for both
+              customers and non-customers.</li><br>
+              <li><b>Knowledge Sharing:</b> Establish a dedicated space for academic content like data science papers, fostering knowledge
+              sharing and transparency.</li><br>
+              <li><b>Thought Leadership:</b> Leverage the database as a public resource, positioning Ledger as a valuable industry resource and
+              thought leader.</li>
+            </ul>
 
-              We started with the Industry data section.
+            <p class="work-content">
+              With a multitude of potential starting points, I collaborated closely with Michael, the project manager, to establish a
+              strategic direction. While data science writing held value, we ultimately decided to prioritize the industry data
+              section. This decision was driven by the data and charts' powerful ability to deliver immediate impact and align with all goals.
+              <br><br>
+              This focus on data ensured the project hit the ground running, meeting all three initial objectives. Following this
+              success, we planned to continue development on the data science writing section, creating a comprehensive knowledge
+              library in the future.
             </p>
 
             <img class="work-img" src="work-img/database-7.png">
+              <p class="work-content2">
+                The Industry Database homepage makes a strong first impression with two key elements:
+              </p>
+                
+              <ul>
+                <li><b>Compelling Data Visualization:</b> A prominent "big total industry chart" alongside breakdowns by Lines of Business (LOBs)
+                offers users a quick snapshot of the industry landscape.</li><br>
+                <li><b>Intelligent Search:</b> Leveraging Algolia, the search bar facilitates intuitive exploration. We anticipated users would
+                often have specific insurers in mind, so this powerful search serves as a primary navigation tool alongside the LOB
+                breakdowns.</li>
+              </ul>
+                
               <p class="work-content">
-                The home page for the database shows a big total industry chart as well as breakdowns for multiple subsections ("lines of business") in the data set. The
-                search bar was something that the Data team worked hard on using Algolia to create intelligent search results. <br><br> It would be one of the main methods of navigation
-                besides the subsections as we believe that most of the users coming to the Industry database would know some of the names of Insurers and begin their exploration there.
+                These features cater to different user preferences, allowing some to browse by category and others to jump right into
+                specific data points they're interested in.
               </p>
             <img class="work-img" src="work-img/database-10.png">
-                <p class="work-content">
-                  The search bar dropdown would feature not only exact search terms, but also was designed to handle fuzzy searches and even related searches. To add to the depth of
-                  the Library, it could also cross-references into other articles and writing.
+                <p class="work-content2">
+                  The Industry Database prioritizes user experience with a powerful search bar powered by Algolia. This goes beyond simple
+                  keyword matching to offer several key functionalities:
                 </p>
+
+                <ul>
+                  <li><b>Fuzzy Search:</b> Handles typos and misspellings, ensuring users find the information they need regardless of minor
+                  mistakes.</li><br>
+                  <li><b>Related Searches:</b> Recommends relevant content based on the user's query, guiding them towards deeper exploration of the
+                  data.</li><br>
+                  <li><b>Cross-Referencing (Future):</b> In future development, the search could seamlessly connect users
+                  to related articles and writing within the database, fostering a more comprehensive learning experience.</li>
+                </ul>
+                  
+                <p class="work-content">
+                  By incorporating these features, the search bar empowers users to navigate the database efficiently and discover
+                  valuable insights.
+                </p>
+
             <img class="work-img" src="work-img/database-8.png">
-                <p class="work-content">
-                  The LOB ("Line of Business") page would give a snapshot view of that subsection of the US insurance industry. Along with a list of top 10 insurers.
-                  We wanted it to be possible for potential customers (Insurers) to come here to see how their numbers stacked up versus their competitors in the overall market.
-                  But of other customers (Investors) we wanted to show the potential for growth these Insurers had or the strength of their position.
+                <p class="work-content2">
+                  The Industry Database caters to a broad audience by providing targeted data on each Line of Business (LOB). These
+                  dedicated pages offer:
                 </p>
+
+                <ul>
+                  <li><b>Industry Snapshot:</b> Users are greeted with a concise overview of the specific LOB, providing a quick grasp of the
+                  sector's current landscape.</li><br>
+                  <li><b>Benchmarking Tools:</b> Potential customers (primarily insurers) can leverage Top 10 insurer lists to compare their performance
+                  against industry rivals.</li><br>
+                  <li><b>Growth Potential:</b> For investors, the LOB pages highlight key metrics that signal an insurer's potential for growth or
+                  their established market strength. This gives investors a small glimps into the amount of data that Ledger was working with.</li>
+                </ul>
+                  
+                <p class="work-content">
+                  By tailoring data presentations to specific needs within each Line of Business, the Industry Database transcends a
+                  simple data repository. It empowers key stakeholders across industries to see what Ledger can do with industry data. 
+                </p>
+
             <img class="work-img" src="work-img/database-9.png">
                 <p class="work-content">
-                  The Insurer detail page allowed the viewer to dive deeper into that companies specific data. This would cover for all Lines of business that the Insurer covered.
+                  For users seeking a granular view, the Industry Database offers dedicated Insurer detail pages. These pages function as
+                  data hubs, allowing users to delve deeper into a specific company's performance across all Lines of Business (LOBs) they
+                  operate in. This comprehensive overview empowers users to analyze trends, identify strengths and weaknesses, and gain a
+                  well-rounded understanding of an insurer's position within the market.
                 </p>
             <img class="work-img" src="work-img/database-14.png">
-                <p class="work-content">
-                  There were even more charts we wanted to add in with Some being "locked" behind a sign up to get more viewers to commit into Ledger. 
-                  This would 'gate' some of the more private data and resources.
+                <p class="work-content2">
+                  To explore user engagement strategies, we incorporated design mockups featuring "gated content." This meant
+                  strategically reserving some of the more in-depth charts and resources behind a user sign-up. This approach aimed to
+                  incentivize deeper user commitment with Ledger while still offering valuable insights on the public-facing side of the
+                  database.
                 </p>
 
                 <p class="work-content">
-                  There were some sections we started designing but probably for a future version such as having a section for media and presenatations. When I chatted with the
-                  Sales teams, they and the executives often did presentations at events. It would have been great for people who were at the event to be able to get the 
-                  recorded presentation and even download the slides.
+                  While the initial launch prioritized core data functionalities, we explored future content sections to further enrich
+                  the database's value. One such exploration involved creating a dedicated media and presentations section. This stemmed
+                  from discussions with sales teams and executives who expressed a frequent need to share presentations at events. This
+                  section, envisioned for a future release, would allow event attendees to easily access recorded presentations and
+                  download the corresponding slides, fostering continued engagement beyond the initial event.
                 </p>
 
 
         <h3 id="part-4" class="work-title">04. Hackathon</h3>
             <p class="work-content">
-              Our team rallied behind this idea as a project to work together in person. The product, engineering, and data teams met up in California to have a "hackathon" to see
-              the fastest MVP we could build from the industry database project.
+              With a multitude of potential projects on the table, fostering a shared focus was crucial. Through a collaborative
+              voting process, the team identified the Industry Database as the most impactful initiative. This unified vision fueled
+              our excitement, leading to a dedicated in-person "hackathon" in California. This intensive session brought together
+              product, engineering, and data teams for a focused effort on developing the fastest possible MVP (Minimum Viable
+              Product) based on the Industry Database project.
             </p>
+
+            <div class="blog-callout">
+              <h3>Hackathon goal:</h3>
+              <p>Iterate, build, and launch. 3 day time limit. We launch on the last day no matter what!!</p> 
+            </div>
             <img class="work-img" src="work-img/database-11.png">
 
+            <p class="work-content2">
+              With a clear vision, our cross-functional team embarked on an ambitious three-day "hackathon" in California. During this
+              intensive session, we tackled several critical tasks:
+            </p>
+
+            <ul>
+              <li><b>Design Refinement:</b> We streamlined the design for the Industry Database MVP, ensuring a user-friendly experience.
+              Messaging Optimization: We honed the messaging to effectively communicate the database's value proposition to different
+              user groups.</li><br>
+              <li><b>Data Integration:</b> We successfully connected the old database data stores, ensuring a seamless flow of information into
+              the new platform.</li><br>
+              <li><b>Front-End Development:</b> Working collaboratively, the team built and published all the front-end components, laying the
+              foundation for the MVP launch.</li>
+            </ul>
+
             <p class="work-content">
-              Our time frame was 3 days to refine the design, the messaging, connect the old database data stores and publish all the components from the front-end. It was a great
-              time working in person with all the team 
+              This intense yet rewarding experience underscored the power of in-person collaboration and our team's ability to deliver
+              under pressure.
             </p>
             <img class="work-img" src="work-img/database-12.png">
 
         <h3 id="part-5" class="work-title">05. Post-Hackathon</h3>
             <p class="work-content">
-              There were a few more chart updates and improvements we wanted to make post-hackathon. Largely still working on getting parity with the data shown on the
-              Old Database.
+              Our post-hackathon focus was refining the Industry Database MVP. We prioritized enhancing charts for clarity and worked
+              towards complete data parity with the old database, ensuring users have access to all historical information. This
+              commitment to continuous improvement keeps the Industry Database delivering valuable user insights.
             </p>
 
         <img class="work-img" src="work-img/database-16.png">
             <p class="work-content">
-              In the old database, one stand out feature was having a lot of the data mapped geographically. Here we had a lot more data to map, so we were experimenting
-              with how we can translate that various series of data by different metrics.
+              The old database excelled in presenting data geographically. Recognizing this user preference, we explored advanced
+              techniques for translating a wider range of data series into compelling geo-visualizations. This involved experimenting
+              with mapping various metrics, aiming to provide users with even richer insights into industry trends across different
+              geographic locations.
             </p>
         <img class="work-img" src="work-img/database-17.png">
             <p class="work-content">
-              Another section that we wanted to add into the Insurer detail page was adding in <a href="https://en.wikipedia.org/wiki/Candlestick_chart">candlestick charts</a>. 
-              This was a type of chart would have been more of our Investor customer base as it would be something they were more familiar with in looking at investment data.
+
+              To cater to our investor user base, we explored incorporating <a href="https://en.wikipedia.org/wiki/Candlestick_chart">candlestick charts</a> on the Insurer detail page. These
+              charts, a familiar format for financial data analysis, would have enabled investors to visualize historical stock price
+              movements and make more informed investment decisions.
             </p>
         <img class="work-img" src="work-img/database-18.png">
+            <p class="work-content2">
+              While the initial launch of the Industry Database focused on core functionalities, a wealth of exciting ideas remain on
+              the horizon. These include:
+            </p>
+              
+            <ul>
+              <li><b>Company Spotlights:</b> Dedicated sections showcasing specific insurers or Lines of Business would provide users with
+              in-depth explorations of industry leaders or emerging trends within a particular sector.</li><br>
+              <li><b>Industry Trend Visualization:</b> Interactive charts and graphs could be implemented to dynamically illustrate historical
+              and projected changes across the entire industry and individual LOBs.</li>
+            </ul>
+            
             <p class="work-content">
-              We wanted even more ways for the viewer to explore our data set. Some ideas included adding in Insuer or Line of Buiness spotlight sections that would highlight
-              a certain company or subsection of the US Insurance industry. Industry trends was an idea to show the direction of change over time in both the whole industry
-              and in the specific subsections.
+              These enhancements would further empower users to delve deeper into the data, fostering a richer understanding of the
+              insurance landscape.
+            </p>
+
+            <h3>A Journey of Learning and Collaboration</h3>
+            
+            <p class="work-content2">
+            Looking back, this project has been an incredible learning experience. It began with a simple idea and a handful of
+            enthusiastic engineers who shared my vision. Throughout the process, I gained valuable insights into:
+            </p>
+            
+            <ul>
+              <li>The power of user-centered design: Understanding user needs and behaviors helped craft an intuitive and engaging
+              platform.</li><br>
+              <li>The importance of collaboration: Working closely with product, engineering, and data teams ensured a successful outcome.</li><br>
+              <li>The value of rapid prototyping: The hackathon experience exemplified the power of focused teamwork in delivering a
+              functional MVP.</li>
+            </ul>
+
+            <p class="work-content">
+            Witnessing the Industry Database transform from concept to reality has been a testament to the team's unwavering
+            dedication and collaborative spirit. It empowers users with valuable data, solidifying Ledger as a thought leader within
+            the insurance industry. As we build upon this foundation, the Industry Database is poised to become a cornerstone
+            resource for navigating the complexities of the insurance landscape.
             </p>
 
         <div class="fr w-100"> <!-- this is a line break -->
