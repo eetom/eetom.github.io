@@ -325,11 +325,12 @@ blockquote {
 /* ======= Background styling ======= */
 
 .blog-callout {
-  background-color: #F3E9FF;
+  background-color: #FCF9FF;
   border:1px solid #440F8A;
   padding: 3rem;
   margin: 3rem 0;
   line-height: 2em;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .blog-callout h3 {
