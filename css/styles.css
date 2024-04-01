@@ -340,7 +340,8 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-top: 1px solid #DDD;
-  background-image: linear-gradient(to right bottom, #fcf9ff, #fcf9ff, #ebd6ff, #ebd6ff, #d8b3ff);
+  /* background-image: linear-gradient(#fcf9ff, #fcf9ff 45%, #ebd6ff, #d8b3ff); */
+  background-image: linear-gradient(#ebd6ff, #fcf9ff, #fcf9ff) ;
   color: #200247;
 }
 
