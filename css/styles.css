@@ -223,6 +223,7 @@ h3 {
 .header-index-text {
   display: flex;
   flex-direction: column;
+  font-family: 'Playfair Display', serif;;
 }
 
 .headline {
@@ -339,20 +340,29 @@ footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-top: 1px solid #DDD;
-  background-color: #E0C8FF;
+  background-image: linear-gradient(to right bottom, #fcf9ff, #fcf9ff, #ebd6ff, #ebd6ff, #d8b3ff);
   color: #200247;
 }
 
 .footer-flex-columns {
   display: flex;
+  width: 100%;
+  max-width: 1080px;
+  justify-content: space-between;
+}
+
+.footer-link-columns {
+  display: flex;
   width: 250px;
   justify-content: space-between;
 }
+
 
 .footer-link a,
 .footer-link a:visited {
   color: #200247;
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
 .footer-link a:hover {
