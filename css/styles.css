@@ -325,7 +325,7 @@ blockquote {
 /* ======= Background styling ======= */
 
 .blog-callout {
-  background-color: #E0C8FF;
+  background-color: #F3E9FF;
   border:1px solid #440F8A;
   padding: 3rem;
   margin: 3rem 0;
@@ -415,7 +415,7 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #E0C8FF;
+  background-color: #F3E9FF;
 }
 
 /* ==================================== */
