@@ -1106,3 +1106,11 @@ body.dark .horizontal-nav.active a:hover.closeout {
   color: #FEFEFE;
   text-decoration: underline;
 }
+
+body.dark .math-box {
+  color: #FEFEFE;
+  background-color: #28252B;
+  border: 1px solid #121212;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
