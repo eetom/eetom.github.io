@@ -191,6 +191,10 @@ h3 {
   color: #828282;
 }
 
+.title-text {
+  max-width: 600px;
+}
+
 .spaced-out {
   letter-spacing: 0.2em;
   color: #1B1B1B;
