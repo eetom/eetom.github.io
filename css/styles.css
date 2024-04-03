@@ -161,7 +161,7 @@ h1 {
       font-family: 'Playfair Display', serif;
       color: #1B1B1B;
       font-weight: 100;
-      font-size: 3rem;
+      font-size: 2.5rem;
 }
 
 h2 {
@@ -192,7 +192,7 @@ h3 {
 }
 
 .title-text {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .spaced-out {

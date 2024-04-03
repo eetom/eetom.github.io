@@ -46,6 +46,11 @@ h3.title {
   color: #888;
 }
 
+h4{
+  font-size: 1em;
+  font-weight: 300;
+}
+
 hr {
   margin: 1em 2em;
 }
@@ -153,6 +158,14 @@ a, a:visited, a:hover {
   font-size: 1.1rem;
   margin-bottom: 1rem;
   line-height: 1.6;
+}
+
+.cover-list{
+  margin-bottom: 1rem;
+}
+
+.cover-gap{
+  margin-top: 1.5rem;
 }
 
 .contacts {
