@@ -343,11 +343,17 @@ blockquote {
 
 footer {
   padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-top: 1px solid #DDD;
-  /* background-image: linear-gradient(#fcf9ff, #fcf9ff 45%, #ebd6ff, #d8b3ff); */
-  background-image: linear-gradient(#ebd6ff, #fcf9ff, #fcf9ff) ;
-  color: #200247;
+  padding-bottom: 2rem;
+  border-image-slice: 1;
+  border-width: 10px;
+  border-top: 10px solid #743ECA;
+  background-color: #0A1535;
+  /* background-image: linear-gradient(#0A1535, #0A1535, #743ECA) ; */
+  color: #fff;
+}
+
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 }
 
 .footer-flex-columns {
@@ -363,16 +369,20 @@ footer {
   justify-content: space-between;
 }
 
+.footer-link p.small {
+  color: #bbb;
+}
+
 
 .footer-link a,
 .footer-link a:visited {
-  color: #200247;
+  color: #bbb;
   text-decoration: none;
   font-size: 1.1rem;
 }
 
 .footer-link a:hover {
-  color: #200247;
+  color: #fff;
 }
 
 .footer-link a i {
@@ -590,6 +600,11 @@ hr {
 /* Custom CSS screen sizes */
 /* ########################## */
 
+@media screen and (min-width: 60em) {
+  .pb8-l {
+    padding-bottom: 24rem;
+  }
+}
 
 @media screen and (min-width: 1800px) {
   #the-sticky-div.sticky {
@@ -949,7 +964,11 @@ body.dark {
 body.dark footer {
   background-image: none;
   background-color: #0B0B0B;
-  border-top: 1px solid #2A2A2A;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-image-slice: 1;
+  border-width: 10px;
+  border-top: 10px solid #743ECA;
 }
 
 body.dark footer p {
