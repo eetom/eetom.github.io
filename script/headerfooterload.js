@@ -24,7 +24,8 @@ window.onload = function () {
         'https://eetom.github.io/img/hosted/pano17.jpg',
         'https://eetom.github.io/img/hosted/pano18.jpg',
         'https://eetom.github.io/img/hosted/pano19.jpg',
-        'https://eetom.github.io/img/hosted/pano20.jpg'];
+        'https://eetom.github.io/img/hosted/pano20.jpg',
+        'https://eetom.github.io/img/hosted/pano21.jpg'];
 
     document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
 }
