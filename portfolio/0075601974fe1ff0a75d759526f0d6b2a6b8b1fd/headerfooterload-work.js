@@ -14,7 +14,6 @@ window.onload = function () {
         'https://eetom.github.io/img/hosted/pano8.jpg',
         'https://eetom.github.io/img/hosted/pano9.jpg',
         'https://eetom.github.io/img/hosted/pano10.jpg',
-        'https://eetom.github.io/img/hosted/pano11.jpg',
         'https://eetom.github.io/img/hosted/pano12.jpg',
         'https://eetom.github.io/img/hosted/pano13.jpg',
         'https://eetom.github.io/img/hosted/pano14.jpg',

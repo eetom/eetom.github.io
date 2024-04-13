@@ -234,8 +234,8 @@ h3 {
 }
 
 .text-out {
-  font-size: 3rem;
-  max-width: 800px;
+  font-size: 3.2rem;
+  max-width: 900px;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
@@ -341,6 +341,10 @@ blockquote {
 
 /* ======= Background styling ======= */
 
+.card-bg {
+  background-color: #fff;
+}
+
 .blog-callout {
   background-color: #FCF9FF;
   border:1px solid #440F8A;
@@ -393,25 +397,33 @@ footer {
   color: hsla(0, 0%, 100%, .75);
 }
 
-.footer-link a i {
-  font-size: 18px;
-  margin-left: 2px;
-  transition: all .2s ease-out;
+a.arrow-link {
+  text-decoration: none;
 }
 
-.footer-link a:hover i {
-  -webkit-transform: translate(5px, 0);
-  -moz-transform: translate(5px, 0);
-  -o-transform: translate(5px, 0);
-  -ms-transform: translate(5px, 0);
-  transform: translate(5px, 0);
+.footer-link a i, a.arrow-link i{
+  font-size: 18px;
+  margin-left: 1px;
+  transition: all .2s ease-out;
+  height: 22px;
+  vertical-align: middle;
+}
+
+
+a:hover i, a:hover.arrow-link i {
+  -webkit-transform: translate(4px, 0);
+  -moz-transform: translate(4px, 0);
+  -o-transform: translate(4px, 0);
+  -ms-transform: translate(4px, 0);
+  transform: translate(4px, 0);
 }
 
 .toggle-callout {
   background-color: #FFF6E8;
   color: #656565;
   font-weight: 100;
-  padding: 0.4rem 0.7rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
   margin: 0;
   width:fit-content;
   display: flex;
@@ -609,9 +621,9 @@ hr {
 /* ########################## */
 
 @media screen and (min-width: 60em) {
-  .cover-height {
-    padding-bottom: 26rem;
-  }
+  /* .cover-height {
+    padding-bottom: 0rem;
+  } */
 }
 
 @media screen and (min-width: 1800px) {
@@ -715,9 +727,9 @@ hr {
 /* ########################## */
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
-  .cover-height {
+  /* .cover-height {
       padding-bottom: 19rem;
-    }
+    } */
   
   .img-nav {
       width: 50%;
@@ -783,9 +795,9 @@ hr {
 
 @media screen and (max-width: 30em) {
 
-  .cover-height {
+  /* .cover-height {
       padding-bottom: 15rem;
-    }
+    } */
 
   .img-nav {
     display: flex;
@@ -1024,6 +1036,10 @@ body.dark .border-gradient-purple {
 
 body.dark footer p.color-boxed {
   color: #ddd;
+}
+
+body.dark .card-bg {
+  background-color: #160F1E;
 }
 
 body.dark .work-title {
