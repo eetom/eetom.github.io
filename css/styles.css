@@ -12,6 +12,7 @@ a {
 a:visited {
 	color: #721BE4;
   text-decoration: underline;
+  padding: 0.1rem;
 }
 
 a:hover {
@@ -234,7 +235,7 @@ h3 {
 }
 
 .text-out {
-  font-size: 3.2rem;
+  font-size: 3rem;
   max-width: 900px;
   margin-top: 4rem;
   margin-bottom: 4rem;
