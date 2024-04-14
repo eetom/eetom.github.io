@@ -2,24 +2,23 @@
 
 
 /* ======= Link styling ======= */
-a {
-	color: #721BE4;
+a, a:visited {
+	color: #A364F4;
   text-decoration: underline;
   background-color: transparent;
-  padding: 0.1rem;
-}
-
-a:visited {
-	color: #721BE4;
-  text-decoration: underline;
-  padding: 0.1rem;
+  padding: 0.15rem;
 }
 
 a:hover {
 	color: #721BE4;
-  background-color: #F1EEFF;
   text-decoration: underline;
 }
+
+/* a:hover {
+  color: #Fff;
+  background-color: #C293FF;
+  text-decoration: underline;
+} */
 
 .img-nav a.placeholder,
 .img-nav a:visited.placeholder,
@@ -286,8 +285,8 @@ blockquote {
 .mainview {
   background-image: url(images/bg-1.png);
   border-image-slice: 1;
-    border-width: 10px;
-    border-top: 20px solid #743ECA;
+  border-width: 10px;
+  border-top: 20px solid #743ECA;
 }
 
 .blog-img {
@@ -343,7 +342,7 @@ blockquote {
 /* ======= Background styling ======= */
 
 .card-bg {
-  background-color: #fff;
+  background-color: #fbfbfb;
 }
 
 .blog-callout {
@@ -395,7 +394,7 @@ footer {
 }
 
 .footer-link p.small {
-  color: hsla(0, 0%, 100%, .75);
+  color: #aaa;
 }
 
 a.arrow-link {
@@ -1006,10 +1005,6 @@ body.dark {
   background: linear-gradient(#151515, #121212 15%, #150F1D 45%);
 }
 
-body.dark p.text-out {
-  color: hsla(0, 0%, 100%, .75);
-}
-
 body.dark footer {
   background-image: none;
   background-color: #160F1E;
@@ -1020,23 +1015,14 @@ body.dark footer {
   border-top: 10px solid #743ECA;
 }
 
-body.dark footer p {
-  color: hsla(0, 0%, 100%, .75);
-}
-
-
 body.dark .color-boxed {
   background-image: linear-gradient(to right, #2A1C47, #1F184F);
   border-radius: 12px;
-  color: #fff;
+  color: #BBB;
 }
 
 body.dark .border-gradient-purple {
   border-image-source: linear-gradient(to left, #201D25, #1F184F);
-}
-
-body.dark footer p.color-boxed {
-  color: #ddd;
 }
 
 body.dark .card-bg {
@@ -1056,9 +1042,14 @@ body.dark h2,
 body.dark h3,
 body.dark h4,
 body.dark p,
-body.dark li
+body.dark li,
+body.dark footer p,
+body.dark p.text-out,
+body.dark .mainview h1,
+body.dark .mainview p,
+body.dark footer p.color-boxed
 {
-  color: #FEFEFE;
+  color: #BBB;
 }
 
 body.dark hr {
@@ -1069,19 +1060,15 @@ body.dark .checkbox-label {
   background-color: #1B2687;
 }
 
-body.dark a {
-  color: #CEB7FF;
+body.dark a, body.dark a:visited {
+  color: #A364F4;
   text-decoration: underline;
   background-color: transparent;
 }
 
-body.dark a:visited {
-  color: #CEB7FF;
-}
-
 body.dark a:hover {
   color: #CEB7FF;
-  background-color: #3C284D;
+  /* background-color: #3C284D; */
   text-decoration: underline;
 }
 
@@ -1130,8 +1117,13 @@ body.dark cite {
 }
 
 body.dark img {
-  filter: brightness(.8) contrast(1.2);
+  filter: brightness(.8) contrast(0.9);
 }
+
+body.dark .mainview {
+  backdrop-filter: brightness(.7) contrast(0.9);
+}
+
 
 body.dark td,
 body.dark th {
