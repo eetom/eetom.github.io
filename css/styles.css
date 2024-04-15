@@ -1121,7 +1121,8 @@ body.dark img {
 }
 
 body.dark .mainview {
-  backdrop-filter: brightness(.7) contrast(0.9);
+  /* backdrop-filter: brightness(.7) contrast(0.9); */
+  filter: brightness(.9) contrast(1.1);
 }
 
 
