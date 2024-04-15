@@ -91,6 +91,12 @@ a, a:visited, a:hover {
   font-weight: 700;
 }
 
+.small-list {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  padding-left: 14px;
+}
+
 .date {
   /* display: block; */
   color: #111;
@@ -111,7 +117,7 @@ a, a:visited, a:hover {
 }
 
 .company {
-  color: #444;
+  color: #333;
   font-size: 1rem;
 }
 

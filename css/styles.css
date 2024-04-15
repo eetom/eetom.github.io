@@ -1068,7 +1068,7 @@ body.dark a, body.dark a:visited {
 
 body.dark a:hover {
   color: #CEB7FF;
-  /* background-color: #3C284D; */
+  background-color: transparent;
   text-decoration: underline;
 }
 
