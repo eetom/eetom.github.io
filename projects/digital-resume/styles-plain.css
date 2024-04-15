@@ -95,11 +95,17 @@ a, a:visited, a:hover {
   font-size: 0.8rem;
   line-height: 1.5;
   padding-left: 14px;
+  margin-bottom: 0;
+}
+
+.small-list li {
+  color: #333;
+  font-weight: 500;
 }
 
 .date {
   /* display: block; */
-  color: #111;
+  color: #333;
   font-weight: 500;
   font-size: 0.9rem;
   opacity: 0.8;
