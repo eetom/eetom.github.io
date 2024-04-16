@@ -31,7 +31,7 @@ a:hover {
 }
 
 .img-sub h3 a:hover {
-  background-color: #E0D8FF;
+  background-color: #F0ECFF;
   text-decoration: underline;
   padding: 0.1rem;
 }
@@ -158,6 +158,10 @@ a.deprecated-link:hover {
 
 p.playfair {
   font-family: 'Playfair Display', serif;
+}
+
+h3.sanserif {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1 {
