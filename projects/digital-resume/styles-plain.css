@@ -43,7 +43,7 @@ h3 {
 
 h3.title {
   margin-top: 5px;
-  color: #888;
+  color: #000;
 }
 
 h4{
@@ -98,10 +98,16 @@ a, a:visited, a:hover {
   margin-bottom: 0;
 }
 
+.big-list {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-left: 14px;
+  margin-bottom: 0;
+}
+
 .small-list li {
   color: #333;
   font-weight: 500;
-  padding-bottom: 4px;
 }
 
 .date {
@@ -139,11 +145,11 @@ a, a:visited, a:hover {
 }
 
 .section-content-2cola {
-  width: 30%;
+  width: 28%;
 }
 
 .section-content-2colb {
-  width: 65%;
+  width: 68%;
 }
 
 .work-wrapper {
@@ -203,5 +209,7 @@ a, a:visited, a:hover {
 .contacts a {
   color: #721BE4;
 }
+
+
 
 
