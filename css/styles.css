@@ -1018,7 +1018,7 @@ body.dark footer {
 body.dark .color-boxed {
   background-image: linear-gradient(to right, #2A1C47, #1F184F);
   border-radius: 12px;
-  color: #BBB;
+  color: #DDD;
 }
 
 body.dark .border-gradient-purple {
@@ -1049,7 +1049,7 @@ body.dark .mainview h1,
 body.dark .mainview p,
 body.dark footer p.color-boxed
 {
-  color: #BBB;
+  color: #DDD;
 }
 
 body.dark hr {
@@ -1097,7 +1097,7 @@ body.dark a:hover.placeholder {
 }
 
 body.dark .img-nav p {
-  color: #AAAAAA;
+  color: #DDD;
 }
 
 body.dark .footer-link a,
