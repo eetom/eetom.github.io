@@ -3,22 +3,16 @@
 
 /* ======= Link styling ======= */
 a, a:visited {
-	color: #A364F4;
+	color: #924af1;
   text-decoration: underline;
   background-color: transparent;
   padding: 0.15rem;
 }
 
 a:hover {
-	color: #721BE4;
+	color: #6208d7;
   text-decoration: underline;
 }
-
-/* a:hover {
-  color: #Fff;
-  background-color: #C293FF;
-  text-decoration: underline;
-} */
 
 .img-nav a.placeholder,
 .img-nav a:visited.placeholder,
@@ -30,11 +24,10 @@ a:hover {
   background-color: transparent;
 }
 
-.img-sub h3 a:hover {
-  background-color: #F0ECFF;
+/* .img-sub h3 a:hover {
   text-decoration: underline;
   padding: 0.1rem;
-}
+} */
 
 a.placeholder,
 a:visited.placeholder,
@@ -48,14 +41,13 @@ a:hover.placeholder,
 
 .footer-link a, .footer-link a:visited {
   color: #bbb;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   display: flex;
   flex-direction: row;
   justify-content: right;
   margin-bottom: 0.5rem;
   text-decoration: none;
 }
-
 
 .footer-link a:hover {
   color: #fff;
@@ -85,7 +77,7 @@ a.main-title, a:hover.main-title, a:visited.main-title {
 .lockednav-links li {
   font-family: 'Playfair Display', serif;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 1.25rem;
 }
 
 .lockednav-exlinks li {
@@ -150,39 +142,77 @@ a.deprecated-link:hover {
 
 /* ======= Font styling ======= */
 
-.font {
+@font-face {
+  font-family: "Ameda Regular";
+  src: url("Ameda-Regular.otf");
+}
+
+@font-face {
+  font-family: "PPMori-Regular";
+  src: url("PPMori-Regular.otf");
+}
+
+@font-face {
+  font-family: "PPMori-Extralight";
+  src: url("PPMori-Extralight.otf");
+}
+
+@font-face {
+  font-family: "PPMori-SemiBold";
+  src: url("PPMori-SemiBold.otf");
+}
+
+/* .font {
   font-family: 'Roboto Condensed', sans-serif;
-  background: linear-gradient(#F8F6F9, #F8F6F9 10%, #FEFEFE 45%);
-  /* background-color: #fff; */
+  background: linear-gradient(#F8F6F9, #F8F6F9 10%, #F5F5F5 45%);
+} */
+
+.font {
+  font-family: "PPMori-Regular", sans-serif;
+  background: linear-gradient(#F8F6F9, #F8F6F9 10%, #F5F5F5 45%);
+}
+
+.grid {
+    height: 16rem;
+    background-image:
+    linear-gradient(to right, rgb(254, 247, 255) 1px, transparent 1px),
+    linear-gradient(to bottom,rgb(254, 247, 255) 1px, transparent 1px);
+    background-size: 2.8rem 2.8rem;
+    background-position: center center;
 }
 
 p.playfair {
-  font-family: 'Playfair Display', serif;
+    font-family: 'Playfair', serif;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: "PPMori-Regular", sans-serif;
 }
 
 h3.sanserif {
-  font-family: 'Roboto Condensed', sans-serif;
+    font-family: "PPMori-Regular", sans-serif;
 }
 
 h1 {
-      font-family: 'Playfair Display', serif;
-      color: #1B1B1B;
-      font-weight: 100;
-      font-size: 2.5rem;
+    font-family: 'Playfair', serif;
+    color: #1B1B1B;
+    font-weight: 100;
+    font-size: 2.7rem;
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair', serif;
     color: #1B1B1B;
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair', serif;
   color: #1B1B1B;
   font-weight:100;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .img-nav h3{
@@ -209,7 +239,7 @@ h3 {
 
 .caption {
   font-style: italic;
-  font-size: 14px;
+  font-size: 1.25rem;
 }
 
 .code {
@@ -218,7 +248,7 @@ h3 {
   padding: 1.5rem;
   background-color: #F5F3F6;
   border: 1px solid #D9D0DA;
-  font-size: 16px;
+  font-size: 1.25rem;
 }
 
 .bg-stripe {
@@ -234,7 +264,7 @@ h3 {
 .header-index-text {
   display: flex;
   flex-direction: column;
-  font-family: 'Playfair Display', serif;;
+  font-family: 'Playfair', serif;
 }
 
 .text-out {
@@ -282,6 +312,10 @@ blockquote {
   border-color: #AC6CFF;
 }
 
+.side-title {
+  text-align: right;
+}
+
 /* ==================================== */
 
 /* ======= Image styling ======= */
@@ -325,8 +359,8 @@ blockquote {
 }
 
 .img-sub h3 {
-  margin-top: 0px;
-  margin-bottom: 32px;
+  /* margin-top: 0px;
+  margin-bottom: 32px; */
 }
 
 .img-nav {
@@ -425,8 +459,9 @@ a:hover i, a:hover.arrow-link i {
 .toggle-callout {
   background-color: #FFF6E8;
   color: #656565;
+  border: 1px solid #f39c12;
   font-weight: 100;
-  padding: 0.7rem 0.9rem;
+  padding: 0.5rem 0.9rem;
   border-radius: 10px;
   margin: 0;
   width:fit-content;
@@ -439,7 +474,7 @@ a:hover i, a:hover.arrow-link i {
 /* ======= Table styling ======= */
 
 table {
-  font-size: 16px;
+  font-size: 1.25rem;
   font-weight: 400;
   border-collapse: collapse;
   width: 100%;
@@ -600,7 +635,7 @@ hr {
 
 .math-box p {
   text-align: center;
-  font-size: 16px;
+  font-size: 1.25rem;
 }
 
 .tag-section{
@@ -681,7 +716,7 @@ hr {
 
   .horizontal-nav.active a {
     padding: 1.5rem 0;
-    font-size: 24px;
+    font-size: 2rem;
     font-family: 'Playfair Display', serif;
   }
 
@@ -719,7 +754,7 @@ hr {
   }
 
   p {
-    font-size: 18px;
+    font-size: 1.25rem;
     line-height: 1.8;
   }
 }
@@ -747,6 +782,11 @@ hr {
   .math-box {
       margin-bottom: 16px;
       font-size: 16px;
+  }
+
+  .side-title {
+    text-align: left;
+    margin-bottom: 2rem;
   }
 
   #the-sticky-div {
@@ -838,12 +878,21 @@ hr {
   }
 
   .img-nav {
-    width: 50%;
+    width: 48%;
+  }
+
+  .color-boxed{
+    padding: 1rem;
   }
 
   .math-box {
     margin-bottom: 16px;
     font-size: 16px;
+  }
+
+  .footer-flex-columns {
+    display: block;
+    width: 100%;
   }
 
   #the-sticky-div {
@@ -870,6 +919,11 @@ hr {
 
   #the-sticky-div hr.small-line {
     width: 100%;
+  }
+
+  .side-title {
+    text-align: left;
+    margin-bottom: 2rem;
   }
 
   .popupClose {
@@ -1000,13 +1054,20 @@ hr {
   transform: translateX(24px);
 }
 
+
 body.dark .blog-img {
   border: 1px solid #777;
 }
 
 body.dark {
   /* background-color: #121212; */
-  background: linear-gradient(#151515, #121212 15%, #150F1D 45%);
+  background-color: #121212;
+}
+
+body.dark.grid {
+  background-image:
+    linear-gradient(to right, rgb(28, 28, 28) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(28, 28, 28) 1px, transparent 1px);
 }
 
 body.dark footer {
@@ -1137,7 +1198,8 @@ body.dark th {
 }
 
 body.dark .toggle-callout {
-  background-color: #23242C;
+  background-color: #1b1f4e;
+  border: 1px solid #1B2687;
 }
 
 body.dark tr:nth-child(even) {
