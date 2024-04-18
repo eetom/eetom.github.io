@@ -75,7 +75,7 @@ a.main-title, a:hover.main-title, a:visited.main-title {
 }
 
 .lockednav-links li {
-  font-family: 'Playfair Display', serif;
+  font-family: "PPMori-Regular", serif;
   margin-bottom: 15px;
   font-size: 1.6rem;
 }
@@ -185,7 +185,7 @@ a.deprecated-link:hover {
 }
 
 p.playfair {
-    font-family: 'Playfair', serif;
+    font-family: "PPMori-Regular", serif;
 }
 
 p {
@@ -198,21 +198,21 @@ h3.sanserif {
 }
 
 h1 {
-    font-family: 'Playfair', serif;
+    font-family: "PPMori-SemiBold", serif;
     color: #1B1B1B;
     font-weight: 100;
     font-size: 2.7rem;
 }
 
 h2 {
-    font-family: 'Playfair', serif;
+    font-family: "PPMori-SemiBold", serif;
     color: #1B1B1B;
     font-weight: 100;
     font-size: 2.2rem;
 }
 
 h3 {
-  font-family: 'Playfair', serif;
+  font-family: "PPMori-SemiBold", serif;
   color: #1B1B1B;
   font-weight:100;
   font-size: 1.7rem;
@@ -268,7 +268,7 @@ h3 {
 .header-index-text {
   display: flex;
   flex-direction: column;
-  font-family: 'Playfair', serif;
+  font-family: "PPMori-SemiBold", serif;
 }
 
 .text-out {
@@ -508,7 +508,7 @@ tr:nth-child(even) {
 
 .horizontal-nav {
   display: flex;
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 .horizontal-nav-index {
@@ -523,7 +523,7 @@ tr:nth-child(even) {
 .horizontal-flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -725,7 +725,7 @@ hr {
   .horizontal-nav.active a {
     padding: 1.5rem 0;
     font-size: 2rem;
-    font-family: 'Playfair Display', serif;
+    font-family: "PPMori-SemiBold", serif;
   }
 
   .horizontal-nav.active a:hover {
@@ -994,7 +994,7 @@ hr {
   right: 45%;
   bottom: 0.4rem;
   color: #230526;
-  font-family: 'Playfair Display', serif;
+  font-family: "PPMori-SemiBold", serif;
   text-decoration: underline;
   font-weight: 100;
   font-size: 1rem;
