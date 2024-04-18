@@ -142,6 +142,7 @@ a.deprecated-link:hover {
 }
 
 
+
 /* ==================================== */
 
 /* ======= Font styling ======= */
@@ -161,7 +162,6 @@ a.deprecated-link:hover {
   font-family: "PPMori-SemiBold";
   src: url("PPMori-SemiBold.otf");
 }
-
 
 .font {
   font-family: "PPMori-Regular", sans-serif;
@@ -185,7 +185,7 @@ a.deprecated-link:hover {
 }
 
 p.playfair {
-    font-family: "Playfair", serif;
+    font-family: "PPMori-Regular", sans-serif;
 }
 
 p {
@@ -205,14 +205,14 @@ h1 {
 }
 
 h2 {
-    font-family: "PPMori-SemiBold", san-serif;
+    font-family: "PPMori-Regular", sans-serif;
     color: #1B1B1B;
     font-weight: 100;
     font-size: 2.2rem;
 }
 
 h3 {
-  font-family: "Playfair", serif;
+  font-family: "PPMori-Regular", sans-serif;
   color: #1B1B1B;
   font-weight:100;
   font-size: 1.7rem;
@@ -268,7 +268,7 @@ h3 {
 .header-index-text {
   display: flex;
   flex-direction: column;
-  font-family: "Playfair", serif;
+  font-family: "PPMori-Regular", sans-serif;
 }
 
 .text-out {
@@ -323,6 +323,11 @@ ul li {
 
 .side-title {
   text-align: right;
+}
+
+.sub-greeting {
+  line-height: 1.6;
+  font-size: 2rem;
 }
 
 /* ==================================== */
@@ -448,20 +453,19 @@ a.arrow-link {
 }
 
 .footer-link a i, a.arrow-link i{
-  font-size: 18px;
   margin-left: 1px;
   transition: all .2s ease-out;
-  height: 22px;
+  height: auto;
   vertical-align: middle;
 }
 
 
 a:hover i, a:hover.arrow-link i {
-  -webkit-transform: translate(4px, 0);
-  -moz-transform: translate(4px, 0);
-  -o-transform: translate(4px, 0);
-  -ms-transform: translate(4px, 0);
-  transform: translate(4px, 0);
+  -webkit-transform: translate(5px, 0);
+  -moz-transform: translate(5px, 0);
+  -o-transform: translate(5px, 0);
+  -ms-transform: translate(5px, 0);
+  transform: translate(5px, 0);
 }
 
 .toggle-callout {
