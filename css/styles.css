@@ -421,13 +421,12 @@ footer {
 .footer-flex-columns {
   display: flex;
   width: 100%;
-  max-width: 1080px;
   justify-content: space-between;
 }
 
 .footer-link-columns {
   display: flex;
-  width: 300px;
+  width: 350px;
   justify-content: space-between;
 }
 
