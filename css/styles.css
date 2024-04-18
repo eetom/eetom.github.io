@@ -6,7 +6,7 @@ a, a:visited {
 	color: #924af1;
   text-decoration: underline;
   background-color: transparent;
-  padding: 0.15rem;
+  padding: 0.25rem 0;
 }
 
 a:hover {
@@ -162,23 +162,26 @@ a.deprecated-link:hover {
   src: url("PPMori-SemiBold.otf");
 }
 
-/* .font {
-  font-family: 'Roboto Condensed', sans-serif;
-  background: linear-gradient(#F8F6F9, #F8F6F9 10%, #F5F5F5 45%);
-} */
 
 .font {
   font-family: "PPMori-Regular", sans-serif;
   background: linear-gradient(#F8F6F9, #F8F6F9 10%, #F5F5F5 45%);
 }
 
-.grid {
+/* .grid {
     height: 16rem;
     background-image:
-    linear-gradient(to right, rgb(254, 247, 255) 1px, transparent 1px),
-    linear-gradient(to bottom,rgb(254, 247, 255) 1px, transparent 1px);
+    linear-gradient(to right, rgb(250, 236, 251) 1px, transparent 1px),
+    linear-gradient(to bottom,rgb(250, 236, 251) 1px, transparent 1px);
     background-size: 2.8rem 2.8rem;
     background-position: center center;
+} */
+
+.grid {
+  height: 16rem;
+  background-image: radial-gradient(circle, rgb(250, 236, 251) 2px, #fff 2px);
+  background-size: 2.5rem 2.5rem;
+  background-position: center center;
 }
 
 p.playfair {
@@ -222,6 +225,7 @@ h3 {
 .img-nav p {
   width:90%;
   margin-top: 0.5rem;
+  line-height: 1.4;
 }
 
 .sub-title {
@@ -312,6 +316,11 @@ blockquote {
   border-color: #AC6CFF;
 }
 
+ul li {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
 .side-title {
   text-align: right;
 }
@@ -354,12 +363,13 @@ blockquote {
 }
 
 .img-sub img {
-  max-height: 260px;
+  max-height: 300px;
   border: 1px solid #ccc;
 }
 
 .img-sub h3 {
-  margin-top: 0px;
+  margin-top: 8px;
+  margin-bottom: 32px;
 }
 
 .img-nav {
@@ -434,7 +444,7 @@ footer {
 }
 
 a.arrow-link {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 .footer-link a i, a.arrow-link i{
