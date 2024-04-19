@@ -594,7 +594,7 @@ tr:nth-child(even) {
 hr {
   height: 1px;
   border: none;
-  border-top: 2px dotted black;
+  border-top: 2px solid #1B1B1B;
 }
 
 .small-line {
@@ -1130,7 +1130,7 @@ body.dark footer p.color-boxed
 }
 
 body.dark hr {
-  border-top: 2px dotted #FEFEFE;
+  border-top: 2px solid #FEFEFE;
 }
 
 body.dark .checkbox-label {
