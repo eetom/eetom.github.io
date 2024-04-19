@@ -431,9 +431,9 @@ tr:nth-child(even) {
 
 #the-sticky-div.sticky {
   position: fixed;
-  top: 150px;
+  top: 170px;
   width: 100%;
-  left: 72vw;
+  left: 68vw;
   height: auto;
   width: 60%;
   transform: translate(0%, -15%);

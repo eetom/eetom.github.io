@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script src="script\darkmode.js"></script>
+  <script src="script/darkmode.js"></script>
 </head>
 
 <header class="sans-serif">
@@ -178,54 +178,3 @@
   document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
 </script>
 
-<!-- <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggleBtn = document.getElementById("checkbox");
-    let darkMode = localStorage.getItem("dark-mode");
-
-    const enableDarkMode = () => {
-      document.body.classList.add("dark");
-      localStorage.setItem("dark-mode", "dark");
-    };
-
-    const disableDarkMode = () => {
-      document.body.classList.remove("dark");
-      localStorage.setItem("dark-mode", "light");
-    };
-
-    // Apply dark mode directly on page load if previously set to dark
-    if (darkMode === "dark") {
-      enableDarkMode();
-      toggleBtn.checked = true; // Ensure checkbox reflects dark mode state
-    } else {
-      disableDarkMode();
-      toggleBtn.checked = false; // Ensure checkbox reflects light mode state
-    }
-
-    // Event listener for toggling dark mode
-    toggleBtn.addEventListener("click", () => {
-      if (toggleBtn.checked) {
-        enableDarkMode();
-      } else {
-        disableDarkMode();
-      }
-    });
-  });
-
-  const dropdown = document.querySelector(".dropdown-nav");
-  const closemenu = document.querySelector(".closeout");
-  const horizontal = document.querySelector(".horizontal-nav");
-
-  dropdown.addEventListener("click", mobileMenu);
-  closemenu.addEventListener("click", hideMenu);
-
-  function mobileMenu() {
-    dropdown.classList.toggle("active");
-    horizontal.classList.toggle("active");
-  }
-
-  function hideMenu() {
-    dropdown.classList.toggle("active");
-    horizontal.classList.toggle("active");
-  }
-</script> -->
