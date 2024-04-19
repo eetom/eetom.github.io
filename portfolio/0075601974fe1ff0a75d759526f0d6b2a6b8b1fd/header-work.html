@@ -43,52 +43,54 @@
 
 
 <script>
-  const toggleBtn = document.getElementById("checkbox");
-  let darkMode = localStorage.getItem("dark-mode");
-  console.log(darkMode);
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById("checkbox");
+    const dropdown = document.querySelector(".dropdown-nav");
+    const horizontal = document.querySelector(".horizontal-nav");
 
-  const enableDarkMode = () => {
-    document.body.classList.add("dark");
-    localStorage.setItem("dark-mode", "dark");
-  };
+    // Retrieve dark mode preference from localStorage
+    let darkMode = localStorage.getItem("dark-mode");
 
-  const disableDarkMode = () => {
-    document.body.classList.remove("dark");
-    localStorage.setItem("dark-mode", "light");
+    // Function to enable dark mode
+    const enableDarkMode = () => {
+      document.body.classList.add("dark");
+      localStorage.setItem("dark-mode", "dark");
+      toggleBtn.checked = true; // Ensure checkbox reflects dark mode state
+    };
 
-  };
+    // Function to disable dark mode
+    const disableDarkMode = () => {
+      document.body.classList.remove("dark");
+      localStorage.setItem("dark-mode", "light");
+      toggleBtn.checked = false; // Ensure checkbox reflects light mode state
+    };
 
-  if (darkMode === "dark") {
-    document.getElementById("checkbox").checked = true;
-    enableDarkMode(); // set state of darkMode on page load
-  } else {
-    document.getElementById("checkbox").checked = false;
-    disableDarkMode(); // start with light mode
-  }
-
-  toggleBtn.addEventListener("click", (e) => {
-    darkMode = localStorage.getItem("dark-mode"); // update darkMode when clicked
-    if (darkMode === "light") {
+    // Apply dark mode directly on page load if previously set to dark
+    if (darkMode === "dark") {
       enableDarkMode();
     } else {
       disableDarkMode();
     }
+
+    // Event listener for toggling dark mode
+    toggleBtn.addEventListener("click", () => {
+      if (toggleBtn.checked) {
+        enableDarkMode();
+      } else {
+        disableDarkMode();
+      }
+    });
+
+    // Event listener for mobile menu dropdown
+    dropdown.addEventListener("click", () => {
+      dropdown.classList.toggle("active");
+      horizontal.classList.toggle("active");
+    });
+
+    // Event listener to close mobile menu
+    document.querySelector(".closeout").addEventListener("click", () => {
+      dropdown.classList.remove("active");
+      horizontal.classList.remove("active");
+    });
   });
-
-  const dropdown = document.querySelector(".dropdown-nav");
-  const closemenu = document.querySelector(".closeout");
-  const horizontal = document.querySelector(".horizontal-nav");
-
-  dropdown.addEventListener("click", mobileMenu);
-  closemenu.addEventListener("click", hideMenu);
-
-  function mobileMenu() {
-    dropdown.classList.toggle("active");
-    horizontal.classList.toggle("active");
-  }
-
-  function hideMenu() {
-    dropdown.classList.toggle("active");
-    horizontal.classList.toggle("active");
-  }
 </script>
