@@ -55,7 +55,7 @@ a:hover.placeholder,
 
 .footer-link a,
 .footer-link a:visited {
-  color: #bbb;
+  color: #808080;
   font-size: 1.25rem;
   display: flex;
   flex-direction: row;
@@ -65,7 +65,7 @@ a:hover.placeholder,
 }
 
 .footer-link a:hover {
-  color: #fff;
+  color: #1B1B1B;
   text-decoration: none;
   background-color: transparent;
 }
@@ -170,7 +170,7 @@ a.deprecated-link:hover {
 
 .grid {
   height: 16rem;
-  background-image: radial-gradient(circle, rgb(250, 236, 251) 2px, #fff 2px);
+  background-image: radial-gradient(circle, rgb(244, 244, 244) 2px, #fff 2px);
   background-size: 2.5rem 2.5rem;
   background-position: center center;
 }
@@ -512,7 +512,7 @@ hr {
 .category {
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
+  margin-bottom: 3rem;
 }
 
 .category h3 {
