@@ -336,9 +336,9 @@ ul li {
 
 .mainview {
   background-image: url(images/bg-1.png);
-  border-image-slice: 1;
+  /* border-image-slice: 1;
   border-width: 10px;
-  border-top: 20px solid #743ECA;
+  border-top: 20px solid #743ECA; */
 }
 
 .blog-img {
