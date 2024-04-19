@@ -1149,17 +1149,15 @@ body.dark a:hover {
   text-decoration: underline;
 }
 
-body.dark .header-text a:visited.main-title,
-body.dark .header-text a:hover.main-title,
-body.dark .header-text a,
-body.dark .header-text a:visited,
-body.dark .header-text a.main-title {
+body.dark a:visited.main-title,
+body.dark a:hover.main-title,
+body.dark a.main-title {
   text-decoration: none;
   background-color: transparent;
   color: #FEFEFE;
 }
 
-body.dark .header-text a:hover {
+body.dark a:hover {
     text-decoration: underline;
     background-color: transparent;
     color: #FEFEFE;
