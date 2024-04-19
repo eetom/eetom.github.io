@@ -9,7 +9,6 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script src="script/darkmode.js"></script>
 </head>
 
 <header class="sans-serif">
@@ -178,3 +177,36 @@
   document.getElementsByClassName('mainview')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
 </script>
 
+<script type="text/javascript">
+    const toggleBtn = document.getElementById("checkbox");
+    let darkMode = localStorage.getItem("dark-mode");
+    console.log(darkMode);
+    const enableDarkMode = () => {
+      document.body.classList.add("dark");
+      localStorage.setItem("dark-mode", "dark");
+    };
+
+    const disableDarkMode = () => {
+      document.body.classList.remove("dark");
+      localStorage.setItem("dark-mode", "light");
+    };
+
+    if (darkMode === "dark") {
+      document.getElementById("checkbox").checked = true;
+      enableDarkMode();
+      // set state of darkMode on page load   
+    } else {
+      document.getElementById("checkbox").checked = false;
+      disableDarkMode(); // start with light mode  
+    }
+
+    toggleBtn.addEventListener("click", (e) => {
+      darkMode = localStorage.getItem("dark-mode");
+      // update darkMode when clicked     
+      if (darkMode === "light") {
+        enableDarkMode();
+      } else {
+        disableDarkMode();
+      }
+    });
+</script>
