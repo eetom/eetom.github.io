@@ -1,0 +1,126 @@
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Typographic CSS */
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+/* ------------------------------- */
+/* Import fonts */
+/* ------------------------------- */
+
+@font-face {
+  font-family: "PPMori-Regular";
+  src: url("PPMori-Regular.otf");
+}
+
+@font-face {
+  font-family: "PPMori-Extralight";
+  src: url("PPMori-Extralight.otf");
+}
+
+@font-face {
+  font-family: "PPMori-SemiBold";
+  src: url("PPMori-SemiBold.otf");
+}
+
+
+/* ------------------------------- */
+/* Base Typography */
+/* ------------------------------- */
+
+body {
+  font-family: "PPMori-Regular", sans-serif;
+  color: #1B1B1B;
+  font-size: 1.2rem;
+}
+
+p,
+.playfair,
+h3.sanserif,
+.img-nav p,
+.sub-title,
+.title-text,
+.spaced-out,
+.caption,
+.header-index-text {
+  font-family: "PPMori-Regular", sans-serif;
+  color: #1B1B1B;
+}
+
+h1 {
+  font-family: "PPMori-SemiBold", serif;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: "PPMori-SemiBold", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: "PPMori-Regular", sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+.img-nav h3 {
+  margin-top: 1rem;
+}
+
+
+/* ------------------------------- */
+/* Specific Classes */
+/* ------------------------------- */
+
+.font {
+  background: linear-gradient(#F8F6F9, #F8F6F9 10%, #F5F5F5 45%);
+}
+
+.sub-title {
+  color: #828282;
+}
+
+.title-text {
+  max-width: 800px;
+}
+
+.spaced-out {
+  letter-spacing: 0.2em;
+}
+
+.caption {
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+.code {
+  font-family: 'Space Mono', monospace;
+  color: #440F8A;
+  padding: 1.5rem;
+  background-color: #F5F3F6;
+  border: 1px solid #D9D0DA;
+  font-size: 1.25rem;
+}
+
+.header-index-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-out {
+  font-size: 3rem;
+  max-width: 900px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.side-title {
+  text-align: right;
+}
+
+.sub-greeting {
+  line-height: 1.6;
+  font-size: 1.7rem;
+}
+
+

@@ -1,0 +1,225 @@
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Dark mode CSS */
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+/* ------------------------------- */
+/* Dark mode toggle */
+/* ------------------------------- */
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #f39c12;
+  width: 40px;
+  height: 16px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moon {
+  color: #ffe992;
+}
+
+.sun {
+  color: #fefefe;
+}
+
+.checkbox-label .ball {
+  background-color: #fefefe;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+
+
+/* ------------------------------- */
+/* Dark mode color changes */
+/* ------------------------------- */
+
+body.dark {
+  background-color: #121212;
+}
+
+body.dark.grid {
+  background-image:
+    linear-gradient(to right, rgb(28, 28, 28) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(28, 28, 28) 1px, transparent 1px);
+}
+
+body.dark footer {
+  background-image: none;
+  background-color: #0a0a0a;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+body.dark .card-bg {
+  background-color: #160f1e;
+}
+
+body.dark .work-title {
+  background-color: #2a2a2a;
+}
+
+body.dark .popup {
+  background: #292929;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark p,
+body.dark li,
+body.dark footer p,
+body.dark p.text-out,
+body.dark .mainview h1,
+body.dark .mainview p,
+body.dark footer p.color-boxed {
+  color: #fefefe;
+}
+
+body.dark hr {
+  border-top: 2px solid #fefefe;
+}
+
+body.dark .checkbox-label {
+  background-color: #1b2687;
+}
+
+body.dark a,
+body.dark a:visited {
+  color: #a364f4;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+body.dark a:hover {
+  color: #ceb7ff;
+  text-decoration: underline;
+}
+
+body.dark a.main-title {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+body.dark a.placeholder,
+body.dark a:visited.placeholder,
+body.dark a:hover.placeholder {
+  color: #60a1ee;
+  background-color: transparent;
+  text-decoration: line-through;
+}
+
+body.dark .img-nav p {
+  color: #fefefe;
+}
+
+body.dark .footer-link a,
+body.dark .footer-link a:hover,
+body.dark .footer-link a:visited {
+  color: hsla(0, 0%, 100%, .75);
+  text-decoration: none;
+}
+
+body.dark .footer-link a:hover {
+  color: hsla(0, 0%, 100%, 0.95);
+}
+
+body.dark cite {
+  color: #bdbdbd;
+}
+
+body.dark img {
+  filter: brightness(.8) contrast(0.9);
+}
+
+body.dark .mainview {
+  filter: brightness(.9) contrast(1.1);
+}
+
+body.dark td,
+body.dark th {
+  border: 1px solid #121212;
+  color: #fefefe;
+}
+
+body.dark .toggle-callout {
+  background-color: #1b1f4e;
+  border: 1px solid #1b2687;
+}
+
+body.dark tr:nth-child(even) {
+  background-color: #212121;
+}
+
+body.dark .blog-callout {
+  color: #fefefe;
+  background-color: #28252b;
+  border: 1px solid #121212;
+}
+
+body.dark .code {
+  color: #a364f4;
+  background-color: #28252b;
+  border: 1px solid #121212;
+}
+
+body.dark .bg-stripe {
+  background-color: #383838;
+  padding: 4px 8px;
+}
+
+body.dark .dropdown-nav button {
+  background-color: #21262d;
+  border: 1px solid #363b42;
+}
+
+body.dark .dropdown-nav button:hover {
+  background-color: #282e35;
+  border: 1px solid #8b949e;
+}
+
+body.dark .bar {
+  background-color: #fefefe;
+}
+
+body.dark .horizontal-nav.active a:hover {
+  background-color: #e0d8ff;
+  color: #48118f;
+}
+
+body.dark .horizontal-nav.active a:hover.placeholder {
+  color: #60a1ee;
+}
+
+body.dark .horizontal-nav.active a:hover.closeout {
+  color: #fefefe;
+  text-decoration: underline;
+}
+
+body.dark .math-box {
+  color: #fefefe;
+  background-color: #28252b;
+  border: 1px solid #121212;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
