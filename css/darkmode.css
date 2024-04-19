@@ -96,7 +96,8 @@ body.dark footer p.color-boxed {
   color: #fefefe;
 }
 
-body.dark .horizontal-nav a
+body.dark .horizontal-nav a,
+body.dark .horizontal-nav a:visited
 {
   color: hsla(0, 0%, 100%, .75);
 }
