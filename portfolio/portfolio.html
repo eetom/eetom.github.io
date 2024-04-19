@@ -7,11 +7,12 @@
     <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
     <link rel="stylesheet" type="text/css" href="workstyles.css">
-    <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 
 </head>
 
-<body>
+<body class="grid">
 
     <div class="protected">
         <div class="protected__alert" data-id="alert">You have entered the wrong password!</div>
@@ -20,7 +21,7 @@
             <p class="mb4 f4 lh-copy">Please <a href="mailto:erictsaidesign@gmail.com?subject=Portfolio Access Request">email me</a> if you would like to get the 🔑 password, Thanks!</p>
             <input class="protected__content__input mb3" data-id="password" type="password" placeholder="Enter Password" />
             <button data-id="button" type="button" class="protected__content__btn">Continue</button>
-            <p class="mt4">or <a href="../index.html">go back to OkayEric! home</a></p>
+            <p class="mt4">or go back to <a href="../index.html" class="arrow-link">Homepage<i class="material-icons">arrow_forward</i></a></p>
         </div>
     </div>
 
@@ -69,5 +70,41 @@
             }
     </script>
 </body>
+
+<script type="text/javascript">
+    const toggleBtn = document.getElementById("checkbox");
+    let darkMode = localStorage.getItem("dark-mode");
+    console.log(darkMode);
+    const enableDarkMode = () => {
+        document.body.classList.add("dark");
+        localStorage.setItem("dark-mode", "dark");
+    };
+
+    const disableDarkMode = () => {
+        document.body.classList.remove("dark");
+        localStorage.setItem("dark-mode", "light");
+    };
+
+    if (darkMode === "dark") {
+        document.getElementById("checkbox").checked = true;
+        enableDarkMode();
+        // set state of darkMode on page load   
+    } else {
+        document.getElementById("checkbox").checked = false;
+        disableDarkMode(); // start with light mode  
+    }
+
+    toggleBtn.addEventListener("click", (e) => {
+        darkMode = localStorage.getItem("dark-mode");
+        // update darkMode when clicked     
+        if (darkMode === "light") {
+            enableDarkMode();
+        } else {
+            disableDarkMode();
+        }
+
+        document.body.classList.toggle("dark", toggleBtn.checked);
+    });
+</script>
 
 </html>

@@ -6,8 +6,6 @@
 
 body,
 html {
-    font-family: 'Roboto Condensed', sans-serif;
-    background: linear-gradient(#F5F0F7, #F5F0F7 10%, #FEFEFE 45%);
     color: #2D3737;
     display: flex;
     align-items: center;
