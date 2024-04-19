@@ -96,6 +96,18 @@ body.dark footer p.color-boxed {
   color: #fefefe;
 }
 
+body.dark .horizontal-nav a
+{
+  color: hsla(0, 0%, 100%, .75);
+}
+
+
+body.dark .horizontal-nav a:hover
+{
+  color: hsla(0, 0%, 100%, 0.95);
+}
+
+
 body.dark hr {
   border-top: 2px solid #fefefe;
 }
