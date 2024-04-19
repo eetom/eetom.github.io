@@ -14,6 +14,11 @@
     width: 60%;
     max-width: 350px;
   }
+
+  .avatar-group  {
+    max-width: auto;
+    width: 100vh;
+  }
 }
 
 @media screen and (min-width: 2000px) {
