@@ -205,7 +205,7 @@ h1 {
 }
 
 h2 {
-    font-family: "PPMori-Regular", sans-serif;
+    font-family: "PPMori-SemiBold", sans-serif;
     color: #1B1B1B;
     font-weight: 100;
     font-size: 2.2rem;
@@ -327,7 +327,7 @@ ul li {
 
 .sub-greeting {
   line-height: 1.6;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 /* ==================================== */
@@ -413,12 +413,12 @@ ul li {
 footer {
   padding-top: 1rem;
   padding-bottom: 2rem;
-  border-image-slice: 1;
+  /* border-image-slice: 1;
   border-width: 10px;
-  border-top: 10px solid #743ECA;
-  background-color: #1D0A35;
+  border-top: 10px solid #743ECA; */
+  background-color: #FBFBFB;
   /* background-image: linear-gradient(#0A1535, #0A1535, #743ECA) ; */
-  color: #fff;
+  color: #1B1B1B;
 }
 
 .border-gradient-purple {
@@ -1084,12 +1084,12 @@ body.dark.grid {
 
 body.dark footer {
   background-image: none;
-  background-color: #160F1E;
+  background-color: #0A0A0A;
   padding-top: 1rem;
   padding-bottom: 2rem;
-  border-image-slice: 1;
+  /* border-image-slice: 1;
   border-width: 10px;
-  border-top: 10px solid #743ECA;
+  border-top: 10px solid #743ECA; */
 }
 
 body.dark .color-boxed {
