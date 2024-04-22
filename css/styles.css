@@ -146,8 +146,8 @@ a.deprecated-link:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1400px;
-  width: 220vh;
+  /* max-width: 1400px;
+  width: 220vh; */
 }
 
 .flex-center {
@@ -429,14 +429,6 @@ tr:nth-child(even) {
   transition: 0.5s all;
 }
 
-/* #the-sticky-div.sticky {
-  position: fixed;
-  top: 170px;
-  width: 100%;
-  height: auto;
-  transform: translate(0%, -15%);
-  transition: 0.5s all;
-} */
 
 #the-sticky-div.sticky #sticky-description {
   width: 30vh;
