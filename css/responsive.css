@@ -4,10 +4,25 @@
 
 
 /* ------------------------------- */
-/* Large Screen */
+/* Responsive styles for side sticky nav */
 /* ------------------------------- */
 
 
+/* From 2200px and up */
+@media screen and (min-width: 2200px) {
+  #the-sticky-div.sticky {
+    left: 64vw;
+  }
+}
+
+/* From 2000px to 2200px */
+@media screen and (min-width: 2000px) {
+  #the-sticky-div.sticky {
+    left: 66vw;
+  }
+}
+
+/* From 1800px to 2000px */
 @media screen and (min-width: 1800px) {
   #the-sticky-div.sticky {
     left: 68vw;
@@ -21,17 +36,32 @@
   }
 }
 
-@media screen and (min-width: 2000px) {
+/* From 1500px to 1800px */
+@media screen and (min-width: 1800px) {
   #the-sticky-div.sticky {
-    left: 66vw;
+    left: 70vw;
+    width: 60%;
+    max-width: 350px;
+  }
+
+  .avatar-group {
+    max-width: auto;
+    width: 100vh;
   }
 }
 
-@media screen and (min-width: 2200px) {
-  #the-sticky-div.sticky {
-    left: 64vw;
-  }
+@media screen and (min-width: 1500px) {
+    #the-sticky-div.sticky {
+        position: relative;
+        max-width: 100%;
+        left: 0%;
+        top: 0;
+        transform: none;
+        transition: none;
+      }
 }
+
+
 
 /* ------------------------------- */
 /* Small Screen (Max-width: 701px) */

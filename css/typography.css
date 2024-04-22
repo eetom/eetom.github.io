@@ -66,7 +66,7 @@ p,
   font-family: 'DM Mono', monospace;
   color: #1B1B1B;
   line-height: 1.8;
-  max-width: 700px;
+  max-width: 750px;
 }
 
 .img-nav h3 {
@@ -78,9 +78,6 @@ p,
 /* Specific Classes */
 /* ------------------------------- */
 
-/* .font {
-  background: linear-gradient(#F8F6F9, #F8F6F9 10%, #F5F5F5 45%);
-} */
 
 .sub-title {
   color: #828282;
@@ -119,7 +116,7 @@ p,
 
 .text-out {
   font-size: 3rem;
-  max-width: 900px;
+  max-width: 1000px;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
