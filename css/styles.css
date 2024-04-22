@@ -393,10 +393,6 @@ tr:nth-child(even) {
   display: none;
 }
 
-.horizontal-nav {
-  display: flex;
-  /* margin-left: 16px; */
-}
 
 .horizontal-nav-index {
   display: flex;
@@ -410,7 +406,6 @@ tr:nth-child(even) {
 .horizontal-flex {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
