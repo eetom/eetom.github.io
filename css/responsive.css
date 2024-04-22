@@ -28,6 +28,11 @@
     display: flex;
     margin-left: 16px;
   }
+
+  .dropdown-nav {
+    display: none;
+    margin: 0 1rem;
+  }
 }
 
 /* From 2000px to 2200px */
@@ -49,6 +54,11 @@
   .horizontal-nav {
     display: flex;
     margin-left: 16px;
+  }
+
+  .dropdown-nav {
+    display: none;
+    margin: 0 1rem;
   }
 }
 
@@ -75,6 +85,11 @@
     display: flex;
     margin-left: 16px;
   }
+
+  .dropdown-nav {
+    display: none;
+    margin: 0 1rem;
+  }
 }
 
 /* From 1400px to 1800px */
@@ -99,7 +114,13 @@
     display: flex;
     margin-left: 16px;
   }
+
+  .dropdown-nav {
+    display: none;
+    margin: 0 1rem;
+  }
 }
+
 
 /* From 960px to 1400px */
 @media screen and (min-width: 960px) and (max-width: 1399px) {
@@ -117,6 +138,10 @@
   .avatar-group {
     max-width: 1200px;
     width: 100vh;
+  }
+
+  .dropdown-nav {
+    display: inline;
   }
 
   .horizontal-nav {

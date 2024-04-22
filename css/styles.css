@@ -109,10 +109,7 @@ a.deprecated-link:hover {
   cursor: not-allowed;
 }
 
-.dropdown-nav {
-  display: none;
-  margin: 0 1rem;
-}
+
 
 .dropdown-nav button {
   background-color: #FAFAFA;
