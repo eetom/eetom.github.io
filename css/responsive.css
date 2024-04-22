@@ -36,10 +36,24 @@
   }
 }
 
-/* From 1500px to 1800px */
-@media screen and (min-width: 1800px) {
+/* From 1400px to 1800px */
+@media screen and (min-width: 1400px) {
   #the-sticky-div.sticky {
     left: 70vw;
+    width: 50%;
+    max-width: 350px;
+  }
+
+  .avatar-group {
+    max-width: auto;
+    width: 100vh;
+  }
+}
+
+/* From 1000px to 1400px */
+@media screen and (min-width: 1000px) {
+  #the-sticky-div.sticky {
+    left: 72vw;
     width: 50%;
     max-width: 350px;
   }
