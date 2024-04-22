@@ -16,7 +16,7 @@ a {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.4em;
 }
 
 h1.title {
@@ -31,7 +31,7 @@ h2 {
 }
 
 h2.title {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-family: 'Lato', sans-serif;
   color: #721BE4;
   margin: 0;
@@ -42,6 +42,7 @@ h3 {
 }
 
 h3.title {
+  font-weight: 400;
   margin-top: 5px;
   color: #000;
 }
@@ -92,7 +93,7 @@ a, a:visited, a:hover {
 }
 
 .small-list {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   padding-left: 14px;
   margin-bottom: 0;
@@ -174,7 +175,7 @@ a, a:visited, a:hover {
 }
 
 .no-title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   line-height: 1.6;
 }
