@@ -529,3 +529,443 @@ hr {
   margin: 8px 8px 0 0;
   border-radius: 2px;
 }
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Responsive CSS */
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+
+/* ------------------------------- */
+/* Responsive styles for side sticky nav */
+/* ------------------------------- */
+
+
+/* From 2200px and up */
+@media screen and (min-width: 2200px) {
+  #the-sticky-div.sticky {
+    left: 64vw;
+    position: fixed;
+    top: 170px;
+    width: 100%;
+    height: auto;
+    transform: translate(0%, -15%);
+    transition: 0.5s all;
+  }
+
+  .avatar-group {
+    max-width: 1400px;
+    width: 220vh;
+  }
+
+  .horizontal-nav {
+    display: flex;
+    margin-left: 16px;
+  }
+
+  .dropdown-nav {
+    display: none;
+    margin: 0 1rem;
+  }
+}
+
+/* From 2000px to 2200px */
+@media screen and (min-width: 2000px) and (max-width: 2199px) {
+  #the-sticky-div.sticky {
+    left: 66vw;
+    position: fixed;
+    top: 120px;
+    width: 100%;
+    height: auto;
+    transform: translate(0%, -15%);
+    transition: 0.5s all;
+  }
+
+  .avatar-group {
+    max-width: 1400px;
+    width: 220vh;
+  }
+
+  .horizontal-nav {
+    display: flex;
+    margin-left: 16px;
+  }
+
+  .dropdown-nav {
+    display: none;
+    margin: 0 1rem;
+  }
+}
+
+/* From 1800px to 2000px */
+@media screen and (min-width: 1800px) and (max-width: 1999px) {
+  #the-sticky-div.sticky {
+    left: 68vw;
+    width: 60%;
+    max-width: 350px;
+    position: fixed;
+    top: 120px;
+    width: 100%;
+    height: auto;
+    transform: translate(0%, -15%);
+    transition: 0.5s all;
+  }
+
+  .avatar-group {
+    max-width: 1400px;
+    width: 220vh;
+  }
+
+  .horizontal-nav {
+    display: flex;
+    margin-left: 16px;
+  }
+
+  .dropdown-nav {
+    display: none;
+    margin: 0 1rem;
+  }
+}
+
+/* From 1400px to 1800px */
+@media screen and (min-width: 1400px) and (max-width: 1799px) {
+  #the-sticky-div.sticky {
+    left: 70vw;
+    max-width: 350px;
+    position: fixed;
+    top: 120px;
+    width: 100%;
+    height: auto;
+    transform: translate(0%, -15%);
+    transition: 0.5s all;
+  }
+
+  .avatar-group {
+    max-width: 1200px;
+    width: 100vh;
+  }
+
+  .horizontal-nav {
+    display: flex;
+    margin-left: 16px;
+  }
+
+  .dropdown-nav {
+    display: none;
+    margin: 0 1rem;
+  }
+}
+
+
+/* From 960px to 1400px */
+@media screen and (min-width: 960px) and (max-width: 1399px) {
+  #the-sticky-div.sticky {
+    left: 72vw;
+    max-width: 350px;
+    position: fixed;
+    top: 120px;
+    width: 100%;
+    height: auto;
+    transform: translate(0%, -15%);
+    transition: 0.5s all;
+  }
+
+  .avatar-group {
+    max-width: 1200px;
+    width: 100vh;
+  }
+
+  .dropdown-nav {
+    display: inline;
+    margin-left: 1rem;
+  }
+
+  .horizontal-nav {
+    display: none;
+    margin-left: 0;
+  }
+
+  .horizontal-nav.active {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    padding-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    opacity: 0.95;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .horizontal-nav.active a {
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    font-family: "PPMori-SemiBold", serif;
+  }
+
+  .horizontal-nav.active a:hover {
+    background-color: #e0d8ff;
+  }
+
+  .horizontal-nav.active a:hover.placeholder {
+    background-color: transparent;
+    color: #2d72c2;
+  }
+
+  .horizontal-nav.active a.closeout {
+    display: inline;
+    font-size: 16px;
+    background-color: transparent;
+    text-decoration: none;
+    margin-top: 2rem;
+  }
+
+  .horizontal-nav.active a:hover.closeout {
+    text-decoration: underline;
+  }
+}
+
+
+
+/* ------------------------------- */
+/* Small Screen (Max-width: 701px) */
+/* ------------------------------- */
+
+@media screen and (max-width: 701px) {
+  .avatar-group h1 {
+    margin-right: 1rem;
+  }
+
+  .horizontal-nav {
+    display: none;
+    margin-left: 0;
+  }
+
+  .horizontal-nav.active {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    padding-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    opacity: 0.95;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  body.dark .horizontal-nav.active {
+    border: none;
+    background-color: #1B1B1B;
+    box-shadow: none;
+    color: #FEFEFE;
+  }
+
+  .horizontal-nav.active a {
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    font-family: "PPMori-SemiBold", serif;
+  }
+
+  .horizontal-nav.active a:hover {
+    background-color: #e0d8ff;
+  }
+
+  .horizontal-nav.active a:hover.placeholder {
+    background-color: transparent;
+    color: #2d72c2;
+  }
+
+  .horizontal-nav.active a.closeout {
+    display: inline;
+    font-size: 16px;
+    background-color: transparent;
+    text-decoration: none;
+    margin-top: 2rem;
+  }
+
+  .horizontal-nav.active a:hover.closeout {
+    text-decoration: underline;
+  }
+
+  .horizontal-flex {
+    width: 90vw;
+  }
+
+  .dropdown-nav {
+    display: inline;
+    margin-left: 1rem;
+  }
+
+  body.dark .horizontal-nav.active {
+    background-color: #292929;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+  }
+}
+
+/* ------------------------------- */
+/* Medium Screen (Min-width: 30em, Max-width: 60em) */
+/* ------------------------------- */
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .img-nav {
+    width: 50%;
+  }
+
+  .img-nav p {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .math-box {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+
+  .side-title {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  #the-sticky-div,
+  #sticky-description {
+    width: 100%;
+  }
+
+  #the-sticky-div.sticky {
+    position: relative;
+    max-width: 100%;
+    left: 0%;
+    top: 0;
+    transform: none;
+    transition: none;
+  }
+
+  #the-sticky-div.sticky #sticky-description,
+  #the-sticky-div hr.small-line {
+    width: 100%;
+  }
+
+  .popupClose {
+    display: none;
+  }
+
+  h2.f1 {
+    font-size: 2.5rem;
+  }
+
+  .text-out {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    max-width: 800px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+/* ------------------------------- */
+/* Small Screen (Max-width: 30em) */
+/* ------------------------------- */
+
+@media screen and (max-width: 30em) {
+  .img-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 2rem 0;
+    justify-content: space-between;
+    width: 98%;
+  }
+
+  .img-nav p {
+    font-size: 16px;
+    width: 80%;
+    line-height: 1.2;
+  }
+
+  .img-section,
+  .row {
+    display: block;
+  }
+
+  .img-sub {
+    width: 98%;
+  }
+
+  .column {
+    max-width: 100%;
+  }
+
+  .small-line {
+    width: 35%;
+  }
+
+  .color-boxed {
+    padding: 1rem;
+  }
+
+  .math-box {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+
+  .footer-flex-columns {
+    display: block;
+    width: 100%;
+  }
+
+  #the-sticky-div,
+  #sticky-description {
+    width: 100%;
+  }
+
+  #the-sticky-div.sticky {
+    position: relative;
+    max-width: 100%;
+    left: 0%;
+    top: 0;
+    transform: none;
+    transition: none;
+  }
+
+  #the-sticky-div.sticky #sticky-description,
+  #the-sticky-div hr.small-line {
+    width: 100%;
+  }
+
+  .side-title {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .popupClose {
+    display: none;
+  }
+
+  h2.f1 {
+    font-size: 2rem;
+  }
+
+  .text-out {
+    font-size: 1.7rem;
+    line-height: 1.2;
+    max-width: 800px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
