@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
+    <meta charset="UTF-8">
     <title>Password Protected Section</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" type="text/css" href="workstyles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
+
 
 <body class="grid">
 
@@ -72,9 +74,11 @@
 </body>
 
 <script type="text/javascript">
-    const toggleBtn = document.getElementById("checkbox");
+    
     let darkMode = localStorage.getItem("dark-mode");
+
     console.log(darkMode);
+
     const enableDarkMode = () => {
         document.body.classList.add("dark");
         localStorage.setItem("dark-mode", "dark");
@@ -85,26 +89,6 @@
         localStorage.setItem("dark-mode", "light");
     };
 
-    if (darkMode === "dark") {
-        document.getElementById("checkbox").checked = true;
-        enableDarkMode();
-        // set state of darkMode on page load   
-    } else {
-        document.getElementById("checkbox").checked = false;
-        disableDarkMode(); // start with light mode  
-    }
-
-    toggleBtn.addEventListener("click", (e) => {
-        darkMode = localStorage.getItem("dark-mode");
-        // update darkMode when clicked     
-        if (darkMode === "light") {
-            enableDarkMode();
-        } else {
-            disableDarkMode();
-        }
-
-        document.body.classList.toggle("dark", toggleBtn.checked);
-    });
 </script>
 
 </html>
