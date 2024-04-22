@@ -3,7 +3,6 @@
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 @import url('darkmode.css');
-@import url('responsive.css');
 @import url('typography.css');
 @import url('popupmodal.css');
 
@@ -143,8 +142,7 @@ a.deprecated-link:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* max-width: 1400px;
-  width: 220vh; */
+  width: 100%;
 }
 
 .flex-center {
@@ -554,8 +552,7 @@ hr {
   }
 
   .avatar-group {
-    max-width: 1400px;
-    width: 220vh;
+
   }
 
   .horizontal-nav {
@@ -582,8 +579,7 @@ hr {
   }
 
   .avatar-group {
-    max-width: 1400px;
-    width: 220vh;
+
   }
 
   .horizontal-nav {
@@ -612,8 +608,7 @@ hr {
   }
 
   .avatar-group {
-    max-width: 1400px;
-    width: 220vh;
+
   }
 
   .horizontal-nav {
@@ -641,8 +636,7 @@ hr {
   }
 
   .avatar-group {
-    max-width: 1200px;
-    width: 100vh;
+
   }
 
   .horizontal-nav {
@@ -671,8 +665,7 @@ hr {
   }
 
   .avatar-group {
-    max-width: 1200px;
-    width: 100vh;
+
   }
 
   .dropdown-nav {
