@@ -927,6 +927,7 @@ hr {
   .footer-flex-columns {
     display: block;
     width: 100%;
+    margin-top: 2rem;
   }
 
   #the-sticky-div,
