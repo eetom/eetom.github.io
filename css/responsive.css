@@ -40,7 +40,7 @@
 @media screen and (min-width: 1800px) {
   #the-sticky-div.sticky {
     left: 70vw;
-    width: 60%;
+    width: 50%;
     max-width: 350px;
   }
 
@@ -50,9 +50,6 @@
   }
 }
 
-@media screen and (min-width: 1500px) {
-
-}
 
 
 

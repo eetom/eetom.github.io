@@ -441,7 +441,7 @@ tr:nth-child(even) {
 }
 
 #the-sticky-div.sticky #sticky-description {
-  width: 25vh;
+  width: 35vh;
 }
 
 #the-sticky-div.sticky h2 {
