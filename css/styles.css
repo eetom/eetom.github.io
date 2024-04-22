@@ -400,11 +400,11 @@ tr:nth-child(even) {
   margin-right: 1rem;
 }
 
-.horizontal-flex {
+/* .horizontal-flex {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
+} */
 
 #banner {
   width: 65vh;
@@ -799,9 +799,9 @@ hr {
     text-decoration: underline;
   }
 
-  .horizontal-flex {
+  /* .horizontal-flex {
     width: 90vw;
-  }
+  } */
 
   .dropdown-nav {
     display: inline;
