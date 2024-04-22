@@ -26,7 +26,7 @@
   #the-sticky-div.sticky {
     left: 66vw;
     position: fixed;
-    top: 170px;
+    top: 120px;
     width: 100%;
     height: auto;
     transform: translate(0%, -15%);
@@ -41,7 +41,7 @@
     width: 60%;
     max-width: 350px;
     position: fixed;
-    top: 170px;
+    top: 120px;
     width: 100%;
     height: auto;
     transform: translate(0%, -15%);
@@ -60,7 +60,7 @@
     left: 70vw;
     max-width: 350px;
     position: fixed;
-    top: 170px;
+    top: 120px;
     width: 100%;
     height: auto;
     transform: translate(0%, -15%);
@@ -79,7 +79,7 @@
     left: 72vw;
     max-width: 350px;
     position: fixed;
-    top: 170px;
+    top: 120px;
     width: 100%;
     height: auto;
     transform: translate(0%, -15%);
