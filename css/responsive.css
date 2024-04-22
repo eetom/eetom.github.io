@@ -16,14 +16,14 @@
 }
 
 /* From 2000px to 2200px */
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 2000px) and (max-width: 2199px) {
   #the-sticky-div.sticky {
     left: 66vw;
   }
 }
 
 /* From 1800px to 2000px */
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1800px) and (max-width: 1999px) {
   #the-sticky-div.sticky {
     left: 68vw;
     width: 60%;
@@ -37,10 +37,9 @@
 }
 
 /* From 1400px to 1800px */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) and (max-width: 1799px) {
   #the-sticky-div.sticky {
     left: 70vw;
-    width: 50%;
     max-width: 350px;
   }
 
@@ -51,10 +50,9 @@
 }
 
 /* From 1000px to 1400px */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) and (max-width: 1399px) {
   #the-sticky-div.sticky {
     left: 72vw;
-    width: 50%;
     max-width: 350px;
   }
 
