@@ -429,16 +429,14 @@ tr:nth-child(even) {
   transition: 0.5s all;
 }
 
-#the-sticky-div.sticky {
+/* #the-sticky-div.sticky {
   position: fixed;
   top: 170px;
   width: 100%;
-  /* left: 68vw; */
   height: auto;
-  /* width: 60%; */
   transform: translate(0%, -15%);
   transition: 0.5s all;
-}
+} */
 
 #the-sticky-div.sticky #sticky-description {
   width: 35vh;
