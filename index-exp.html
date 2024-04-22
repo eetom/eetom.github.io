@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>OkayEric! A place to put the things that I makes</title>
@@ -16,7 +17,7 @@
 
       <div class="cf pa3 pa4-m pa5-l mw9 center index-main-body">
         <div class="mb4 mt4 pa5-l pa4 br3 card-bg">
-
+    
           <div class="header-index-text mr4 pa4-l pt3-m pb3-m pl0">
             <img src="https://eetom.github.io/img/hosted/me3.png" class="br-100 ba h4 w4 dib mb3" alt="avatar">
             <h1 class="lh-title mt2 mb1">OkayEric!</h1>
@@ -122,7 +123,7 @@
   </main>
 </body>
 
-<footer>
+<footer >
   <div class="cf pa3 pa4-m pa5-l mw9 center">
     <div class="fr w-100">
       <hr>
@@ -182,37 +183,37 @@
 </script>
 
 <script type="text/javascript">
-  const toggleBtn = document.getElementById("checkbox");
-  let darkMode = localStorage.getItem("dark-mode");
-  console.log(darkMode);
-  const enableDarkMode = () => {
-    document.body.classList.add("dark");
-    localStorage.setItem("dark-mode", "dark");
-  };
+    const toggleBtn = document.getElementById("checkbox");
+    let darkMode = localStorage.getItem("dark-mode");
+    console.log(darkMode);
+    const enableDarkMode = () => {
+      document.body.classList.add("dark");
+      localStorage.setItem("dark-mode", "dark");
+    };
 
-  const disableDarkMode = () => {
-    document.body.classList.remove("dark");
-    localStorage.setItem("dark-mode", "light");
-  };
+    const disableDarkMode = () => {
+      document.body.classList.remove("dark");
+      localStorage.setItem("dark-mode", "light");
+    };
 
-  if (darkMode === "dark") {
-    document.getElementById("checkbox").checked = true;
-    enableDarkMode();
-    // set state of darkMode on page load   
-  } else {
-    document.getElementById("checkbox").checked = false;
-    disableDarkMode(); // start with light mode  
-  }
-
-  toggleBtn.addEventListener("click", (e) => {
-    darkMode = localStorage.getItem("dark-mode");
-    // update darkMode when clicked     
-    if (darkMode === "light") {
+    if (darkMode === "dark") {
+      document.getElementById("checkbox").checked = true;
       enableDarkMode();
+      // set state of darkMode on page load   
     } else {
-      disableDarkMode();
+      document.getElementById("checkbox").checked = false;
+      disableDarkMode(); // start with light mode  
     }
 
+    toggleBtn.addEventListener("click", (e) => {
+      darkMode = localStorage.getItem("dark-mode");
+      // update darkMode when clicked     
+      if (darkMode === "light") {
+        enableDarkMode();
+      } else {
+        disableDarkMode();
+      }
+
     document.body.classList.toggle("dark", toggleBtn.checked);
-  });
+    });
 </script>

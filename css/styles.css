@@ -276,6 +276,8 @@ ul li {
 
 .card-bg {
   background-color: #fbfbfb;
+  display: flex;
+  align-items: center;
 }
 
 .blog-callout {
@@ -633,6 +635,14 @@ hr {
     display: none;
     margin: 0 1rem;
   }
+
+  .text-out {
+    font-size: 2.5rem;
+    max-width: 1000px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
 }
 
 
@@ -710,6 +720,14 @@ hr {
   .horizontal-nav.active a:hover.closeout {
     text-decoration: underline;
   }
+
+  .text-out {
+    font-size: 2.5rem;
+    max-width: 1000px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
 }
 
 
@@ -793,6 +811,28 @@ hr {
     font-size: 1.25rem;
     line-height: 1.8;
   }
+
+  .card-bg {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .header-index-text {
+    border-right: none;
+  }
+
+  .website-name {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .text-out {
+    font-size: 2rem;
+    max-width: 1000px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
 }
 
 /* ------------------------------- */
@@ -846,13 +886,6 @@ hr {
     font-size: 2.5rem;
   }
 
-  .text-out {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    max-width: 800px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
 }
 
 
@@ -946,3 +979,5 @@ hr {
     margin-bottom: 1rem;
   }
 }
+
+
