@@ -142,6 +142,7 @@
 
   .dropdown-nav {
     display: inline;
+    margin-left: 1rem;
   }
 
   .horizontal-nav {
@@ -197,7 +198,6 @@
 
 
 
-
 /* ------------------------------- */
 /* Small Screen (Max-width: 701px) */
 /* ------------------------------- */
@@ -228,6 +228,13 @@
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  body.dark .horizontal-nav.active {
+    border: none;
+    background-color: #1B1B1B;
+    box-shadow: none;
+    color: #FEFEFE;
   }
 
   .horizontal-nav.active a {
@@ -263,6 +270,7 @@
 
   .dropdown-nav {
     display: inline;
+    margin-left: 1rem;
   }
 
   body.dark .horizontal-nav.active {
