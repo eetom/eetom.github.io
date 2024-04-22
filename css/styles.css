@@ -351,7 +351,7 @@ a:hover.arrow-link i {
 
 .toggle-callout {
   background-color: #FFF6E8;
-  color: #656565;
+  color: #e68e00;
   border: 1px solid #f39c12;
   font-weight: 100;
   padding: 0.5rem 0.9rem;
@@ -639,8 +639,8 @@ hr {
   .text-out {
     font-size: 2.5rem;
     max-width: 1000px;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
 }
@@ -724,8 +724,8 @@ hr {
   .text-out {
     font-size: 2.5rem;
     max-width: 1000px;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
 }
