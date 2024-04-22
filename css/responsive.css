@@ -51,14 +51,7 @@
 }
 
 @media screen and (min-width: 1500px) {
-    #the-sticky-div.sticky {
-        position: relative;
-        max-width: 100%;
-        left: 0%;
-        top: 0;
-        transform: none;
-        transition: none;
-      }
+
 }
 
 
