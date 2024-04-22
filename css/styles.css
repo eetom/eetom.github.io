@@ -544,7 +544,7 @@ hr {
   #the-sticky-div.sticky {
     left: 64vw;
     position: fixed;
-    top: 170px;
+    top: 140px;
     width: 100%;
     height: auto;
     transform: translate(0%, -15%);
@@ -567,7 +567,7 @@ hr {
   #the-sticky-div.sticky {
     left: 66vw;
     position: fixed;
-    top: 120px;
+    top: 140px;
     width: 100%;
     height: auto;
     transform: translate(0%, -15%);
@@ -592,7 +592,7 @@ hr {
     width: 60%;
     max-width: 350px;
     position: fixed;
-    top: 120px;
+    top: 140px;
     width: 100%;
     height: auto;
     transform: translate(0%, -15%);
@@ -616,7 +616,7 @@ hr {
     left: 70vw;
     max-width: 350px;
     position: fixed;
-    top: 120px;
+    top: 140px;
     width: 100%;
     height: auto;
     transform: translate(0%, -15%);
@@ -641,7 +641,7 @@ hr {
     left: 72vw;
     max-width: 350px;
     position: fixed;
-    top: 120px;
+    top: 140px;
     width: 100%;
     height: auto;
     transform: translate(0%, -15%);
