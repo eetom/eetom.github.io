@@ -313,6 +313,7 @@ footer {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .footer-link-columns {
@@ -903,7 +904,6 @@ hr {
   .footer-flex-columns {
     display: block;
     width: 100%;
-    margin-top: 2rem;
   }
 
   #the-sticky-div,
