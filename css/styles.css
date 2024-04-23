@@ -84,7 +84,7 @@ a:visited.main-title {
 }
 
 .lockednav-links li {
-  font-family: "PPMori-Regular", serif;
+  font-family: 'DM Mono', monospace;
   margin-bottom: 15px;
   font-size: 1.6rem;
 }
