@@ -247,6 +247,10 @@ ul li {
   width: 100%;
 }
 
+.myImg {
+  cursor: zoom-in;
+}
+
 .img-section {
   display: flex;
   flex-wrap: wrap;
