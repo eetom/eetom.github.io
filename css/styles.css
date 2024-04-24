@@ -562,7 +562,7 @@ hr {
     left: 64vw;
     position: fixed;
     top: 140px;
-    width: 100%;
+    width: 16%;
     height: auto;
     transform: translate(0%, -15%);
     transition: 0.5s all;
@@ -585,7 +585,7 @@ hr {
     left: 66vw;
     position: fixed;
     top: 140px;
-    width: 100%;
+    width: 20%;
     height: auto;
     transform: translate(0%, -15%);
     transition: 0.5s all;
@@ -743,8 +743,6 @@ hr {
   }
 
 }
-
-
 
 /* ------------------------------- */
 /* Small Screen (Max-width: 960px) */
