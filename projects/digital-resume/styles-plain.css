@@ -13,6 +13,7 @@
 body {
   font-family: 'DM Mono', monospace;
   color: #1B1B1B;
+  background-color: #CCC;
 }
 
 p {
@@ -22,11 +23,11 @@ p {
 }
 
 a {
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 2.4rem;
   font-family: 'PPMori-Regular', sans-serif;
 }
 
@@ -37,14 +38,14 @@ h1.title {
 
 
 h2 {
-  font-size: 1em;
+  font-size: 1rem;
   color: #4a00ac;
   margin: 15px 0;
   font-family: 'PPMori-Regular', sans-serif;
 }
 
 h2.title {
-  font-size: 1.3em;
+  font-size: 1rem;
   font-family: 'PPMori-Regular', sans-serif;
   color: #721BE4;
   margin: 0;
@@ -75,8 +76,10 @@ a, a:visited, a:hover {
 }
 
 .wrapper {
-  margin: 1em auto;
+  margin: 1rem auto;
+  padding: 1rem;
   max-width: 800px;
+  background-color: #FEFEFE;
 }
 
 .section-wrapper {
@@ -114,24 +117,14 @@ a, a:visited, a:hover {
   margin-top: 0.5rem;
 }
 
-.big-list {
-  font-size: 1rem;
-  line-height: 1.5;
-  padding-left: 14px;
-  margin-bottom: 0;
-}
-
 .small-list li {
-  color: #333;
   font-weight: 500;
 }
 
 .date {
-  /* display: block; */
   color: #333;
   font-weight: 500;
   font-size: 0.9rem;
-  opacity: 0.8;
   padding-left: 0px;
   margin-top: 2px;
 }
@@ -188,6 +181,7 @@ h3.company {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 0rem;
+  margin-top: 1rem;
 }
 
 .signature-cover {
@@ -196,7 +190,7 @@ h3.company {
 }
 
 .no-title {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 0.5rem;
   line-height: 1.6;
 }
