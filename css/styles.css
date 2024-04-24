@@ -108,7 +108,16 @@ a.deprecated-link:hover {
   cursor: not-allowed;
 }
 
+.flexy-links {
+  display: flex;
+  flex-direction: row;
+}
 
+.flexy-links p {
+  margin-right: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #e5d1ff3a;
+}
 
 .dropdown-nav button {
   background-color: #FAFAFA;
