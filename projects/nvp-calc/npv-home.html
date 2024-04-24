@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
-    <script src="../../script/headerfooterload.js"></script>
+    <script src="../headerfooterproj.js"></script>
 </head>
 
 <header class="sans-serif">
@@ -24,46 +24,15 @@
 
 <body class="font grid">
     <main class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
-        <div id="header">
-            <!-- Reusable header -->
-            <div class="fr w-100 header">
-                <div class="header-text">
-                    <div class="horizontal-flex">
-                        <div class="avatar-group">
-                            <img src="https://eetom.github.io/img/hosted/me3.png" class="br-100 ba h3 w3 dib mb4 mt4 mr2"
-                                alt="avatar">
-                            <h1 class="f2 f2-l lh-title mt0 mb0">
-                                <a href="../index.html" class="main-title">OkayEric!</a>
-                            </h1>
-                            <div class="horizontal-nav">
-                                <a href="../../portfolio/portfolio.html">🔒/portfolio</a>
-                                <a href="../../projects/projects.html">/projects</a>
-                                <a href="../../words/words.html">/words</a>
-                                <a href="../../img/images.html">/images</a>
-                                <a href="../../about/about.html">/about</a>
-                                <a class="closeout" href="#">Close Menu</a>
-                            </div>
-                            <div class="fr">
-                                <input type="checkbox" class="checkbox" id="checkbox">
-                                <label for="checkbox" class="checkbox-label">
-                                    <i class="material-icons moon" style="font-size: 16px;">dark_mode</i>
-                                    <i class="material-icons sun" style="font-size: 16px;">light_mode</i>
-                                    <span class="ball"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="dropdown-nav">
-                            <button>
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                            </button>
-                        </div>
-                    </div>
+
+        <header class="sans-serif">
+            <div class="cover bg-left bg-center-l mainview">
+                <div class="bg-black-0 pb5 pb6-m pb7-l">
+                    <nav class="dt w-100 mw8 center">
+                    </nav>
                 </div>
             </div>
-            <!-- End header -->
-        </div>
+        </header>
 
         <div class="lh-copy fl w-100 mb4"> <!-- Coding links section -->
 
@@ -80,7 +49,7 @@
                         Graham</a> on <a
                         href="https://unsplash.com/photos/person-holding-pencil-near-laptop-computer-5fNmWej4tAA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
                 </p>
-                <h2>Expriments with NPV</h2>
+                <h2>Net Present Value 101</h2>
                 <hr class="mb5 mt4 ml0 small-line" />
                 <h2>What is Net Present Value?</h2>
                 <p>One of the things I've learnt about working in investing and finance is the concept of 
@@ -401,13 +370,14 @@
 
 </html>
 
-<script>
+<!-- <script>
     $(function () {
         $('#footer').load('../../footer.html');
+        $('#header').load('../../header.html');
     });
-</script>
+</script> -->
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     // Allow for random header image
     var images = [
         'https://eetom.github.io/img/hosted/img1.jpg', 'https://eetom.github.io/img/hosted/img2.jpg', 'https://eetom.github.io/img/hosted/img3.jpg', 'https://eetom.github.io/img/hosted/img4.jpg', 'https://eetom.github.io/img/hosted/img5.jpg', 'https://eetom.github.io/img/hosted/img6.jpg', 'https://eetom.github.io/img/hosted/img8.jpg', 'https://eetom.github.io/img/hosted/img10.jpg', 'https://eetom.github.io/img/hosted/img12.jpg', 'https://eetom.github.io/img/hosted/img14.jpg', ' https://eetom.github.io/img/hosted/img15.jpg', 'https://eetom.github.io/img/hosted/img17.jpg', 'https://eetom.github.io/img/hosted/img20.jpg', 'https://eetom.github.io/img/hosted/pano1.jpg', 'https://eetom.github.io/img/hosted/pano2.jpg', 'https://eetom.github.io/img/hosted/pano3.jpg', 'https://eetom.github.io/img/hosted/pano4.jpg', 'https://eetom.github.io/img/hosted/pano5.jpg', 'https://eetom.github.io/img/hosted/pano6.jpg', 'https://eetom.github.io/img/hosted/pano7.jpg'];
@@ -463,4 +433,4 @@
         dropdown.classList.toggle("active");
         horizontal.classList.toggle("active");
     }
-</script>
+</script> -->
