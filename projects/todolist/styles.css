@@ -3,6 +3,7 @@
 body {
   margin: 0;
   min-width: 250px;
+  max-width: 1440px;
   font-family: 'FontAwesome', sans-serif;
   background-color: #2E3C54;
 }
@@ -17,6 +18,7 @@ h2 {
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 4px;
+  font-size: 2.2rem;
 }
 
 p.title {
@@ -24,12 +26,13 @@ p.title {
   margin-bottom: 25px;
   text-align: left;
   font-size: 18px;
+  max-width: 600px;
 }
 
 /* Remove margins and padding from the list */
 ul {
   margin: 0;
-  margin-top: 13rem;
+  margin-top: 14rem;
   padding: 0 40px;
   background-color: #2E3C54;
 }
@@ -159,7 +162,8 @@ ul li.completed .pause-btn {
 /* Style the input */
 input {
   border: none;
-  width: 55%;
+  width: 45%;
+  max-width: 600px;
   padding: 10px;
   float: left;
   font-size: 18px;
@@ -210,29 +214,17 @@ input {
 }
 
 .saveBtn:after {
-  content: "Save List";
+  content: "Save";
 }
 
 .clearBtn:after {
-  content: "New List";
+  content: "Export";
 }
 
 .disabled {
   opacity: 0.4;
   pointer-events: none;
   cursor: default;
-}
-
-.addBtn:hover, .clearBtn:hover, .saveBtn:hover {
-  background-color: #FF6D92;
-}
-
-.fa-plus-circle, .fa-tasks, .fa-pause, .fa-hourglass-start, .fa-clock-o, .fa-floppy-o, .fa-external-link {
-  margin-right: 8px;
-}
-
-.watch {
-  margin-left: 5px;
 }
 
 

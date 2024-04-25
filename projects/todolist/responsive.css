@@ -2,12 +2,8 @@
 
 /* Laptop L - 1440 */
 @media only screen and (max-width : 1441px) {
-  body {
-    /*background-color: lightblue;*/
-    /*responsive test*/
-  }
   input {
-    width: 53%;
+    width: 45%;
   }
   .saveBtn, .clearBtn {
     width: 13%;
@@ -16,12 +12,8 @@
 
 /* Laptop - 1024 */
 @media only screen and (max-width : 1025px) {
-	body {
-    b/*ackground-color: lightgreen;*/
-    /*responsive test*/
-  }
   input {
-    width: 46%;
+    width: 42%;
   }
   .saveBtn:after {
     content: "Save";
@@ -36,10 +28,6 @@
 
 /* Tablet - 768 */
 @media only screen and (max-width : 769px) {
-  body {
-    /*background-color: red;*/
-    /*responsive test*/
-  }
   .pause:after {
     content: none;
     padding-left: 0px;
@@ -80,14 +68,11 @@
 
 /* Special Breakpoint for Buttons */
 @media only screen and (max-width: 605px) {
-  h2 {
-    font-size: 2.2em;
-  }
   input {
     width: 100%;
   } 
   ul {
-    margin-top: 265px;
+    margin-top: 300px;
     padding: 0 20px;
   }
   .header {
@@ -101,10 +86,6 @@
 
 /* Mobile L - 425 */
 @media only screen and (max-width : 426px) {
-  body {
-    /*background-color: darkgreen;*/
-    /*responsive test*/
-  }
   ul {
     margin-top: 265px;
     padding: 0 20px;
@@ -131,10 +112,6 @@
 
 /* Mobile S - 320 */ 
 @media only screen and (max-width : 321px) {
-  body {
-    /*background-color: darkred;*/
-    /*responsive test*/
-  }
   .clearBtn, .saveBtn {
     padding: 10px;
     width: auto;
