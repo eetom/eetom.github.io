@@ -181,10 +181,11 @@ function deleteTask(task) {
   const list = document.getElementById("myUL");
   const listItems = list.getElementsByTagName("li");
   Array.from(listItems).forEach(li => {
-    const descriptionSpan = li.querySelector("span:first-child");
+    const descriptionSpan = li.querySelector("span:nth-child(2)");
     if (descriptionSpan && descriptionSpan.textContent === task.description) {
       list.removeChild(li);
       console.log("Task deleted:", task);
     }
   });
 }
+
