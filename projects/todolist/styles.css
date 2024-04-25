@@ -20,7 +20,7 @@ h2 {
 }
 
 p.title {
-  margin-top: 5px;
+  margin-top: 20px;
   margin-bottom: 25px;
   text-align: left;
   font-size: 18px;
@@ -29,7 +29,7 @@ p.title {
 /* Remove margins and padding from the list */
 ul {
   margin: 0;
-  margin-top: 177px;
+  margin-top: 13rem;
   padding: 0 40px;
   background-color: #2E3C54;
 }
@@ -108,7 +108,7 @@ button {
 }
 
 ul li.completed {
-  background-color: #253145;
+  background-color: #242932;
 }
 
 ul li.completed .task-description {
@@ -134,25 +134,6 @@ ul li.completed .pause-btn {
 /* -------------------------------------------------- */
 /* Old styles */
 
-
-.start {
-  background-color: #00BE81;
-  color: white;
-}
-
-.start:after {
-   content: "Timing";
-   padding-left: 5px;
-}
-
-.initiate {
-  background-color: #6A67CE;
-  color: white;
-}
-
-.initiate:after {
-  content: "Start Timer";
-}
 
 /* Style the header */
 .header {
