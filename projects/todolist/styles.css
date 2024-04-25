@@ -167,6 +167,7 @@ input {
 
 /* Style the "Add" button */
 .addBtn {
+  height: 42px;
   padding: 10px 14px;
   background: #FC636B;
   color: #fff;
