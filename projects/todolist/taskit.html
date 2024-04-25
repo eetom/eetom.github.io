@@ -8,18 +8,16 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="responsive.css" type="text/css">
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="action.js"></script>
+    <script src="action_b.js"></script>
   </head>
 
   <body>
     <div id="myDIV" class="header">
-      <h2>Taskit</h2>
+      <h2>Taskit v0.1</h2>
       <p class="title">A simple task list for easy task management and tracking</p>
-
-
+      
       <input type="text" id="myInput" onkeydown = "if (event.keyCode == 13) document.getElementById('addBtn').click()" placeholder="Enter Task Description...">
       <span onclick="newElement()" class="addBtn" id="addBtn"><i class="fa fa-plus-circle"></i></span>
-
 
       <span onclick="window.open('https://eetom.github.io/projects/todolist/taskit.html')" class="clearBtn"><i class="fa fa-external-link" aria-hidden="true"></i></span>
       <span onclick="saveList()" class="saveBtn disabled"><i class="fa fa-floppy-o" aria-hidden="true"></i></span>
