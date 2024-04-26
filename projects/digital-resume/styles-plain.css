@@ -190,6 +190,7 @@ h3.company {
 .signature-cover {
   font-family: "Nothing You Could Do", cursive;
   font-size: 2rem;
+  margin-top: 0rem;
 }
 
 .no-title {
@@ -200,6 +201,11 @@ h3.company {
 
 .cover-list{
   margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.cover-list b{
+  opacity: 1;
 }
 
 .cover-gap{
@@ -207,15 +213,22 @@ h3.company {
 }
 
 .contacts {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-right: 1rem;
 }
 
 .contacts2 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-right: 1rem;
-  color: #000;
+  color: #1B1B1B;
   margin-bottom: 1.5rem;
+}
+
+.contacts3 {
+  font-size: 0.9rem;
+  margin-right: 1rem;
+  color: #1B1B1B;
+  margin-bottom: 0.5rem;
 }
 
 .contacts i {
@@ -227,6 +240,13 @@ h3.company {
 
 .contacts a {
   color: #721BE4;
+}
+
+h3.title2, h3.title2 a {
+  font-weight: 400;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  color: #3b0088;
 }
 
 
