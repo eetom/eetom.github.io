@@ -83,6 +83,16 @@ a:visited.main-title {
   margin: 1rem 0 0 0;
 }
 
+.lockednav-links a,
+.lockednav-links a:visited {
+  color: #924af1;
+}
+
+.lockednav-links a.active {
+  color: #6208d7;
+  font-weight: 700;
+}
+
 .lockednav-links li {
   font-family: 'DM Mono', monospace;
   margin-bottom: 15px;
