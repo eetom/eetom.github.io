@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    min-height: 200vh;
+    background-color: #1B1B1B;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border-radius: 12px;
+}
+
+.gradient {
+    background: linear-gradient(#e66465, #9198e5);
+}

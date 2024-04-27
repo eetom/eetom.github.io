@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Learn GSAP JS Library</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+
+        <div class="box gradient"><h2>Hello World!</h2></div>
+
+        <script src="script.js"></script>
+        <script src="gsap.min.js"></script>
+        <script src="ScrollTrigger.min.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                gsap.registerPlugin(ScrollTrigger)
+                gsap.to('.box',{
+                    rotation: 360,
+                    duration: 2,
+                    scrollTrigger: {
+                        trigger: '.box',
+                        markers: true,
+                        scrub: true
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
+
+

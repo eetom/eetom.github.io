@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <div id="container"></div>
+
+
+    <script type="module">
+        import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+
+        // Declare the chart dimensions and margins.
+        const width = 640;
+        const height = 400;
+        const marginTop = 20;
+        const marginRight = 20;
+        const marginBottom = 30;
+        const marginLeft = 40;
+
+        var theData = [];
+
+        // Generate data points for each month
+            var additionalData = [];
+            var currentDate = new Date("2023-01-01");
+            while (currentDate < new Date("2024-01-01")) {
+                var value = Math.floor(Math.random() * 100) + 1; // Random value between 1 and 100
+                additionalData.push({ value: value, date: new Date(currentDate) }); // Clone current date
+                currentDate.setMonth(currentDate.getMonth() + 1); // Increment to next month
+            }
+
+            // Concatenate the additional data points with the existing data
+            theData = theData.concat(additionalData);
+
+        // Declare the x (horizontal position) scale.
+        const x = d3.scaleUtc()
+            .domain([new Date("2023-01-01"), new Date("2024-01-01")])
+            .range([marginLeft, width - marginRight]);
+
+        // Declare the y (vertical position) scale.
+        const y = d3.scaleLinear()
+            .domain([0, 100])
+            .range([height - marginBottom, marginTop]);
+
+        // Create the SVG container.
+        const svg = d3.create("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        // Add the x-axis.
+        svg.append("g")
+            .attr("transform", `translate(0,${height - marginBottom})`)
+            .call(d3.axisBottom(x));
+
+        // Add the y-axis.
+        svg.append("g")
+            .attr("transform", `translate(${marginLeft},0)`)
+            .call(d3.axisLeft(y));
+
+        svg.append("g")
+                .attr("fill", "steelblue")
+                .selectAll("rect")
+                .data(theData)
+                .join("rect")
+                .attr("x", (d) => x(d.date)) // Use date for x-axis positioning
+                .attr("y", (d) => y(d.value)) // Use value directly for vertical positioning
+                .attr("height", (d) => height - marginBottom - y(d.value)) // Adjust height calculation
+                .attr("width", 20); // Set a fixed width for the bars
+
+        // Append the SVG element.
+        container.append(svg.node());
+    </script>
+
+</html>
