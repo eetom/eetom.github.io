@@ -2,21 +2,102 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Venn diagram with Angular and D3</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.0/angular.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venn Diagram</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 
 <body>
+    <svg width="470" height="320"></svg>
+    <h1>Here is a svg about a venn diagram</h1>
+    <p>The venn diagram is a type of data visualization that
+        shows where data sets have data in common and displays it
+        by showing visually where this overlap is.</p>
+    <script>
+        const svg = d3.select("svg");
 
-    <section ng-app="app" class="app">
-        <section class="container">
-            <venn-diagram></venn-diagram>
-        </section>
-    </section>
+        // Add background color to SVG
+        svg.append("rect")
+            .attr("width", "100%")
+            .attr("height", "100%")
+            .attr("fill", "lightgray");
+
+        // Define circle properties
+        const circleRadius = 150;
+        const circleSeparation = -150;
+
+        // Calculate circle positions
+        const circle1X = circleRadius + 10; // Adjusted circle position
+        const circle1Y = circleRadius + 10;
+        const circle2X = circleRadius + circleRadius * 2 + circleSeparation;
+        const circle2Y = circleRadius + 10;
+
+        // Draw circles with strokes
+        svg.append("circle")
+            .attr("cx", circle1X)
+            .attr("cy", circle1Y)
+            .attr("r", circleRadius)
+            .style("fill", "blue")
+            .style("stroke", "black")
+            .style("stroke-width", 2)
+            .style("opacity", 0.5);
+
+        svg.append("circle")
+            .attr("cx", circle2X)
+            .attr("cy", circle2Y)
+            .attr("r", circleRadius)
+            .style("fill", "red")
+            .style("stroke", "black")
+            .style("stroke-width", 2)
+            .style("opacity", 0.5);
+
+        // Add multi-line text labels with center alignment
+        const text1 = svg.append("text")
+            .attr("x", circle1X - circleRadius / 2)
+            .attr("y", circle1Y)
+            .attr("dy", "-0.5em")
+            .style("text-anchor", "middle")
+            .style("fill", "white");
+
+        text1.append("tspan")
+            .text("UI/UX");
+
+        text1.append("tspan")
+            .attr("x", circle1X - circleRadius / 2)
+            .attr("dy", "1.2em")
+            .text("Designer");
+
+        const text2 = svg.append("text")
+            .attr("x", circle2X + circleRadius / 2)
+            .attr("y", circle2Y)
+            .attr("dy", "-0.5em")
+            .style("text-anchor", "middle")
+            .style("fill", "white");
+
+        text2.append("tspan")
+            .text("Front-end");
+
+        text2.append("tspan")
+            .attr("x", circle2X + circleRadius / 2)
+            .attr("dy", "1.2em")
+            .text("Developer");
+
+        const text3 = svg.append("text")
+            .attr("x", (circle1X + circle2X) / 2)
+            .attr("y", circle1Y)
+            .attr("dy", "-0.5em")
+            .style("text-anchor", "middle")
+            .style("fill", "white");
+
+        text3.append("tspan")
+            .text("Design");
+
+        text3.append("tspan")
+            .attr("x", (circle1X + circle2X) / 2)
+            .attr("dy", "1.2em")
+            .text("Engineer");
+    </script>
 
 </body>
-
 </html>
