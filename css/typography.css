@@ -60,8 +60,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-p,
-.img-nav p
+p
 {
   font-family: 'DM Mono', monospace;
   color: #1B1B1B;
@@ -69,8 +68,13 @@ p,
   max-width: 750px;
 }
 
+.img-nav p {
+  margin-top: 0;
+}
+
 .img-nav h3 {
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 

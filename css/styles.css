@@ -286,8 +286,13 @@ ul li {
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 2rem 0;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  align-content: flex-start;
   width: 32%;
+}
+
+.img-nav a {
+ max-height: 200px;
 }
 
 .img-nav a img {
@@ -871,6 +876,10 @@ hr {
     line-height: 1.2;
   }
 
+    .img-nav a {
+      max-height: none;
+    }
+
   .math-box {
     margin-bottom: 16px;
     font-size: 16px;
@@ -928,6 +937,14 @@ hr {
     font-size: 16px;
     width: 80%;
     line-height: 1.2;
+  }
+
+  .img-nav a {
+    max-height: none;
+  }
+
+  .img-nav h3 {
+    margin-top: 0rem;
   }
 
   .img-section,
