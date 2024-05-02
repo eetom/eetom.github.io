@@ -1,0 +1,92 @@
+html,
+body {
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #fff;
+}
+
+/* the outer beige container */
+.chart {
+    display: flex;
+    margin: 10px;
+    width: 600px;
+    background-color: #C9BEBC;
+    padding: 40px;
+}
+
+/* the blue bar containers */
+.container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 10px;
+    width: 200px;
+    height: 500px;
+    justify-content: flex-start;
+    align-content: flex-start;
+    background-color: #596079;
+}
+
+/* the pink boxes we will transition */
+.box {
+    width: 12px;
+    height: 10px;
+    margin: 2px;
+    z-index: 0;
+    background-color: #FF7373;
+    position: relative;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    transform: scale(0);
+}
+
+button {
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 60px;
+    font-weight: bold;
+    padding: 0 40px;
+    background: salmon;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.venue-label {
+    width: 120px;
+    margin: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.year {
+    width: 120px;
+    margin: 4px 4px 0px 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tooltip {
+    background-color: #fff;
+    z-index: 1000;
+    width: 210px;
+    padding: 4px;
+}
+
