@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Generative pattern part 2</title>
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <script>
+        CSS.paintWorklet.addModule('script-voronoi2.js');
+        document.documentElement.style.setProperty('--pattern-seed', Math.random() * 10000);
+    </script>
+    <!-- <script src="script-voronoi.js"></script> -->
+
+</head>
+
+<body>
+
+    <div class="main-content">
+
+        <div class="worklet-canvas"></div>
+
+        <img id="tile-image" src="../img/hosted/tile_1.png">
+        <div class="hover-card">
+            <h1>Generative art pattern Voronoi from css-tricks</h1>
+            <h3>This is just an exploration based on the tutorial by <a href="https://css-tricks.com/creating-generative-patterns-with-the-css-paint-api/">George Francis - Creating Generative Patterns with The CSS Paint API</a></h3>
+            <p>Please check out his original article about how to create different generative backgrounds. This example forks the original <a href="https://codepen.io/georgedoescode/pen/zYdjBVg">CSS tricks codepen for Voronoi pattern</a></p>
+        </div>
+
+        </body>
+    </div>
+
+
+
+</html>
