@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     ];
 
-    const colors = ["#FF8E79", "#FF6B5B", "#FF4941", "#DB1D25"];
+    const colors = ["#D8B4FE", "#A855F7", "#7E22CE", "#3B0764"];
 
     scaleColor = d3.scaleOrdinal()
         .domain(data.map(d => d.year))
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const box = d3.select(this);
             const tooltip = box.append("div")
                 .attr("class", "tooltip")
-                .html(`<strong>Total Capacity:</strong> ${d.capacity}<br><strong>Number of Boxes:</strong>${d.boxes}`);
+                .html(`<strong>Venue Capacity:</strong> ${d.capacity}<br><strong>Number of Boxes:</strong>${d.boxes}`);
 
             const boxRect = this.getBoundingClientRect();
             const tooltipRect = tooltip.node().getBoundingClientRect();

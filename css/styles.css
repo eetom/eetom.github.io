@@ -420,7 +420,6 @@ tr:nth-child(even) {
   display: none;
 }
 
-
 .horizontal-nav-index {
   display: flex;
   flex-wrap: wrap;
@@ -860,6 +859,16 @@ hr {
     margin-bottom: 2rem;
   }
 
+}
+
+/* ------------------------------- */
+/* Large Screen (Min-width: 30em, Max-width: 60em) */
+/* ------------------------------- */
+
+@media screen and (min-width: 60em) {
+  .w-35-l {
+    width: 35%;
+  }
 }
 
 /* ------------------------------- */
