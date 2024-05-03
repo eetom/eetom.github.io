@@ -1,13 +1,25 @@
 @property --pattern-seed {
     syntax: "<number>";
-    initial-value: 123456;
+    initial-value: 1000;
     inherits: true;
 }
 
-@property --pattern-background {
-    syntax: "<color>";
-    inherits: false;
-    initial-value: #fff;
+@property --pattern-colors {
+    syntax: "<color>#";
+    initial-value: #D8B4FE, #A855F7, #7E22CE, #3B0764;
+    inherits: true;
+}
+
+@property --pattern-size {
+    syntax: "<number>";
+    initial-value: 1024;
+    inherits: true;
+}
+
+@property --pattern-detail {
+    syntax: "<number>";
+    initial-value: 16;
+    inherits: true;
 }
 
 * {
@@ -17,9 +29,12 @@
 }
 
 .worklet-canvas {
+    /* the default custom properties defined above could be overriden here */
     width: 100vw;
     height: 100vh;
-    background-image: paint(voronoiPattern);
+    background-color: #e9edeb;
+    /* use the worklet to create the background-image for this element */
+    background-image: paint(bauhausPattern);
 }
 
 .hover-card {
