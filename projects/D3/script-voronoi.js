@@ -4,17 +4,19 @@ import { createVoronoiTessellation } from "https://cdn.skypack.dev/@georgedoesco
 
 class VoronoiPattern {
     static get inputProperties() {
-        return ["--pattern-seed", "--pattern-colors", "--pattern-background"];
+        return ["--pattern-seed", "--pattern-background"];
+    }
+
+    constructor() {
+        // Define colors array
+        this.colors = ["#D8B4FE", "#A855F7", "#7E22CE", "#3B0764"];
     }
 
     paint(ctx, geometry, props) {
         const { width, height } = geometry;
 
-        // Increase the range of random points
-
         const background = props.get("--pattern-background").toString();
         const seed = props.get("--pattern-seed").value;
-        const colors = props.getAll("--pattern-colors").map((c) => c.toString());
 
         random.use(seedrandom(seed));
 
@@ -24,14 +26,16 @@ class VoronoiPattern {
         const { cells } = createVoronoiTessellation({
             width,
             height,
-            points: [...Array(100)].map(() => ({
+            points: [...Array(40)].map(() => ({
                 x: random.float(0, width),
                 y: random.float(0, height)
             }))
         });
 
         cells.forEach((cell) => {
-            ctx.fillStyle = colors[random.int(0, colors.length - 1)];
+            // Randomly select a color from the colors array
+            const color = this.colors[random.int(0, this.colors.length - 1)];
+            ctx.fillStyle = color;
 
             const cx = cell.centroid.x;
             const cy = cell.centroid.y;

@@ -1,44 +1,42 @@
-import random from "https://cdn.skypack.dev/random";
-import seedrandom from "https://cdn.skypack.dev/seedrandom";
-import { createVoronoiTessellation } from "https://cdn.skypack.dev/@georgedoescode/generative-utils";
-
 class VoronoiPattern {
     static get inputProperties() {
-        return ["--pattern-seed", "--pattern-colors", "--pattern-background"];
+        return ['--pattern-seed', '--pattern-background'];
     }
 
     paint(ctx, geometry, props) {
         const { width, height } = geometry;
 
+        console.log("Canvas Width:", width);
+        console.log("Canvas Height:", height);
+
         const background = props.get("--pattern-background").toString();
         const seed = props.get("--pattern-seed").value;
-        const tileImage = document.getElementById('tile-image'); // Get the tile image element
-        const tileSize = 100; // Adjust the size of the tiles
+        const tileImage = document.getElementById('tile-image');
+        const tileSize = 100;
 
         random.use(seedrandom(seed));
 
         ctx.fillStyle = background;
         ctx.fillRect(0, 0, width, height);
 
-        // Generate random tile positions and rotations
-        const tileCount = 24; // Adjust the number of tiles
-        const tiles = [...Array(tileCount)].map(() => ({
+        const tiles = [...Array(24)].map(() => ({
             x: random.float(0, width),
             y: random.float(0, height),
-            rotation: random.float(0, Math.PI * 2) // Random rotation angle in radians
+            rotation: random.float(0, Math.PI * 2)
         }));
 
-        // Draw tiles
+        console.log("Generated Tiles:", tiles);
+
         tiles.forEach(tile => {
-            ctx.save(); // Save the current transformation matrix
-            ctx.translate(tile.x, tile.y); // Translate to the tile position
-            ctx.rotate(tile.rotation); // Rotate the canvas
-            ctx.drawImage(tileImage, -tileSize / 2, -tileSize / 2, tileSize, tileSize); // Draw the tile
-            ctx.restore(); // Restore the saved transformation matrix
+            ctx.save();
+            ctx.translate(tile.x, tile.y);
+            ctx.rotate(tile.rotation);
+            ctx.drawImage(tileImage, -tileSize / 2, -tileSize / 2, tileSize, tileSize);
+            ctx.restore();
         });
     }
 }
 
 if (typeof registerPaint !== "undefined") {
-    registerPaint("voronoiPattern", VoronoiPattern);
+    registerPaint("customPattern", CustomPattern);
 }
