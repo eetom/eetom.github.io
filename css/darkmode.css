@@ -165,7 +165,7 @@ body.dark cite {
 }
 
 body.dark img {
-  filter: brightness(.8) contrast(0.9);
+  filter: brightness(.9);
 }
 
 body.dark .mainview {
