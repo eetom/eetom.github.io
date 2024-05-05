@@ -6,7 +6,7 @@ $(document).ready(function () {
 
   $window.scroll(function () {
     $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
-    $stickyE2.toggleClass('line-clamp-3', $window.scrollTop() > elTop);
+    $stickyE2.toggleClass('line-clamp-4', $window.scrollTop() > elTop);
   });
 
   // Add the scroll event listener to update the active state of the side navigation

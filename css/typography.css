@@ -86,6 +86,10 @@ p
   color: #828282;
 }
 
+.highlighter {
+  background: linear-gradient(180deg, transparent 60%, rgba(178, 95, 255, 0.226) 60%);
+}
+
 .title-text {
   max-width: 800px;
 }

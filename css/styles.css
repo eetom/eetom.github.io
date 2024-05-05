@@ -346,6 +346,8 @@ footer {
   padding-bottom: 2rem;
   background-color: #FBFBFB;
   color: #1B1B1B;
+  z-index: 999;
+  position: relative;
 }
 
 .border-gradient-purple {
@@ -376,9 +378,6 @@ footer {
   color: #aaa;
 }
 
-a.arrow-link {
-  /* text-decoration: none; */
-}
 
 .footer-link a i,
 a.arrow-link i {
@@ -454,12 +453,13 @@ tr:nth-child(even) {
   align-items: center;
 } */
 
-#banner {
+/* #banner {
   width: 77vh;
-}
+} */
 
 #sticky-description {
-  width: 65vh;
+  /* width: 65vh; */
+  padding: 0 2rem 0 0;
 }
 
 #the-sticky-div {
@@ -471,7 +471,7 @@ tr:nth-child(even) {
 
 
 #the-sticky-div.sticky #sticky-description {
-  width: 30vh;
+  /* width: 30vh; */
 }
 
 #the-sticky-div.sticky h2 {
@@ -490,12 +490,12 @@ tr:nth-child(even) {
   margin: 2rem 0;
 }
 
-.line-clamp-3 {
+.line-clamp-4 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   /* truncate to 3 lines */
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
 }
 
 .hidden-on-scroll {
@@ -697,7 +697,7 @@ hr {
 @media screen and (min-width: 960px) and (max-width: 1399px) {
   #the-sticky-div.sticky {
     left: 72vw;
-    max-width: 350px;
+    max-width: 330px;
     position: fixed;
     top: 140px;
     width: 100%;
