@@ -10,11 +10,11 @@ $(document).ready(function () {
 
 
     // This is for the sticky side nav for projects and portfolios
-    if (scrollPosition < 455) {
+    if (scrollPosition < 500) {
       $('#the-sticky-div').removeClass("sticky");
     }
 
-    if (scrollPosition >= 455){
+    if (scrollPosition >= 500){
       $('#the-sticky-div').addClass("sticky");
     }
 
