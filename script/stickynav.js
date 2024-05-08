@@ -1,12 +1,12 @@
 $(document).ready(function () {
   var $window = $(window),
     $stickyEl = $('#the-sticky-div'),
-    $stickyE2 = $('#sticky-description'),
+    // $stickyE2 = $('#sticky-description'),
     elTop = $stickyEl.offset().top;
 
   $window.scroll(function () {
-    $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
-    $stickyE2.toggleClass('line-clamp-4', $window.scrollTop() > elTop);
+    // $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
+    // $stickyE2.toggleClass('line-clamp-4', $window.scrollTop() > elTop);
   });
 
   // Add the scroll event listener to update the active state of the side navigation
@@ -16,6 +16,16 @@ $(document).ready(function () {
     // If scroll position is at the top, remove active class from all links
     if (scrollPosition === 0) {
       $(".lockednav-links a").removeClass("active");
+    }
+
+    if (scrollPosition < 435) {
+      $('#the-sticky-div').removeClass("sticky");
+      console.log('scroll position', scrollPosition);
+    }
+
+    if (scrollPosition >= 435){
+      $('#the-sticky-div').addClass("sticky");
+      console.log('scroll position', scrollPosition);
     }
 
     // Iterate through each section

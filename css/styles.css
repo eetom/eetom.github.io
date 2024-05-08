@@ -97,9 +97,9 @@ a:visited.main-title {
 
 .lockednav-links {
   list-style: decimal-leading-zero;
-  padding: 1rem 1rem 1rem 2.5rem;
+  padding: 1rem 1rem 1rem 3.5rem;
   line-height: 2em;
-  margin: 1rem 0 0 0;
+  margin: 0;
 }
 
 .lockednav-links a,
@@ -464,38 +464,30 @@ tr:nth-child(even) {
 
 #the-sticky-div {
   position: relative;
-  width: 60%;
-  transform: translate(0%, 0%);
-  transition: 0.5s all;
-}
-
-
-#the-sticky-div.sticky #sticky-description {
-  /* width: 30vh; */
-}
-
-#the-sticky-div.sticky h2 {
-  font-size: 30px;
+  top: 0px;
+  width: 30%;
+  left: 3vw;
+  padding: 16px;
 }
 
 #the-sticky-div.sticky hr.small-line {
   width: 100%;
 }
 
-#the-sticky-div.sticky .lockednav-links li {
+/* #the-sticky-div.sticky .lockednav-links li {
   margin-bottom: 20px;
-}
+} */
 
 #the-sticky-div.sticky .project-title {
   margin: 2rem 0;
 }
 
 .line-clamp-4 {
-  overflow: hidden;
+  /* overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  /* truncate to 3 lines */
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 4; */
+  display: none;
 }
 
 .hidden-on-scroll {
@@ -592,13 +584,11 @@ hr {
 /* From 2200px and up */
 @media screen and (min-width: 2200px) {
   #the-sticky-div.sticky {
-    left: 64vw;
+    left: 64.3vw;
     position: fixed;
-    top: 140px;
+    top: 20px;
     width: 16%;
     height: auto;
-    transform: translate(0%, -15%);
-    transition: 0.5s all;
   }
 
   .horizontal-nav {
@@ -617,11 +607,11 @@ hr {
   #the-sticky-div.sticky {
     left: 66vw;
     position: fixed;
-    top: 140px;
-    width: 20%;
+    max-width: 420px;
+    top: 20px;
     height: auto;
-    transform: translate(0%, -15%);
-    transition: 0.5s all;
+    /* transform: translate(0%, -15%);
+    transition: 0.5s all; */
   }
 
   .horizontal-nav {
@@ -640,13 +630,12 @@ hr {
   #the-sticky-div.sticky {
     left: 68vw;
     width: 60%;
-    max-width: 350px;
+    max-width: 420px;
     position: fixed;
-    top: 140px;
-    width: 100%;
+    top: 20px;
     height: auto;
-    transform: translate(0%, -15%);
-    transition: 0.5s all;
+    /* transform: translate(0%, -15%);
+    transition: 0.5s all; */
   }
 
   .horizontal-nav {
@@ -663,14 +652,13 @@ hr {
 /* From 1400px to 1800px */
 @media screen and (min-width: 1400px) and (max-width: 1799px) {
   #the-sticky-div.sticky {
-    left: 70vw;
-    max-width: 350px;
-    position: fixed;
-    top: 140px;
-    width: 100%;
-    height: auto;
-    transform: translate(0%, -15%);
-    transition: 0.5s all;
+  left: 71vw;
+  max-width: 350px;
+  position: fixed;
+  top: 20px;
+  height: auto;
+    /* transform: translate(0%, -15%);
+    transition: 0.5s all; */
   }
 
   .horizontal-nav {
@@ -696,14 +684,13 @@ hr {
 /* From 960px to 1400px */
 @media screen and (min-width: 960px) and (max-width: 1399px) {
   #the-sticky-div.sticky {
-    left: 72vw;
-    max-width: 330px;
+    left: 73vw;
+    max-width: 300px;
     position: fixed;
-    top: 140px;
-    width: 100%;
+    top: 20px;
     height: auto;
-    transform: translate(0%, -15%);
-    transition: 0.5s all;
+    /* transform: translate(0%, -15%);
+    transition: 0.5s all; */
   }
 
   .dropdown-nav {
@@ -918,9 +905,9 @@ hr {
     margin-bottom: 2rem;
   }
 
-  #the-sticky-div,
-  #sticky-description {
+  #the-sticky-div {
     width: 100%;
+    left: 0vw;
   }
 
   #the-sticky-div.sticky {
