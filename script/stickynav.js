@@ -10,11 +10,11 @@ $(document).ready(function () {
 
 
     // This is for the sticky side nav for projects and portfolios
-    if (scrollPosition < 435) {
+    if (scrollPosition < 455) {
       $('#the-sticky-div').removeClass("sticky");
     }
 
-    if (scrollPosition >= 435){
+    if (scrollPosition >= 455){
       $('#the-sticky-div').addClass("sticky");
     }
 
@@ -35,7 +35,7 @@ $(document).ready(function () {
         return; // Skip if section ID is not found
       }
 
-      var sectionTop = section.offset().top;
+      var sectionTop = section.offset().top - 50;
       var sectionBottom = sectionTop + section.outerHeight() + 500;
 
       // Check if the current scroll position is within this section
