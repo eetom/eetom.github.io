@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OkayEric! A place to put the things that I makes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+    <meta name="robots" content="noindex, nofollow">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="headerfooterload-work.js"></script>
+    <script src="../../script/stickynav.js"></script>
+  </head>
+
+  <header class="sans-serif">
+    <div class="cover bg-left bg-center-l mainview">
+      <div class="bg-black-0 pb5 pb6-m pb7-l">
+        <nav class="dt w-100 mw8 center">
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <body class="font grid">
+    <main id="part-0" class="cf pa3 pa4-m pa5-l mw9 center"> <!-- Main container -->
+      <div id="header">
+        <!-- reusable header goes here-->
+      </div>
+
+      <div class="fr w-100"> <!-- this is a line break -->
+        <hr class="mb5" />
+      </div>
+
+      <!--  ************************************** Nav sidebar -->
+
+      <div class="fl w-100 mb4">
+
+        <div class="fl w-100 w-70-l">
+          <img id="banner" src="work-img/cf-banner.png">
+          <h2 class="f1 mb2">Cloudflare Firewall WAF rules</h2>
+          <h3>Self serve access to Firewall rule builder</h3>
+
+          <hr class="mb4 ml0 small-locked-line" />
+          
+          <p class="lh-copy">
+            I designed the first version of self-serve Web Application Firewall (WAF) rule builder.
+            This is a feature that allows customers to customize rules for how they want their Cloudflare
+            firewall to react to oncoming traffic.
+          </p>
+
+          <div class="w-100 w-70-l">
+            <div class="fl w-100 w-50-m w-50-l">
+              <p class="mb0 sub-title">Release date:</p>
+              <p class="mt0 mb4">May 2019</p>
+              <p class="mb0 sub-title">My role:</p>
+              <p class="mt0 mb0">User research</p>
+              <p class="mt0 mb4">Product design</p>
+            </div>
+          
+            <div class="fl w-100 w-50-m w-50-l">
+              <p class="mb0 sub-title">Team:</p>
+              <p class="mt0 mb0">Alex C.F.(PM)</p>
+              <p class="mt0 mb0">David K.(ENG lead)</p>
+              <p class="mt0 mb0">Mark L.(ENG)</p>
+              <p class="mt0 mb0">Andrew G.(EM)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="fr w-20-l" id="the-sticky-div">
+        
+          <h2 class="f3 mt0 mb0">Table of contents</h2>
+          <ul class="lockednav-links">
+            <li><a href="#part-1">Background</a></li>
+            <li><a href="#part-2">Research + Analysis</a></li>
+            <li><a href="#part-3">Prototype + Lofi</a></li>
+            <li><a href="#part-4">Design + Testing</a></li>
+            <li><a href="#part-5">Outcomes</a></li>
+          </ul>
+          <hr class="mb4 ml0 small-locked-line" />
+        
+          <h2 class="f3 mt5 mb0">Tags</h2>
+          <div class="tag-section mt3 pb4">
+            <div class="tag"><a href="tags.html">🧑‍💻 HTML prototype</a></div>
+            <div class="tag"><a href="tags.html">📑 Information architecture</a></div>
+          </div>
+          <hr class="mb4 ml0 small-locked-line" />
+        
+          <h2 class="f3 mt5 mb0">Links</h2>
+          <ul class="lockednav-exlinks mt3">
+            <li><a href="https://www.cloudflare.com/">Cloudflare homepage</a></li>
+            <li><a href="https://developers.cloudflare.com/firewall/">Cloudflare Firewall documentation</a></li>
+            <li><a href="index-work.html" class="mb3 arrow-link">back to portfolio</a></li>
+          </ul>
+        
+        </div>
+
+      </div>
+
+
+      <!-- **************************************  Begin main content -->
+
+      <div class="lh-copy fl w-100 mb4">
+
+        <div class="fl w-100 w-70-l">
+
+          <h3 id="part-1" class="work-title mt5">01. Background</h3>
+
+
+            <p class="work-content">
+              The existing way for customers to access Web Application Firewall rules was to request via support for Cloudflare team to create
+              and adjust the rules for them. This was a lengthy process and required a lot of back and forth communication to fine tune rules.
+            </p>
+
+            <p class="work-content">
+              One of the concerns on how to approach solving this was which customer base to focus on at first. We had 2 levels of customers who 
+              were either more beginner and would benefit from a WYSIWYG type interaction or the more experienced engineer who would like to have
+              more precise control over how the rules would be created.
+            </p>
+
+            <p class="work-content">
+              My aim was to explore designs that would allow customers to build rules in a way that they would be most comfortable with.
+              That's not to say that advanced users might not benefit from templates or visual builders.
+            </p>
+
+
+          <h3 id="part-2" class="work-title">02. Research + Analysis</h3>
+            <p class="work-content2">
+              To get a better understanding of the challenges for building for the firewall app I needed to understand how the firewall app worked
+              and what kind of jobs and goals did the customer have.
+            </p>
+
+            <ul>
+              <li>Exploration of the Cloudflare Firewall</li>
+              <li>Getting a sense of the customer via sales eng team and support team</li>
+              <li>Doing a competitive anaysis on existing rule builders</li>
+            </ul>
+
+          
+          <h3 id="part-3" class="work-title">03. Prototype + Lofi</h3>
+            <p class="work-content2">
+              Once I had a better understanding of how firewall worked and what was the range of actions customers would want. I set
+              out to explore both visual rule builder and the code builder (Domain Specific Language or DSL).
+            </p>
+            <ul>
+              <li>Figuring out the logic to construct rules</li>
+              <li>Alternating between rule builder and DSL expression editor</li>
+              <li>Prototyping rule builder interactions</li>
+            </ul>
+
+          <h3 id="part-4" class="work-title">04. Design + Testing</h3>
+            <p class="work-content2">
+              To ensure the user interface (UI) effectively addressed customer needs, I collaborated with engineers and the
+              London-based engineering and sales team. Through paper prototyping sessions, we gained valuable insights into how both teams interpreted
+              customer wants and translated them into actionable design decisions. This teamwork led to the development of several key
+              UI components:
+              </p>
+              <ul class="mb5">
+                <li>Enhanced feedback mechanisms that provided users with clearer information on existing firewall rules and their
+                effectiveness.</li><br>
+                <li>A basic rule builder prototype that allowed users to switch between the visual interface and a dedicated Domain Specific
+                Language (DSL) view. This addressed the needs of both technical and non-technical users.</li>
+              </ul>
+
+
+          <h3 id="part-5" class="work-title">05. Outcomes</h3>
+
+            <p class="work-content2">
+              The redesigned custom firewall experience yielded positive results, providing valuable insights for future iterations.
+            </p>
+            <p class="work-content">
+            <b>High User Engagement:</b> Within the first 6 days of launch, nearly 4,000 users actively participated by creating a new
+            custom rule. Over half (over 2,000 users) successfully completed the rule creation process, saving and deploying at
+            least one rule. This suggests the core user experience resonated well with a significant portion of the user base.
+            </p>
+          <img class="work-img" src="work-img/firewall-17.png">
+            <p class="work-content">
+              <b>Areas for Optimization:</b> The 60% conversion rate for creating custom rules offers an opportunity to further
+              improve the user experience. Analyzing user behavior can pinpoint specific areas where users might encounter friction, allowing
+              for targeted improvements in subsequent follow up Firewall design.
+            </p>
+              
+          <img class="work-img" src="work-img/firewall-16.png">
+            <p class="work-content">
+              <b>Advanced User Success:</b> For highly technical users, the new DSL expression editor proved valuable. While a smaller
+              group (approximately 350 users) explored this advanced feature, a significant percentage (aproximately 200 users) successfully created 
+              and deployed custom rules using the editor.
+            </p>
+
+          <img class="work-img" src="work-img/firewall-18.png">
+            <p class="work-content2">
+              <b>Reduced Support Burden and User Empowerment:</b> The impact of the redesigned custom firewall experience extended beyond
+              user adoption. Support ticket data revealed a significant decrease in inquiries related to firewall rules.
+            </p>
+              <ul>
+                <li><b>Initial Inquiry Spike:</b> As expected, the launch week saw a temporary increase in support tickets (21 tickets), likely due
+                to users familiarizing themselves with the new features. However, this initial rise was quickly followed by a
+                substantial decrease.</li><br>
+                <li><b>Sustainable Reduction:</b> Just two weeks after launch, support tickets related to firewall rules dropped by 33%
+                week-over-week (33 tickets). This downward trend continued, with a further 28% reduction the following week (13
+                tickets).</li>
+              </ul>
+              <p class="work-content">
+                <b>Sustainable Reduction:</b> Just two weeks after launch, support tickets related to firewall rules dropped by 33%
+                week-over-week (33 tickets). This downward trend continued, with a further 28% reduction the following week (13
+                tickets).
+              </p>
+
+          <p class="work-content">
+            The redesigned custom firewall experience, proved to be a success. User engagement metrics, reduced support tickets,
+            and positive feedback all indicate a significant improvement for our customers. This project serves as a springboard
+            for continued innovation. 
+            <br><br> 
+            By prioritizing an intuitive user experience and empowering users with self-service
+            tools, we have empowered them to take control of their firewall security. Looking ahead, the Firewall team had plan to
+            leverage the learnings from this project to introduce even more advanced functionalities while ensuring a seamless 
+            experience for all user levels.
+          </p>
+
+          <p class="work-content">
+            This project wouldn't have been possible without the incredible collaboration and support from the London team. Huge
+            thanks to Alex, Harley, Mark, Andrew, David, and everyone else who lent their expertise and insights throughout the process. It was a
+            true pleasure working alongside such a talented group, and exploring London while collaborating on the firewall project
+            made it an even more rewarding experience.
+          </p>
+
+
+        </div>
+        <!-- **************************************  End main content -->
+    </main>
+  </body>
+
+  <footer >
+    <div id="footer">
+      <!-- reusable footer goes here-->
+    </div>
+  </footer>
+</html>
