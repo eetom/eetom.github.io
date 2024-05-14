@@ -149,12 +149,14 @@ body.dark .img-nav p {
   color: #fefefe;
 }
 
+body.dark .lockednav-links a.active {
+  background-color: #3d0a62;
+}
+
 body.dark .tag {
   color: #ccc;
   background-color: #2f133f;
-  padding: 4px 10px;
-  margin: 8px 8px 0 0;
-  border-radius: 2px;
+  border: 1px solid #653595;
 }
 
 body.dark .tag a {
