@@ -638,7 +638,7 @@ hr {
 @media screen and (min-width: 1400px) and (max-width: 1799px) {
   #the-sticky-div.sticky {
   left: 71vw;
-  max-width: 350px;
+  max-width: 380px;
   position: fixed;
   top: 20px;
   height: auto;
@@ -663,6 +663,10 @@ hr {
     margin-bottom: 2rem;
   }
 
+  .lockednav-links {
+    font-size: 1.3rem;
+  }
+
 }
 
 
@@ -670,7 +674,7 @@ hr {
 @media screen and (min-width: 960px) and (max-width: 1399px) {
   #the-sticky-div.sticky {
     left: 73vw;
-    max-width: 300px;
+    max-width: 340px;
     position: fixed;
     top: 20px;
     height: auto;
