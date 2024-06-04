@@ -101,6 +101,7 @@ button.secondary:hover {
     background-color: #fafafa;
     border: 3px solid black;
     min-width: 160px;
+    width: max-content;
     z-index: 1;
 }
 
@@ -141,6 +142,7 @@ button.secondary:hover {
     padding: 8px 10px;
     text-decoration: none;
     display: block;
+    width: 100%;
 }
 
 .modal-style-title {
@@ -186,6 +188,11 @@ code {
 p img.r {
 float: right;
 padding: 0px 0px 16px 16px;
+}
+
+p img.l {
+    float: left;
+    padding: 0px 16px 0px 16px;
 }
 
 .box {
