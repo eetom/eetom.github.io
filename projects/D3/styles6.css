@@ -11,6 +11,7 @@
 
 body {
     background: url("assets/light_bg.png") repeat;
+    margin: 0;
 }
 
 p {
@@ -23,29 +24,19 @@ p {
     height: 35px;
     align-items: center;
     border-bottom: 3px solid black;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.header h4 {
-    margin-right: 1rem;
-    font-size: 24px;
-    padding: 2px 4px;
-}
-
-.header h4:first-child {
-    margin-left: 1rem;
-    font-size: 24px;
-}
-
-.header h4:hover {
-    background-color: black;
-    color: white;
-}
 
 .button-nav-bottom {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: flex-end;
+    margin-top: 2rem;
 }
 
 button.secondary {
@@ -102,14 +93,88 @@ button.secondary:hover {
     background-attachment: fixed;
 }
 
- figure {
-     text-align: center;
-     margin: 2em 0;
- }
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    font-size: 1.4rem;
+    position: absolute;
+    background-color: #fafafa;
+    border: 3px solid black;
+    min-width: 160px;
+    z-index: 1;
+}
 
- figure img {
-     outline: 2px solid black;
- }
+.dropbtn {
+    margin-right: 1rem;
+    font-size: 24px;
+    padding: 2px 4px;
+    background-color: #fafafa;
+    border: none;
+}
+
+.dropdown:first-child {
+    margin-left: 1rem;
+    margin-right: 0rem;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: black;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content a:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.modal-style-title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1px 0;
+    height: 31px;
+    background: url("assets/stripe2_bg.png") repeat;
+    border-bottom: 3px solid black;
+}
+
+.modal-style-title h4 {
+    display: inline;
+    margin: 0;
+    padding: 2px 4px;
+    background-color: white;
+}
+
+.modal-style {
+    padding: 0;
+}
+
+.modal-style-content {
+    padding: 0.5rem 3rem 2rem 3rem;
+}
+
+figure {
+    text-align: center;
+    margin: 2em 0;
+}
+
+figure img {
+    outline: 2px solid black;
+}
 
 code {
     background: #1b1b1bd4;
@@ -141,10 +206,6 @@ padding: 0px 0px 16px 16px;
 .box .card.mid {
     width: 60%;
 }
-
-
-
-
 
 
 @media screen and (max-width: 900px) {

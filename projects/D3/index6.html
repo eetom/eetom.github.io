@@ -10,66 +10,104 @@
 
 <body>
     <div class="header">
-        <h4>☕</h4>
-        <h4>File</h4>
-        <h4>Edit</h4>
-        <h4>View</h4>
-        <h4>Special</h4>
+        <div class="dropdown">
+            <button class="dropbtn">☕</button>
+            <div class="dropdown-content">
+                <a href="#">About</a>
+                <a href="#">Code by Eric</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Files</button>
+            <div class="dropdown-content">
+                <a href="#">Open</a>
+                <a href="#">Duplicate</a>
+                <a href="#">Get Info</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Edit</button>
+            <div class="dropdown-content">
+                <a href="#">Undo</a>
+                <a href="#">Cut</a>
+                <a href="#">Copy</a>
+                <a href="#">Paste</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">View</button>
+            <div class="dropdown-content">
+                <a href="#">By Icon</a>
+                <a href="#">By Name</a>
+                <a href="#">By Date </a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Special</button>
+            <div class="dropdown-content">
+                <a href="#">Clean Up</a>
+                <a href="#">Empty Trash</a>
+                <a href="#">Erase Disk</a>
+            </div>
+        </div>
     </div>
 
     <div class="container">
         <div class="card">
-            <h1>Lorem Ipsum</h1>
+            <h1>Retro UI</h1>
             <h3>
-                This is just an exploration based on the tutorial by X
+                This is just an exploration based on old retro UIs
             </h3>
 
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada
             erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.
             </p>
 
-            <figure>
-                <img src="assets/screen2.png" width="640"
-                    alt="Fighting a monster in Sword of Kumdor. Text on the screen reads, 'A monster appears! Eff is casting a spell. 9 points of damage to your opponent!' The player types back spells like 'dasafaa dasafaa' using the keyboard to defeat monsters.">
-            </figure>
-
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede. <code>Hello</code>
+                erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.
             </p>
         </div>
 
-        <div class="card">
-            <h3>
-                Another card dialog box
-            </h3>
-            
-            <p>
-                <img class="r" src="assets/ship_ku.png" height="128">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada
-                erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede. With a <a href="#">Link</a>
-            </p>
-
-            <p>
-                <code>
-                    code {<br>
-                    background: #1b1b1bd4;<br>
-                    color: #fafafa;<br>
-                    padding: 0px 6px;<br>
-                    }
-                </code>
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Credits</h3>
-            <p>The style of this page is inspired by the game "The Sword of Kumdor” (クムドールの剣)"</p>
-            <p>The other inpsiration was from the website <a href="https://lynn.github.io/kumdor/">https://lynn.github.io/kumdor/</a>
-                who did a english translation of the page</p>
-
-            <div class="button-nav-bottom">
-                <button class="secondary">Cancel</button>
-                <button class="primary">Go for it</button>
+        <div class="card modal-style">
+            <div class="modal-style-title">
+                <h4>Font inspiration</h4>
             </div>
+            <div class="modal-style-content">
+                <p>
+                    <img class="r" src="assets/ship_ku.png" height="128">
+                    The font inspiration is based off the original Windows 1.0 font called <a
+                        href="https://en.wikipedia.org/wiki/Fixedsys">Fixedsys</a>.
+                    The actual typefaced used here is called <a href="https://github.com/kika/fixedsys">Fixedsys Excelsior</a> by <a
+                        href="https://github.com/bathos">Darien Valentine</a>
+                    as a public domain and creative commons zero dedication.
+                </p>
+            </div>
+        </div>
+
+        <div class="card modal-style">
+            <div class="modal-style-title"><h4>Style Inspiration</h4></div>
+            <div class="modal-style-content">
+                <p>The primary inpsiration of this style is from the website <a
+                        href="https://lynn.github.io/kumdor/">https://lynn.github.io/kumdor/</a>
+                    who did a english translation of the game "The Sword of Kumdor” (クムドールの剣)"</p>
+
+                <figure>
+                    <img src="assets/screen2.png" width="640"
+                        alt="Fighting a monster in Sword of Kumdor. Text on the screen reads, 'A monster appears! Eff is casting a spell. 9 points of damage to your opponent!' The player types back spells like 'dasafaa dasafaa' using the keyboard to defeat monsters.">
+                </figure>
+    
+
+                <div class="button-nav-bottom">
+                    <button class="secondary">Cancel</button>
+                    <button class="primary">Go for it</button>
+                </div>
+            </div>
+
+
         </div>
 
         <div class="box">
