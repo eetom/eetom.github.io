@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Fixsys";
+    src: url("/projects/D3/assets/FSEX300.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Fixsys"
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.sub-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title-card {
+    width: 55%;
+    background-color: #fff;
+    padding: 2rem 3rem;
+    margin: 3rem;
+    border-radius: 8px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hover-card {
+    width: 48%;
+    background-color: #fff;
+    padding: 2rem 3rem;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hover-card:nth-child(odd) {
+    margin-right: 2rem;
+}
+
+img {
+    border: 2px solid black;
+}
+
+
+@media screen and (max-width: 900px) {
+    .hover-card, .title-card {
+        margin: 0 0 1rem 0;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .hover-card:nth-child(odd) {
+        margin-right: 0;
+    }
+
+    .container {
+        max-width: inherit;
+    }
+}
