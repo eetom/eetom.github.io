@@ -45,17 +45,12 @@
 
         <hr class="mb4 ml0 small-locked-line" />
 
-        <p class="lh-copy">
-          The Ledger Internal Admin platform serves as the critical backbone of our day-to-day operations. This
-          behind-the-scenes
-          hub empowers teams across Sales, Support, Engineering, Product, and Data science to seamlessly collaborate and manage
-          Ledger's core functions.
+        <p class="lh-copy mb4">
+          I designed the Ledger Internal Admin platform, a critical backbone for our day-to-day operations. This centralized
+          portal empowers teams across Sales, Support, Engineering, Product, and Data Science to seamlessly collaborate and manage
+          core functions. <br><br> Employees can securely access and manage customer and product data, log in, view customer progress, and
+          track sales performance – all within a user-friendly interface designed to adapt to their needs.
         </p> 
-        <p class="lh-copy mb4">  
-          It functions as a centralized portal, granting employees secure access to manage customer and product
-          data. This includes functionalities for logging in, viewing customer progress, and tracking sales performance – all in
-          one user-friendly interface.
-        </p>
 
         <div class="w-100 w-70-l">
           <div class="fl w-100 w-50-m w-50-l">
@@ -114,107 +109,107 @@
 
         <h3 id="part-1" class="work-title mt5">01. Background</h3>
             <p class="work-content">
-              Originally, the customer and sales teams had worked with a number of different platforms to manage and update of customer program data. They had tried out 
-              things like keeping some records in <a href="https://www.notion.so/">Notion</a> and backend tools like <a href="https://retool.com/">Retool</a>.
-              When those options weren't working we replaced those with a rudimentary admin panel (version 0.5) pretty similar to the one built in Retool.
+              Initially, the customer and sales teams used platforms like Google Docs, Notion, and Retool to manage customer data.
+              These tools led to segregated knowledge and inefficiency, prolonging customer onboarding up to a month. When those
+              options proved inadequate, we introduced a rudimentary admin portal (v0.5).
             </p>
         <img class="work-img" src="work-img/admin-1.png">
             <p class="work-content">
-              This is the homepage of the Admin portal version 0.5. While it primarily utilizes Retool functionalities
-              through links, the team had begun to integrating native features like the program status tracker on the left. This addition
-              empowers our team to monitor the program funnel directly within the Admin panel, streamlining workflow and improving
-              operational efficiency.
+              The admin portal (v0.5) primarily used Retool functionalities but began integrating features like the program status
+              tracker to streamline workflow and improve efficiency. Engineers used the <a href="ledgersignature.html">Signature UI design system</a> system for data tables to
+              save time, but navigation and responsiveness were not fully addressed.
             </p>
         <img class="work-img" src="work-img/admin-2.png">
             <p class="work-content">
-              To help save time and get started the engineers implemented the data tables using the <a href="ledgersignature.html">Signature UI design system</a>. 
-              However navigation and responsiveness were not factored in along with other design details.
+              My aim was to unify teams along the customer journey, ensuring alignment by measuring sales cycle times. The initial
+              versions relied on a spreadsheet-like format using Retool-linked data, which had limitations. Navigating these tables
+              took significant time, making it difficult to identify key details quickly.
             </p>
         <img class="work-img" src="work-img/admin-3.png">
-            <p class="work-content">
-              While the initial versions of our detail pages relied on a spreadsheet-like format leveraging Retool tables, this
-              approach, while straightforward, presented some limitations. Navigating these 'data grids' often required users to spend
-              significant time searching for specific information. The sheer volume of data could be overwhelming, making it difficult
-              to identify key details quickly.
-            </p>
+
+        <p class="work-content">
+          How can we improve the way our customer teams work together?
+        </p>
 
 
         <h3 id="part-2" class="work-title">02. Research + audit</h3>
             <p class="work-content">
-              To build a more full functioning and well designed admin panel. We spent time talking with the users, the Ledger teams who would be using
-              it to do their day-to-day work.
+              To build a functional and well-designed admin panel, we engaged with the Ledger teams to understand their pain points,
+              goals, and expectations. We explored the v0.5 platform, mapping out tasks and identifying challenges. The v0.5 platform
+              was a proof of concept, hosting Retool app links but lacking usability and consistent use.
+              Interviews and surveys revealed issues like outdated information and difficulty finding sources. To address these, I
+              mapped user flows and annotated feedback to track improvements.
             </p>
         <img class="work-img" src="work-img/admin-4.png">
             <p class="work-content">
-              We interviewed and summed up various metrics and data points that would be useful. Our goal for the new home page
-              would be a dashboard that could give the users a quick sense of what the situation was and what needed attention. <br><br>
-              Different users might have different numbers and statistics they wanted to see so we also thought about customization and personalization.
+              The PM and I developed low-fidelity wireframes to discuss design directions with stakeholders and identify technical
+              challenges early on. This proactive approach allowed us to prioritize functionalities and plan for potential roadblocks.
+              My research focused on data dashboard designs, emphasizing customization and consistency.
             </p>
         <img class="work-img" src="work-img/admin-5.png">
             <p class="work-content">
-              In collaboration with the Product Manager, we conducted a user survey to gather valuable insights. By analyzing the
-              results, we identified recurring themes within the user feedback. This focus on user "wins" and pain points helped us
-              prioritize improvements that would have the greatest positive impact on the user experience.
+              We prioritized quick wins and defined the scope for v1.0. Building a centralized hub required considering all team
+              needs, planning for customer hand-offs, and ensuring up-to-date information was accessible. Our goal was to enhance team
+              collaboration with a customized, centralized admin panel.
             </p>
         <img class="work-img" src="work-img/admin-6.png">
-            <p class="work-content">
-              Following the user research, the PM and I collaborated to develop super low-fidelity wireframes. These
-              initial layouts served two key purposes. First, they provided a foundation for discussions with stakeholders, allowing
-              us to explore different design directions and gather feedback. Secondly, sharing these wireframes with engineers
-              facilitated early identification of potential technical challenges. This proactive approach enabled us to prioritize
-              functionalities and plan for potential roadblocks, ensuring a smoother development process down the line.
-            </p>
+
         <img class="work-img" src="work-img/admin-7.png">
-            <p class="work-content">
-              I based a lot of my investigative work looking through different designs of comparative data dashboards and what made them work. Some things that really 
-              excited me was having some level of customization and personalization such as having your own dashboard set up to how you would best work.
-            </p>
+
         <img class="work-img" src="work-img/admin-8.png">
-            <p class="work-content">
-              It was also important to see the users' path thought-out the admin platform. I did this by mapping out the various flows a real user might have to click
-              and flow through the current admin v0.5 to better understand where our navigation was failing us. 
-            </p>
+
         <img class="work-img" src="work-img/admin-9.png">
-            <p class="work-content">
-              I also started mapping the comments and feedback directly onto the pages to better keep track of what we needed to fix and improve.
-            </p>
+
 
 
         <h3 id="part-3" class="work-title">03. Quick wins + Lofi</h3>
             <p class="work-content">
-              After many rounds of revisions and updates, here is the v1.0 of the Admin portal. The main layout has now
-              a consistent side bar menu. The menu has the most used "All programs" at the top allowing for easy and frequent access.
-              There is room on the side bar for future items such as "My settings" or "BDX consolidation". <br><br>
-              In the footer of the app, we added in a section for company frequented links. This would be useful in getting the team to
-              start using and visiting key pages such as helping with testing on our staging site or even giving feedback on our designs in Figma.
+              After many rounds of revisions and updates, we launched v1.0 of the Admin portal. The main layout now features a
+              consistent side bar menu, with the most-used 'All programs' at the top for easy access. There is space for future items
+              like 'My settings' or 'BDX consolidation'. To address findings from team interviews, we prioritized quick wins for the
+              platform and defined the scope and scale for v1.0.
             </p>
         <img class="work-img" src="work-img/admin-10.png">
             <p class="work-content">
-              The main page is now fully a data dashboard. We moved all the links to the side and categorized it by user. This would help as an interim step
-              for some of the personalization we wanted to put in. There is still an "All" under tools to see all of them. <br><br>
-              The data is arranged by top priority when the Ledger team is working on risk origination. The are able to see the where the programs are in the process
-              and adjust their tasks to address anything that most needed their attention.
+              Consistency and heuristics were key focuses, as the existing platform had many inconsistencies in layout, formatting,
+              and navigation. Interviews helped identify UX bottlenecks, particularly in status and feedback for customer profiles.
+              This feedback guided our strategy, aiming for a more unified and user-friendly experience.
             </p>
         <img class="work-img" src="work-img/admin-11.png">
-            <p class="work-content">
-              The tool pages and detail pages got cleaned up and extra details such as empty states with clear messaging to help with new users who aren't
-              familiar with the system.
-            </p>
+
         <img class="work-img" src="work-img/admin-12.png">
-            <p class="work-content">
-              The full details pages have reworked some of the navigation and cleaned up the hierarchy for the program details. The program details section is
-              hidden but still accessible when needed. We've opted to keep a majority of the tables as from before and will make changes to those at a later date.
-            </p>
+
         <img class="work-img" src="work-img/admin-13.png">
+
+
+
+        <h3 id="part-4" class="work-title">04. Design + hand-off</h3>
             <p class="work-content">
-              There was also a few other UI personalization we wanted to hold until we added some new features. A lot of the feedback we got after we had launched
-              the is first big update on the admin platform has been very positive. The number of our team visiting the admin platform has greatly increased over
-              the first months of launch and we can slowly transition most of the program management features over.
+              To build v1.0 of the Admin portal, we added a footer for frequently used company links, improving access to key pages.
+              The main page now serves as a data dashboard with categorized user links for easier navigation. Data is prioritized for
+              risk management, showing program statuses and allowing task adjustments. We cleaned up tool and detail pages, enhanced
+              navigation, and deferred some UI personalization for future updates. Post-launch feedback has been positive, with
+              increased team usage.
             </p>
-
-
-            <h3 id="part-4" class="work-title">04. Design + hand-off</h3>
-            <h3 id="part-5" class="work-title">05. Outcomes</h3>
+            <p class="work-content">
+              We broke the design into phases and sprints, using ready-made components to speed up development. Early reviews with
+              engineers and user testing ensured technical feasibility and improved flows. Our quick, low-fidelity design process
+              involved rough sketches and comparative research to create effective dashboards. Collaboration with the PM and engineers
+              helped bring these designs to life, with ongoing updates to key navigation elements. This phased, user-focused approach
+              resulted in a robust, user-friendly v1.0 of the Admin portal.
+            </p>
+        
+        <h3 id="part-5" class="work-title">05. Outcomes</h3>
+            <p class="work-content">
+              The first release of the new internal admin in September sparked a 50% increase in internal traffic, despite being in
+              its initial stage. We also noticed significantly shorter sales cycles, reducing the time between customer steps to just
+              weeks. As enthusiasm grew, I began sharing plans for incorporating more metrics and analytics, transforming the platform
+              from a mere data repository to an actionable workspace.
+            </p>
+            <p class="work-content">
+              This experience highlighted the importance of user feedback, iterative design, and early collaboration with engineers,
+              proving that a well-designed admin platform can greatly enhance operational efficiency and team collaboration.
+            </p>
 
 
       </div>
