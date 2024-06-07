@@ -249,6 +249,25 @@ h3.title2, h3.title2 a {
   color: #3b0088;
 }
 
+.tight {
+  margin: 0 0 0.25rem 0;
+}
+
+.tight:nth-child(2) {
+  margin-left: 0.5rem;
+}
+
+.tight a {
+  color: #3b0088;
+}
+
+.port-box {
+  background-color: #f4f4f4;
+  padding: 6px 16px 4px 16px;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
 
 
 
