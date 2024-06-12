@@ -18,7 +18,6 @@ body {
 
 p {
   font-size: 0.9rem;
-  opacity: 0.7;
   line-height: 1.4;
   margin: 0.5rem 0;
 }
@@ -68,7 +67,7 @@ h4{
 }
 
 hr {
-  margin: 0.5rem 0rem 1rem 2rem;
+  margin: 0.5rem 1rem 1rem 1rem;
   border: 1px solid #1e1e1e3e;
 }
 
@@ -120,7 +119,6 @@ a, a:visited, a:hover {
 
 .small-list li {
   font-weight: 500;
-  opacity: 0.7;
 }
 
 .date {
@@ -129,7 +127,7 @@ a, a:visited, a:hover {
   font-size: 0.9rem;
   padding-left: 0px;
   margin-top: 2px;
-  opacity: 0.7;
+  margin-bottom: 0;
 }
 
 .triple-columns {
@@ -144,17 +142,22 @@ a, a:visited, a:hover {
 .company {
   color: #333;
   font-size: 1rem;
-}
-
-h3.company {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
 }
 
 .role {
   color: #721BE4;
   font-size: 1.2rem;
   margin-bottom: 0;
+  text-align: left;
   margin-top: 0;
 }
 
@@ -184,7 +187,6 @@ h3.company {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 0rem;
-  margin-top: 1rem;
 }
 
 .signature-cover {
@@ -268,6 +270,23 @@ h3.title2, h3.title2 a {
   print-color-adjust: exact;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+.summary {
+  text-align: center;
+  width: 650px;
+}
 
 
 

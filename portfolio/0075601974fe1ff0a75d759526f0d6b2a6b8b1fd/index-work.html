@@ -40,12 +40,11 @@
         </div>
 
         <div class="fl w-100 w-60-l">
-          <h2 class="f2 mb4" id="greeting">Hey there!</h2>
+          <h2 class="f2 mb4" id="greeting">Hello, I'm Eric.</h2>
           <p class="mt0 sub-greeting">
-            <b>Eric Tsai</b> is a product designer that <span class="highlighter">simplifies</span> complex technical products to build 
-            <span class="highlighter">intuitive</span> interfaces and <span class="highlighter">engaging</span>
-            customer experiences.<br><br> I enjoy prototyping designs to fine-tune intricate interactions. Previously at Amazon and Cloudflare.
-        </p>
+            I'm a senior product designer with 10+ years of working from early stage start-ups to B2B enterprise teams. I bring cross-functional teams together to solve ambiguous problem spaces and create highly crafted customer-focused solutions.
+            <br><br>Previously at Amazon and Cloudflare.
+          </p>
           <div class="flexy-links">
             <p><a href="https://www.linkedin.com/in/erictsaidesign/" target="_blank" class="arrow-link">Linkedin<i class="material-icons">arrow_forward</i></a></p>
             <p><a href="../../projects/digital-resume/resume2024.html" target="_blank" class="arrow-link">Resum&eacute;<i class="material-icons">arrow_forward</i></a></p>
@@ -221,73 +220,13 @@
     let greetingElement = document.getElementById("greeting");
 
     if (hour >= 5 && hour < 12) {
-        greetingElement.textContent = "🌅 Good Morning!";
+        greetingElement.textContent = "🌅 Hello, I'm Eric.";
     } else if (hour >= 12 && hour < 19) {
-        greetingElement.textContent = "🌞 Good Afternoon!";
+        greetingElement.textContent = "🌞 Hello, I'm Eric.";
     } else if (hour >= 0 && hour < 5) {
       greetingElement.textContent = "🌚 Still awake?";
     } else {
-        greetingElement.textContent = "🌜Good evening!";
+        greetingElement.textContent = "🌜Hello, I'm Eric.";
     }
 
 </script>
-
-<!-- <script>
-  // Array of text options
-    const textOptions = [
-      "digital",
-      "fintech",
-      "security",
-      "data",
-      "iOS app",
-      "web",
-      "notification",
-      "prototype",
-      "platform",
-    ];
-
-    // Current text index
-    let currentTextIndex = 0;
-
-    // Function to update text
-    function updateText() {
-      const textElement = document.getElementById("changing-text");
-      textElement.textContent = textOptions[currentTextIndex];
-      currentTextIndex = (currentTextIndex + 1) % textOptions.length; // Loop back to the beginning
-    }
-
-    // Update text every 3 seconds (adjust as needed)
-    setInterval(updateText, 1000);
-</script> -->
-
-  <!-- <script>
-    // Function to display different message based on location
-    function displayMessage(location) {
-      const messageContainer = document.getElementById('message');
-
-      if (location === 'USA') {
-        messageContainer.textContent = "Welcome! You're in the USA.";
-      } else if (location === 'UK') {
-        messageContainer.textContent = "Welcome! You're in the UK.";
-      } else {
-        messageContainer.textContent = "Welcome! You're in an unknown location.";
-      }
-    }
-
-    // Get user's location using Geolocation API
-    navigator.geolocation.getCurrentPosition(function (position) {
-      const latitude = position.coords.latitude;
-      const longitude = position.coords.longitude;
-
-      // Here, you can use a service like a reverse geocoding API to determine the user's country based on their latitude and longitude.
-      // For simplicity, let's assume the user is in the USA if their latitude is positive, and in the UK otherwise.
-      const location = latitude > 0 ? 'USA' : 'UK';
-
-      // Display message based on location
-      displayMessage(location);
-    }, function (error) {
-      console.error('Error getting user location:', error);
-      // If there's an error getting the user's location, display a generic message
-      displayMessage('Unknown');
-    });
-  </script> -->
