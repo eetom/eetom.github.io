@@ -219,6 +219,12 @@ a, a:visited, a:hover {
   margin-top: 0.5rem;
 }
 
+.section-content-2colc {
+  width: 60%;
+  margin-top: 0.5rem;
+  margin-right: 3rem;
+}
+
 .section-content-2colb2 {
   display: flex;
   margin-right: 1rem;
