@@ -253,6 +253,11 @@ ul li {
 /* Image styles */
 /* ------------------------------- */
 
+.w35 {
+  width: 6rem;
+}
+
+
 .mainview {
   background-image: url(images/bg-1.png);
 }
@@ -846,6 +851,10 @@ hr {
   .website-name {
     max-width: 350px;
     width: 100%;
+  }
+
+  .website-name2 {
+    display: none;
   }
 
   .text-out {
