@@ -60,6 +60,10 @@ h3 {
   font-size: 1.5rem;
 }
 
+h2.big-copy {
+  font-size: 3.5rem;
+}
+
 p
 {
   font-family: 'DM Mono', monospace;
