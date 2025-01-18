@@ -1,5 +1,5 @@
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-/* Typographic CSS */
+/* Typographic CSS - Optimized */
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
 /* ------------------------------- */
@@ -8,19 +8,28 @@
 
 @font-face {
   font-family: "PPMori-Regular";
-  src: url("PPMori-Regular.otf");
+  src: url("PPMori-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "PPMori-Extralight";
-  src: url("PPMori-Extralight.otf");
+  src: url("PPMori-Extralight.otf") format("opentype");
 }
 
 @font-face {
   font-family: "PPMori-SemiBold";
-  src: url("PPMori-SemiBold.otf");
+  src: url("PPMori-SemiBold.otf") format("opentype");
 }
 
+/* ------------------------------- */
+/* CSS Variables */
+/* ------------------------------- */
+
+:root {
+  --text-color: #1B1B1B;
+  --highlight-color: rgba(178, 95, 255, 0.226);
+  --max-width: 750px;
+}
 
 /* ------------------------------- */
 /* Base Typography */
@@ -28,35 +37,24 @@
 
 body {
   font-family: 'DM Mono', monospace;
-  color: #1B1B1B;
+  color: var(--text-color);
   font-size: 1.2rem;
 }
 
-h3.sanserif,
-.sub-title,
-.title-text,
-.spaced-out,
-.caption,
-.header-index-text {
-  font-family: 'DM Mono', monospace;
-  color: #1B1B1B;
+h1, h2, h3 {
+  font-family: "PPMori-SemiBold", sans-serif;
+  font-weight: 100;
 }
 
 h1 {
-  font-family: "PPMori-SemiBold", serif;
-  font-weight: 100;
   font-size: 2.5rem;
 }
 
 h2 {
-  font-family: "PPMori-SemiBold", sans-serif;
-  font-weight: 100;
   font-size: 2rem;
 }
 
 h3 {
-  font-family: "PPMori-SemiBold", sans-serif;
-  font-weight: 100;
   font-size: 1.5rem;
 }
 
@@ -64,34 +62,28 @@ h2.big-copy {
   font-size: 3.5rem;
 }
 
-p
-{
+p {
   font-family: 'DM Mono', monospace;
-  color: #1B1B1B;
+  color: var(--text-color);
   line-height: 1.8;
-  max-width: 750px;
+  max-width: var(--max-width);
 }
-
-.img-nav p {
-  margin-top: 0;
-}
-
-.img-nav h3 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-
 
 /* ------------------------------- */
 /* Specific Classes */
 /* ------------------------------- */
+
+.sanserif, .sub-title, .title-text, .spaced-out, .caption, .header-index-text {
+  font-family: 'DM Mono', monospace;
+  color: var(--text-color);
+}
 
 .sub-title {
   color: #828282;
 }
 
 .highlighter {
-  background: linear-gradient(180deg, transparent 60%, rgba(178, 95, 255, 0.226) 60%);
+  background: linear-gradient(180deg, transparent 60%, var(--highlight-color) 60%);
 }
 
 .title-text {
@@ -123,6 +115,7 @@ p
 .header-index-text {
   display: flex;
   flex-direction: column;
+  border-right: 1px solid var(--text-color);
 }
 
 .text-out {
@@ -150,9 +143,3 @@ p
   width: 60%;
   line-height: 1.4;
 }
-
-.header-index-text {
-  border-right: 1px solid #1B1B1B;
-}
-
-
