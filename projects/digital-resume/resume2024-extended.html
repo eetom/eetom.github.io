@@ -1,199 +1,380 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Eric Tsai - Resume 2024</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eric Tsai – Principal Product Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <link rel="stylesheet" href="styles-plain.css" type="text/css">
+    :root {
+      --bg: #e8e8f0;
+      --paper: #ffffff;
+      --ink: #0d0c14;
+      --ink-mid: #1f1d2e;
+      --ink-light: #4a4760;
+      --ink-faint: #6e6b85;
+      --rule: #d0cfe0;
+      --accent: #6112cc;
+      --tag-text: #1f1d2e;
+    }
+
+    html { background: var(--bg); }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      color: var(--ink);
+      background: var(--bg);
+      padding: 32px 24px 64px;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      background: var(--paper);
+    }
+
+    /* HEADER — no border, melts into body */
+    .header {
+      padding: 40px 52px 24px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: end;
+    }
+
+    .header-eyebrow {
+      font-size: 9.5px;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 7px;
+    }
+
+    .header h1 {
+      font-family: 'Lora', serif;
+      font-weight: 400;
+      font-size: 2.2rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      line-height: 1.1;
+    }
+
+    .header-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+    }
+
+    .header-contact a {
+      font-size: 11.5px;
+      color: var(--ink-light);
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    .header-contact a:hover { color: var(--accent); }
+
+    /* BODY */
+    .body { padding: 0 52px 44px; }
+
+    .section { padding-top: 20px; }
+
+    .section + .section {
+      border-top: 1px solid var(--rule);
+      margin-top: 20px;
+    }
+
+    .section-label {
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 10px;
+    }
+
+    /* SUMMARY */
+    .summary-text {
+      font-family: 'Lora', serif;
+      font-size: 0.94rem;
+      line-height: 1.72;
+      color: var(--ink-mid);
+      font-style: italic;
+
+    }
+
+    /* EXPERTISE */
+    .expertise {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .tag {
+      font-size: 11px;
+      color: var(--tag-text);
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      padding: 3px 10px;
+      border-radius: 2px;
+      font-weight: 400;
+    }
+
+    /* ROLES */
+    .role { margin-bottom: 17px; }
+    .role:last-child { margin-bottom: 0; }
+
+    .role-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 7px;
+    }
+
+    .role-name {
+      font-family: 'Lora', serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--accent);
+    }
+
+    .role-name a { color: inherit; text-decoration: none; }
+    .role-name a:hover { opacity: 0.75; }
+
+    .role-title-line {
+      font-size: 11px;
+      color: var(--ink-light);
+      margin-top: 2px;
+      font-weight: 400;
+    }
+
+    .role-meta {
+      font-size: 10.5px;
+      color: var(--ink-light);
+      text-align: right;
+      white-space: nowrap;
+      flex-shrink: 0;
+      line-height: 1.6;
+      padding-top: 1px;
+      font-weight: 400;
+    }
+
+    .role ul {
+      list-style: none;
+      border-left: 1.5px solid var(--rule);
+      padding-left: 14px;
+      margin-left: 2px;
+    }
+
+    .role li {
+      font-size: 12.5px;
+      line-height: 1.65;
+      color: var(--ink-mid);
+      margin-bottom: 4px;
+      font-weight: 300;
+      max-width: 58ch;
+    }
+
+    .role li:last-child { margin-bottom: 0; }
+    .role li:first-child { color: var(--ink); font-weight: 400; }
+
+    .more-link {
+      font-size: 11px;
+      color: var(--ink-faint);
+      margin-top: 14px;
+      font-style: italic;
+    }
+
+    .more-link a { color: var(--ink-light); text-decoration: underline; text-underline-offset: 2px; }
+
+    /* SKILLS */
+    .skills-rows { display: flex; flex-direction: column; gap: 7px; }
+
+    .skill-row {
+      display: grid;
+      grid-template-columns: 96px 1fr;
+      gap: 12px;
+      align-items: baseline;
+    }
+
+    .skill-cat {
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      line-height: 1.65;
+    }
+
+    .skill-vals {
+      font-size: 12px;
+      color: var(--ink-mid);
+      line-height: 1.65;
+      font-weight: 400;
+    }
+
+    /* EDUCATION */
+    .edu-line {
+      font-size: 12.5px;
+      color: var(--ink-mid);
+      font-weight: 400;
+    }
+
+    /* PRINT */
+    @media print {
+      @page { size: letter; margin: 0; }
+      html, body {
+        background: #fff;
+        padding: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .page { max-width: 100%; background: #fff; }
+      .header { padding: 32px 44px 20px; }
+      .body { padding: 0 44px 36px; }
+    }
+
+    @media (max-width: 600px) {
+      .header { padding: 24px 20px 20px; grid-template-columns: 1fr; }
+      .header-contact { align-items: flex-start; }
+      .body { padding: 0 20px 36px; }
+      .role-top { flex-direction: column; }
+      .role-meta { text-align: left; }
+      .skill-row { grid-template-columns: 1fr; gap: 2px; }
+    }
+  </style>
 </head>
-
 <body>
-  <div class="wrapper">
+<div class="page">
 
-    <div class="work-wrapper2">
+  <div class="header">
+    <div>
+      <div class="header-eyebrow">Principal Product Designer</div>
+      <h1>Eric Tsai</h1>
+    </div>
+    <div class="header-contact">
+      <a href="mailto:erictsaidesign@gmail.com">erictsaidesign@gmail.com</a>
+      <a href="https://bit.ly/erictsai-portfolio" target="_blank">bit.ly/erictsai-portfolio</a>
+      <a href="https://linkedin.com/in/erictsaidesign/" target="_blank">linkedin.com/in/erictsaidesign</a>
+    </div>
+  </div>
 
-        <div class="section-content-2cola">
-          <div class="section-title2">
-            <h1 class="title">Eric Tsai</h1>
-            <h2 class="title">Senior Product Designer</h2>
-          </div>
-        </div>
+  <div class="body">
 
-        <div class="section-content-2colb2">
-          <div class="right">
-            <p>email:</p>
-            <p>phone:</p>
-            <p>portfolio:</p>
-            <p>linkedin:</p>
-          </div>
-          <div class="left">
-            <h3 class="title2"><a href="mailto:erictsaidesign@gmail.com">erictsaidesign@gmail.com</a></h3>
-            <h3 class="title2"><a href="tel:415-712-9912">(415) 712-9912</a></h3>
-            <h3 class="title2"><a href="https://bit.ly/erictsai-portfolio">bit.ly/erictsai-portfolio</a></h3>
-            <h3 class="title2"><a href="https://www.linkedin.com/in/erictsaidesign/">linkedin.com/in/erictsaidesign/</a></h3>
-          </div>
-        </div>
+    <div class="section">
+      <div class="section-label">Summary</div>
+      <p class="summary-text">12+ years designing products that put users first — across cybersecurity, developer tools, fintech, and AI. I excel in technically complex spaces, but my focus is always <strong style="color: var(--accent);">the people using the product</strong>. AI enhances how I work; it doesn't replace why I work.</p>
     </div>
 
-
-
-    <div class="work-wrapper">
-      <div class="section-content-2cola">
-        <div class="section-title">
-          <hr>
-          <h2>Summary</h2>
-        </div>
-      </div>
-    
-      <div class="section-content-2colb">
-            <p class="date-extended">
-              10+ years of working from early stage start-ups to B2B enterprise teams. I excel in product ownership and working with technical complexity. I bring cross-functional teams together to solve ambiguous problem spaces and create highly crafted customer-focused solutions.
-            </p>
-            <br>
-            <h3 class="company">Industry Expertise</h3>
-            <p class="date-extended">• Web Security • Developer Tools • Data Dashboards • Fintech</p>
+    <div class="section">
+      <div class="section-label">Industry Expertise</div>
+      <div class="expertise">
+        <span class="tag">Human-Centered Design</span>
+        <span class="tag">AI Security</span>
+        <span class="tag">Developer Tools</span>
+        <span class="tag">Web Security</span>
+        <span class="tag">Fintech</span>
+        <span class="tag">Enterprise UX</span>
       </div>
     </div>
 
+    <div class="section">
+      <div class="section-label">Work Experience</div>
 
-
-    <div class="work-wrapper">
-      <div class="section-content-2cola">
-        <div class="section-title">
-          <hr>
-          <h2>Work Experience</h2>
+      <div class="role">
+        <div class="role-top">
+          <div>
+            <div class="role-name"><a href="https://www.paloaltonetworks.com" target="_blank">Palo Alto Networks</a> / Protect AI</div>
+            <div class="role-title-line">Principal Product Designer</div>
+          </div>
+          <div class="role-meta">07/2024 – Present<br/>Seattle, WA (Remote)</div>
         </div>
-      </div>
-
-      <div class="section-content-2colb">
-
-        <h3 class="role"><a href="https://www.ledgerinvesting.com/">Ledger Investing (W17)</a> / Senior Product Designer</h3>
-        <div class="container-extended">
-          <p class="date-extended">[02/2021 to 10/2023 – Remote]</p>
-        </div>
-
-        <ul class="small-list">
-          <li>Designed and launched of new features that accelerated sales cycles from months to weeks and simplified customer journey by transforming 10+ forms into guided flows.</li>
-          <li>Developed and maintained Ledger's design system "Signature UI", collaborated with engineers on component library.</li>
-          <li>Focused on creating intuitive user experiences and decomposing features into smaller pieces for rapid iterative development.</li>
-          <li>Delivered pixel-perfect mockups and design specs while maintaining design quality in shipped products.</li>
+        <ul>
+          <li>Promoted to Principal Designer after Palo Alto Networks acquired Protect AI; designing AI security products within one of the world's largest cybersecurity platforms.</li>
+          <li>Led cross-team IA alignment to secure top-level placement for AIRS across multiple product owners and stakeholders.</li>
+          <li>Owned UX for Agent Artifact Scanning and AI Discovery (AI-SPM) — helping enterprises surface Shadow AI and shipping the team's first agentic security products.</li>
+          <li>Designed RBAC systems and ran user research at Protect AI, enabling enterprise teams to onboard hundreds of sub-teams onto a unified security platform.</li>
         </ul>
-
-
-        <br />
-
-        <h3 class="role"><a href="https://aws.amazon.com/products/developer-tools/">Amazon AWS</a> / UX Designer L5 – Developer Tools</h3>
-        <div class="container-extended">
-          <p class="date-extended">[08/2019 to 02/2021 – Seattle, WA]</p>
-        </div>
-
-        <ul class="small-list">
-          <li>Designed and launched CodeStar Connections and Notifications, improving developer experience by integrating 4 new
-          third-party tools into AWS CodeSuite.</li>
-          <li>Primary UX designer for AWS CodePipeline, updating new features, UI fixes, and design hand-off with ENG teams.</li>
-          <li>Designed high-fidelity interactive prototypes and visuals mockups.</li>
-          <li>Evaluated and recommended design solutions, guiding product team decision-making with design research.</li>
-        </ul>
-
-        <br>
-
-        <h3 class="role"><a href="https://www.cloudflare.com/">Cloudflare</a> / Product Designer</h3>
-        <div class="container-extended">
-          <p class="date-extended">[06/2016 to 06/2019 – San Francisco, CA]</p>
-        </div>
-
-        <ul class="small-list">
-          <li>Was the initial product design hired, helped grow the team to 8+ product designers. Developed foundational design process & culture across 3 international offices.</li>
-          <li>Led improvements to the Firewall app and other products (Analytics, Registrar, Logpush, Billing) that empowered customers and 30% reduction of related support tickets.</li>
-          <li>Created and assessed design solutions to solve complex design problems with consideration for user research and customer data.</li>
-          <li>Worked with cross-functional teams to deliver world-class interaction designs and user flows.</li>
-        </ul>
-
-        <p>More work experience [2014 - 2016] in <a href="https://bit.ly/erictsai-portfolio">portfolio</a> website.</p>
-
       </div>
 
+      <div class="role">
+        <div class="role-top">
+          <div>
+            <div class="role-name"><a href="https://www.ledgerinvesting.com" target="_blank">Ledger Investing</a></div>
+            <div class="role-title-line">Senior Product Designer</div>
+          </div>
+          <div class="role-meta">02/2021 – 10/2023<br/>Remote</div>
+        </div>
+        <ul>
+          <li>Transformed 10+ complex forms into guided flows, cutting sales cycles from months to weeks.</li>
+          <li>Built and maintained "Signature UI", Ledger's design system, in close collaboration with engineering.</li>
+          <li>Designed an internal platform enabling the team to pressure-test workflows end-to-end, surfacing edge cases and refining the customer experience before shipping.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-top">
+          <div>
+            <div class="role-name"><a href="https://aws.amazon.com/products/developer-tools/" target="_blank">Amazon AWS</a></div>
+            <div class="role-title-line">UX Designer L5 – Developer Tools</div>
+          </div>
+          <div class="role-meta">08/2019 – 02/2021<br/>Seattle, WA</div>
+        </div>
+        <ul>
+          <li>Designed and launched CodeStar Connections and Notifications, integrating 4 third-party tools into AWS CodeSuite for thousands of daily users.</li>
+          <li>Primary UX designer for CodePipeline — owning new features, UI improvements, and engineering handoff.</li>
+          <li>Used research and prototypes to advocate for user needs inside a large, fast-moving org.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-top">
+          <div>
+            <div class="role-name"><a href="https://www.cloudflare.com" target="_blank">Cloudflare</a></div>
+            <div class="role-title-line">Product Designer</div>
+          </div>
+          <div class="role-meta">06/2016 – 06/2019<br/>San Francisco, CA</div>
+        </div>
+        <ul>
+          <li>Among the first designers hired; scaled the team to 8+ and built design culture across 3 international offices.</li>
+          <li>Led UX for Firewall, Analytics, Registrar, and Billing — driving a 30% reduction in related support tickets.</li>
+          <li>Shipped interaction designs for web security products used by millions worldwide.</li>
+        </ul>
+      </div>
+
+      <p class="more-link">More experience [2014–2016] at <a href="https://bit.ly/erictsai-portfolio" target="_blank">bit.ly/erictsai-portfolio</a></p>
     </div>
 
-    <br><br>
-
-    <div class="work-wrapper">
-      <div class="section-content-2cola">
-        <div class="section-title">
-          <hr>
-          <h2>Skills & Tools</h2>
+    <div class="section">
+      <div class="section-label">Skills & Tools</div>
+      <div class="skills-rows">
+        <div class="skill-row">
+          <div class="skill-cat">Design Craft</div>
+          <div class="skill-vals">End-to-end UI/UX · Visual Design · Design Systems · Information Architecture · Prototyping · Accessibility</div>
         </div>
-      </div>
-
-      <div class="section-content-2colb">
-
-        <div class="triple-columns">
-          <div class="tc-1">
-            <h3 class="company">Design Skills</h3>
-            <p>Visual Design • Wireframes • End-to-end UI/UX • Design Systems •
-              Design Documentation • Accessibility • Prototyping</p>
-          </div>
-          <div class="tc-1">
-            <h3 class="company">Research Skills</h3>
-            <p>Design Audits • Journey Maps • Storytelling •
-              User Research • Sprints • Design Critique • Understanding User Needs
-              </p>
-          </div>
-          <div class="tc-1">
-            <h3 class="company">Tool Stack</h3>
-            <p>Figma • Adobe Creative Suite • Visual Studio Code • Sketch • Jira • Github • HTML/CSS/JS</p>
-          </div>
+        <div class="skill-row">
+          <div class="skill-cat">Research</div>
+          <div class="skill-vals">User Research · Design Audits · Journey Maps · Cross-functional Facilitation · Storytelling · Design Critique</div>
         </div>
-
-      </div>
-    </div>
-
-    <div class="work-wrapper">
-      <div class="section-content-2cola">
-        <div class="section-title">
-          <hr>
-          <h2>Awards & Talks</h2>
+        <div class="skill-row">
+          <div class="skill-cat">Tools & AI</div>
+          <div class="skill-vals">Figma · Git · GitHub · GitLab · Jira · Asana · Linear · HTML · CSS · JavaScript · Claude Code · ChatGPT · NotebookLM</div>
         </div>
-      </div>
-
-      <div class="section-content-2colb">
-        <h3 class="company">Designing for Security <span class="date"><br>[06/2019 – Presented at San Francisco Design Week]</span></h3>
-        <br>
-        <h3 class="company">Adobe Creative Jam <span class="date"><br>[03/2017 – Judge's Choice Award Winner]</span></h3>
       </div>
     </div>
 
-
-    <div class="work-wrapper">
-      <div class="section-content-2cola">
-        <div class="section-title">
-          <hr>
-          <h2>Education</h2>
-        </div>
-      </div>
-
-      <div class="section-content-2colb">
-        <h3 class="company"><a href="https://www.founderfule.com/en/">FounderFuel Accelerator Program</a></h3>
-        <div class="container-extended">
-          <p class="date-extended">[Winter 2014 – Montreal, QC]</p>
-        </div>
-   
-        <br>
-        <h3 class="company"><a href="https://www.siat.sfu.com/">Simon Fraser University</a></h3>
-        <div class="container-extended">
-          <p class="date-extended">[Graduated 06/2011 – Vancouver, BC]</p>
-        </div>
-        <ul class="small-list">
-          <li>Bachelor of Arts, Interactive Arts & Technology: Design</li>
-        </ul>
- 
-      </div>
+    <div class="section">
+      <div class="section-label">Education</div>
+      <p class="edu-line">Simon Fraser University — B.A., Interactive Arts & Technology, 2011</p>
     </div>
 
   </div>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+</div>
 </body>
-
 </html>
