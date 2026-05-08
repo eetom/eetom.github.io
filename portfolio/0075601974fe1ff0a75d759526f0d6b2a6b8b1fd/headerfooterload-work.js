@@ -4,7 +4,7 @@ window.onload = function () {
     $('#header').load('header-work.html');
     
     var images = [
-        'https://eetom.github.io/img/hosted/pano1.jpg',
+        'https://eetom.github.io/img/hosted/pano1.webp',
         'https://eetom.github.io/img/hosted/pano2.jpg',
         'https://eetom.github.io/img/hosted/pano3.jpg',
         'https://eetom.github.io/img/hosted/pano4.jpg',
