@@ -13,11 +13,11 @@
 
 .checkbox-label {
   background-color: #f39c12;
-  width: 50px;
-  height: 20px;
+  width: 52px;
+  height: 26px;
   border-radius: 50px;
   position: relative;
-  padding: 5px;
+  padding: 3px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -27,27 +27,30 @@
 
 .moon {
   color: #ffe992;
-  font-size: 12px;
+  font-size: 14px;
+  z-index: 1;
 }
 
 .sun {
   color: #fefefe;
-  font-size: 12px;
+  font-size: 14px;
+  z-index: 1;
 }
 
 .checkbox-label .ball {
   background-color: #fefefe;
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   position: absolute;
-  left: 2px;
-  top: 2px;
+  left: 0;
+  top: 0;
   border-radius: 50%;
   transition: transform 0.2s linear;
+  z-index: 2;
 }
 
 .checkbox:checked+.checkbox-label .ball {
-  transform: translateX(28px);
+  transform: translateX(26px);
 }
 
 
