@@ -3,3 +3,9 @@ _site
 .DS_Store
 img/.DS_Store
 ../.DS_Store
+
+# Unencrypted portfolio source — never commit
+portfolio/src/
+
+# Claude Code settings
+.claude/

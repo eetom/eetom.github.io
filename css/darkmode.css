@@ -265,3 +265,14 @@ body.dark .math-box {
   margin-bottom: 24px;
   font-size: 24px;
 }
+
+body.dark .images-toc-nav .lockednav-links a,
+body.dark .images-toc-nav .lockednav-links a:visited {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+body.dark .images-toc-nav .lockednav-links a:hover {
+  color: #fefefe;
+  text-decoration: underline;
+}
