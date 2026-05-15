@@ -17,23 +17,27 @@
   height: 26px;
   border-radius: 50px;
   position: relative;
-  padding: 3px;
   cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   overflow: hidden;
 }
 
 .moon {
   color: #ffe992;
   font-size: 14px;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1;
 }
 
 .sun {
   color: #fefefe;
   font-size: 14px;
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1;
 }
 
