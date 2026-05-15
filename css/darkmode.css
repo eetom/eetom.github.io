@@ -26,10 +26,12 @@
 
 .moon {
   color: #ffe992;
+  font-size: 12px;
 }
 
 .sun {
   color: #fefefe;
+  font-size: 12px;
 }
 
 .checkbox-label .ball {
