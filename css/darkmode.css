@@ -13,48 +13,38 @@
 
 .checkbox-label {
   background-color: #f39c12;
-  width: 52px;
-  height: 26px;
+  width: 40px;
+  height: 16px;
   border-radius: 50px;
   position: relative;
+  padding: 5px;
   cursor: pointer;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .moon {
   color: #ffe992;
-  font-size: 14px;
-  position: absolute;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
 }
 
 .sun {
   color: #fefefe;
-  font-size: 14px;
-  position: absolute;
-  right: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
 }
 
 .checkbox-label .ball {
   background-color: #fefefe;
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 2px;
+  top: 2px;
   border-radius: 50%;
   transition: transform 0.2s linear;
-  z-index: 2;
 }
 
 .checkbox:checked+.checkbox-label .ball {
-  transform: translateX(26px);
+  transform: translateX(24px);
 }
 
 
