@@ -221,7 +221,7 @@ a.deprecated-link:hover {
   background-color: #fff;
   color: #1B1B1B;
   padding: 40px 30px;
-  margin-top: 3rem;
+  margin-top: 4rem;
   border-left: solid 10px #6208d7;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
@@ -268,7 +268,8 @@ ul li {
 }
 
 .small-img {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
 }
 
 .column img {
@@ -561,6 +562,28 @@ hr {
   border-radius: 2px;
 }
 
+
+.caption {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+}
+
+.sub-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+}
+
+.icon-link-sm {
+  font-size: 16px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 /* Responsive CSS */
