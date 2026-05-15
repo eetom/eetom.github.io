@@ -322,6 +322,10 @@ ul li {
   margin-top: 3rem;
 }
 
+.images-toc-content > div:first-child h2 {
+  margin-top: 0;
+}
+
 .images-toc-content [id] {
   scroll-margin-top: 2rem;
 }
