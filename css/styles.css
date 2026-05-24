@@ -10,10 +10,18 @@
 /* Link styles */
 /* ------------------------------- */
 
+.prose {
+  line-height: 1.75;
+}
+
+.prose p {
+  margin-bottom: 1.5rem;
+}
+
 a,
 a:visited {
   color: #6208d7;
-  text-decoration: underline;
+  text-decoration: none;
   background-color: transparent;
   padding: 0.25rem 0;
 }
@@ -307,6 +315,10 @@ ul li {
 .images-toc-nav .lockednav-links a:visited {
   color: #1b1b1b;
   text-decoration: none;
+}
+
+.images-toc-nav .lockednav-links a.active {
+  color: #fff;
 }
 
 .images-toc-nav .lockednav-links a:hover {
