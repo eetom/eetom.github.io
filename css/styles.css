@@ -68,6 +68,16 @@ a:hover.placeholder,
   background-color: transparent;
 }
 
+.hero-icon-link {
+  color: #808080;
+  line-height: 0;
+  transition: color 0.15s ease;
+}
+
+.hero-icon-link:hover {
+  color: #6208d7;
+}
+
 .tag a {
   text-decoration: none;
   color: #000;
