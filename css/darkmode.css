@@ -120,6 +120,9 @@ body.dark .sidebar-gradient {
   background: linear-gradient(90deg, rgba(178, 95, 255, 0.22) 0%, rgba(178, 95, 255, 0.05) 60%, transparent 100%);
 }
 
+body.dark .light-wave { display: none; }
+body.dark .dark-wave { display: block; }
+
 body.dark hr {
   border-top: 2px solid #fefefe;
 }

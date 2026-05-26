@@ -27,7 +27,7 @@ a:visited {
 }
 
 a:hover {
-  color: #F0C040;
+  color: #B5690A;
   text-decoration: underline;
 }
 
@@ -190,6 +190,31 @@ a.deprecated-link:hover {
 .sidebar-col {
   display: flex;
 }
+
+.greeting-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.greeting-text {
+  flex: 1;
+  min-width: 0;
+  width: clamp(200px, 50vw, 700px);
+}
+
+.greeting-figure-wrap {
+  flex-shrink: 0;
+  width: clamp(350px, 35vw, 550px);
+  opacity: 1;
+}
+
+.greeting-figure {
+  width: 100%;
+  height: auto;
+}
+
+.dark-wave { display: none; }
 
 .sidebar-gradient {
   width: 100%;
@@ -938,6 +963,16 @@ hr {
 /* ------------------------------- */
 
 @media screen and (max-width: 960px) {
+  .greeting-figure-wrap {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  h2.big-copy {
+    font-size: 1.8rem;
+  }
+
   .avatar-group h1 {
     margin-right: 1rem;
   }
@@ -1113,6 +1148,10 @@ hr {
 /* ------------------------------- */
 
 @media screen and (max-width: 30em) {
+  h2.big-copy {
+    font-size: 1.4rem;
+  }
+
   .img-nav {
     display: flex;
     flex-wrap: wrap;
