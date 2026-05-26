@@ -131,6 +131,37 @@ a:visited.main-title {
   font-size: 1.6rem;
 }
 
+.category-links {
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.category-links p {
+  break-inside: avoid;
+  max-width: none;
+}
+
+.lockednav-sublinks {
+  list-style: none;
+  padding: 0.25rem 0 0 1rem;
+  margin: 0;
+}
+
+.lockednav-sublinks li {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.lockednav-sublinks a,
+.lockednav-sublinks a:visited {
+  color: #b0a8bc;
+}
+
+.lockednav-sublinks a:hover {
+  color: #6208d7;
+  text-decoration: none;
+}
+
 .lockednav-exlinks li {
   margin-bottom: 15px;
   line-height: 1.2;
@@ -581,7 +612,7 @@ hr {
 }
 
 .small-line {
-  width: 10%;
+  width: 7%;
 }
 
 .small-locked-line {
