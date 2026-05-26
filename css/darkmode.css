@@ -71,7 +71,7 @@ body.dark footer {
 }
 
 body.dark .card-bg {
-  background-color: #160f1e;
+  background-color: rgba(22, 15, 30, 0.85);
 }
 
 body.dark .work-title {
@@ -167,7 +167,7 @@ body.dark .tag a {
 body.dark .tag:hover,
 body.dark .tag a:hover {
   text-decoration: none;
-  background-color: #6208d7;
+  background-color: #F0C040;
   color: #fff;
 }
 
