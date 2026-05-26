@@ -233,6 +233,7 @@ a.deprecated-link:hover {
   align-items: center;
 }
 
+
 /* ------------------------------- */
 /* Font styles */
 /* ------------------------------- */
@@ -455,6 +456,8 @@ ul li {
   background-color: rgba(251, 251, 251, 0.85);
   display: flex;
   align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .blog-callout {

@@ -74,6 +74,10 @@ body.dark .card-bg {
   background-color: rgba(22, 15, 30, 0.85);
 }
 
+body.dark .header-index-text {
+  border-right: 1px solid #fff;
+}
+
 body.dark .work-title {
   background-color: #2a2a2a;
 }
