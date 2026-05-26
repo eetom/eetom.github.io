@@ -8,21 +8,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
-@font-face {
-  font-family: "PPMori-Regular";
-  src: url("PPMori-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "PPMori-Extralight";
-  src: url("PPMori-Extralight.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "PPMori-SemiBold";
-  src: url("PPMori-SemiBold.otf") format("opentype");
-}
-
 /* ------------------------------- */
 /* CSS Variables */
 /* ------------------------------- */
@@ -44,8 +29,8 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: "PPMori-SemiBold", sans-serif;
-  font-weight: 100;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
 }
 
 h1 {
@@ -76,7 +61,7 @@ p {
 /* ------------------------------- */
 
 .sanserif, .sub-title, .title-text, .spaced-out, .caption, .header-index-text {
-  font-family: 'DM Mono', monospace;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   color: var(--text-color);
 }
 

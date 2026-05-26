@@ -126,7 +126,7 @@ a:visited.main-title {
 }
 
 .lockednav-links li {
-  font-family: 'DM Mono', monospace;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   margin-bottom: 15px;
   font-size: 1.6rem;
 }
@@ -581,7 +581,7 @@ hr {
 }
 
 .small-line {
-  width: 15%;
+  width: 10%;
 }
 
 .small-locked-line {
@@ -838,7 +838,7 @@ hr {
   .horizontal-nav.active a {
     padding: 1.5rem 0;
     font-size: 2rem;
-    font-family: "PPMori-SemiBold", serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
   .horizontal-nav.active a:hover {
@@ -913,7 +913,7 @@ hr {
   .horizontal-nav.active a {
     padding: 1.5rem 0;
     font-size: 2rem;
-    font-family: "PPMori-SemiBold", serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
   .horizontal-nav.active a:hover {
