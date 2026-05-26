@@ -420,19 +420,26 @@ ul li {
 
 .img-nav {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 0 0 2rem 0;
-  align-content: flex-start;
-  width: 44%;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 100%;
 }
 
 .img-nav > a {
   display: block;
+  flex-shrink: 0;
+  width: 25%;
 }
 
-.img-nav a img {
+.img-nav > a img {
+  width: 100%;
+  display: block;
   border: 1px solid #ccc;
+}
+
+.img-nav-text {
+  flex: 1;
 }
 
 /* ------------------------------- */
@@ -546,7 +553,7 @@ tr:nth-child(even) {
 
 .horizontal-nav-index {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 2rem;
 }
 
@@ -1025,7 +1032,7 @@ hr {
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .img-nav {
-    width: 50%;
+    flex: 0 0 calc(50% - 1rem);
   }
 
   .img-nav p {
