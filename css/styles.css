@@ -182,6 +182,22 @@ a.deprecated-link:hover {
   cursor: not-allowed;
 }
 
+.greeting-row {
+  display: flex;
+  align-items: stretch;
+}
+
+.sidebar-col {
+  display: flex;
+}
+
+.sidebar-gradient {
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(245, 166, 35, 0.2) 0%, rgba(245, 166, 35, 0.05) 60%, transparent 100%);
+}
+
+
 .flexy-links {
   display: flex;
   flex-direction: row;
@@ -190,7 +206,7 @@ a.deprecated-link:hover {
 .flexy-links p {
   margin-right: 2rem;
   padding: 0.5rem 1rem;
-  background-color: #e5d1ff3a;
+  background-color: rgba(245, 166, 35, 0.12);
 }
 
 .dropdown-nav button {
@@ -623,7 +639,7 @@ tr:nth-child(even) {
 hr {
   height: 1px;
   border: none;
-  border-top: 2px solid #1B1B1B;
+  border-top: 2px solid #D4D4D4;
 }
 
 .small-line {

@@ -113,7 +113,11 @@ body.dark .horizontal-nav a:hover
 }
 
 body.dark .flexy-links p {
-  background-color: #242326db;
+  background-color: #e5d1ff3a;
+}
+
+body.dark .sidebar-gradient {
+  background: linear-gradient(90deg, rgba(178, 95, 255, 0.22) 0%, rgba(178, 95, 255, 0.05) 60%, transparent 100%);
 }
 
 body.dark hr {
