@@ -123,6 +123,10 @@ body.dark .sidebar-gradient {
 body.dark .light-wave { display: none; }
 body.dark .dark-wave { display: block; }
 
+body.dark blockquote {
+  border-color: #AC6CFF;
+}
+
 body.dark hr {
   border-top: 2px solid #fefefe;
 }
