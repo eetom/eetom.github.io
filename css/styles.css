@@ -205,7 +205,7 @@ a.deprecated-link:hover {
 
 .greeting-figure-wrap {
   flex-shrink: 0;
-  width: clamp(350px, 35vw, 550px);
+  width: clamp(450px, 35vw, 550px);
   opacity: 1;
 }
 
