@@ -1,36 +1,18 @@
 <!-- Reusable header -->
-<div class="fr w-100 header">
-
-
-    <div class="avatar-group">
-      <div class="flex-center">
-        <img src="https://eetom.github.io/img/portfolio/thoughtful.png" class="br3 w3 dib mb4 mt4 mr3" alt="avatar">
-        <h1 class="f2 f2-l lh-title mt0 mb0">
-          <a href="../../index.html" class="main-title">OkayEric!</a>
-        </h1>
-      </div>
-
-      <div class="flex-center">
-        <div class="horizontal-nav">
-          <a href="index-work.html">🔓/portfolio</a>
-          <a href="../../lab/lab.html">/lab</a>
-          <a href="../../notes/notes.html">/notes</a>
-          <a href="../../img/images.html">/images</a>
-          <a href="../../about/about.html">/about</a>
-          <a class="closeout" href="#">Close Menu</a>
-        </div>
-
-        <div>
-          <input type="checkbox" class="checkbox" id="checkbox">
-          <label for="checkbox" class="checkbox-label">
-            <i class="material-icons moon" style="font-size: 16px;">dark_mode</i>
-            <i class="material-icons sun" style="font-size: 16px;">light_mode</i>
-            <span class="ball"></span>
-          </label>
-        </div>
-      </div>
+<div class="avatar-group">
+  <a href="../../index.html" class="header-logo">
+    <img src="https://eetom.github.io/img/portfolio/thoughtful.png" alt="" class="hero-logo-avatar">
+    OkayEric!
+  </a>
+  <div class="flex-center">
+    <div class="horizontal-nav">
+      <a href="index-work.html">/portfolio</a>
+      <a href="../../lab/lab.html">/lab</a>
+      <a href="../../notes/notes.html">/notes</a>
+      <a href="../../img/images.html">/images</a>
+      <a href="../../about/about.html">/about</a>
+      <a class="closeout" href="#">Close Menu</a>
     </div>
-
     <div class="dropdown-nav">
       <button>
         <span class="bar"></span>
@@ -38,13 +20,21 @@
         <span class="bar"></span>
       </button>
     </div>
-
+    <div>
+      <input type="checkbox" class="checkbox" id="checkbox">
+      <label for="checkbox" class="checkbox-label">
+        <i class="material-icons moon" style="font-size: 16px;">dark_mode</i>
+        <i class="material-icons sun" style="font-size: 16px;">light_mode</i>
+        <span class="ball"></span>
+      </label>
+    </div>
+  </div>
 </div>
+<!-- End header -->
 
 <script>
   const toggleBtn = document.getElementById("checkbox");
   let darkMode = localStorage.getItem("dark-mode");
-  console.log(darkMode);
 
   const enableDarkMode = () => {
     document.body.classList.add("dark");
@@ -59,21 +49,18 @@
   if (darkMode === "dark") {
     document.getElementById("checkbox").checked = true;
     enableDarkMode();
-    // set state of darkMode on page load   
   } else {
     document.getElementById("checkbox").checked = false;
-    disableDarkMode(); // start with light mode  
+    disableDarkMode();
   }
 
   toggleBtn.addEventListener("click", (e) => {
     darkMode = localStorage.getItem("dark-mode");
-    // update darkMode when clicked     
     if (darkMode === "light") {
       enableDarkMode();
     } else {
       disableDarkMode();
     }
-
     document.body.classList.toggle("dark", toggleBtn.checked);
   });
 

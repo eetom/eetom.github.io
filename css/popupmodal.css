@@ -31,8 +31,9 @@
 .popup {
   position: relative;
   background: #FFF;
-  max-width: 95%;
-  max-height: 95%;
+  max-width: 95vw;
+  max-height: 92vh;
+  overflow: hidden;
 }
 
 .popupClose {
@@ -59,5 +60,35 @@
 }
 
 .popupCnt #img01 {
-  height: 50%;
+  display: block;
+  max-width: 100%;
+  max-height: 82vh;
+  width: auto;
+  height: auto;
+}
+
+.popup-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.18);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 1.25rem 0.75rem;
+  z-index: 999999;
+  line-height: 0;
+  transition: background 0.15s ease;
+}
+
+.popup-nav:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.popup-prev { left: 1.5rem; }
+.popup-next { right: 1.5rem; }
+
+.popup-nav .material-icons {
+  font-size: 3rem;
 }
