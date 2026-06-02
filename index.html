@@ -11,39 +11,30 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<header class="sans-serif">
-  <div class="cover bg-left bg-center-l mainview z-1">
-    <div class="bg-black-0 cover-height">
-
-      <div class="cf pa3 pa4-m pa5-l mw9 center index-main-body">
-        <div class="mb4 mt4 pa5-l pa4 br3 card-bg">
-
-          <div class="header-index-text mr4 pa4-l pt3-m pb3-m pl0">
-            <img src="https://eetom.github.io/img/portfolio/eric_d.png" class="br3 w4 dib mb3" alt="avatar">
-            <h1 class="lh-title mt2 mb1">OkayEric!</h1>
-            <p class="f5 mt0 mb0 mr4 website-name">Designing for <em>humans</em> in complex spaces</p>
-          </div>
-
-          <div class="ml4-l">
-            <h3 class="text-out">A growing collection of projects, notes, experiments, and observations.</h3>
-
-            <div class="toggle-callout">
-              <h4 class="f5 mt0 mb0">Light / Dark</h4>
-              <div class="ml3">
-                <input type="checkbox" class="checkbox" id="checkbox">
-                <label for="checkbox" class="checkbox-label">
-                  <i class="material-icons moon" style="font-size: 16px;">dark_mode</i>
-                  <i class="material-icons sun" style="font-size: 16px;">light_mode</i>
-                  <span class="ball"></span>
-                </label>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-
+<header class="hero mainview sans-serif">
+  <nav class="hero-nav">
+    <a href="eetom.github.io" class="hero-logo">
+      <img src="https://eetom.github.io/img/portfolio/eric_hmm.png" alt="" class="hero-logo-avatar">
+      OkayEric!
+    </a>
+    <div class="hero-nav-links">
+      <a href="portfolio/portfolio.html">/portfolio</a>
+      <a href="lab/lab.html">/lab</a>
+      <a href="notes/notes.html">/notes</a>
+      <a href="img/images.html">/images</a>
+      <a href="about/about.html">/about</a>
+      <input type="checkbox" class="checkbox" id="checkbox">
+      <label for="checkbox" class="checkbox-label">
+        <i class="material-icons moon" style="font-size: 16px;">dark_mode</i>
+        <i class="material-icons sun" style="font-size: 16px;">light_mode</i>
+        <span class="ball"></span>
+      </label>
+    </div>
+  </nav>
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Eric designs complex UX, shoots expired film, writes about coffee, and builds things to figure out how they work.</h1>
+      <p>UX designer, AI optimist, and a dad who's figuring it out as I go.<br> Security AI and aligning opinions at <a href="https://www.paloaltonetworks.com/">Palo Alto Networks</a>.</p>
     </div>
   </div>
 </header>
@@ -58,7 +49,7 @@
     <div class="fl w-100 mb4"> <!-- Coding links section -->
 
       <div class="fl-ns w-100 w-30-l pr4-l"> <!-- Side Title -->
-        <h2 class="mt2">🧭 Main Spaces</h2>
+        <h2 class="mt2">Main Spaces</h2>
       </div>
 
       <div class="horizontal-nav-index w-100 w-70-l">
@@ -107,7 +98,7 @@
     <div class="fl w-100 mb4"> <!-- Coding links section -->
 
       <div class="fl-ns w-100 w-30-l pr4-l"> <!-- Side Title -->
-        <h2 class="mt2">🆕 Latest Updates</h2>
+        <h2 class="mt2">Latest Updates</h2>
       </div>
 
 
@@ -123,32 +114,24 @@
   </main>
 </body>
 
-<footer>
-  <div class="cf pa3 pa4-m pa5-l mw9 center">
-    <div class="fr w-100">
-      <hr>
-      <div class="footer-flex-columns">
-        <div class="footer-link">
-          <h2 class="f2 mt0 mb1">OkayEric!</h2>
-          <p class="f5 mb4 mt2 small">©2026 Eric Tsai
-            <br />Site designed and developed in old school HTML and CSS by me.
-            <br />Last updated in May 2026</p>
-        </div>
-
-        <div class="footer-link-columns">
-          <div class="footer-link">
-            <a href="portfolio/portfolio.html">🔒/portfolio <i class="material-icons">arrow_forward</i></a>
-            <a href="lab/lab.html">/lab <i class="material-icons">arrow_forward</i></a>
-            <a href="notes/notes.html">/notes <i class="material-icons">arrow_forward</i></a>
-            <a href="img/images.html">/images <i class="material-icons">arrow_forward</i></a>
-            <a href="about/about.html">/about <i class="material-icons">arrow_forward</i></a>
-          </div>
-          <div class="footer-link">
-            <a href="mailto:erictsaidesign@gmail.com">email<i class="material-icons">arrow_forward</i></a>
-            <a href="https://github.com/eetom">github <i class="material-icons">arrow_forward</i></a>
-            <a href="https://dribbble.com/Eetom">dribbble <i class="material-icons">arrow_forward</i></a>
-          </div>
-        </div>
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <hr class="site-footer-rule">
+    <div class="site-footer-row">
+      <div class="site-footer-brand">
+        <div class="site-footer-name">OkayEric!</div>
+        <p class="site-footer-meta">©2026 Eric Tsai<br>Site designed and developed in old school HTML and CSS by me.</p>
+        <p class="site-footer-meta">Last updated in June 2026. It's world cup season in Seattle. Yay traffic</p>
+      </div>
+      <div class="site-footer-links">
+        <a href="portfolio/portfolio.html">/portfolio</a>
+        <a href="lab/lab.html">/lab</a>
+        <a href="notes/notes.html">/notes</a>
+        <a href="img/images.html">/images</a>
+        <a href="about/about.html">/about</a>
+        <!-- <a href="mailto:erictsaidesign@gmail.com">email</a>
+        <a href="https://github.com/eetom">github</a>
+        <a href="https://dribbble.com/Eetom">dribbble</a> -->
       </div>
     </div>
   </div>
@@ -185,7 +168,7 @@
 <script type="text/javascript">
   const toggleBtn = document.getElementById("checkbox");
   let darkMode = localStorage.getItem("dark-mode");
-  console.log(darkMode);
+
   const enableDarkMode = () => {
     document.body.classList.add("dark");
     localStorage.setItem("dark-mode", "dark");
@@ -199,21 +182,18 @@
   if (darkMode === "dark") {
     document.getElementById("checkbox").checked = true;
     enableDarkMode();
-    // set state of darkMode on page load   
   } else {
     document.getElementById("checkbox").checked = false;
-    disableDarkMode(); // start with light mode  
+    disableDarkMode();
   }
 
   toggleBtn.addEventListener("click", (e) => {
     darkMode = localStorage.getItem("dark-mode");
-    // update darkMode when clicked     
     if (darkMode === "light") {
       enableDarkMode();
     } else {
       disableDarkMode();
     }
-
     document.body.classList.toggle("dark", toggleBtn.checked);
   });
 </script>

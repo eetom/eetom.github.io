@@ -64,10 +64,8 @@ body.dark.grid {
 }
 
 body.dark footer {
-  background-image: none;
   background-color: #0a0a0a;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  color: #fff;
 }
 
 body.dark .card-bg {
@@ -210,7 +208,7 @@ body.dark .highlighter {
 }
 
 body.dark .mainview {
-  filter: brightness(.9) contrast(1.1);
+  filter: brightness(.75) contrast(1.05);
 }
 
 body.dark td,
@@ -287,7 +285,106 @@ body.dark .images-toc-nav .lockednav-links a:visited {
   text-decoration: none;
 }
 
+body.dark .images-toc-nav .lockednav-links a.active {
+  color: #b784fa;
+  background-color: transparent;
+  border-left: 4px solid #b784fa;
+}
+
 body.dark .images-toc-nav .lockednav-links a:hover {
   color: #fefefe;
   text-decoration: underline;
+}
+
+body.dark .notes-new-badge {
+  color: #b784fa;
+}
+
+
+body.dark header.sans-serif:not(.hero) nav .header-logo,
+body.dark header.sans-serif:not(.hero) nav .header-logo:visited,
+body.dark header.sans-serif:not(.hero) nav .header-logo:hover,
+body.dark header.sans-serif:not(.hero) nav .horizontal-nav a,
+body.dark header.sans-serif:not(.hero) nav .horizontal-nav a:visited,
+body.dark header.sans-serif:not(.hero) nav .horizontal-nav a:hover {
+  color: #fff !important;
+  background: none;
+  text-decoration: none;
+}
+
+
+body.dark .site-footer {
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+body.dark .site-footer-rule {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+body.dark .site-footer-name {
+  color: #fff;
+}
+
+body.dark .site-footer-meta {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+body.dark .site-footer-links a,
+body.dark .site-footer-links a:visited {
+  color: rgba(255, 255, 255, 0.55);
+  background: none;
+  text-decoration: none;
+}
+
+body.dark .site-footer-links a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+body.dark .hero-text a,
+body.dark .hero-text a:visited {
+  color: #b784fa;
+  text-decoration: none;
+  background: none;
+}
+
+body.dark .hero-text a:hover {
+  color: #ceb7ff;
+  text-decoration: underline;
+}
+
+body.dark .hero-logo-avatar {
+  background-color: #b784fa;
+}
+
+body.dark .header-logo,
+body.dark .header-logo:visited,
+body.dark .header-logo:hover {
+  color: #fefefe;
+  background: none;
+  text-decoration: none;
+}
+
+body.dark .hero-logo,
+body.dark .hero-logo:visited,
+body.dark .hero-logo:hover,
+body.dark .hero-nav-links a,
+body.dark .hero-nav-links a:visited {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+body.dark .hero-nav-links a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+body.dark .theme-toggle {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body.dark .theme-toggle:hover {
+  color: #fff;
 }

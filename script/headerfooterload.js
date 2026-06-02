@@ -1,7 +1,7 @@
 window.onload = function () {
     // Allow for random header image
     $('#footer').load('../footer.html');
-    $('#header').load('../header.html');
+    $('header.sans-serif nav').load('../header.html');
     $('#modal').load('../modal.html');
     
     var images = [
