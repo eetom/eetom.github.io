@@ -257,7 +257,6 @@ a.deprecated-link:hover {
   width: 20px;
   height: 2px;
   margin: 4px auto;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #1b1b1b;
 }
@@ -799,7 +798,8 @@ ul li {
   margin-top: 0;
 }
 
-footer {
+footer,
+.site-footer {
   background-color: #FBFBFB;
   color: #1b1b1b;
   padding-bottom: 2.5rem;
@@ -836,14 +836,6 @@ a.arrow-link i {
 /* ------------------------------- */
 /* Site footer (index) */
 /* ------------------------------- */
-
-.site-footer {
-  background-color: #FBFBFB;
-  color: #1b1b1b;
-  padding-bottom: 2.5rem;
-  position: relative;
-  z-index: 999;
-}
 
 .site-footer-inner {
   max-width: 96rem;
@@ -906,10 +898,6 @@ a.arrow-link i {
 
 a:hover i,
 a:hover.arrow-link i {
-  -webkit-transform: translate(5px, 0);
-  -moz-transform: translate(5px, 0);
-  -o-transform: translate(5px, 0);
-  -ms-transform: translate(5px, 0);
   transform: translate(5px, 0);
 }
 
@@ -965,16 +953,6 @@ tr:nth-child(even) {
   margin-right: 1rem;
 }
 
-/* .horizontal-flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-} */
-
-/* #banner {
-  width: 77vh;
-} */
-
 #sticky-description {
   /* width: 65vh; */
   padding: 0 2rem 0 0;
@@ -992,19 +970,11 @@ tr:nth-child(even) {
   width: 100%;
 }
 
-/* #the-sticky-div.sticky .lockednav-links li {
-  margin-bottom: 20px;
-} */
-
 #the-sticky-div.sticky .project-title {
   margin: 2rem 0;
 }
 
 .line-clamp-4 {
-  /* overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4; */
   display: none;
 }
 
@@ -1321,9 +1291,7 @@ hr {
   .greeting-figure-wrap {
     display: none;
   }
-}
 
-@media screen and (max-width: 960px) {
   h2.big-copy {
     font-size: 1.8rem;
   }
@@ -1357,7 +1325,7 @@ hr {
 
   body.dark .horizontal-nav.active {
     border: none;
-    background-color: #1B1B1B;
+    background-color: #292929;
     box-shadow: none;
     color: #FEFEFE;
   }
@@ -1392,10 +1360,6 @@ hr {
   .dropdown-nav {
     display: inline;
     margin-left: 1rem;
-  }
-
-  body.dark .horizontal-nav.active {
-    background-color: #292929;
   }
 
   p {
