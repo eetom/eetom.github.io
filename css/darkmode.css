@@ -257,20 +257,6 @@ body.dark .bar {
   background-color: #fefefe;
 }
 
-body.dark .horizontal-nav.active a:hover {
-  background-color: #e0d8ff;
-  color: #48118f;
-}
-
-body.dark .horizontal-nav.active a:hover.placeholder {
-  color: #60a1ee;
-}
-
-body.dark .horizontal-nav.active a:hover.closeout {
-  color: #fefefe;
-  text-decoration: underline;
-}
-
 body.dark .math-box {
   color: #fefefe;
   background-color: #28252b;

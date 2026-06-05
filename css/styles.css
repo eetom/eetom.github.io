@@ -89,6 +89,10 @@ a:hover.placeholder,
   color: #fff;
 }
 
+.horizontal-nav {
+  display: flex;
+}
+
 .horizontal-nav a,
 .horizontal-nav a:hover {
   margin-right: 1.5rem;
@@ -1222,44 +1226,39 @@ hr {
     margin-left: 0;
   }
 
-  body.dark .horizontal-nav.active {
-    border: none;
-    background-color: #1B1B1B;
-    box-shadow: none;
-    color: #FEFEFE;
-  }
-
   .horizontal-nav.active {
     display: flex;
     position: fixed;
     left: 0;
     top: 0;
     flex-direction: column;
-    border: 1px solid #ccc;
-    background-color: #f2f2f2;
+    background: rgba(10, 10, 10, 0.9);
     padding-top: 5rem;
     width: 100%;
     height: 100vh;
     z-index: 99;
-    opacity: 0.95;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
-  .horizontal-nav.active a {
+  .horizontal-nav.active a,
+  .horizontal-nav.active a:visited {
     padding: 1.5rem 0;
     font-size: 2rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    background: none;
   }
 
   .horizontal-nav.active a:hover {
-    background-color: #e0d8ff;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.08);
+    text-decoration: none;
   }
 
   .horizontal-nav.active a:hover.placeholder {
     background-color: transparent;
-    color: #2d72c2;
+    color: #60a1ee;
   }
 
   .horizontal-nav.active a.closeout {
@@ -1311,38 +1310,33 @@ hr {
     left: 0;
     top: 0;
     flex-direction: column;
-    border: 1px solid #ccc;
-    background-color: #f2f2f2;
+    background: rgba(10, 10, 10, 0.9);
     padding-top: 5rem;
     width: 100%;
     height: 100vh;
     z-index: 99;
-    opacity: 0.95;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
-  body.dark .horizontal-nav.active {
-    border: none;
-    background-color: #292929;
-    box-shadow: none;
-    color: #FEFEFE;
-  }
-
-  .horizontal-nav.active a {
+  .horizontal-nav.active a,
+  .horizontal-nav.active a:visited {
     padding: 1.5rem 0;
     font-size: 2rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    background: none;
   }
 
   .horizontal-nav.active a:hover {
-    background-color: #e0d8ff;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.08);
+    text-decoration: none;
   }
 
   .horizontal-nav.active a:hover.placeholder {
     background-color: transparent;
-    color: #2d72c2;
+    color: #60a1ee;
   }
 
   .horizontal-nav.active a.closeout {
