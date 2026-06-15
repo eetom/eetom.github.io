@@ -265,6 +265,41 @@ body.dark .math-box {
   font-size: 24px;
 }
 
+body.dark .main-space-featured-wrap,
+body.dark .main-space-list-item {
+  border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark .main-space-list-item:last-child {
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark .main-space-featured-wrap:hover,
+body.dark .main-space-list-item:hover {
+  border-top-color: #b784fa;
+  text-decoration: none;
+}
+
+body.dark .main-space-featured-wrap:hover .main-space-desc,
+body.dark .main-space-list-item:hover .main-space-desc {
+  text-decoration: none;
+}
+
+body.dark .main-space-name {
+  color: #fefefe;
+}
+
+body.dark .main-space-featured-wrap:hover .main-space-name,
+body.dark .main-space-list-item:hover .main-space-name {
+  color: #b784fa;
+}
+
+body.dark .main-space-desc,
+body.dark .main-space-featured-wrap:hover .main-space-desc,
+body.dark .main-space-list-item:hover .main-space-desc {
+  color: rgba(255, 255, 255, 0.4);
+}
+
 body.dark .images-toc-nav .lockednav-links a,
 body.dark .images-toc-nav .lockednav-links a:visited {
   color: #fefefe;
