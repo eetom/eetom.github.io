@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pour Favor — Beautiful Places Where Coffee Happens</title>
+  <style>
+    :root {
+      --bg: #f4efe8;
+      --paper: #fffaf2;
+      --ink: #1f1a16;
+      --muted: #7b7068;
+      --line: #ded2c4;
+      --coffee: #5f3b25;
+      --clay: #b76e47;
+      --cream: #eadcc9;
+      --shadow: 0 22px 70px rgba(49, 31, 20, 0.14);
+      --radius: 26px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(31,26,22,.045) 1px, transparent 1px),
+        linear-gradient(rgba(31,26,22,.035) 1px, transparent 1px),
+        var(--bg);
+      background-size: 56px 56px;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 34px 22px 80px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 74px;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: 850;
+      letter-spacing: -0.06em;
+    }
+
+    .brand span { color: var(--clay); }
+
+    nav {
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 52px;
+      align-items: center;
+      margin-bottom: 76px;
+    }
+
+    .kicker {
+      color: var(--clay);
+      font-size: 13px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(52px, 8vw, 96px);
+      line-height: .9;
+      letter-spacing: -.085em;
+      margin: 0 0 26px;
+      max-width: 720px;
+    }
+
+    .sub {
+      font-size: 21px;
+      line-height: 1.5;
+      color: var(--muted);
+      max-width: 560px;
+      margin-bottom: 30px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 999px;
+      padding: 15px 20px;
+      font-weight: 850;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .primary {
+      background: var(--coffee);
+      color: white;
+    }
+
+    .secondary {
+      background: var(--cream);
+      color: var(--coffee);
+    }
+
+    .hero-card {
+      position: relative;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      min-height: 560px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .photo {
+      height: 350px;
+      border-radius: 24px;
+      background:
+        linear-gradient(135deg, rgba(95,59,37,.65), rgba(183,110,71,.18)),
+        url("https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80");
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 22px;
+    }
+
+    .place-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .place-title h2 {
+      font-size: 34px;
+      line-height: 1;
+      letter-spacing: -.055em;
+      margin: 0;
+    }
+
+    .city-pill {
+      flex: 0 0 auto;
+      background: #f1e4d5;
+      color: var(--coffee);
+      border-radius: 999px;
+      padding: 9px 12px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .note {
+      color: var(--muted);
+      line-height: 1.55;
+      margin: 14px 0 22px;
+      max-width: 620px;
+    }
+
+    .score-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .score {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 13px;
+      background: #fff;
+    }
+
+    .score strong {
+      display: block;
+      font-size: 22px;
+      letter-spacing: -.04em;
+    }
+
+    .score span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 2px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 24px;
+      margin-bottom: 22px;
+    }
+
+    h3.section-title {
+      font-size: 42px;
+      letter-spacing: -.06em;
+      margin: 0;
+    }
+
+    .section-desc {
+      color: var(--muted);
+      max-width: 460px;
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    .collections {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 76px;
+    }
+
+    .collection {
+      min-height: 210px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 10px 34px rgba(49, 31, 20, 0.07);
+    }
+
+    .collection .emoji {
+      font-size: 30px;
+    }
+
+    .collection h4 {
+      font-size: 23px;
+      line-height: 1.02;
+      letter-spacing: -.045em;
+      margin: 0 0 8px;
+    }
+
+    .collection p {
+      color: var(--muted);
+      line-height: 1.4;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .guide {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 28px;
+      background: #211914;
+      color: #fff5e8;
+      border-radius: 36px;
+      padding: 30px;
+      margin-bottom: 76px;
+      box-shadow: var(--shadow);
+    }
+
+    .guide h3 {
+      font-size: 50px;
+      line-height: .92;
+      letter-spacing: -.07em;
+      margin: 0 0 18px;
+    }
+
+    .guide p {
+      color: #dcc8b5;
+      line-height: 1.55;
+      max-width: 420px;
+    }
+
+    .guide-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .guide-item {
+      display: grid;
+      grid-template-columns: 84px 1fr;
+      gap: 18px;
+      align-items: center;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 24px;
+      padding: 14px;
+      background: rgba(255,255,255,.055);
+    }
+
+    .thumb {
+      width: 84px;
+      height: 84px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #8b5b3e, #d6a066);
+    }
+
+    .guide-item h4 {
+      margin: 0 0 6px;
+      font-size: 20px;
+      letter-spacing: -.035em;
+    }
+
+    .guide-item p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .profile {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: 0 10px 34px rgba(49, 31, 20, 0.07);
+    }
+
+    .profile h4 {
+      font-size: 25px;
+      letter-spacing: -.05em;
+      margin: 0 0 10px;
+    }
+
+    .profile p {
+      color: var(--muted);
+      line-height: 1.45;
+      margin: 0 0 18px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      border: 1px solid var(--line);
+      color: var(--coffee);
+      background: #fff;
+      border-radius: 999px;
+      padding: 7px 10px;
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    footer {
+      margin-top: 76px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      header { margin-bottom: 48px; }
+      nav { display: none; }
+
+      .hero,
+      .guide,
+      .profile-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .collections {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .score-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 560px) {
+      .page { padding: 24px 16px 56px; }
+
+      .collections {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        min-height: auto;
+      }
+
+      .photo {
+        height: 260px;
+      }
+
+      footer {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <header>
+      <div class="brand">Pour <span>Favor</span></div>
+      <nav>
+        <span>City Guides</span>
+        <span>Moments</span>
+        <span>Spaces</span>
+        <span>Field Notes</span>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="kicker">A coffee field guide</div>
+        <h1>Beautiful places where coffee happens.</h1>
+        <p class="sub">
+          Pour Favor curates cafés through design, atmosphere, architecture,
+          light, ritual, and the moments they make possible.
+        </p>
+
+        <div class="actions">
+          <button class="primary">Browse Seattle</button>
+          <button class="secondary">Find a Moment</button>
+          <button class="secondary">I’m Feeling Lucky</button>
+        </div>
+      </div>
+
+      <article class="hero-card">
+        <div class="photo"></div>
+
+        <div class="place-title">
+          <h2>URL Coffee</h2>
+          <div class="city-pill">Seattle</div>
+        </div>
+
+        <p class="note">
+          A bright, minimal room for slow mornings, solo thinking, and
+          design-minded coffee people. Come for the flat white. Stay for the light.
+        </p>
+
+        <div class="score-row">
+          <div class="score">
+            <strong>9.4</strong>
+            <span>Design</span>
+          </div>
+          <div class="score">
+            <strong>9.1</strong>
+            <span>Light</span>
+          </div>
+          <div class="score">
+            <strong>8.7</strong>
+            <span>Coffee</span>
+          </div>
+          <div class="score">
+            <strong>8.9</strong>
+            <span>Stayability</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h3 class="section-title">Curated moments</h3>
+        <p class="section-desc">
+          Not “top cafés.” Not “near me.” Start with the kind of moment you want to have.
+        </p>
+      </div>
+
+      <div class="collections">
+        <article class="collection">
+          <div class="emoji">🌧️</div>
+          <div>
+            <h4>Rainy afternoon with a book</h4>
+            <p>Warm rooms, window seats, soft noise, and good places to disappear.</p>
+          </div>
+        </article>
+
+        <article class="collection">
+          <div class="emoji">💻</div>
+          <div>
+            <h4>Spaces for thinking</h4>
+            <p>Quiet tables, useful light, enough room for a notebook and a laptop.</p>
+          </div>
+        </article>
+
+        <article class="collection">
+          <div class="emoji">🏛️</div>
+          <div>
+            <h4>Architectural cafés</h4>
+            <p>Cafés worth visiting for the room, material choices, and spatial feel.</p>
+          </div>
+        </article>
+
+        <article class="collection">
+          <div class="emoji">☕</div>
+          <div>
+            <h4>Espresso pilgrimage</h4>
+            <p>For people who care about the cup first, but still appreciate the setting.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide">
+      <div>
+        <div class="kicker">City guide</div>
+        <h3>Seattle through cafés.</h3>
+        <p>
+          A subjective guide to rooms, rituals, and coffee moments across the city.
+          Each place earns its spot by being memorable, not merely popular.
+        </p>
+        <button class="secondary">Read the guide</button>
+      </div>
+
+      <div class="guide-list">
+        <article class="guide-item">
+          <div class="thumb"></div>
+          <div>
+            <h4>For quiet design mornings</h4>
+            <p>Minimal rooms, natural light, soft energy, and coffee that does not distract.</p>
+          </div>
+        </article>
+
+        <article class="guide-item">
+          <div class="thumb"></div>
+          <div>
+            <h4>For coffee nerds</h4>
+            <p>Roasters, espresso bars, and places where the bar matters more than the room.</p>
+          </div>
+        </article>
+
+        <article class="guide-item">
+          <div class="thumb"></div>
+          <div>
+            <h4>For neighborhood wandering</h4>
+            <p>Start with coffee, then walk. These cafés anchor a good afternoon route.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h3 class="section-title">Curation lenses</h3>
+        <p class="section-desc">
+          Every place is viewed through multiple lenses. Coffee matters, but it is not the only story.
+        </p>
+      </div>
+
+      <div class="profile-grid">
+        <article class="profile">
+          <h4>Design & interiors</h4>
+          <p>Materials, furniture, composition, lighting, visual noise, and how the room feels.</p>
+          <div class="tags">
+            <span class="tag">natural light</span>
+            <span class="tag">wood</span>
+            <span class="tag">minimal</span>
+            <span class="tag">historic</span>
+          </div>
+        </article>
+
+        <article class="profile">
+          <h4>Moments & rituals</h4>
+          <p>The human reason to be there: read, work, talk, wander, recover, celebrate.</p>
+          <div class="tags">
+            <span class="tag">read</span>
+            <span class="tag">deep work</span>
+            <span class="tag">date</span>
+            <span class="tag">rainy day</span>
+          </div>
+        </article>
+
+        <article class="profile">
+          <h4>Coffee & menu</h4>
+          <p>What to order, what they do well, and whether the menu supports the moment.</p>
+          <div class="tags">
+            <span class="tag">flat white</span>
+            <span class="tag">pour over</span>
+            <span class="tag">pastry</span>
+            <span class="tag">matcha</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div>Pour Favor — a field guide to beautiful places where coffee happens.</div>
+      <div>Seattle · Vancouver · Tokyo · Melbourne</div>
+    </footer>
+  </main>
+</body>
+</html>
